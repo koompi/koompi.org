@@ -27,7 +27,7 @@ weight = 2
 
 # Dropdown menu
 [[menu.main]]
-weight = 3
+weight = 4
 name = "docs"
 hasChildren = true
 
@@ -35,19 +35,25 @@ hasChildren = true
   parent = "docs"
   name = "Installation"
   url = "installation"
-  weight = 1
+  weight = 2
 
   [[menu.main]]
   parent = "docs"
   name = "New Release"
   url = "billing-pricing"
-  weight = 3
+  weight = 4
 
   [[menu.main]]
   parent = "docs"
   name = "Features"
   url = "features"
-  weight = 2
+  weight = 1
+
+  [[menu.main]]
+  parent = "docs"
+  name = "Commands"
+  url = "#"
+  weight = 3
 
 
 ############################# Default Parameters ##########################
