@@ -1,6 +1,10 @@
 ---
 title: "Frequently Asked Questions"
 draft: false
+date: 2018-12-28T11:02:05+06:00
+icon: "ti-help-alt"
+description: "You can find all the solutions to the problems that have happened."
+type : "docs"
 ---
 
 {{< faq "Will updates also be free?" >}}

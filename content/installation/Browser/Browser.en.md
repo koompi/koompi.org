@@ -15,6 +15,18 @@ In these documents, We will show you the details about some browsers and how to 
 
 Before continuing with this documents, make sure you know how to use [**terminal or konsole, first**](#)
 
+In this chart list below is all the browser apps that KOOMPI OS is supported:
+
+| Application Name  |  Guidance| 
+|:-------------|:-------------|
+| [Brave]() |       Yes|
+| [Chromium]() |       Yes|
+| [Firefox]() |       Yes|
+| [Google Chrome]() |       Yes|
+| [Midori]() |       No|
+| [Opera]() |       Yes|
+| [Thunderbird]() |      No|
+
 ---
 
 ### Brave
@@ -87,5 +99,74 @@ You can easily install firefox with only a command:
 pi -S firefox
 ```
 
+---
+
+### Google Chrome
+A **Google Chrome** App, or commonly just Chrome App, is a web application that runs on the Google 
+Chrome web browser. Chrome apps can be obtained from the Chrome Web Store where apps, 
+extensions, and themes can be installed or bought.
+
+#### How install Google Chrome
+In order to install chrome, all you need to know is its keyword like I have said before. So, the command you need to know it below:
+
+```
+pi -S google-chrome
+```
+
+---
+
+### Midori
+[Midori browser](#) is a lightweight yet powerful web browser which runs just as well on little embedded computers named for delicious pastries as it does on beefy machines with a core temperature exceeding that of planet earth. 
+
+For Midori privacy has been a very important point since its birth for this reason it uses 
+DuckDuckGo to ensure better privacy towards users.
+
+#### How to install Midori
+
+Midori can be installed within only a command in konsole:
+```
+pi -S midori
+```
  
+---
+
+### Opera
+[Opera](#) is a freeware web browser for Microsoft Windows, Android, iOS, macOS, and open-source operating systems, developed by Opera Software.
+
+Opera is a Chromium-based browser using the Blink layout engine. It differentiates itself because of a distinct user interface and other features.
+
+#### How to install Opera
+
+On open-source operating system, We can install **opera** through many ways. In KOOMPI OS, it has its own way, too. You can install it by a command below:
+```
+pi -S opera
+```
+---
+
+### Thunderbird
+
+**Mozilla Thunderbird** is a free and open-source, cross-platform email client, news client, RSS, and chat client developed by the Mozilla Foundation. 
+
+
+{{< notice warning >}}
+Before you install Thunderbird, make sure that your computer has the [required libraries](https://www.thunderbird.net/thunderbird/system-requirements/) installed. Missing libraries will cause Thunderbird to be inoperable.
+{{< /notice >}}
+
+#### How to instal Thunderbird
+
+To install Thunderbird, we recommended you to install it from package manager.
+
+```
+pi -S thunderbird
+```
+
+{{< notice note >}}
+If you installed thunderbird from outside package manager, you have to make sure that you have installed all its relevant dependencies.
+{{< /notice >}}
+
+
+{{< notice tip >}}
+If you face the problem with runnning app, please [click here](#) 
+{{< /notice >}}
+
 ---
