@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://examplesite.com/release/ownership/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://examplesite.com/fr/release/ownership/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://examplesite.com/release/ownership/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/features/linux/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://examplesite.com/fr/features/linux/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://examplesite.com/features/linux/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/installation/install/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://examplesite.com/fr/installation/install/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://examplesite.com/installation/install/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/features/mac/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://examplesite.com/fr/features/mac/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://examplesite.com/features/mac/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/release/manage/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://examplesite.com/fr/release/manage/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://examplesite.com/release/manage/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/installation/configuration/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://examplesite.com/fr/installation/configuration/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://examplesite.com/installation/configuration/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/release/bill/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://examplesite.com/fr/release/bill/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://examplesite.com/release/bill/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/features/routing/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://examplesite.com/fr/features/routing/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://examplesite.com/features/routing/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/installation/customization/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://examplesite.com/fr/installation/customization/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://examplesite.com/installation/customization/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/release/payment/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://examplesite.com/fr/release/payment/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://examplesite.com/release/payment/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/features/ubuntu/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://examplesite.com/fr/features/ubuntu/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://examplesite.com/features/ubuntu/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/installation/elements/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://examplesite.com/fr/installation/elements/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://examplesite.com/installation/elements/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/release/profile/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://examplesite.com/fr/release/profile/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://examplesite.com/release/profile/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/features/windows/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://examplesite.com/fr/features/windows/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://examplesite.com/features/windows/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/installation/browser/browser/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/installation/code-editors/code_editor/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/installation/converter/converter/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/installation/documentation/documentation/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/installation/downloader/downloader/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/installation/graphic-editor/graphic_editor/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://examplesite.com/fr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://examplesite.com/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/installation/music-platform/music_platform/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/installation/others/others/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/installation/recorder/recorder/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/installation/media/media/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/installation/video-editor/video_editor/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/installation/video-player/video_player/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/installation/lamp/lamp/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/basic/</loc>
+    <lastmod>2018-12-28T11:02:05+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/features/</loc>
+    <lastmod>2018-12-28T11:02:05+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://examplesite.com/fr/features/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://examplesite.com/features/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/faqs/</loc>
+    <lastmod>2018-12-28T11:02:05+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://examplesite.com/fr/faqs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://examplesite.com/faqs/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/installation/</loc>
+    <lastmod>2018-12-28T11:02:05+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://examplesite.com/fr/installation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://examplesite.com/installation/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/release/</loc>
+    <lastmod>2018-12-28T11:02:05+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://examplesite.com/fr/release/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://examplesite.com/release/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://examplesite.com/fr/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://examplesite.com/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/contact/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://examplesite.com/fr/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://examplesite.com/contact/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://examplesite.com/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://examplesite.com/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://examplesite.com/tags/"
+                />
+  </url>
+  
+</urlset>

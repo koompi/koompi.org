@@ -11,9 +11,9 @@ A web browser, or simply "**browser**," is a software application for accessing 
 The most popular browsers have a number of features in common. They allow users to set bookmarks and browse in a private mode. They also can be customized with extensions, and some of them provide a sync service. 
 
 ---
-In these documents, We will show you the details about some browsers and how to install some of those **Web Browsers** that are supported in KOOMPI OS.
+In this document, We will show you the details about some browsers and how to install some of those **Web Browsers** that are supported in KOOMPI OS.
 
-Before continuing with this documents, make sure you know how to use [**terminal or konsole, first**](#)
+Before continuing with this document, make sure you know how to use [**terminal or konsole, first**](#)
 
 In this chart list below is all the browser apps that KOOMPI OS is supported:
 

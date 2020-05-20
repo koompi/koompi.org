@@ -17,7 +17,7 @@ unsafe= true
 ################################# navigation ################################
 [[menu.main]]
 name = "Faq"
-url = "faq"
+url = "faqs"
 weight = 1
 
 [[menu.main]]
@@ -35,25 +35,25 @@ hasChildren = true
   parent = "docs"
   name = "Installation"
   url = "installation"
-  weight = 2
+  weight = 3
 
   [[menu.main]]
   parent = "docs"
   name = "New Release"
-  url = "billing-pricing"
+  url = "release"
   weight = 4
 
   [[menu.main]]
   parent = "docs"
   name = "Features"
   url = "features"
-  weight = 1
+  weight = 2
 
   [[menu.main]]
   parent = "docs"
-  name = "Commands"
-  url = "commands"
-  weight = 3
+  name = "Basic "
+  url = "basic"
+  weight = 1
 
 
 ############################# Default Parameters ##########################
