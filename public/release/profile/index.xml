@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Understand the different levels of profile on KOOMPI OS</title>
-    <link>koompi.org/release/profile/</link>
+    <link>https://koompi.org/release/profile/</link>
     <description>Recent content in Understand the different levels of profile on KOOMPI OS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright by  © KOOMPI 2020 </copyright>
     <lastBuildDate>Sat, 29 Dec 2018 11:02:05 +0600</lastBuildDate>
     
-	<atom:link href="koompi.org/release/profile/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://koompi.org/release/profile/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
