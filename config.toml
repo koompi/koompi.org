@@ -1,6 +1,6 @@
 ################################# Default configuration ###################
 # provide your domain here
-baseURL = "koompi.org"
+baseURL = "0.0.0"
 # theme
 theme = "dot"
 # site title
