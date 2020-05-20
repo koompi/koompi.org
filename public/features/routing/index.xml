@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Routing on KOOMPI OS</title>
-    <link>https://examplesite.com/features/routing/</link>
+    <link>koompi.org/features/routing/</link>
     <description>Recent content in Routing on KOOMPI OS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright by  © KOOMPI 2020 </copyright>
     <lastBuildDate>Sat, 29 Dec 2018 11:02:05 +0600</lastBuildDate>
     
-	<atom:link href="https://examplesite.com/features/routing/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="koompi.org/features/routing/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

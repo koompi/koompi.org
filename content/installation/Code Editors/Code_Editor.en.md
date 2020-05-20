@@ -47,3 +47,5 @@ pi -S android-stud
 [**Atom**](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwjpsZnQo9boAhUlNKYKHV4lDJsQFjAAegQIFxAC&url=https%3A%2F%2Fatom.io%2F&usg=AOvVaw2f1xmShfpKULMHZBtecYLV) is a free and open-text editor that is user-friendly, customizable, and mobile. It is a desktop application built on HTML, JavaScript, CSS, and Node.js, and operates using the Electron framework.
 
  Atom boasts of simplicity, flexibility and effectiveness that appeal to many developers, expert and novice alike.
+
+ 

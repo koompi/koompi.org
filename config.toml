@@ -1,6 +1,6 @@
 ################################# Default configuration ###################
 # provide your domain here
-baseURL = "https://examplesite.com/"
+baseURL = "koompi.org"
 # theme
 theme = "dot"
 # site title
@@ -17,7 +17,7 @@ unsafe= true
 ################################# navigation ################################
 [[menu.main]]
 name = "Faq"
-url = "faqs"
+url = "faq"
 weight = 1
 
 [[menu.main]]
@@ -35,7 +35,7 @@ hasChildren = true
   parent = "docs"
   name = "Installation"
   url = "installation"
-  weight = 3
+  weight = 2
 
   [[menu.main]]
   parent = "docs"
@@ -47,11 +47,11 @@ hasChildren = true
   parent = "docs"
   name = "Features"
   url = "features"
-  weight = 2
+  weight = 1
 
   [[menu.main]]
   parent = "docs"
-  name = "Basic "
+  name = "Basic Commands"
   url = "basic"
   weight = 1
 

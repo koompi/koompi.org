@@ -3,399 +3,399 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://examplesite.com/release/ownership/</loc>
+    <loc>koompi.org/release/ownership/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://examplesite.com/fr/release/ownership/"
+                href="koompi.org/fr/release/ownership/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://examplesite.com/release/ownership/"
+                href="koompi.org/release/ownership/"
                 />
   </url>
   
   <url>
-    <loc>https://examplesite.com/features/linux/</loc>
+    <loc>koompi.org/features/linux/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://examplesite.com/fr/features/linux/"
+                href="koompi.org/fr/features/linux/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://examplesite.com/features/linux/"
+                href="koompi.org/features/linux/"
                 />
   </url>
   
   <url>
-    <loc>https://examplesite.com/installation/install/</loc>
+    <loc>koompi.org/installation/install/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://examplesite.com/fr/installation/install/"
+                href="koompi.org/fr/installation/install/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://examplesite.com/installation/install/"
+                href="koompi.org/installation/install/"
                 />
   </url>
   
   <url>
-    <loc>https://examplesite.com/features/mac/</loc>
+    <loc>koompi.org/features/mac/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://examplesite.com/fr/features/mac/"
+                href="koompi.org/fr/features/mac/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://examplesite.com/features/mac/"
+                href="koompi.org/features/mac/"
                 />
   </url>
   
   <url>
-    <loc>https://examplesite.com/release/manage/</loc>
+    <loc>koompi.org/release/manage/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://examplesite.com/fr/release/manage/"
+                href="koompi.org/fr/release/manage/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://examplesite.com/release/manage/"
+                href="koompi.org/release/manage/"
                 />
   </url>
   
   <url>
-    <loc>https://examplesite.com/installation/configuration/</loc>
+    <loc>koompi.org/installation/configuration/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://examplesite.com/fr/installation/configuration/"
+                href="koompi.org/fr/installation/configuration/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://examplesite.com/installation/configuration/"
+                href="koompi.org/installation/configuration/"
                 />
   </url>
   
   <url>
-    <loc>https://examplesite.com/release/bill/</loc>
+    <loc>koompi.org/release/bill/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://examplesite.com/fr/release/bill/"
+                href="koompi.org/fr/release/bill/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://examplesite.com/release/bill/"
+                href="koompi.org/release/bill/"
                 />
   </url>
   
   <url>
-    <loc>https://examplesite.com/features/routing/</loc>
+    <loc>koompi.org/features/routing/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://examplesite.com/fr/features/routing/"
+                href="koompi.org/fr/features/routing/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://examplesite.com/features/routing/"
+                href="koompi.org/features/routing/"
                 />
   </url>
   
   <url>
-    <loc>https://examplesite.com/installation/customization/</loc>
+    <loc>koompi.org/installation/customization/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://examplesite.com/fr/installation/customization/"
+                href="koompi.org/fr/installation/customization/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://examplesite.com/installation/customization/"
+                href="koompi.org/installation/customization/"
                 />
   </url>
   
   <url>
-    <loc>https://examplesite.com/release/payment/</loc>
+    <loc>koompi.org/release/payment/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://examplesite.com/fr/release/payment/"
+                href="koompi.org/fr/release/payment/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://examplesite.com/release/payment/"
+                href="koompi.org/release/payment/"
                 />
   </url>
   
   <url>
-    <loc>https://examplesite.com/features/ubuntu/</loc>
+    <loc>koompi.org/features/ubuntu/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://examplesite.com/fr/features/ubuntu/"
+                href="koompi.org/fr/features/ubuntu/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://examplesite.com/features/ubuntu/"
+                href="koompi.org/features/ubuntu/"
                 />
   </url>
   
   <url>
-    <loc>https://examplesite.com/installation/elements/</loc>
+    <loc>koompi.org/installation/elements/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://examplesite.com/fr/installation/elements/"
+                href="koompi.org/fr/installation/elements/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://examplesite.com/installation/elements/"
+                href="koompi.org/installation/elements/"
                 />
   </url>
   
   <url>
-    <loc>https://examplesite.com/release/profile/</loc>
+    <loc>koompi.org/release/profile/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://examplesite.com/fr/release/profile/"
+                href="koompi.org/fr/release/profile/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://examplesite.com/release/profile/"
+                href="koompi.org/release/profile/"
                 />
   </url>
   
   <url>
-    <loc>https://examplesite.com/features/windows/</loc>
+    <loc>koompi.org/features/windows/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://examplesite.com/fr/features/windows/"
+                href="koompi.org/fr/features/windows/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://examplesite.com/features/windows/"
+                href="koompi.org/features/windows/"
                 />
   </url>
   
   <url>
-    <loc>https://examplesite.com/installation/browser/browser/</loc>
+    <loc>koompi.org/installation/browser/browser/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://examplesite.com/installation/code-editors/code_editor/</loc>
+    <loc>koompi.org/installation/code-editors/code_editor/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://examplesite.com/installation/converter/converter/</loc>
+    <loc>koompi.org/installation/converter/converter/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://examplesite.com/installation/documentation/documentation/</loc>
+    <loc>koompi.org/installation/documentation/documentation/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://examplesite.com/installation/downloader/downloader/</loc>
+    <loc>koompi.org/installation/downloader/downloader/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://examplesite.com/installation/graphic-editor/graphic_editor/</loc>
+    <loc>koompi.org/installation/graphic-editor/graphic_editor/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://examplesite.com/</loc>
+    <loc>koompi.org/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://examplesite.com/fr/"
+                href="koompi.org/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://examplesite.com/"
+                href="koompi.org/"
                 />
   </url>
   
   <url>
-    <loc>https://examplesite.com/installation/music-platform/music_platform/</loc>
+    <loc>koompi.org/installation/music-platform/music_platform/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://examplesite.com/installation/others/others/</loc>
+    <loc>koompi.org/installation/others/others/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://examplesite.com/installation/recorder/recorder/</loc>
+    <loc>koompi.org/installation/recorder/recorder/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://examplesite.com/installation/media/media/</loc>
+    <loc>koompi.org/installation/media/media/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://examplesite.com/installation/video-editor/video_editor/</loc>
+    <loc>koompi.org/installation/video-editor/video_editor/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://examplesite.com/installation/video-player/video_player/</loc>
+    <loc>koompi.org/installation/video-player/video_player/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://examplesite.com/installation/lamp/lamp/</loc>
+    <loc>koompi.org/installation/lamp/lamp/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://examplesite.com/basic/</loc>
+    <loc>koompi.org/basic/</loc>
     <lastmod>2018-12-28T11:02:05+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://examplesite.com/features/</loc>
+    <loc>koompi.org/features/</loc>
     <lastmod>2018-12-28T11:02:05+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://examplesite.com/fr/features/"
+                href="koompi.org/fr/features/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://examplesite.com/features/"
+                href="koompi.org/features/"
                 />
   </url>
   
   <url>
-    <loc>https://examplesite.com/faqs/</loc>
+    <loc>koompi.org/faqs/</loc>
     <lastmod>2018-12-28T11:02:05+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://examplesite.com/fr/faqs/"
+                href="koompi.org/fr/faqs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://examplesite.com/faqs/"
+                href="koompi.org/faqs/"
                 />
   </url>
   
   <url>
-    <loc>https://examplesite.com/installation/</loc>
+    <loc>koompi.org/installation/</loc>
     <lastmod>2018-12-28T11:02:05+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://examplesite.com/fr/installation/"
+                href="koompi.org/fr/installation/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://examplesite.com/installation/"
+                href="koompi.org/installation/"
                 />
   </url>
   
   <url>
-    <loc>https://examplesite.com/release/</loc>
+    <loc>koompi.org/release/</loc>
     <lastmod>2018-12-28T11:02:05+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://examplesite.com/fr/release/"
+                href="koompi.org/fr/release/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://examplesite.com/release/"
+                href="koompi.org/release/"
                 />
   </url>
   
   <url>
-    <loc>https://examplesite.com/categories/</loc>
+    <loc>koompi.org/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://examplesite.com/fr/categories/"
+                href="koompi.org/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://examplesite.com/categories/"
+                href="koompi.org/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://examplesite.com/contact/</loc>
+    <loc>koompi.org/contact/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://examplesite.com/fr/contact/"
+                href="koompi.org/fr/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://examplesite.com/contact/"
+                href="koompi.org/contact/"
                 />
   </url>
   
   <url>
-    <loc>https://examplesite.com/tags/</loc>
+    <loc>koompi.org/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://examplesite.com/fr/tags/"
+                href="koompi.org/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://examplesite.com/tags/"
+                href="koompi.org/tags/"
                 />
   </url>
   

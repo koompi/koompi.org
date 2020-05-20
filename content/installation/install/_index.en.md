@@ -58,7 +58,7 @@ Launch by using the following command:
 hugo serve
 ```
 
-Go to `http://localhost:1313`
+Go to `http://koompi.org`
 
 ### Build the website
 
