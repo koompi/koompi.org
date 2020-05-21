@@ -83,7 +83,7 @@
         
         
         <li class="nav-item">
-          <a class="nav-link text-dark" href="/faq">Faq</a>
+          <a class="nav-link text-dark" href="/faqs">Faq</a>
         </li>
         
         
@@ -101,7 +101,7 @@
           </a>
           <div class="dropdown-menu">
             
-            <a class="dropdown-item" href="/basic">Basic Commands</a>
+            <a class="dropdown-item" href="/basic">Basic</a>
             
             <a class="dropdown-item" href="/features">Features</a>
             
@@ -177,94 +177,6 @@
   
   
     <ul>
-      
-        
-          
-
-
-
-
-
-
-
-
-<li data-nav-id="https://koompi.org/installation/install/" title="Installation" class="sidelist
-  ">
-  <a href="https://koompi.org/installation/install/">
-    Installation
-  </a>
-  
-  
-</li>
-
-
-        
-      
-        
-          
-
-
-
-
-
-
-
-
-<li data-nav-id="https://koompi.org/installation/configuration/" title="Configuration" class="sidelist
-  ">
-  <a href="https://koompi.org/installation/configuration/">
-    Configuration
-  </a>
-  
-  
-</li>
-
-
-        
-      
-        
-          
-
-
-
-
-
-
-
-
-<li data-nav-id="https://koompi.org/installation/customization/" title="Customization" class="sidelist
-  ">
-  <a href="https://koompi.org/installation/customization/">
-    Customization
-  </a>
-  
-  
-</li>
-
-
-        
-      
-        
-          
-
-
-
-
-
-
-
-
-<li data-nav-id="https://koompi.org/installation/elements/" title="Elements" class="sidelist
-  ">
-  <a href="https://koompi.org/installation/elements/">
-    Elements
-  </a>
-  
-  
-</li>
-
-
-        
       
         
           
@@ -570,29 +482,47 @@
         <div class="p-lg-5 p-4 bg-white">
           <h2 class="mb-5">Converting Apps</h2>
           
-          <div class="bg-light p-4">
-            <ul class="page-list">
-              
+          <div class="content"><p>Converter is the app that helps the user for converting text file formats, documents, media file format (image, audio, and even video).</p>
+<p>In this article, we are going to introduce you guys the converting applications that mostly use in the KOOMPI OS.</p>
+<h2 id="audio-convert">Audio Convert</h2>
+<p><strong>Audio Convert</strong> is a script that converts between WAV, Ogg, MP3, MPC, FLAC, APE, AAC, and WMA files. It has an easy-to-use interface that makes it possible to fill in the tags for a few formats, copy the tags from input files into the new files, and choose the quality of compression.</p>
+<h3 id="how-to-install-audio-convert">How to install Audio convert</h3>
+<p>You can install it with this command:</p>
+<pre><code>pi -S audio-convert
+</code></pre><hr>
+<h2 id="handbrake">Handbrake</h2>
+<p><a href="https://handbrake.fr/">HandBrake</a> is very easy to use open-source tool for converting videos from a number of formats to a few modern, popular formats.</p>
 
 
+<div class="notices tip" ><p>Before you install any apps, make sure your system have been updated.If you have not updated, please run this command <strong>pi -Syu</strong> first.</p></div>
 
-
-
-
-
-
-<li data-nav-id="https://koompi.org/installation/converter/converter/" title="Converting Apps" class="sidelist
-  active">
-  <a href="https://koompi.org/installation/converter/converter/">
-    Converting Apps
-  </a>
-  
-  
-</li>
-
-
-            </ul>
-          </div>
+<h3 id="how-to-install-handbrake">How to install handbrake</h3>
+<p>In KOOMPI OS handbrake is installed within command below</p>
+<pre><code>pi -S handbrake
+</code></pre><hr>
+<h2 id="soundconverter">Soundconverter</h2>
+<p><strong>SoundConverter</strong> is the leading audio file converter. It reads anything GStreamer can read (Ogg Vorbis, AAC, MP3, FLAC, WAV, AVI, MPEG, MOV, M4A, AC3, DTS, ALAC, MPC, Shorten, APE, SID, MOD, XM, S3M, etc&hellip;), and writes to Opus, Ogg Vorbis, FLAC, WAV, AAC, and MP3 files.</p>
+<p>SoundConverter aims to be the simple app in using, and very fast. Thanks to its multithreaded designing, it will use as many cores as possible to speed up the conversion. It can also extract the audio from
+videos.</p>
+<h3 id="how-to-install-soundconverter">How to install Soundconverter</h3>
+<p>To install it, you need to be in <em>konsole</em> and run command below:</p>
+<pre><code>pi -S soundconverter
+</code></pre><h3 id="features">Features</h3>
+<p>This app is providing many features such as:</p>
+<ul>
+<li>Clean and easy interface</li>
+<li>Fast, multithreaded, conversion</li>
+<li>Process huge number of files in record time</li>
+<li>Powerful automated renaming- Change filenames and create folders according to tags</li>
+</ul>
+<hr>
+<h2 id="soundkonverter">SoundKonverter</h2>
+<p><strong>SoundKonverter</strong> is a front-end to various audio converters.</p>
+<h3 id="how-to-install-soundkonverter">How to install SoundKonverter</h3>
+<p>It is easy to install, run this command below:</p>
+<pre><code>pi -S soundkonverter
+</code></pre><h2 id="29024-1png29024-1png"><img src="/29024-1.png" alt="29024-1.png"></h2>
+</div>
           
           <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 05 Jan 2020</p>
           <nav class="pagination mt-3">
@@ -644,21 +574,6 @@
             
             
             
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
 
             
             
@@ -677,139 +592,6 @@
             
 
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
             
             
             
@@ -1056,89 +838,7 @@
             
             
             
-            
-            
 
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
             
             
             

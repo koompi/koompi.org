@@ -51,7 +51,7 @@ hasChildren = true
 
   [[menu.main]]
   parent = "docs"
-  name = "Basic Commands"
+  name = "Basic"
   url = "basic"
   weight = 1
 

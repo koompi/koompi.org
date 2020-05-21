@@ -83,7 +83,7 @@
         
         
         <li class="nav-item">
-          <a class="nav-link text-dark" href="/fr/faq">Faq</a>
+          <a class="nav-link text-dark" href="/fr/faqs">Faq</a>
         </li>
         
         
@@ -101,7 +101,7 @@
           </a>
           <div class="dropdown-menu">
             
-            <a class="dropdown-item" href="/fr/basic">Basic Commands</a>
+            <a class="dropdown-item" href="/fr/basic">Basic</a>
             
             <a class="dropdown-item" href="/fr/features">Features</a>
             
@@ -182,98 +182,6 @@
   </a>
   
   
-    <ul>
-      
-        
-          
-
-
-
-
-
-
-
-
-<li data-nav-id="https://koompi.org/fr/installation/install/" title="Installation" class="sidelist
-  ">
-  <a href="https://koompi.org/fr/installation/install/">
-    Installation
-  </a>
-  
-  
-</li>
-
-
-        
-      
-        
-          
-
-
-
-
-
-
-
-
-<li data-nav-id="https://koompi.org/fr/installation/configuration/" title="Configuration" class="sidelist
-  ">
-  <a href="https://koompi.org/fr/installation/configuration/">
-    Configuration
-  </a>
-  
-  
-</li>
-
-
-        
-      
-        
-          
-
-
-
-
-
-
-
-
-<li data-nav-id="https://koompi.org/fr/installation/elements/" title="Elements" class="sidelist
-  ">
-  <a href="https://koompi.org/fr/installation/elements/">
-    Elements
-  </a>
-  
-  
-</li>
-
-
-        
-      
-        
-          
-
-
-
-
-
-
-
-
-<li data-nav-id="https://koompi.org/fr/installation/customization/" title="Customization" class="sidelist
-  ">
-  <a href="https://koompi.org/fr/installation/customization/">
-    Customization
-  </a>
-  
-  
-</li>
-
-
-        
-      
-    </ul>
-  
 </li>
 
 
@@ -294,121 +202,88 @@
         <div class="p-lg-5 p-4 bg-white">
           <h2 class="mb-5">Installation</h2>
           
-          <div class="bg-light p-4">
-            <ul class="page-list">
-              
+          <div class="content"><!-- ---
+title: "Installation"
+date: 2018-12-29T11:02:05+06:00
+lastmod: 2020-01-05T10:42:26+06:00
+weight: 2
+draft: false
+# search related keywords
+keywords: ["induct", "instate"]
+---
+
+The following steps are here to help you initialize your new website. If you don't know Hugo at all, we strongly suggest you learn more about it by following this [great documentation for beginners](https://gohugo.io/overview/quickstart/).
+
+### Create your project
+
+Hugo provides a `new` command to create a new website.
+
+```
+hugo new site <new_project>
+```
+
+### Install the theme
+
+Install the **Dot** theme by following [this documentation](https://gohugo.io/themes/installing/)
+
+This theme's repository is: https://github.com/themefisher/dot-hugo-documentation-theme.git
+
+Alternatively, you can [download the theme as .zip](https://github.com/themefisher/dot-hugo-documentation-theme/archive/master.zip) file and extract it in the `themes` directory
+
+Or you can check this video documentation for installing this template:
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/Srt3lTmRxzQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+### Basic configuration
+
+When building the website, you can set a theme by using `--theme` option. However, we suggest you modify the configuration file (`config.toml`) and set the theme as the default.
+
+```toml
+# Change the default theme to be use when building the site with Hugo
+theme = "Dot"
+```
+
+
+### Create your first content pages
+
+Then, create content pages inside the previously created chapter. Here are two ways to create content in the chapter:
+
+```
+hugo new installation/first-content.md
+hugo new installation/second-content/_index.md
+```
+
+Feel free to edit thoses files by adding some sample content and replacing the `title` value in the beginning of the files. 
+
+### Launching the website locally
+
+Launch by using the following command:
+
+```
+hugo serve
+```
+
+Go to `https://koompi.org`
+
+### Build the website
+
+When your site is ready to deploy, run the following command:
+
+```
+hugo
+```
+
+A `public` folder will be generated, containing all static content and assets for your website. It can now be deployed on any web server.
 
 
 
-
-
-
-
-
-<li data-nav-id="https://koompi.org/fr/installation/" title="Installation" class="sidelist
-  active">
-  <a href="https://koompi.org/fr/installation/">
-    Installation
-  </a>
-  
-  
-    <ul>
-      
-        
-          
-
-
-
-
-
-
-
-
-<li data-nav-id="https://koompi.org/fr/installation/install/" title="Installation" class="sidelist
-  ">
-  <a href="https://koompi.org/fr/installation/install/">
-    Installation
-  </a>
-  
-  
-</li>
-
-
-        
-      
-        
-          
-
-
-
-
-
-
-
-
-<li data-nav-id="https://koompi.org/fr/installation/configuration/" title="Configuration" class="sidelist
-  ">
-  <a href="https://koompi.org/fr/installation/configuration/">
-    Configuration
-  </a>
-  
-  
-</li>
-
-
-        
-      
-        
-          
-
-
-
-
-
-
-
-
-<li data-nav-id="https://koompi.org/fr/installation/elements/" title="Elements" class="sidelist
-  ">
-  <a href="https://koompi.org/fr/installation/elements/">
-    Elements
-  </a>
-  
-  
-</li>
-
-
-        
-      
-        
-          
-
-
-
-
-
-
-
-
-<li data-nav-id="https://koompi.org/fr/installation/customization/" title="Customization" class="sidelist
-  ">
-  <a href="https://koompi.org/fr/installation/customization/">
-    Customization
-  </a>
-  
-  
-</li>
-
-
-        
-      
-    </ul>
-  
-</li>
-
-
-            </ul>
-          </div>
+<div class="notices info" ><p>This website can be automatically published and hosted with <a href="https://www.netlify.com/">Netlify</a> (Read more about <a href="https://www.netlify.com/blog/2015/07/30/hosting-hugo-on-netlifyinsanely-fast-deploys/">Automated HUGO deployments with Netlify</a>). Alternatively, you can use <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Github pages</a></p></div>
+ --><blockquote>
+</blockquote>
+</div>
           
           <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 29 Dec 2018</p>
           <nav class="pagination mt-3">
@@ -442,41 +317,10 @@
             
             
             
-            
-            
 
             
             
             
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
             
             
             
@@ -509,205 +353,6 @@
             
             
 
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
             
             
             
@@ -752,7 +397,7 @@
             <a class="nav nav-prev" href="https://koompi.org/fr/"><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">KOOMPI OS</span></a>
             
             
-            <a class="nav nav-next" href="https://koompi.org/fr/installation/install/"> <span class="d-none d-md-block">Installation</span><i class="ti-arrow-right ml-2"></i></a>
+            <a class="nav nav-next" href="https://koompi.org/fr/release/"> <span class="d-none d-md-block">Billing &amp; Pricing</span><i class="ti-arrow-right ml-2"></i></a>
             
           </nav>
         </div>

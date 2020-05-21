@@ -5,7 +5,7 @@ icon: "ti-panel"
 description: "Providing the guide of applications installation; documents, images, and videos."
 type : "docs"
 ---
- The following steps are here to help you initialize you. If you don’t know Hugo at all, we strongly suggest you learn more about it by following this great documentation for beginners.
+ The following steps are stored here to help you. If you don’t know Hugo at all, we strongly suggest you learn more about it by following this great documentation for beginners.
 
 {{% notice note %}}
  Before, You install any applications, you have to make sure your system is already up to date. If you haven't done it, you must do it.

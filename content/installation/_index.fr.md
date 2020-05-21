@@ -66,7 +66,7 @@ Launch by using the following command:
 hugo serve
 ```
 
-Go to `http://koompi.org`
+Go to `https://koompi.org`
 
 ### Build the website
 

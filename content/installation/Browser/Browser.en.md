@@ -38,7 +38,7 @@ Brave is the default apps that we use in our KOOMPI OS. And we recommend you guy
 {{< /notice >}}
 
 
-#### How to install Brave
+### How to install Brave
 There are various choices you can install brave.
 
 Open terminal either via **Ctrl+Alt+T** keyboard shortcut or by searching for `terminal or konsole`  from app launcher. When it opened, run the command below to install it:
@@ -64,14 +64,14 @@ It will require your password. Your password won't be appeared on your screen an
 
 ---
 
-### Chromium
+## Chromium
 [Chromium browser](#) is an open-source browser project that aims to build a safer, faster, and more stable way for all Internet users to experience the web.
 
 {{< notice info >}}
 Unlike Chrome, **Chromium** does not automatically update itself. As a result, you will have to update your browser periodically to ensure you remain on top of the latest security updates and features as they are introduced.
 {{< /notice >}}
 
-#### How to install Chromium
+### How to install Chromium
 
 If you are familiar with using commands, you can simply type this in the terminal:
 
@@ -80,11 +80,11 @@ pi -S chromium
 ```
 
 ---
-### Firefox
+## Firefox
 
 [**Mozilla Firefox** or simple called **Firefox**](#) browser is the default web browser in a number of open-source Linux distributions and KOOMPI OS is one of them. 
 
-#### How to install firefox
+### How to install firefox
 
 As I said before, **Firefox** is available in almost all the open-source distributions out there.
 
@@ -101,12 +101,12 @@ pi -S firefox
 
 ---
 
-### Google Chrome
+## Google Chrome
 A **Google Chrome** App, or commonly just Chrome App, is a web application that runs on the Google 
 Chrome web browser. Chrome apps can be obtained from the Chrome Web Store where apps, 
 extensions, and themes can be installed or bought.
 
-#### How install Google Chrome
+### How install Google Chrome
 In order to install chrome, all you need to know is its keyword like I have said before. So, the command you need to know it below:
 
 ```
@@ -115,13 +115,13 @@ pi -S google-chrome
 
 ---
 
-### Midori
+## Midori
 [Midori browser](#) is a lightweight yet powerful web browser which runs just as well on little embedded computers named for delicious pastries as it does on beefy machines with a core temperature exceeding that of planet earth. 
 
 For Midori privacy has been a very important point since its birth for this reason it uses 
 DuckDuckGo to ensure better privacy towards users.
 
-#### How to install Midori
+### How to install Midori
 
 Midori can be installed within only a command in konsole:
 ```
@@ -130,12 +130,12 @@ pi -S midori
  
 ---
 
-### Opera
+## Opera
 [Opera](#) is a freeware web browser for Microsoft Windows, Android, iOS, macOS, and open-source operating systems, developed by Opera Software.
 
 Opera is a Chromium-based browser using the Blink layout engine. It differentiates itself because of a distinct user interface and other features.
 
-#### How to install Opera
+### How to install Opera
 
 On open-source operating system, We can install **opera** through many ways. In KOOMPI OS, it has its own way, too. You can install it by a command below:
 ```
@@ -143,7 +143,7 @@ pi -S opera
 ```
 ---
 
-### Thunderbird
+## Thunderbird
 
 **Mozilla Thunderbird** is a free and open-source, cross-platform email client, news client, RSS, and chat client developed by the Mozilla Foundation. 
 
@@ -152,7 +152,7 @@ pi -S opera
 Before you install Thunderbird, make sure that your computer has the [required libraries](https://www.thunderbird.net/thunderbird/system-requirements/) installed. Missing libraries will cause Thunderbird to be inoperable.
 {{< /notice >}}
 
-#### How to instal Thunderbird
+### How to instal Thunderbird 
 
 To install Thunderbird, we recommended you to install it from package manager.
 
