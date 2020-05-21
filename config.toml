@@ -17,7 +17,7 @@ unsafe= true
 ################################# navigation ################################
 [[menu.main]]
 name = "Faq"
-url = "faq"
+url = "faqs"
 weight = 1
 
 [[menu.main]]
