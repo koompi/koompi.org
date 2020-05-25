@@ -3,32 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.koompi.org/installation/browser/browser/</loc>
+    <loc>https://www.koompi.org/applications/browser/browser/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.koompi.org/installation/code-editors/code_editor/</loc>
+    <loc>https://www.koompi.org/applications/code-editors/code_editor/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.koompi.org/installation/converter/converter/</loc>
+    <loc>https://www.koompi.org/applications/converter/converter/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.koompi.org/installation/documentation/documentation/</loc>
+    <loc>https://www.koompi.org/applications/documentation/documentation/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.koompi.org/installation/downloader/downloader/</loc>
+    <loc>https://www.koompi.org/applications/downloader/downloader/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.koompi.org/installation/graphic-editor/graphic_editor/</loc>
+    <loc>https://www.koompi.org/applications/graphic-editor/graphic_editor/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
@@ -48,38 +48,53 @@
   </url>
   
   <url>
-    <loc>https://www.koompi.org/installation/music-platform/music_platform/</loc>
+    <loc>https://www.koompi.org/applications/music-platform/music_platform/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.koompi.org/installation/others/others/</loc>
+    <loc>https://www.koompi.org/applications/others/others/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.koompi.org/installation/recorder/recorder/</loc>
+    <loc>https://www.koompi.org/applications/recorder/recorder/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.koompi.org/installation/media/media/</loc>
+    <loc>https://www.koompi.org/applications/media/media/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.koompi.org/installation/video-editor/video_editor/</loc>
+    <loc>https://www.koompi.org/applications/video-editor/video_editor/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.koompi.org/installation/video-player/video_player/</loc>
+    <loc>https://www.koompi.org/applications/video-player/video_player/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.koompi.org/installation/lamp/lamp/</loc>
+    <loc>https://www.koompi.org/applications/lamp/lamp/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.koompi.org/applications/</loc>
+    <lastmod>2018-12-28T11:02:05+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.koompi.org/fr/applications/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/applications/"
+                />
   </url>
   
   <url>
@@ -114,21 +129,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://www.koompi.org/faqs/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://www.koompi.org/installation/</loc>
-    <lastmod>2018-12-28T11:02:05+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://www.koompi.org/fr/installation/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.koompi.org/installation/"
                 />
   </url>
   

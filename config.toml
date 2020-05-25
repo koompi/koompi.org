@@ -1,6 +1,7 @@
 ################################# Default configuration ###################
 # provide your domain here
-baseURL = "https://www.koompi.org"
+#baseURL = "https://www.koompi.org"
+#baseURL = "https://pionux.org"
 # theme
 theme = "dot"
 # site title
@@ -16,7 +17,7 @@ unsafe= true
 
 ################################# navigation ################################
 [[menu.main]]
-name = "Faq"
+name = "Faqs"
 url = "faqs"
 weight = 1
 
@@ -33,25 +34,25 @@ hasChildren = true
 
   [[menu.main]]
   parent = "docs"
-  name = "Installation"
-  url = "installation"
-  weight = 3
+  name = "Applications Info"
+  url = "applications"
+  weight = 2
 
   [[menu.main]]
   parent = "docs"
-  name = "New Release"
+  name = "OS & Apps Release"
   url = "release"
   weight = 4
 
   [[menu.main]]
   parent = "docs"
-  name = "Features"
+  name = "KOOMPI OS Features"
   url = "features"
-  weight = 2
+  weight = 3
 
   [[menu.main]]
   parent = "docs"
-  name = "Basic"
+  name = "Basic Linux Commands"
   url = "basic"
   weight = 1
 
@@ -90,11 +91,11 @@ link = "https://twitter.com/koompi_official"
   
 [[params.social]]
 icon = "ti-github" # themify icon pack : https://themify.me/themify-icons
-link = "#"
+link = "https://github.com/koompi"
   
 [[params.social]]
 icon = "ti-linkedin" # themify icon pack : https://themify.me/themify-icons
-link = "#"
+link = "https://linkedin.com/company/koompi"
 
 ################################ English Language ######################
 [Languages.en]

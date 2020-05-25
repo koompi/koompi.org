@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8">
+  <title>Converting Apps</title>
+
+  <meta name="generator" content="Hugo 0.71.0" />
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://www.koompi.org/plugins/bootstrap/bootstrap.min.css">
+
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="https://www.koompi.org/plugins/themify-icons/themify-icons.css">
+
+  <!-- highlight -->
+  <link rel="stylesheet" href="https://www.koompi.org/plugins/highlight/hybrid.css">
+
+  <!--Favicon-->
+  <link rel="icon" href="https://www.koompi.org/images/KOOMPILogo-Black.png" type="image/x-icon">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+  
+  <style>
+  :root{
+    --primary-color:#02007e;
+    --body-color:#f9f9f9;
+    --text-color:#636363;
+    --text-color-dark:#242738;
+    --white-color:#ffffff;
+    --light-color:#f8f9fa;
+    --font-family:Lato;
+  }
+  </style>
+
+<!-- Main Stylesheet -->
+
+<link href="https://www.koompi.org/css/style.min.css" rel="stylesheet" media="screen"/>
+
+<!-- jquiry -->
+<script src="https://www.koompi.org/plugins/jquery/jquery-1.12.4.js"></script>
+
+<!-- jquary ui -->
+<script src="https://www.koompi.org/plugins/jquery/jquery-ui.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://www.koompi.org/plugins/bootstrap/bootstrap.min.js"></script>
+
+<!-- match-height JS -->
+<script src="https://www.koompi.org/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+<!-- highlight -->
+<script src="https://www.koompi.org/plugins/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+</head>
+  
+  <body>
+    
+    <!-- header -->
+    <header class="shadow-bottom sticky-top bg-white">
+      <nav class="navbar navbar-expand-md navbar-light">
+  <div class="container">
+    <a class="navbar-brand px-2" href="/">KOOMPI OS
+      
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/">Home</a>
+        </li>
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/faqs">Faq</a>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/contact">contact</a>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            docs
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="/basic">Basic</a>
+            
+            <a class="dropdown-item" href="/features">Features</a>
+            
+            <a class="dropdown-item" href="/applications">Applications</a>
+            
+            <a class="dropdown-item" href="/release">New Release</a>
+            
+          </div>
+        </li>
+        
+        
+      </ul>
+      
+      <select class="lang-list dark" id="select-language"
+        onchange="location = this.value;">
+        
+        
+        
+        
+        
+        
+        
+        
+        <option id="en" value="https://www.koompi.org/applications/converter/converter/" selected>En
+        </option>
+        
+        
+        
+        
+        
+        
+      </select>
+      
+    </div>
+  </div>
+</nav>
+    </header>
+    <!-- /header -->
+    
+    
+
+<!-- details page -->
+<section class="single section-sm pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="bg-white pl-lg-4 py-4 pr-4 mb-5 mb-lg-0 sticky-top top-100 overflow-hidden">
+          <ul class="list-styled">
+            
+            <a class="d-block h4 back-btn" href="/"></a>
+            
+               
+              
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.koompi.org/applications/" title="Applications" class="sidelist
+  ">
+  <a href="https://www.koompi.org/applications/">
+    Applications
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.koompi.org/applications/browser/browser/" title="Browser Apps" class="sidelist
+  ">
+  <a href="https://www.koompi.org/applications/browser/browser/">
+    Browser Apps
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.koompi.org/applications/code-editors/code_editor/" title="Code Editing Apps" class="sidelist
+  ">
+  <a href="https://www.koompi.org/applications/code-editors/code_editor/">
+    Code Editing Apps
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.koompi.org/applications/converter/converter/" title="Converting Apps" class="sidelist
+  active">
+  <a href="https://www.koompi.org/applications/converter/converter/">
+    Converting Apps
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.koompi.org/applications/documentation/documentation/" title="Document Apps" class="sidelist
+  ">
+  <a href="https://www.koompi.org/applications/documentation/documentation/">
+    Document Apps
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.koompi.org/applications/downloader/downloader/" title="Downloading Apps" class="sidelist
+  ">
+  <a href="https://www.koompi.org/applications/downloader/downloader/">
+    Downloading Apps
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.koompi.org/applications/graphic-editor/graphic_editor/" title="Graphic Editor Apps" class="sidelist
+  ">
+  <a href="https://www.koompi.org/applications/graphic-editor/graphic_editor/">
+    Graphic Editor Apps
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.koompi.org/applications/music-platform/music_platform/" title="Music Player Apps" class="sidelist
+  ">
+  <a href="https://www.koompi.org/applications/music-platform/music_platform/">
+    Music Player Apps
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.koompi.org/applications/others/others/" title="Others Apps" class="sidelist
+  ">
+  <a href="https://www.koompi.org/applications/others/others/">
+    Others Apps
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.koompi.org/applications/recorder/recorder/" title="Recording Apps" class="sidelist
+  ">
+  <a href="https://www.koompi.org/applications/recorder/recorder/">
+    Recording Apps
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.koompi.org/applications/media/media/" title="Social Media Apps" class="sidelist
+  ">
+  <a href="https://www.koompi.org/applications/media/media/">
+    Social Media Apps
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.koompi.org/applications/video-editor/video_editor/" title="Video Editor Apps" class="sidelist
+  ">
+  <a href="https://www.koompi.org/applications/video-editor/video_editor/">
+    Video Editor Apps
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.koompi.org/applications/video-player/video_player/" title="Video Player Apps" class="sidelist
+  ">
+  <a href="https://www.koompi.org/applications/video-player/video_player/">
+    Video Player Apps
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.koompi.org/applications/lamp/lamp/" title="Web Stack (LAMP)" class="sidelist
+  ">
+  <a href="https://www.koompi.org/applications/lamp/lamp/">
+    Web Stack (LAMP)
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="p-lg-5 p-4 bg-white">
+          <h2 class="mb-5">Converting Apps</h2>
+          
+          <div class="content"><p>Converter is the app that helps the user for converting text file formats, documents, media file format (image, audio, and even video).</p>
+<p>In this article, we are going to introduce you guys the converting applications that mostly use in the KOOMPI OS.</p>
+<h2 id="audio-convert">Audio Convert</h2>
+<p><strong>Audio Convert</strong> is a script that converts between WAV, Ogg, MP3, MPC, FLAC, APE, AAC, and WMA files. It has an easy-to-use interface that makes it possible to fill in the tags for a few formats, copy the tags from input files into the new files, and choose the quality of compression.</p>
+<h3 id="how-to-install-audio-convert">How to install Audio convert</h3>
+<p>You can install it with this command:</p>
+<pre><code>pi -S audio-convert
+</code></pre><hr>
+<h2 id="handbrake">Handbrake</h2>
+<p><a href="https://handbrake.fr/">HandBrake</a> is very easy to use open-source tool for converting videos from a number of formats to a few modern, popular formats.</p>
+
+
+<div class="notices tip" ><p>Before you install any apps, make sure your system have been updated.If you have not updated, please run this command <strong>pi -Syu</strong> first.</p></div>
+
+<h3 id="how-to-install-handbrake">How to install handbrake</h3>
+<p>In KOOMPI OS handbrake is installed within command below</p>
+<pre><code>pi -S handbrake
+</code></pre><hr>
+<h2 id="soundconverter">Soundconverter</h2>
+<p><strong>SoundConverter</strong> is the leading audio file converter. It reads anything GStreamer can read (Ogg Vorbis, AAC, MP3, FLAC, WAV, AVI, MPEG, MOV, M4A, AC3, DTS, ALAC, MPC, Shorten, APE, SID, MOD, XM, S3M, etc&hellip;), and writes to Opus, Ogg Vorbis, FLAC, WAV, AAC, and MP3 files.</p>
+<p>SoundConverter aims to be the simple app in using, and very fast. Thanks to its multithreaded designing, it will use as many cores as possible to speed up the conversion. It can also extract the audio from
+videos.</p>
+<h3 id="how-to-install-soundconverter">How to install Soundconverter</h3>
+<p>To install it, you need to be in <em>konsole</em> and run command below:</p>
+<pre><code>pi -S soundconverter
+</code></pre><h3 id="features">Features</h3>
+<p>This app is providing many features such as:</p>
+<ul>
+<li>Clean and easy interface</li>
+<li>Fast, multithreaded, conversion</li>
+<li>Process huge number of files in record time</li>
+<li>Powerful automated renaming- Change filenames and create folders according to tags</li>
+</ul>
+<hr>
+<h2 id="soundkonverter">SoundKonverter</h2>
+<p><strong>SoundKonverter</strong> is a front-end to various audio converters.</p>
+<h3 id="how-to-install-soundkonverter">How to install SoundKonverter</h3>
+<p>It is easy to install, run this command below:</p>
+<pre><code>pi -S soundkonverter
+</code></pre><h2 id="29024-1png29024-1png"><img src="/29024-1.png" alt="29024-1.png"></h2>
+</div>
+          
+          <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 05 Jan 2020</p>
+          <nav class="pagination mt-3">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+            <a class="nav nav-prev" href="https://www.koompi.org/applications/code-editors/code_editor/"><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">Code Editing Apps</span></a>
+            
+            
+            <a class="nav nav-next" href="https://www.koompi.org/applications/documentation/documentation/"> <span class="d-none d-md-block">Document Apps</span><i class="ti-arrow-right ml-2"></i></a>
+            
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /details page -->
+
+
+
+
+
+    <!-- footer -->
+<footer class="section pb-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-md-left text-center">
+       <p class="mb-md-0 mb-4">Copyright by  © KOOMPI 2020</p>
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline">
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://www.facebook.com/koompi/"><i class="ti-facebook"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://twitter.com/koompi_official"><i class="ti-twitter-alt"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="#"><i class="ti-github"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="#"><i class="ti-linkedin"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- Main Script -->
+
+<script src="https://www.koompi.org/js/script.min.js"></script>
+  </body>
+
+</html>
