@@ -21,7 +21,7 @@ pi -Syu
 {{% /notice %}}
 
 
-### Apache Install & Configure
+## Apache Install & Configure
 
 In order to install apache, you have to run command below:
 ```
@@ -41,17 +41,17 @@ Here is the following line, you need to comment:
   #LoadModule unique_id_module modules/mod_unique_id.so
 [...]
 ```
-#### Enable Apache Service 
+### Enable Apache Service 
 To start your service at boot in http, you can run this command:
 ```
 systemctl enable httpd
 ```
-#### Restart Apache Service
+### Restart Apache Service
 you can restart your serviceon http by:
 ```
 systemctl restart httpd
 ```
-#### Verifying Apache
+### Verifying Apache
 You can verify whether Apache is running or not with command:
 ```
 systemctl status httpd
@@ -79,7 +79,7 @@ Output of sample server that is ready to use:
     Feb 16 13:00:18 server httpd[1067]: AH00558: httpd: Could not reliably dete...ge
     Hint: Some lines were ellipsized, use -l to show in full.
 ```
-#### Test Apache
+### Test Apache
 
 First, Let create a sample page in the Apache root directory.
 For Example: /srv/http.
@@ -96,7 +96,7 @@ Add the following line:
 </html>
 ```
 Now, open your web browser and navigate to http://localhost or http://IP-address. You will be pleased with Apache server Test page.
-#### Extent Details
+### Extent Details
 
 To set Apache to start at boot:
 ```
@@ -112,7 +112,7 @@ Before changing any configuration files, it is advised that you make a backup of
 {{% /notice %}}
 
 ---
-### MariaDB Or MySql
+## MariaDB Or MySql
 
 Run the following command to install MariaDB:
 ```
@@ -140,7 +140,7 @@ You can verify whether MariaDb is running or not using command:
 ```
 systemctl status mysqld
 ```
-#### Setup MySQL/MariaDB root user password
+### Setup MySQL/MariaDB root user password
 
 As you may know, It is recommended to setup a password for database root user.
 
@@ -175,7 +175,7 @@ LoadModule php7_module modules/libphp7.so
 AddHandler php7-script php
 Include conf/extra/php7_module.conf
 ```
-### Testing PHP
+## Testing PHP
 
 Now create a test.php file in the Apache root directory.
 ```
@@ -188,7 +188,7 @@ Add the following lines:
  phpinfo();
 ?>
 ```
-### Restart httpd service.
+## Restart httpd service.
 ```
 systemctl restart httpd
 ```

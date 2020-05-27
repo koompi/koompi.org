@@ -19,13 +19,13 @@ Before you install any apps, make sure your system have been updated.If you have
 
 ---
 
-## UGet
+# UGet
 
 **UGet** is an open-source download manager that downloads your files fast. This download manager can be efficiently organized and highly configurable. You can control your downloads in one central place.
  
 All the modern browsers have default download manager, it’s not good enough to handle effective downloading system. When the question comes whether a web browser can handle multiple download,  pause system, torrent integration, or fast download, then the answer is not satisfactory.
 
-### How to install UGet
+## How to install UGet
 Since UGet is an open-source app, we can download it through a command:
 ```
 pi -S uget
@@ -33,7 +33,7 @@ pi -S uget
 
 ---
 
-## Clipgrab
+# Clipgrab
 **ClipGrab** is a multi-platform software package for downloading videos from popular websites such as YouTube, Vimeo, Dailymotion, or Metacafe. It also provides the possibility to convert the downloaded files to other file formats such as MP3, MPEG4, OGG.
 
 **Clipgrab can be used with two main ways :**
@@ -43,7 +43,7 @@ pi -S uget
 - Second, Clipgrab can download any videos through URL (Links) from any website.
 
 
-### How to install Clipgrab
+## How to install Clipgrab
 
 Clipgrab can be installed with command below:
 ```

@@ -1,139 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Installation on KOOMPI OS</title>
-    <link>https://www.koompi.org/installation/</link>
-    <description>Recent content in Installation on KOOMPI OS</description>
+    <title>Installations on KOOMPI OS</title>
+    <link>https://pionux.org/installation/</link>
+    <description>Recent content in Installations on KOOMPI OS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright by  © KOOMPI 2020 </copyright>
-    <lastBuildDate>Fri, 28 Dec 2018 11:02:05 +0600</lastBuildDate>
     
-	<atom:link href="https://www.koompi.org/installation/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://pionux.org/installation/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Browser Apps</title>
-      <link>https://www.koompi.org/installation/browser/browser/</link>
-      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
-      
-      <guid>https://www.koompi.org/installation/browser/browser/</guid>
-      <description>A web browser, or simply &amp;ldquo;browser,&amp;rdquo; is a software application for accessing information on the World Wide Web. When a user requests a web page from a particular website, the web browser retrieves the necessary content from a web server and then displays the page on the screen.
-The most popular browsers have a number of features in common. They allow users to set bookmarks and browse in a private mode.</description>
-    </item>
     
     <item>
-      <title>Code Editing Apps</title>
-      <link>https://www.koompi.org/installation/code-editors/code_editor/</link>
-      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
+      <title></title>
+      <link>https://pionux.org/installation/installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.koompi.org/installation/code-editors/code_editor/</guid>
-      <description>Code editors are a small piece of software like a text editor. The only difference is code editors have special functionalities than text editors.
-According to the language used to code, the code editors highlight special keywords, give suggestions to some extent, automatic indentation features, and sometimes it has an integrated terminal as well.
- This document providesa completed details of the list of available coding apps that could be install in KOOMPI OS.</description>
-    </item>
-    
-    <item>
-      <title>Converting Apps</title>
-      <link>https://www.koompi.org/installation/converter/converter/</link>
-      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
-      
-      <guid>https://www.koompi.org/installation/converter/converter/</guid>
-      <description>Converter is the app that helps the user for converting text file formats, documents, media file format (image, audio, and even video).
-In this article, we are going to introduce you guys the converting applications that mostly use in the KOOMPI OS.
-Audio Convert Audio Convert is a script that converts between WAV, Ogg, MP3, MPC, FLAC, APE, AAC, and WMA files. It has an easy-to-use interface that makes it possible to fill in the tags for a few formats, copy the tags from input files into the new files, and choose the quality of compression.</description>
-    </item>
-    
-    <item>
-      <title>Document Apps</title>
-      <link>https://www.koompi.org/installation/documentation/documentation/</link>
-      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
-      
-      <guid>https://www.koompi.org/installation/documentation/documentation/</guid>
+      <guid>https://pionux.org/installation/installation/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Downloading Apps</title>
-      <link>https://www.koompi.org/installation/downloader/downloader/</link>
-      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
-      
-      <guid>https://www.koompi.org/installation/downloader/downloader/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Graphic Editor Apps</title>
-      <link>https://www.koompi.org/installation/graphic-editor/graphic_editor/</link>
-      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
-      
-      <guid>https://www.koompi.org/installation/graphic-editor/graphic_editor/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Music Player Apps</title>
-      <link>https://www.koompi.org/installation/music-platform/music_platform/</link>
-      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
-      
-      <guid>https://www.koompi.org/installation/music-platform/music_platform/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Others Apps</title>
-      <link>https://www.koompi.org/installation/others/others/</link>
-      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
-      
-      <guid>https://www.koompi.org/installation/others/others/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Recording Apps</title>
-      <link>https://www.koompi.org/installation/recorder/recorder/</link>
-      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
-      
-      <guid>https://www.koompi.org/installation/recorder/recorder/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Social Media Apps</title>
-      <link>https://www.koompi.org/installation/media/media/</link>
-      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
-      
-      <guid>https://www.koompi.org/installation/media/media/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Video Editor Apps</title>
-      <link>https://www.koompi.org/installation/video-editor/video_editor/</link>
-      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
-      
-      <guid>https://www.koompi.org/installation/video-editor/video_editor/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Video Player Apps</title>
-      <link>https://www.koompi.org/installation/video-player/video_player/</link>
-      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
-      
-      <guid>https://www.koompi.org/installation/video-player/video_player/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Web Stack (LAMP)</title>
-      <link>https://www.koompi.org/installation/lamp/lamp/</link>
-      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
-      
-      <guid>https://www.koompi.org/installation/lamp/lamp/</guid>
-      <description>A LAMP (Linux, Apache, MySQL, PHP) stack is a common web stack used to prepare servers for hosting web content. This guide shows you how to install a LAMP stack an KOOMPI OS.
-This guide is written for a non-root user. Commands that require elevated privileges are prefixed with sudo. If you’re not familiar with the sudo command, you can check our Users and Groups guide.
- In order to install lamp server, you need to run the command in terminal:</description>
     </item>
     
   </channel>
