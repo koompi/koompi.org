@@ -27,8 +27,8 @@ url = "contact"
 weight = 2
 
 [[menu.main]]
-name = "Interaction"
-url = "interaction"
+name = "Download"
+url = "https://repo.koompi.org/iso/KOOMPI-OS-2020.04.26-x86_64.iso"
 weight = 3
 
 # Dropdown menu

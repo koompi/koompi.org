@@ -79,11 +79,14 @@ You can categorize each file as you download it, and then access all downloads r
     
     <item>
       <title>GitHub</title>
-      <link>https://www.koompi.org/basic/git/git_command/</link>
+      <link>https://www.koompi.org/basic/github/git_command/</link>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
-      <guid>https://www.koompi.org/basic/git/git_command/</guid>
-      <description>coming soon!!!</description>
+      <guid>https://www.koompi.org/basic/github/git_command/</guid>
+      <description>This module is a guide for details and usage of github. If you are a newbie especialy coding beginners and get to know what it is.
+  Install git We can start to install git by run a command in konsole:
+pi -S git  Make sure you have already run command pi -Syu to update your system.
+  Clone an existing repository If you want to clone your existing repository or you clone other people&amp;rsquo;s repository, you run command below:</description>
     </item>
     
     <item>
@@ -98,6 +101,15 @@ Please, make sure you have already updated your system with this command &amp;ld
     </item>
     
     <item>
+      <title>Intermediate</title>
+      <link>https://www.koompi.org/basic/intermediate-command/intermediate/</link>
+      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
+      
+      <guid>https://www.koompi.org/basic/intermediate-command/intermediate/</guid>
+      <description>coming soon!!! </description>
+    </item>
+    
+    <item>
       <title>Music Player Apps</title>
       <link>https://www.koompi.org/applications/music-platform/music_platform/</link>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
@@ -105,6 +117,33 @@ Please, make sure you have already updated your system with this command &amp;ld
       <guid>https://www.koompi.org/applications/music-platform/music_platform/</guid>
       <description>Not many music platform or apps can be installed in open-source system. Music platform companies are focusing on mobile app. We recommend you guy to use mobile apps or on browser, but if you guy want to install in desktop. Here is some apps that we can install in open-source world.
 This document is containing only apps that possibly to install in the OS, If you want to install other apps beside the infomation we are providing, it is impossible.</description>
+    </item>
+    
+    <item>
+      <title>Network Information</title>
+      <link>https://www.koompi.org/basic/network/network/</link>
+      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
+      
+      <guid>https://www.koompi.org/basic/network/network/</guid>
+      <description>coming soon!!! </description>
+    </item>
+    
+    <item>
+      <title>Pix Update</title>
+      <link>https://www.koompi.org/release/pix-release/pix_release/</link>
+      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
+      
+      <guid>https://www.koompi.org/release/pix-release/pix_release/</guid>
+      <description>coming soon!!!</description>
+    </item>
+    
+    <item>
+      <title>Printing Information</title>
+      <link>https://www.koompi.org/basic/printing/printing/</link>
+      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
+      
+      <guid>https://www.koompi.org/basic/printing/printing/</guid>
+      <description>coming soon!!! </description>
     </item>
     
     <item>
@@ -131,7 +170,16 @@ This document is containing only apps that possibly to install in the OS, If you
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
       <guid>https://www.koompi.org/basic/system-control/system_control/</guid>
-      <description>coming soon!!!</description>
+      <description>coming soon!!! </description>
+    </item>
+    
+    <item>
+      <title>Users/Groups</title>
+      <link>https://www.koompi.org/basic/users-and-groups/users-and-groups/</link>
+      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
+      
+      <guid>https://www.koompi.org/basic/users-and-groups/users-and-groups/</guid>
+      <description>coming soon!!! </description>
     </item>
     
     <item>

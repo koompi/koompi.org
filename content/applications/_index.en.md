@@ -18,11 +18,11 @@ pi -Syu
 
 In order to install the applications in KOOMPI OS, You must know the keyword's names of each apps. And here is the form of the command for installing the applications:
 ```
-pi -S Applications_Name
+pi -S Package_Name
 ```
 If you wish to remove any applications from your PC, you will need to use this command:
 ```
- pi -Rn Applications_Name
+ pi -Rn Package_Name
 ```
 For automatic command to accept all the requiring requests have been given:
 ```

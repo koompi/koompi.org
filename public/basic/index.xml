@@ -25,11 +25,41 @@ Basic commands should be all run on the konsole, terminal or command line tools.
     
     <item>
       <title>GitHub</title>
-      <link>https://www.koompi.org/basic/git/git_command/</link>
+      <link>https://www.koompi.org/basic/github/git_command/</link>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
-      <guid>https://www.koompi.org/basic/git/git_command/</guid>
-      <description>coming soon!!!</description>
+      <guid>https://www.koompi.org/basic/github/git_command/</guid>
+      <description>This module is a guide for details and usage of github. If you are a newbie especialy coding beginners and get to know what it is.
+  Install git We can start to install git by run a command in konsole:
+pi -S git  Make sure you have already run command pi -Syu to update your system.
+  Clone an existing repository If you want to clone your existing repository or you clone other people&amp;rsquo;s repository, you run command below:</description>
+    </item>
+    
+    <item>
+      <title>Intermediate</title>
+      <link>https://www.koompi.org/basic/intermediate-command/intermediate/</link>
+      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
+      
+      <guid>https://www.koompi.org/basic/intermediate-command/intermediate/</guid>
+      <description>coming soon!!! </description>
+    </item>
+    
+    <item>
+      <title>Network Information</title>
+      <link>https://www.koompi.org/basic/network/network/</link>
+      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
+      
+      <guid>https://www.koompi.org/basic/network/network/</guid>
+      <description>coming soon!!! </description>
+    </item>
+    
+    <item>
+      <title>Printing Information</title>
+      <link>https://www.koompi.org/basic/printing/printing/</link>
+      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
+      
+      <guid>https://www.koompi.org/basic/printing/printing/</guid>
+      <description>coming soon!!! </description>
     </item>
     
     <item>
@@ -38,7 +68,16 @@ Basic commands should be all run on the konsole, terminal or command line tools.
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
       <guid>https://www.koompi.org/basic/system-control/system_control/</guid>
-      <description>coming soon!!!</description>
+      <description>coming soon!!! </description>
+    </item>
+    
+    <item>
+      <title>Users/Groups</title>
+      <link>https://www.koompi.org/basic/users-and-groups/users-and-groups/</link>
+      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
+      
+      <guid>https://www.koompi.org/basic/users-and-groups/users-and-groups/</guid>
+      <description>coming soon!!! </description>
     </item>
     
   </channel>

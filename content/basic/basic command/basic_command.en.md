@@ -16,7 +16,7 @@ Basic commands should be all run on the konsole, terminal or command line tools.
 ---
 ---
 
-## Pwd Command
+### Pwd Command
 To show the directory you are currently in:
 ```
  [koompi@koompi-pc ~]$ pwd
@@ -27,7 +27,7 @@ To show the directory you are currently in:
 ```
 ---
 ---
-## Ls Command
+### Ls Command
 Use "ls" for showing all the files in your directory:
 ```
  [koompi@koompi-pc ~]$ ls
@@ -52,7 +52,7 @@ Use "ls -a" to list down even the hidden files:
 ---
 ---
 
-## Cd Command
+### Cd Command
 " cd " ― Use this command for go into other directory.If you are in /home/koompi you want go into 
 *Documents*:
 ```
@@ -64,7 +64,7 @@ Output :
 ```
  [koompi@koompi-pc Documents]$
 ```
-## Touch Command
+### Touch Command
 To create file " touch ":
 ```
 touch <file name with extension >
@@ -77,7 +77,7 @@ touch Name.txt
 ---
 ---
 
-## Mkdir Command
+### Mkdir Command
 To create a directory, you must use:
 ``` 
 mkdir <name of directory you want to put>
@@ -93,7 +93,7 @@ This command only working when your directory is empty.
 ---
 ---
 
-## Rm Command
+### Rm Command
 To delete directory or files, "rm" it is:
 ```text
 rm <file's name or directory's name>
@@ -115,7 +115,7 @@ man cd or $ cd --help
 ```
 ---
 --- 
-## Cd Command
+### Cd Command
 (" cd ") is the command you might need to know more infomation.
 Output :
 ```shell
@@ -158,7 +158,7 @@ Returning `0` if the directory is changed, and if $PWD is set successful:
 ```
 ---
 ---
-## Cp Command
+### Cp Command
 "Cp", You know, you can also copy file through command. It takes only two arguments: The first is the location of the file to be copied, the second is where to copy.
 ```shell
 [koompi@koompi-pc ~]$ ls
@@ -176,7 +176,7 @@ New.txt
 ---
 ---
 
-## Mv Command
+### Mv Command
 "mv" ― You know, you can also move file through command. It takes only two arguments like `cp`:
 ```shell
 [koompi@koompi-pc ~]$ ls
