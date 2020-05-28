@@ -3,36 +3,61 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+<<<<<<< HEAD
     <loc>https://www.koompi.org/basic/basic-command/basic_command/</loc>
-    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
-  </url>
-  
-  <url>
+=======
     <loc>https://www.koompi.org/applications/browser/browser/</loc>
+>>>>>>> 1320b2ee21548d9248c1b6ed6d584b17a00728cc
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
   <url>
+<<<<<<< HEAD
+    <loc>https://www.koompi.org/applications/browser/browser/</loc>
+=======
     <loc>https://www.koompi.org/applications/code-editors/code_editor/</loc>
+>>>>>>> 1320b2ee21548d9248c1b6ed6d584b17a00728cc
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
   <url>
+<<<<<<< HEAD
+    <loc>https://www.koompi.org/applications/code-editors/code_editor/</loc>
+=======
     <loc>https://www.koompi.org/applications/converter/converter/</loc>
+>>>>>>> 1320b2ee21548d9248c1b6ed6d584b17a00728cc
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
   <url>
+<<<<<<< HEAD
+    <loc>https://www.koompi.org/applications/converter/converter/</loc>
+=======
     <loc>https://www.koompi.org/applications/documentation/documentation/</loc>
+>>>>>>> 1320b2ee21548d9248c1b6ed6d584b17a00728cc
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
   <url>
+<<<<<<< HEAD
+    <loc>https://www.koompi.org/applications/documentation/documentation/</loc>
+=======
     <loc>https://www.koompi.org/applications/downloader/downloader/</loc>
+>>>>>>> 1320b2ee21548d9248c1b6ed6d584b17a00728cc
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
   <url>
+<<<<<<< HEAD
+    <loc>https://www.koompi.org/applications/downloader/downloader/</loc>
+=======
+    <loc>https://www.koompi.org/applications/graphic-editor/graphic_editor/</loc>
+>>>>>>> 1320b2ee21548d9248c1b6ed6d584b17a00728cc
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+  </url>
+  
+  <url>
+<<<<<<< HEAD
     <loc>https://www.koompi.org/basic/git/git_command/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
@@ -43,6 +68,8 @@
   </url>
   
   <url>
+=======
+>>>>>>> 1320b2ee21548d9248c1b6ed6d584b17a00728cc
     <loc>https://www.koompi.org/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
     <xhtml:link
@@ -59,21 +86,32 @@
   
   <url>
     <loc>https://www.koompi.org/applications/music-platform/music_platform/</loc>
+<<<<<<< HEAD
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.koompi.org/applications/recorder/recorder/</loc>
+=======
+>>>>>>> 1320b2ee21548d9248c1b6ed6d584b17a00728cc
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
   <url>
+<<<<<<< HEAD
     <loc>https://www.koompi.org/applications/media/media/</loc>
+=======
+    <loc>https://www.koompi.org/applications/recorder/recorder/</loc>
+>>>>>>> 1320b2ee21548d9248c1b6ed6d584b17a00728cc
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
   <url>
+<<<<<<< HEAD
     <loc>https://www.koompi.org/basic/system-control/system_control/</loc>
+=======
+    <loc>https://www.koompi.org/applications/media/media/</loc>
+>>>>>>> 1320b2ee21548d9248c1b6ed6d584b17a00728cc
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
