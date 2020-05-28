@@ -1,7 +1,7 @@
 ################################# Default configuration ###################
 # provide your domain here
-#baseURL = "https://www.koompi.org"
-baseURL = "https://pionux.org"
+baseURL = "https://www.koompi.org"
+#baseURL = "https://pionux.org"
 # theme
 theme = "dot"
 # site title
