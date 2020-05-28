@@ -11,6 +11,8 @@ Converter is the app that helps the user for converting text file formats, docum
 
 In this article, we are going to introduce you guys the converting applications that mostly use in the KOOMPI OS.
 
+----
+
 # Audio Convert
 **Audio Convert** is a script that converts between WAV, Ogg, MP3, MPC, FLAC, APE, AAC, and WMA files. It has an easy-to-use interface that makes it possible to fill in the tags for a few formats, copy the tags from input files into the new files, and choose the quality of compression.
 

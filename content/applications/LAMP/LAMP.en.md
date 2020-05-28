@@ -12,6 +12,8 @@ A LAMP (Linux, Apache, MySQL, PHP) stack is a common web stack used to prepare s
   This guide is written for a non-root user. Commands that require elevated privileges are prefixed with sudo. If you’re not familiar with the sudo command, you can check our Users and Groups guide.
 {{% /notice %}}
 
+---
+
 In order to install **lamp server**, you need to run the command in terminal:
 ```
 pi -Syu

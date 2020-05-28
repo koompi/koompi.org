@@ -6,7 +6,7 @@ draft: false
 # search related keywords
 keywords: ["induct", "instate"]
 ---
-Not many music platform or apps can be installed in open-source system. Music platform companies are focusing on mobile app. We recommen you guy to use mobile apps or on browser, but if you guy want to install in desktop. Here is some apps that we can install in open-source world.
+Not many music platform or apps can be installed in open-source system. Music platform companies are focusing on mobile app. We recommend you guy to use mobile apps or on browser, but if you guy want to install in desktop. Here is some apps that we can install in open-source world.
 
 This document is containing only apps that possibly to install in the OS, If you want to install other apps beside the infomation we are providing, it is impossible. 
 

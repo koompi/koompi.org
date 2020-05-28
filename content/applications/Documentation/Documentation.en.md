@@ -15,6 +15,8 @@ And we are going to recommen all of you to use which apps that is very suitable 
 If you have questions about the anything, you can check it [here](#) for the answers. If you want to submit any new question you can sub up to us.
 {{< /notice >}}
 
+----
+
 # Libre Office
 **Libra Office** is the free power-packed Open-Source personal productivity suite for Windows, Macintosh,KOOMPI OS, and any other Linuxs, that gives you six feature-rich applications for all your document production and data processing needs: Writer, Calc, Impress, Draw, Math and Base.
 

@@ -12,6 +12,8 @@ As we all know that graphic editor is one of the common app for demand of editin
 Please, make sure you have already updated your system with this command "**pi -Syu**".
 {{< /notice >}}
 
+---
+
 # Darktable
 
 I let you store all the precious digital negatives in a database that you can, later on, develop raw images. It’s a powerful image editing application created by photographers for photographers.

@@ -29,7 +29,7 @@ In this chart list below is all the browser apps that KOOMPI OS is supported:
 
 ---
 
-### Brave
+# Brave
 
 [Brave web browser](#) is a fast, free and open-source software.It was invented for fighting malware and preventing from tracking while keeping your information safe and secured.
 
@@ -38,7 +38,7 @@ Brave is the default apps that we use in our KOOMPI OS. And we recommend you guy
 {{< /notice >}}
 
 
-# How to install Brave
+## How to install Brave
 There are various choices you can install brave.
 
 Open terminal either via **Ctrl+Alt+T** keyboard shortcut or by searching for `terminal or konsole`  from app launcher. When it opened, run the command below to install it:
