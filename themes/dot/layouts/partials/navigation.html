@@ -33,7 +33,7 @@
           </a>
           <div class="dropdown-menu">
             {{ range .Children }}
-            <a class="dropdown-item" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+            <a class="dropdown-item" href={{ .Permalink }}>{{ .Name }}</a>
             {{ end }}
           </div>
         </li>

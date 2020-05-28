@@ -32,36 +32,36 @@ url = "interaction"
 weight = 3
 
 # Dropdown menu
-[[menu.main]]
-weight = 4
-name = "docs"
-hasChildren = true
-
-  [[menu.main]]
-  parent = "docs"
-  name = "Applications Info"
-  url = "applications"
-  weight = 2
-
-  [[menu.main]]
-  parent = "docs"
-  name = "OS & Apps Release"
-  url = "release"
-  weight = 4
-
-  [[menu.main]]
-  parent = "docs"
-  name = "KOOMPI OS Features"
-  url = "features"
-  weight = 3
-
-  [[menu.main]]
-  parent = "docs"
-  name = "Basic Linux Commands"
-  url = "basic"
-  weight = 1
-
-
+#[[menu.main]]
+#weight = 4
+#name = "docs"
+#hasChildren = true
+#
+#  [[menu.main]]
+#  parent = "docs"
+#  name = "Applications Info"
+#  url = "applications"
+#  weight = 2
+#
+#  [[menu.main]]
+#  parent = "docs"
+#  name = "OS & Apps Release"
+#  url = "release"
+#  weight = 4
+#
+#  [[menu.main]]
+#  parent = "docs"
+#  name = "KOOMPI OS Features"
+#  url = "features"
+#  weight = 3
+#
+#  [[menu.main]]
+#  parent = "docs"
+#  name = "Basic Linux Commands"
+#  url = "basic"
+#  weight = 1
+#
+#
 ############################# Default Parameters ##########################
 [params]
 # logo is for all page
