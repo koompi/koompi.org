@@ -77,16 +77,16 @@
   </url>
   
   <url>
-    <loc>https://www.koompi.org/fr/faqs/</loc>
+    <loc>https://www.koompi.org/fr/faq/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.koompi.org/faqs/"
+                href="https://www.koompi.org/faq/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://www.koompi.org/fr/faqs/"
+                href="https://www.koompi.org/fr/faq/"
                 />
   </url>
   
