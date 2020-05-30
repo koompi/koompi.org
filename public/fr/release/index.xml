@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>New Release on KOOMPI OS</title>
+    <link>https://www.koompi.org/fr/release/</link>
+    <description>Recent content in New Release on KOOMPI OS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <copyright>Copyright par © KOOMPI 2020</copyright>
+    <lastBuildDate>Thu, 27 Dec 2018 11:02:05 +0600</lastBuildDate>
+    
+	<atom:link href="https://www.koompi.org/fr/release/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

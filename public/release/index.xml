@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>New Release on KOOMPI OS</title>
+    <link>https://www.koompi.org/release/</link>
+    <description>Recent content in New Release on KOOMPI OS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright by  © KOOMPI 2020 </copyright>
+    <lastBuildDate>Thu, 27 Dec 2018 11:02:05 +0600</lastBuildDate>
+    
+	<atom:link href="https://www.koompi.org/release/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pix Update</title>
+      <link>https://www.koompi.org/release/pix-release/pix_release/</link>
+      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
+      
+      <guid>https://www.koompi.org/release/pix-release/pix_release/</guid>
+      <description>coming soon!!!</description>
+    </item>
+    
+  </channel>
+</rss>
