@@ -48,7 +48,7 @@ git add .
 git commit -m " message "
 ```
 {{< notice info >}}
-The Words in "... ". After you push the changes to the git, the directory that change will appear the wordsin "...".
+The Words in "... ". After you push the changes to the git, the directory that change will appear the words in "...".
 {{< /notice >}}
 
 ---
@@ -74,7 +74,7 @@ git branch -a
 
 ---
 ## Delete branch
-If you wish to remove the branch, you can do it by run
+If you wish to remove the branch, you can do it by run:
 ```
 git branch -d [branchName]
 ```
