@@ -3,71 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.koompi.org/fr/applications/</loc>
-    <lastmod>2018-12-29T11:02:05+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.koompi.org/applications/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://www.koompi.org/fr/applications/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://www.koompi.org/fr/</loc>
-    <lastmod>2018-12-29T11:02:05+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.koompi.org/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://www.koompi.org/fr/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://www.koompi.org/fr/features/</loc>
-    <lastmod>2018-12-28T11:02:05+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.koompi.org/features/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://www.koompi.org/fr/features/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://www.koompi.org/fr/release/</loc>
-    <lastmod>2018-12-27T11:02:05+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.koompi.org/release/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://www.koompi.org/fr/release/"
-                />
-  </url>
-  
-  <url>
     <loc>https://www.koompi.org/fr/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
                 href="https://www.koompi.org/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kh"
+                href="https://www.koompi.org/kh/categories/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -77,16 +22,21 @@
   </url>
   
   <url>
-    <loc>https://www.koompi.org/fr/faqs/</loc>
+    <loc>https://www.koompi.org/fr/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.koompi.org/faqs/"
+                href="https://www.koompi.org/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kh"
+                href="https://www.koompi.org/kh/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://www.koompi.org/fr/faqs/"
+                href="https://www.koompi.org/fr/"
                 />
   </url>
   
@@ -99,22 +49,13 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="kh"
+                href="https://www.koompi.org/kh/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="fr"
                 href="https://www.koompi.org/fr/tags/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://www.koompi.org/fr/contact/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.koompi.org/contact/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://www.koompi.org/fr/contact/"
                 />
   </url>
   

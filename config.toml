@@ -132,27 +132,27 @@ link = "contact"
 
 
 ################################### Franch Language ######################
-[Languages.fr]
-languageName = "Fr"
-languageCode = "fr-fr"
+[Languages.kh]
+languageName = "Kh"
+languageCode = "kh-kh"
 weight = 2
 home = "Accueil"
 copyright = "Copyright par © KOOMPI 2020"
 
 # banner
-[Languages.fr.params.banner]
+[Languages.kh.params.banner]
 title = "Comment pouvons nous aider?"
 subtitle = "Trouvez rapidement des conseils et des réponses auprès de notre équipe d'assistance ou contactez-nous."
 bg_image = "images/hell.jpg"
 placeholder = "Avoir une question? Il suffit de demander ici ou de saisir les termes"
 
 # call to action
-[Languages.fr.params.cta]
+[Languages.kh.params.cta]
 enable = true
 title = "Vous n'avez pas trouvé de réponse à votre question?"
 content = "Contactez-nous pour plus de détails sur les services supplémentaires et la tarification du travail personnalisé"
 # call to action button
-[Languages.fr.params.cta.button]
+[Languages.kh.params.cta.button]
 enable = true
 label = "Contactez nous"
 link = "contact"

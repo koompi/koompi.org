@@ -1,8 +1,8 @@
 ---
-title: "Installation"
-date: 2018-12-29T11:02:05+06:00
-icon: "ti-panel"
-description: "Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet"
+title: "Applications Info"
+date: 2018-12-27T11:02:05+06:00
+icon: "ti-package"
+description: "Providing the guide of applications installation; documents, images, and videos."
 type : "docs"
 ---
 
