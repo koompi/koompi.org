@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>KOOMPI OS</title>
+    <title>Dot</title>
     <link>https://www.koompi.org/fr/</link>
-    <description>Recent content on KOOMPI OS</description>
+    <description>Recent content on Dot</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <copyright>Copyright par © KOOMPI 2020</copyright>
+    <copyright>Les documents Hugo sont sous copyright © [gethugothemes](https://gethugothemes.com/) 2020.</copyright>
     <lastBuildDate>Sat, 29 Dec 2018 11:02:05 +0600</lastBuildDate>
     
 	<atom:link href="https://www.koompi.org/fr/index.xml" rel="self" type="application/rss+xml" />

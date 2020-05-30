@@ -3,48 +3,228 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.koompi.org/basic/basic-command/basic_command/</loc>
+    <loc>https://www.koompi.org/billing-pricing/ownership/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.koompi.org/fr/billing-pricing/ownership/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/billing-pricing/ownership/"
+                />
   </url>
   
   <url>
-    <loc>https://www.koompi.org/applications/browser/browser/</loc>
+    <loc>https://www.koompi.org/features/linux/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.koompi.org/fr/features/linux/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/features/linux/"
+                />
   </url>
   
   <url>
-    <loc>https://www.koompi.org/applications/code-editors/code_editor/</loc>
+    <loc>https://www.koompi.org/installation/requirments/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.koompi.org/fr/installation/requirments/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/installation/requirments/"
+                />
   </url>
   
   <url>
-    <loc>https://www.koompi.org/applications/converter/converter/</loc>
+    <loc>https://www.koompi.org/installation/install/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.koompi.org/fr/installation/install/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/installation/install/"
+                />
   </url>
   
   <url>
-    <loc>https://www.koompi.org/applications/documentation/documentation/</loc>
+    <loc>https://www.koompi.org/features/mac/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.koompi.org/fr/features/mac/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/features/mac/"
+                />
   </url>
   
   <url>
-    <loc>https://www.koompi.org/applications/downloader/downloader/</loc>
+    <loc>https://www.koompi.org/billing-pricing/manage/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.koompi.org/fr/billing-pricing/manage/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/billing-pricing/manage/"
+                />
   </url>
   
   <url>
-    <loc>https://www.koompi.org/basic/github/git_command/</loc>
+    <loc>https://www.koompi.org/installation/configuration/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.koompi.org/fr/installation/configuration/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/installation/configuration/"
+                />
   </url>
   
   <url>
-    <loc>https://www.koompi.org/applications/graphic-editor/graphic_editor/</loc>
+    <loc>https://www.koompi.org/billing-pricing/bill/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.koompi.org/fr/billing-pricing/bill/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/billing-pricing/bill/"
+                />
   </url>
   
   <url>
-    <loc>https://www.koompi.org/basic/intermediate-command/intermediate/</loc>
+    <loc>https://www.koompi.org/features/routing/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.koompi.org/fr/features/routing/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/features/routing/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.koompi.org/installation/customization/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.koompi.org/fr/installation/customization/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/installation/customization/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.koompi.org/billing-pricing/payment/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.koompi.org/fr/billing-pricing/payment/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/billing-pricing/payment/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.koompi.org/features/ubuntu/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.koompi.org/fr/features/ubuntu/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/features/ubuntu/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.koompi.org/installation/elements/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.koompi.org/fr/installation/elements/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/installation/elements/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.koompi.org/billing-pricing/profile/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.koompi.org/fr/billing-pricing/profile/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/billing-pricing/profile/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.koompi.org/features/windows/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.koompi.org/fr/features/windows/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/features/windows/"
+                />
   </url>
   
   <url>
@@ -63,83 +243,38 @@
   </url>
   
   <url>
-    <loc>https://www.koompi.org/applications/music-platform/music_platform/</loc>
-    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.koompi.org/basic/network/network/</loc>
-    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.koompi.org/release/pix-release/pix_release/</loc>
-    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.koompi.org/basic/printing/printing/</loc>
-    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.koompi.org/applications/recorder/recorder/</loc>
-    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.koompi.org/applications/media/media/</loc>
-    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.koompi.org/basic/system-control/system_control/</loc>
-    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.koompi.org/basic/users-and-groups/users-and-groups/</loc>
-    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.koompi.org/applications/video-editor/video_editor/</loc>
-    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.koompi.org/applications/video-player/video_player/</loc>
-    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.koompi.org/applications/lamp/lamp/</loc>
-    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.koompi.org/basic/</loc>
-    <lastmod>2018-12-28T11:02:05+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.koompi.org/applications/</loc>
-    <lastmod>2018-12-27T11:02:05+06:00</lastmod>
+    <loc>https://www.koompi.org/installation/</loc>
+    <lastmod>2018-12-29T11:02:05+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://www.koompi.org/fr/applications/"
+                href="https://www.koompi.org/fr/installation/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.koompi.org/applications/"
+                href="https://www.koompi.org/installation/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.koompi.org/billing-pricing/</loc>
+    <lastmod>2018-12-28T11:02:05+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.koompi.org/fr/billing-pricing/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/billing-pricing/"
                 />
   </url>
   
   <url>
     <loc>https://www.koompi.org/features/</loc>
-    <lastmod>2018-12-27T11:02:05+06:00</lastmod>
+    <lastmod>2018-12-28T11:02:05+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -150,30 +285,6 @@
                 hreflang="en"
                 href="https://www.koompi.org/features/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://www.koompi.org/release/</loc>
-    <lastmod>2018-12-27T11:02:05+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://www.koompi.org/fr/release/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.koompi.org/release/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://www.koompi.org/applications/others/others/</loc>
-    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.koompi.org/installation/installation/</loc>
   </url>
   
   <url>
@@ -191,16 +302,16 @@
   </url>
   
   <url>
-    <loc>https://www.koompi.org/faqs/</loc>
+    <loc>https://www.koompi.org/faq/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://www.koompi.org/fr/faqs/"
+                href="https://www.koompi.org/fr/faq/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.koompi.org/faqs/"
+                href="https://www.koompi.org/faq/"
                 />
   </url>
   
@@ -216,10 +327,6 @@
                 hreflang="en"
                 href="https://www.koompi.org/contact/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://www.koompi.org/installation/</loc>
   </url>
   
   <url>

@@ -1,11 +1,10 @@
 ################################# Default configuration ###################
 # provide your domain here
 baseURL = "https://www.koompi.org"
-#baseURL = "https://pionux.org"
 # theme
 theme = "dot"
 # site title
-title = "KOOMPI OS"
+title = "Dot"
 # disable language
 disableLanguages = []
 # google analytics
@@ -17,8 +16,8 @@ unsafe= true
 
 ################################# navigation ################################
 [[menu.main]]
-name = "Faqs"
-url = "faqs"
+name = "Faq"
+url = "faq"
 weight = 1
 
 [[menu.main]]
@@ -26,42 +25,31 @@ name = "contact"
 url = "contact"
 weight = 2
 
-[[menu.main]]
-name = "Download"
-url = "https://repo.koompi.org/iso/KOOMPI-OS-2020.04.26-x86_64.iso"
-weight = 3
-
 # Dropdown menu
-#[[menu.main]]
-#weight = 4
-#name = "docs"
-#hasChildren = true
-#
-#  [[menu.main]]
-#  parent = "docs"
-#  name = "Applications Info"
-#  url = "applications"
-#  weight = 2
-#
-#  [[menu.main]]
-#  parent = "docs"
-#  name = "OS & Apps Release"
-#  url = "release"
-#  weight = 4
-#
-#  [[menu.main]]
-#  parent = "docs"
-#  name = "KOOMPI OS Features"
-#  url = "features"
-#  weight = 3
-#
-#  [[menu.main]]
-#  parent = "docs"
-#  name = "Basic Linux Commands"
-#  url = "basic"
-#  weight = 1
-#
-#
+[[menu.main]]
+weight = 3
+name = "docs"
+hasChildren = true
+
+  [[menu.main]]
+  parent = "docs"
+  name = "Installation"
+  url = "installation"
+  weight = 1
+
+  [[menu.main]]
+  parent = "docs"
+  name = "Billing and Pricing"
+  url = "billing-pricing"
+  weight = 2
+
+  [[menu.main]]
+  parent = "docs"
+  name = "Features"
+  url = "features"
+  weight = 3
+
+
 ############################# Default Parameters ##########################
 [params]
 # logo is for all page
@@ -88,19 +76,19 @@ contact_form_action = "#" # contact form works with : https://formspree.io
 ############################## social links ##############################
 [[params.social]]
 icon = "ti-facebook" # themify icon pack : https://themify.me/themify-icons
-link = "https://www.facebook.com/koompi/"
+link = "#"
 
 [[params.social]]
 icon = "ti-twitter-alt" # themify icon pack : https://themify.me/themify-icons
-link = "https://twitter.com/koompi_official"
+link = "#"
   
 [[params.social]]
 icon = "ti-github" # themify icon pack : https://themify.me/themify-icons
-link = "https://github.com/koompi"
+link = "#"
   
 [[params.social]]
 icon = "ti-linkedin" # themify icon pack : https://themify.me/themify-icons
-link = "https://linkedin.com/company/koompi"
+link = "#"
 
 ################################ English Language ######################
 [Languages.en]
@@ -108,22 +96,20 @@ languageName = "En"
 languageCode = "en-us"
 weight = 1
 home = "Home"
-copyright = "Copyright by  © KOOMPI 2020 "
-#copyright = "The Hugo Documents are copyright © [gethugothemes](https://gethugothemes.com/) 2020."
+copyright = "The Hugo Documents are copyright © [gethugothemes](https://gethugothemes.com/) 2020."
 
 # banner
 [Languages.en.params.banner]
 title = "Support Center & Knowledge base"
 subtitle = "Find advice and answers from our support team fast or get in touch"
-bg_image = "images/hell.jpg"
+bg_image = "images/banner.jpg"
 placeholder = "Have a question? Just ask here or enter terms"
 
 # call to action
 [Languages.en.params.cta]
 enable = true
 title = "Didn't find an answer to your question?"
-content = "If you could not find any answers related to the problems, let us know by submitting the problems."
-
+content = "Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam."
 # call to action button
 [Languages.en.params.cta.button]
 enable = true
@@ -137,13 +123,13 @@ languageName = "Fr"
 languageCode = "fr-fr"
 weight = 2
 home = "Accueil"
-copyright = "Copyright par © KOOMPI 2020"
+copyright = "Les documents Hugo sont sous copyright © [gethugothemes](https://gethugothemes.com/) 2020."
 
 # banner
 [Languages.fr.params.banner]
 title = "Comment pouvons nous aider?"
 subtitle = "Trouvez rapidement des conseils et des réponses auprès de notre équipe d'assistance ou contactez-nous."
-bg_image = "images/hell.jpg"
+bg_image = "images/banner.jpg"
 placeholder = "Avoir une question? Il suffit de demander ici ou de saisir les termes"
 
 # call to action
