@@ -1,9 +1,10 @@
 ---
-title: "New Release"
-date: 2018-12-27T11:02:05+06:00
+title: "ព័ត៌មានថ្មីៗ"
+date: 2018-12-26T11:02:05+06:00
 icon: "ti-new-window"
-description: "Informing the new features and functions about the latest version of the OS."
+description: "ជូនអំពីមុខងារនិងប្រព័ន្ធប្រតិបត្តិការថ្មីៗ
+អំពីជំនាន់ចុងក្រោយនៃ OS។"
 type : "docs"
 ---
 
-# Coming soon !!!
+# មកដល់ឆាប់ៗនេះ !!!

@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md {{ if .IsHome }}navbar-dark{{ else }}navbar-light{{ end }}">
   <div class="container">
-    <a class="navbar-brand px-2" href="{{ .Site.BaseURL | relLangURL }}">KOOMPI OS
-      <!-- {{ $logo:= .Site.Params.logo }}
+    <a class="navbar-brand px-2" href="{{ .Site.BaseURL | relLangURL }}">
+      {{ $logo:= .Site.Params.logo }}
       {{ $logoWhite:= .Site.Params.logo_white }}
       {{ if (or $logo $logoWhite) }}
       {{ if .IsHome }}
@@ -12,7 +12,7 @@
       {{ end }}
       {{ else }}
       {{ .Site.Title }}
-      {{ end }} -->
+      {{ end }}
     </a>
     <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
       aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">

@@ -109,13 +109,13 @@ languageCode = "en-us"
 weight = 1
 home = "Home"
 copyright = "Copyright by  © KOOMPI 2020 "
-#copyright = "The Hugo Documents are copyright © [gethugothemes](https://gethugothemes.com/) 2020."
+
 
 # banner
 [Languages.en.params.banner]
 title = "Support Center & Knowledge base"
 subtitle = "Find advice and answers from our support team fast or get in touch"
-bg_image = "images/hell.jpg"
+bg_image = "images/lightblack.png"
 placeholder = "Have a question? Just ask here or enter terms"
 
 # call to action
@@ -131,28 +131,29 @@ label = "contact us"
 link = "contact"
 
 
-################################### Franch Language ######################
+################################### Khmer Language ######################
 [Languages.kh]
 languageName = "Kh"
 languageCode = "kh-kh"
 weight = 2
-home = "Accueil"
-copyright = "Copyright par © KOOMPI 2020"
+home = "ទំព័រដើម"
+Faqs= "សំនួរ&​ចំលើយ" 
+copyright = "រក្សាសិទ្ធិដោយ © គម្ពីរ ២០២០"
 
 # banner
 [Languages.kh.params.banner]
-title = "Comment pouvons nous aider?"
-subtitle = "Trouvez rapidement des conseils et des réponses auprès de notre équipe d'assistance ou contactez-nous."
-bg_image = "images/hell.jpg"
-placeholder = "Avoir une question? Il suffit de demander ici ou de saisir les termes"
+title = "មជ្ឈមណ្ឌលសម្របសម្រួលនិង មូលដ្ឋាននៃចំណេះដឹង"
+subtitle = "ស្វែងរកដំបូន្មាន និងចម្លើយពីអ្នកសម្របសម្រួលរបស់យើងបានយ៉ាងឆាប់រហ័ស"
+bg_image = "images/lightblack.png"
+placeholder = "មានសំណួរមែនទេ?  អាចធ្វើការស្វែងរកនៅទីនេះ..."
 
 # call to action
 [Languages.kh.params.cta]
 enable = true
-title = "Vous n'avez pas trouvé de réponse à votre question?"
-content = "Contactez-nous pour plus de détails sur les services supplémentaires et la tarification du travail personnalisé"
+title = "រកមិនឃើញចម្លើយសម្រាប់សំណួររបស់អ្នកមែនទេ??"
+content = "ប្រសិនបើអ្នកមិនអាចរកឃើញដំណោះស្រាយទាក់ទងនឹងបញ្ហារបស់អ្នក អ្នកអាចធ្វើការទំនាក់ទំនងមក​យើងខ្ញុំ ឬដោយដាក់ស្នើពីបញ្ហានោះបាន។"
 # call to action button
 [Languages.kh.params.cta.button]
 enable = true
-label = "Contactez nous"
+label = "ធ្វើទាក់ទង​មក​យើងខ្ញុំ"
 link = "contact"

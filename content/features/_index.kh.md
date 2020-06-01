@@ -1,9 +1,9 @@
 ---
-title: "KOOMPI OS Features"
+title: "មុខងារនៃ គម្ពីរ OS"
 date: 2018-12-27T11:02:05+06:00
 icon: "ti-layers"
 description: "Open Source, Functional, Compatible, and Effortless. "
 type : "docs"
 ---
 
-# Coming soon !!!
+# មកដល់ឆាប់ៗនេះ !!!

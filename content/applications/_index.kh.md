@@ -1,11 +1,12 @@
 ---
-title: "Applications Info"
-date: 2018-12-27T11:02:05+06:00
+title: "ព័ត៌មានអំពីកម្មវិធី"
+date:  2018-12-28T11:02:05+06:00
 icon: "ti-package"
-description: "Providing the guide of applications installation; documents, images, and videos."
+description: "ការផ្តល់មគ្គុទេសក៍នៃការតម្លើងឡើងកម្មវិធី,
+ដែល​មានជា ឯកសារ,រូបភាព និងវីដេអូ។"
 type : "docs"
 ---
-
+# មកដល់ឆាប់ៗនេះ !!!
 <!-- ---
 title: "Installation"
 date: 2018-12-29T11:02:05+06:00

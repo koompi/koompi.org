@@ -1,5 +1,5 @@
 body {
-  line-height: 1.5;
+  line-height: 2;
   font-family: var(--font-family), sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 17px;
@@ -21,7 +21,7 @@ h6 {
   color: var(--text-color-dark);
   font-family: var(--font-family), sans-serif;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.9;
 }
 
 h1,
@@ -340,7 +340,7 @@ header.sticky-top {
 .navbar .nav-item .nav-link {
   text-transform: uppercase;
   padding: 10px 15px !important;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .navbar .dropdown:hover .dropdown-menu {

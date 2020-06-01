@@ -1,7 +1,8 @@
 ---
-title: "Basic Linux Commands"
-date: 2018-12-28T11:02:05+06:00
+title: "មូលដ្ឋាននៃ Commands"
+date: 2018-12-29T11:02:05+06:00
 icon: "ti-files"
-description: "This section is available only the command lines supported in the open source world. "
+description: "ផ្នែកនេះអាចប្រើសម្រាប់តែ command lines ដែលគាំទ្រតែនៅក្នុងពិភព open source "
 type : "docs"
 ---
+# មកដល់ឆាប់ៗនេះ !!!

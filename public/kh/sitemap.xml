@@ -3,23 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.koompi.org/kh/basic/</loc>
-    <lastmod>2018-12-28T11:02:05+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.koompi.org/basic/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="kh"
-                href="https://www.koompi.org/kh/basic/"
-                />
-  </url>
-  
-  <url>
     <loc>https://www.koompi.org/kh/</loc>
-    <lastmod>2018-12-28T11:02:05+06:00</lastmod>
+    <lastmod>2018-12-29T11:02:05+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -33,8 +18,23 @@
   </url>
   
   <url>
+    <loc>https://www.koompi.org/kh/basic/</loc>
+    <lastmod>2018-12-29T11:02:05+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/basic/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kh"
+                href="https://www.koompi.org/kh/basic/"
+                />
+  </url>
+  
+  <url>
     <loc>https://www.koompi.org/kh/applications/</loc>
-    <lastmod>2018-12-27T11:02:05+06:00</lastmod>
+    <lastmod>2018-12-28T11:02:05+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -64,7 +64,7 @@
   
   <url>
     <loc>https://www.koompi.org/kh/release/</loc>
-    <lastmod>2018-12-27T11:02:05+06:00</lastmod>
+    <lastmod>2018-12-26T11:02:05+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"

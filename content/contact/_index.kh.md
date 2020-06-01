@@ -1,6 +1,6 @@
 ---
-title: "Vous avez des questions"
+title: "តើអ្នកមានសំណួរមែនទេ ?"
 draft: false
 ---
 
-Envoyez-nous le formulaire et confirmez votre adresse e-mail.[ici](pi@koompi.com).
+សូមផ្ញើទម្រង់បែបបទមកយើងខ្ញុំនិងបញ្ជាក់អាស័យដ្ឋានអ៊ីមែលរបស់អ្នកមកកាន់[ទីនេះ](pi@koompi) ។
