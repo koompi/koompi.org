@@ -1,6 +1,6 @@
 ################################# Default configuration ###################
 # provide your domain here
-baseURL = "https://www.koompi.org"
+baseURL = "https://www.koompi.org/"
 
 # theme
 theme = "dot"
@@ -18,12 +18,12 @@ googleAnalytics = "" # paste your analytics ID here. (Ex: UA-123-45)
 ################################# navigation ################################
 [[menu.main]]
 name = "Faqs"
-url = "https://www.koompi.org/faqs"
+url = "faqs"
 weight = 1
 
 [[menu.main]]
 name = "contact"
-url = "https://www.koompi.org/contact"
+url = "contact"
 weight = 2
 
 [[menu.main]]
@@ -40,7 +40,7 @@ weight = 3
 #  [[menu.main]]
 #  parent = "docs"
 #  name = "Applications Info"
-#  url = "contact"
+#  url = "applications"
 #  weight = 2
 #
 #  [[menu.main]]
