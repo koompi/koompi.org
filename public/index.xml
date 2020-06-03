@@ -106,11 +106,11 @@ Please, make sure you have already updated your system with this command &amp;ld
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
       <guid>https://www.koompi.org/basic/intermediate-command/intermediate/</guid>
-      <description>Update Operating System The mandatory step is to upgrade your operating system before downloading any new applications.
- pi -Syu For Database Updates:
-pi -Syy Installing Packages Follow the following command to install a signal package including the dependencies:
+      <description>Installing Packages Follow the following command to install a signal package including the dependencies:
 pi -S &amp;lt;Package name&amp;gt; or pi -i &amp;lt;Package name&amp;gt; For the list of packages installation:
-pi -S &amp;lt;Package name1 Package name2 ...&amp;gt; Installing Package Group Some packages belong to a group of packages that simultaneously call installation.</description>
+pi -S &amp;lt;Package name1 Package name2 ...&amp;gt; Installing Package Group Some packages belong to a group of packages that simultaneously call installation. As in here, for instance:
+pi -S &amp;lt;Package group name&amp;gt; To see what inside the package group, run:
+pi -Sg &amp;lt;Package group name&amp;gt; Removing Packages If you just want to remove the package, the command following will be enough:</description>
     </item>
     
     <item>
@@ -211,8 +211,9 @@ This document is containing only apps that possibly to install in the OS, If you
       
       <guid>https://www.koompi.org/applications/lamp/lamp/</guid>
       <description>A LAMP (Linux, Apache, MySQL, PHP) stack is a common web stack used to prepare servers for hosting web content. This guide shows you how to install a LAMP stack an KOOMPI OS.
-This guide is written for a non-root user. Commands that require elevated privileges are prefixed with sudo. If you’re not familiar with the sudo command, you can check our Users and Groups guide.
-  In order to install lamp server, you need to run the command in terminal:</description>
+  In order to install lamp server, you need to run the command in terminal:
+pi -Syu   Apache Install &amp;amp; Configure In order to install apache, you have to run command below:
+pi -S apache And then follow the next steps below:</description>
     </item>
     
     <item>

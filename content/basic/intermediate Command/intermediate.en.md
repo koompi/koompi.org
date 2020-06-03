@@ -10,17 +10,7 @@ keywords: ["induct", "instate"]
 
 
 
-# Update Operating System
-The **mandatory step** is to upgrade your operating system before downloading any new applications.
 
-
-```
- pi -Syu
-```
-For Database Updates:
-```
-pi -Syy
-```
 # Installing Packages
 Follow the following command to install a signal package including the dependencies:
 ```shell

@@ -41,11 +41,11 @@ pi -S git  Make sure you have already run command pi -Syu to update your system.
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
       <guid>https://www.koompi.org/basic/intermediate-command/intermediate/</guid>
-      <description>Update Operating System The mandatory step is to upgrade your operating system before downloading any new applications.
- pi -Syu For Database Updates:
-pi -Syy Installing Packages Follow the following command to install a signal package including the dependencies:
+      <description>Installing Packages Follow the following command to install a signal package including the dependencies:
 pi -S &amp;lt;Package name&amp;gt; or pi -i &amp;lt;Package name&amp;gt; For the list of packages installation:
-pi -S &amp;lt;Package name1 Package name2 ...&amp;gt; Installing Package Group Some packages belong to a group of packages that simultaneously call installation.</description>
+pi -S &amp;lt;Package name1 Package name2 ...&amp;gt; Installing Package Group Some packages belong to a group of packages that simultaneously call installation. As in here, for instance:
+pi -S &amp;lt;Package group name&amp;gt; To see what inside the package group, run:
+pi -Sg &amp;lt;Package group name&amp;gt; Removing Packages If you just want to remove the package, the command following will be enough:</description>
     </item>
     
     <item>
