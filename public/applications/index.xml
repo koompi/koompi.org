@@ -130,9 +130,8 @@ This document is containing only apps that possibly to install in the OS, If you
       
       <guid>https://www.koompi.org/applications/lamp/lamp/</guid>
       <description>A LAMP (Linux, Apache, MySQL, PHP) stack is a common web stack used to prepare servers for hosting web content. This guide shows you how to install a LAMP stack an KOOMPI OS.
-  In order to install lamp server, you need to run the command in terminal:
-pi -Syu   Apache Install &amp;amp; Configure In order to install apache, you have to run command below:
-pi -S apache And then follow the next steps below:</description>
+This guide is written for a non-root user. Commands that require elevated privileges are prefixed with sudo. If you’re not familiar with the sudo command, you can check our Users and Groups guide.
+  In order to install lamp server, you need to run the command in terminal:</description>
     </item>
     
     <item>

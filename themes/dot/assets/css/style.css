@@ -78,16 +78,16 @@ h6,
 }
 
 .btn-primary {
-  background: var(--primary-color);
+  background: var(#262e3c);
   color: var(--white-color);
 }
 
 .btn-primary:active {
-  background: var(--primary-color);
+  background: var(#262e3c);
 }
 
 .btn-primary:hover {
-  background: var(--primary-color);
+  background: var(#262e3c);
 }
 
 .btn-primary:not(:disabled):not(.disabled).active,
@@ -142,7 +142,11 @@ ul {
 ol {
   padding-left: 20px;
 }
-
+img-fluids{
+  height: 40px !important;
+  margin-top: 2px !important;
+  float: left;
+}
 img {
   vertical-align: middle;
   border: 0;
@@ -255,7 +259,7 @@ pre {
 }
 
 .text-primary {
-  color: var(--primary-color) !important;
+  color: var(#262e3c) !important;
 }
 
 .text-color {

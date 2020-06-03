@@ -12,8 +12,8 @@ disableLanguages = []
 googleAnalytics = "" # paste your analytics ID here. (Ex: UA-123-45)
 
 # unsafe html
-#[markup.goldmark.renderer]
-#unsafe= true
+[markup.goldmark.renderer]
+unsafe= true
 
 ################################# navigation ################################
 [[menu.main]]
@@ -67,7 +67,7 @@ weight = 3
 # logo is for all page
 logo = ""
 # logo white is for homepage logo, you can use colorful logo too...
-logo_white = ""
+logo_white =""
 # when logo is empty, it will shown your site title
 
 # customize color

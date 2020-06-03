@@ -487,7 +487,7 @@
           <div class="content"><p>The following steps are stored here to help you. If you don’t know Hugo at all, we strongly suggest you learn more about it by following this great documentation for beginners.</p>
 
 
-<div class="notices note" ><p><!-- raw HTML omitted --></p></div>
+<div class="notices note" ><p>Before, You install any applications, you have to make sure your system is already up to date. If you haven&rsquo;t done it, you must do it.</p></div>
 
 <p>In order to update your system, you have to run this command below in the konsole:</p>
 <pre><code>pi -Syu
@@ -502,10 +502,21 @@
 
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
-  <div class="tab-content"><!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+  <div class="tab-content"><div class="tab-pane" title="Install Sample">
+  <pre><code>yes | pi -S brave
+</code></pre>
 </div>
+<div class="tab-pane" title="Remove Sample">
+  <pre><code>yes | pi -Rn brave
+</code></pre>
+</div>
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content"><div class="notices info" ><p>This auto command can do on both install and remove command.</p></div>
+<div class="notices note" ><p>This auto command is working on only some apps.</p></div>
+<hr>
+</div>
+</div></div>
 </div>
 </div>
           
