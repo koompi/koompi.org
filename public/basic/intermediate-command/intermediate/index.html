@@ -340,7 +340,362 @@
         <div class="p-lg-5 p-4 bg-white">
           <h2 class="mb-5">Intermediate</h2>
           
-          <div class="content"><h1 id="coming-soon">coming soon!!!</h1>
+          <div class="content"><h1 id="update-operating-system">Update Operating System</h1>
+<p>The <strong>mandatory step</strong> is to upgrade your operating system before downloading any new applications.</p>
+<pre><code> pi -Syu
+</code></pre><p>For Database Updates:</p>
+<pre><code>pi -Syy
+</code></pre><h1 id="installing-packages">Installing Packages</h1>
+<p>Follow the following command to install a signal package including the dependencies:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">     pi -S &lt;Package name&gt; or pi -i &lt;Package name&gt;
+</code></pre></div><p>For the list of packages installation:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">     pi -S &lt;Package name1 Package name2 ...&gt;
+</code></pre></div><h1 id="installing-package-group">Installing Package Group</h1>
+<p>Some packages belong to a <strong>group of packages</strong> that simultaneously call installation. As in here, for instance:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    pi -S &lt;Package group name&gt;
+</code></pre></div><p>To see what inside the package group, run:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">     pi -Sg &lt;Package group name&gt;
+</code></pre></div><h1 id="removing-packages">Removing Packages</h1>
+<p>If you just want to remove the package, the command following will be enough:</p>
+<pre><code>     pi -R &lt;Package name&gt;
+</code></pre><p>To remove the package and those of its dependencies that aren’t needed by any other application, do:</p>
+<pre><code>     pi -Rs &lt;Package name&gt;
+</code></pre><p>To remove a package, its dependencies and all the packages that depend on the target package:</p>
+<pre><code>     pi -Rsc &lt;Package name&gt;
+</code></pre><p>For deleting a package that other packages need without deleting their dependency package:</p>
+<pre><code>     pi -Rdd &lt;Package name&gt;
+</code></pre><blockquote>
+<p><strong>Note:</strong> All operations have required a password. Then if you aren’t satisfied with the build tool and configuration choices, you can eject at any time. This command will remove the single build dependency from your operation.
+{.is-info}</p>
+</blockquote>
+<blockquote>
+<p><strong>Tips:</strong> Here Special usage to automate the install procedure (Recommend):
+{.is-success}</p>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"> yes | pi -S &lt;Package name&gt; 
+</code></pre></div><blockquote>
+<p><strong>Tips:</strong> Install packages with no confirm
+{.is-success}</p>
+</blockquote>
+<pre><code> pi -S --noconfirm &lt;Package name&gt;
+</code></pre><h1 id="listing-packages">Listing Packages</h1>
+<p>You may want to get the list of installed packages with their version, which is useful while reporting bugs or discussing installed packages.</p>
+<ul>
+<li>List all explicitly installed packages: <code>pi -Qe</code>.
+List all packages in the <strong>package group</strong> named group: <code>pi -Sg group</code></li>
+<li>List all explicitly installed native packages (i.e. present in the sync database) that are not direct or optional dependencies: <code>pi -Qent</code>.</li>
+<li>List all foreign packages (typically manually downloaded and installed or packages removed from the repositories): <code>pi -Qm</code>.</li>
+<li>List all native packages (installed from the sync database(s)): <code>pi -Qn</code>.</li>
+<li>List packages by regex: <code>pi -Qs regex</code>.</li>
+<li>List packages by regex with custom output format: <code>expac -s &quot;%-30n %v&quot; regex</code> (needs <strong>expac</strong>).</li>
+</ul>
+<h3 id="listing-changed-backup-files">Listing Changed Backup Files</h3>
+<p>If you want to backup your system configuration files you could copy all files in <code>/etc/</code>, but usually, you are only interested in the files that you have changed. Modified <strong>backup files</strong> can be viewed with the following command:</p>
+<pre><code>     pi -Qii | awk '/^MODIFIED/ {print $ 2}'
+</code></pre><p>Running this command with root permissions will ensure that files readable only by root (such as /etc/sudoers) are included in the output.</p>
+<h3 id="listing-all-changed-files-from-packages">Listing All Changed Files From Packages</h3>
+<p>If you are suspecting file corruption (e.g. by software/hardware failure), but are unsure if files were corrupted, you might want to compare with the hash sums in the packages.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">     paccheck --md5sum --quiet
+</code></pre></div><h1 id="removing-unused-packages-orphans">Removing Unused Packages (orphans)</h1>
+<p>For recursively removing orphans and their configuration files:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">     pi -Rns $ <span style="color:#f92672">(</span>pi -Qtdq<span style="color:#f92672">)</span>
+</code></pre></div><p>If no orphans were found pacman outputs <code>error: no targets specified</code>. This is expected as no arguments were passed to <code>pi -Rns</code>.</p>
+<h1 id="backup-the-pi-database">Backup The Pi Database</h1>
+<p>The following command can be used to back up the local pi database:</p>
+<pre><code>     tar -cjf pacman_database.tar.bz2 /var/lib/pacman/local
+</code></pre><blockquote>
+<p><strong>Noted</strong>: If the <strong>pi</strong> database files are corrupted, and there is no backup file available, there exists some hope of rebuilding the pi database.
+{.is-info}</p>
+</blockquote>
+<h1 id="reinstalling-all-packages">Reinstalling all packages</h1>
+<p>To reinstall all native packages, use:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"> pi -Qqn | pi -S -
+</code></pre></div><h1 id="password-info">Password Info</h1>
+<p>Both <strong>KOOMPI OS</strong> and <strong>Linux</strong> operating systems use the <code>passwd</code> command to change the user password. The <code>passwd</code> is used to update a user’s authentication token (password) stored in <code>/etc/shadow file</code>. The <code>passwd</code> change passwords for user and group accounts.</p>
+<p>A normal user may only change the password for his/her own account, <code>the superuser (or root)</code> may change the password for any account.</p>
+<p>The <strong>administrator</strong> of a group may change the password for the group. It also changes account information, such as the full name of the user, user login shell, or password expiry date and interval.</p>
+<h3 id="set-user-password">Set User Password</h3>
+<p>Type the following command to change your own password</p>
+<pre><code> passwd
+</code></pre><p><strong>Sample Output:</strong></p>
+<pre><code>    [koompi@koompi-pc ~]$ passwd
+    Changing password for koompi.
+    Current password: 
+    New password: 
+    Retype new password: 
+    passwd: password updated successfully
+</code></pre><p>The <strong>user</strong> is first prompted for his/her old password if one is present. This password is then encrypted and compared against the stored password. The user has only one chance to enter the correct <strong>password</strong>.</p>
+<p><strong>The superuser</strong> is permitted to bypass this step so that forgotten passwords may be changed. <strong>A new password</strong> is tested for complexity. As a general guideline, passwords should consist of 10 <code>to</code> 20 <code>characters</code> including one or more** from each of the following sets:</p>
+<ol>
+<li><code>Lower</code> case alphabetics</li>
+<li><code>Upper</code> case alphabetics</li>
+<li>Digits <code>0</code> to <code>9</code></li>
+<li><code>Punctuation marks</code>/<code>spacial characters</code></li>
+</ol>
+<h3 id="changing-password-for-other-user-account">Changing Password For Other User Account</h3>
+<p>You need to <a href="https://koompi.org/KOOMPI%20OS#root-info">log in as the root user</a>. In order to go into the <strong>root</strong>, type the following command to change the password for User_Name:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"> passwd User_Name
+</code></pre></div><p>or</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"> sudo passwd User_Name
+</code></pre></div><p><strong>Sample Output:</strong></p>
+<pre><code>    [koompi@koompi-pc ~]$ sudo passwd koompi
+    New password: 
+    Retype new password: 
+    passwd: password updated successfully
+</code></pre><p>Where, <strong>koompi</strong> – is username or account&rsquo;s name.</p>
+<blockquote>
+<p><strong>Noted</strong>: Passwords do not display to the screen when you enter them.
+{.is-info}</p>
+</blockquote>
+<h3 id="changing-group-password">Changing Group Password</h3>
+<p>When the <code>-g</code> option is used, the password for the named group is changed. In this example, change the password for the group:</p>
+<pre><code>    passwd -g Group_Name
+</code></pre><p>The current group password is not prompted for. The <code>-r</code> option is used with the <code>-g</code> option to remove the current password from the named group. This allows group access to all members. The <code>-R</code> option is used with the <code>-g</code> option to restrict the named group for all users.</p>
+<h3 id="changing-user-passwords-on-koompi-os">Changing User Passwords On KOOMPI OS</h3>
+<p>As a KOOMPI OS or Linux system administrator (sysadmin), you can change the password for any users on your server. To change a password on behalf of a user:</p>
+<ol>
+<li>First sign on or “<code>su</code>” or “<code>sudo</code>” to the “<code>root</code>” account on <strong>KOOMPI OS</strong>, run: <code>sudo -i</code></li>
+<li>Then type, <code>passwd Administrator_name</code> to change a password for Admin user</li>
+<li>The system will prompt you to enter a password twice</li>
+</ol>
+<h4 id="conclusion">Conclusion</h4>
+<p>The passwd command line utility is used to update or change user’s password. The encrypted password is stored in <code>/etc/shadow</code> file and account information is in <code>/etc/passwd file</code>. To see all user account try <strong>grep command</strong> or <strong>cat command</strong> as follows:</p>
+<pre><code> cat /etc/passwd
+ grep '^userNameHere' /etc/passwd
+</code></pre><p>The <strong>root</strong> account on a KOOMPI OS computer is the account with full privileges. Root access is often necessary for performing commands in PionuxOS, especially commands that affect system files. Because root is so powerful, it&rsquo;s recommended to only request root access when necessary, as opposed to logging in as the root user. This can help prevent accidental damage to important system files.</p>
+<h1 id="root-info">Root Info</h1>
+<h3 id="root-access-in-terminalkonsole">Root Access In Terminal(Konsole)</h3>
+<ol>
+<li><strong>Open the terminal</strong>. If the terminal is not already open, open it. Many distributions allow you to open it by pressing <code>Ctrl+Alt+T</code>.</li>
+<li>Type <strong>su -</strong> and <strong>press ↵</strong> Enter. This will attempt to log you in as <code>super user</code>. You can actually use this command to log in as any user on the machine, but when left blank it will attempt to log in as root.</li>
+<li><strong>Enter the root password when prompted</strong>. After typing *<strong>su -</strong> and <strong>press ↵</strong> Enter, you&rsquo;ll be prompted for the root password.
+If you get an &ldquo;authentication error&rdquo; message, your root account is likely locked. See the next section for instructions on unlocking it.</li>
+<li><strong>Check the command prompt</strong>. When you are logged in as root, the command prompt should end with <code>#</code> instead of <code>$</code>.</li>
+<li>Now you can use any commands that required root.</li>
+</ol>
+<h3 id="logout-of-root">Logout Of Root</h3>
+<p>You can <strong>Logout of Root</strong> in two ways:
+<strong>+ First Way, Type:</strong></p>
+<pre><code>exit
+</code></pre><p><strong>+ Second Way,Press:</strong></p>
+<pre><code>     CTRL+D
+</code></pre><h3 id="unlocked-the-root-account">Unlocked The Root Account</h3>
+<ol>
+<li><strong>Unlock the root account (KOOMPI OS)</strong>. KOOMPI OS locks the root account so that the average user can&rsquo;t access it. This is done because accessing root is rarely necessary when using the <code>sudo</code> command (see the previous section). Unlocking the root account will allow you to log in as root.</li>
+</ol>
+<pre><code>sudo passwd root
+</code></pre><ol start="2">
+<li><strong>Open the terminal</strong>. If the terminal hasn&rsquo;t opened yet. Many distributions allow you to open it by pressing <code>Ctrl+Alt+T</code>.</li>
+<li>Type <code>sudo passwd root</code> and <code>press ↵ Enter</code>. When prompted for a password, enter your <em>user</em> password.</li>
+<li><code>Set a new password</code>. You&rsquo;ll be prompted to create a new password and enter it twice. Once a password has been set, the root account will be active.</li>
+<li><code>Lock the root account again</code>. If you want to lock the root account, enter the following commands to remove the password and lock root:</li>
+</ol>
+<pre><code> sudo passwd -dl root
+</code></pre><h1 id="querying-package-database">Querying Package Database</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    $ pi -Q      <span style="color:#75715e">#queries the local package database</span>
+    $ pi -s      <span style="color:#75715e">#sync database</span>
+    $ pi -F      <span style="color:#75715e">#files database</span>
+</code></pre></div><p>For more options about querying:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    $ pi -Q --help
+</code></pre></div><p>Options:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">  -b, --dbpath &lt;path&gt;               <span style="color:#75715e"># set an alternate database location</span>
+  -c, --changelog                   <span style="color:#75715e"># view the changelog of a package</span>
+  -d, --deps                        <span style="color:#75715e"># list packages installed as dependencies [filter]</span>
+  -e, --explicit                    <span style="color:#75715e"># list packages explicitly installed [filter]</span>
+  -g, --groups                      <span style="color:#75715e"># view all members of a package group</span>
+  -i, --info                        <span style="color:#75715e"># view package information (-ii for backup files)</span>
+  -k, --check                       <span style="color:#75715e"># check that package files exist (-kk for file properties)</span>
+  -l, --list                        <span style="color:#75715e"># list the files owned by the queried package</span>
+  -m, --foreign                     <span style="color:#75715e"># list installed packages not found in sync db(s) [filter]</span>
+  -n, --native                      <span style="color:#75715e"># list installed packages only found in sync db(s) [filter]</span>
+  -o, --owns &lt;file&gt;                 <span style="color:#75715e"># query the package that owns &lt;file&gt;</span>
+  -p, --file &lt;package&gt;              <span style="color:#75715e"># query a package file instead of the database</span>
+  -q, --quiet                       <span style="color:#75715e"># show less information for query and search</span>
+  -r, --root &lt;path&gt;                 <span style="color:#75715e"># set an alternate installation root</span>
+  -s, --search &lt;regex&gt;              <span style="color:#75715e"># search locally-installed packages for matching strings</span>
+  -t, --unrequired                  <span style="color:#75715e"># list packages not (optionally) required by any package (-tt to ignore optdepends) [filter]</span>
+  -u, --upgrades                    <span style="color:#75715e"># list outdated packages [filter]</span>
+  -v, --verbose                     <span style="color:#75715e"># be verbose</span>
+      --arch &lt;arch&gt;                 <span style="color:#75715e"># set an alternate architecture</span>
+      --cachedir &lt;dir&gt;              <span style="color:#75715e"># set an alternate package cache location</span>
+      --color &lt;when&gt;                <span style="color:#75715e"># colorize the output</span>
+      --config &lt;path&gt;               <span style="color:#75715e"># set an alternate configuration file</span>
+      --confirm                     <span style="color:#75715e"># always ask for confirmation</span>
+      --debug                       <span style="color:#75715e"># display debug messages</span>
+      --disable-download-timeout    <span style="color:#75715e"># use relaxed timeouts for download</span>
+      --gpgdir &lt;path&gt;               <span style="color:#75715e"># set an alternate home directory for GnuPG</span>
+      --hookdir &lt;dir&gt;               <span style="color:#75715e"># set an alternate hook location</span>
+      --logfile &lt;path&gt;              <span style="color:#75715e"># set an alternate log file</span>
+      --noconfirm                   <span style="color:#75715e"># do not ask for any confirmation</span>
+      --sysroot                     <span style="color:#75715e"># operate on a mounted guest system (root-only)</span>
+</code></pre></div><blockquote>
+<p><strong>Warning</strong>: Sometimes, -s&rsquo;s builtin ERE (Extended Regular Expressions) can cause a lot of unwanted results, so it has to be limited to match the package name only; not the description nor any other field.
+{.is-warning}</p>
+</blockquote>
+<h1 id="searching-packages">Searching Packages</h1>
+<p><strong>Pi</strong> can also use for the search for packages in the database <code>(package_name and descriptions)</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"> pi -Ss String
+</code></pre></div><p><strong>Example :</strong></p>
+<pre><code>pi -Ss '^vim-'
+</code></pre><p>To Search for installed package:</p>
+<pre><code>pi -Qs String1 String2 ...
+</code></pre><p>To display extensive information about the given packages:</p>
+<pre><code> pi -F String1 String2
+</code></pre><blockquote>
+<p><strong>Tips</strong>: Passing two <code>-i</code> flags will also display the list of backup files and their modification states.
+{.is-success}</p>
+</blockquote>
+<pre><code>    $ pi -Qii package_name
+</code></pre><p>To verify the presence of the files installed by a package:</p>
+<pre><code>    $ pi -Qk package_name
+</code></pre><blockquote>
+<p><strong>Tips</strong>: Passing the <code>k</code> flag twice will perform a more thorough check.
+{.is-success}</p>
+</blockquote>
+<h1 id="cleaning-the-package-caches">Cleaning The Package Caches</h1>
+<p><strong>Pi</strong> stores its downloaded packages in <code>/var/cache/pacman/pkg/</code> and does not remove the old or uninstalled versions automatically. This has some advantages:</p>
+<p><strong>1. It allows to <code>downgrade a package</code> without the need to retrieve the previous version through other means, such as the <code>Arch Linux Archive.</code></strong>
+<strong>2. A package that has been uninstalled can easily be reinstalled directly from the cache folder, not requiring a new download from the repository.</strong></p>
+<p>However, it is necessary to <code>deliberately clean up the cache</code> periodically to prevent the folder to grow indefinitely in size.</p>
+<p>The paccache script, provided within the <code>pacman-contrib</code> package, deletes all cached versions of installed and uninstalled packages, except for the most recent 3, by default:</p>
+<pre><code>paccache -r
+</code></pre><p><strong>Enable and start</strong> <code>paccache.timer</code> to discard unused packages weekly.</p>
+<blockquote>
+<p><strong>Tips</strong>: You can create a <code>hook</code> to run this automatically after every pi transaction.
+{.is-success}</p>
+</blockquote>
+<p>For more <strong>options</strong> aboout <code>paccache</code> use :</p>
+<pre><code> paccache -h
+</code></pre><p><strong>Pacman</strong> also has some built-in options to clean the cache and the leftover database files from repositories which are no longer listed in the configuration file <code>/etc/pacman.conf</code>.</p>
+<p>However, <em>Pacman</em> does not offer the possibility to keep a number of past versions and is, therefore, more aggressive than paccache default options.</p>
+<p>To remove all the <code>cached packages</code> that are not currently installed, and the <code>unused sync database</code>, execute:</p>
+<pre><code> pi -Sc
+</code></pre><p>To remove all files from the cache, use the clean switch twice, this is the most aggressive approach and will leave nothing in the cache folder:</p>
+<pre><code>    pi -Scc
+</code></pre><blockquote>
+<p><strong>Warning</strong>: One should avoid deleting from the cache all past versions of installed packages and all uninstalled packages unless one desperately needs to free some disk space. This will prevent downgrading or reinstalling packages without downloading them again.
+{.is-warning}</p>
+</blockquote>
+<blockquote>
+<p><strong>Tips:</strong> Automatically clean the package cache.
+{.is-success}</p>
+</blockquote>
+<p>If you are too lazy to clean the package cache manually, you can automate this task using Pacman hooks. The Pacman hook will automatically clean the package cache after every Pacman transaction.</p>
+<p>To do so, create a file /etc/pacman.d/hooks/clean_package_cache.hook:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Text" data-lang="Text">     sudo mkdir /etc/pacman.d/hooks
+</code></pre></div><p>Next:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Text" data-lang="Text">    sudo nano /etc/pacman.d/hooks/clean_package_cache.hook
+</code></pre></div><p>Add the following lines:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Text" data-lang="Text">    [Trigger]
+    Operation = Upgrade
+    Operation = Install
+    Operation = Remove
+    Type = Package
+    Target = *
+    [Action]
+    Description = Cleaning pacman cache...
+    When = PostTransaction
+    Exec = /usr/bin/paccache -r
+</code></pre></div><p>Save and close the file. From now on, the package cache will be cleaned automatically after every Pacman transactions (like an upgrade, install, remove). You don’t have to run paccache command manually every time.</p>
+<h1 id="other-operations">Other Operations</h1>
+<p><strong>Operations:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    $ pi <span style="color:#f92672">{</span>-h --help<span style="color:#f92672">}</span>
+    $ pi <span style="color:#f92672">{</span>-V --version<span style="color:#f92672">}</span>
+    $ pi <span style="color:#f92672">{</span>-D --database<span style="color:#f92672">}</span>    <span style="color:#75715e"># &lt;options&gt; &lt;package(s)&gt;</span>
+    $ pi <span style="color:#f92672">{</span>-F --files<span style="color:#f92672">}</span>       <span style="color:#75715e"># [options] [package(s)]</span>
+    $ pi <span style="color:#f92672">{</span>-Q --query<span style="color:#f92672">}</span>       <span style="color:#75715e"># [options] [package(s)]</span>
+    $ pi <span style="color:#f92672">{</span>-R --remove<span style="color:#f92672">}</span>      <span style="color:#75715e"># [options] &lt;package(s)&gt;</span>
+    $ pi <span style="color:#f92672">{</span>-S --sync<span style="color:#f92672">}</span>        <span style="color:#75715e"># [options] [package(s)]</span>
+    $ pi <span style="color:#f92672">{</span>-T --deptest<span style="color:#f92672">}</span>     <span style="color:#75715e"># [options] [package(s)]</span>
+    $ pi <span style="color:#f92672">{</span>-U --upgrade<span style="color:#f92672">}</span>     <span style="color:#75715e"># [options] &lt;file(s)&gt;</span>
+</code></pre></div><p>New operations:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    $ pi <span style="color:#f92672">{</span>-Y --pi<span style="color:#f92672">}</span>          <span style="color:#75715e"># [options] [package(s)]</span>
+    $ pi <span style="color:#f92672">{</span>-P --show<span style="color:#f92672">}</span>        <span style="color:#75715e"># [options]</span>
+    $ pi <span style="color:#f92672">{</span>-G --getpkgbuild<span style="color:#f92672">}</span> <span style="color:#75715e"># [package(s)]</span>
+</code></pre></div><p>New options:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    --repo                  <span style="color:#75715e"># Assume targets are from the repositories</span>
+    -a --aur                <span style="color:#75715e"># Assume targets are from the AUR</span>
+</code></pre></div><p>Permanent configuration options:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    --save                 <span style="color:#75715e"># Causes the following options to be saved back to the config file when used</span>
+    --aururl      &lt;url&gt;    <span style="color:#75715e"># Set an alternative AUR URL</span>  
+    --builddir    &lt;dir&gt;    <span style="color:#75715e"># Directory used to download and run PKGBUILDS</span>
+    --editor      &lt;file&gt;   <span style="color:#75715e"># Editor to use when editing PKGBUILDs</span>
+    --editorflags &lt;flags&gt;  <span style="color:#75715e"># Pass arguments to editor</span>
+    --makepkg     &lt;file&gt;   <span style="color:#75715e"># makepkg command to use</span>  
+    --mflags      &lt;flags&gt;  <span style="color:#75715e"># Pass arguments to makepkg</span>
+    --pacman      &lt;file&gt;   <span style="color:#75715e"># pacman command to use</span>
+    --tar         &lt;file&gt;   <span style="color:#75715e"># bsdtar command to use</span>
+    --git         &lt;file&gt;   <span style="color:#75715e"># Git command to use</span>  
+    --gitflags    &lt;flags&gt;  <span style="color:#75715e"># Pass arguments to git</span>
+    --gpg         &lt;file&gt;   <span style="color:#75715e"># gpg command to use</span>  
+    --gpgflags    &lt;flags&gt;  <span style="color:#75715e"># Pass arguments to gpg</span>
+    --config      &lt;file&gt;   <span style="color:#75715e"># pacman.conf file to use</span>
+    --makepkgconf &lt;file&gt;   <span style="color:#75715e"># makepkg.conf file to use</span>
+    --nomakepkgconf        <span style="color:#75715e"># Use the default makepkg.conf</span>
+
+    --requestsplitn &lt;n&gt;    <span style="color:#75715e"># Max amount of packages to query per AUR request</span>
+    --completioninterval   <span style="color:#75715e"># &lt;n&gt; Time in days to to refresh completion cache</span>
+    --sortby    &lt;field&gt;    <span style="color:#75715e"># Sort AUR results by a specific field during search</span>
+    --answerclean   &lt;a&gt;    <span style="color:#75715e"># Set a predetermined answer for the clean build menu</span>
+    --answerdiff    &lt;a&gt;    <span style="color:#75715e"># Set a predetermined answer for the diff menu</span>
+    --answeredit    &lt;a&gt;    <span style="color:#75715e"># Set a predetermined answer for the edit pkgbuild menu</span>
+    --answerupgrade &lt;a&gt;    <span style="color:#75715e"># Set a predetermined answer for the upgrade menu</span>
+    --noanswerclean        <span style="color:#75715e"># Unset the answer for the clean build menu</span>
+    --noanswerdiff         <span style="color:#75715e"># Unset the answer for the edit diff menu</span>
+    --noansweredit         <span style="color:#75715e"># Unset the answer for the edit pkgbuild menu</span>
+    --noanswerupgrade      <span style="color:#75715e"># Unset the answer for the upgrade menu</span>
+    --cleanmenu            <span style="color:#75715e"># Give the option to clean build PKGBUILDS</span>
+    --diffmenu             <span style="color:#75715e"># Give the option to show diffs for build files</span>
+    --editmenu             <span style="color:#75715e"># Give the option to edit/view PKGBUILDS</span>
+    --upgrademenu          <span style="color:#75715e"># Show a detailed list of updates with the option to skip any</span>
+    --nocleanmenu          <span style="color:#75715e"># Don&#39;t clean build PKGBUILDS</span>
+    --nodiffmenu           <span style="color:#75715e"># Don&#39;t show diffs for build files</span>
+    --noeditmenu           <span style="color:#75715e"># Don&#39;t edit/view PKGBUILDS</span>
+    --noupgrademenu        <span style="color:#75715e"># Don&#39;t show the upgrade menu</span>
+    --askremovemake        <span style="color:#75715e"># Ask to remove makedepends after install</span>
+    --removemake           <span style="color:#75715e"># Remove makedepends after install</span>
+    --noremovemake         <span style="color:#75715e"># Don&#39;t remove makedepends after install</span>
+
+    --cleanafter           <span style="color:#75715e"># Remove package sources after successful install</span>
+    --nocleanafter         <span style="color:#75715e"># Do not remove package sources after successful build</span>
+    --bottomup             <span style="color:#75715e"># Shows AUR&#39;s packages first and then repository&#39;s</span>
+    --topdown              <span style="color:#75715e"># Shows repository&#39;s packages first and then AUR&#39;s</span>
+
+    --devel                <span style="color:#75715e"># Check development packages during sysupgrade</span>
+    --nodevel              <span style="color:#75715e"># Do not check development packages</span>
+    --gitclone             <span style="color:#75715e"># Use git clone for PKGBUILD retrieval</span>
+    --nogitclone           <span style="color:#75715e"># Never use git clone for PKGBUILD retrieval</span>
+    --rebuild              <span style="color:#75715e"># Always build target packages</span>
+    --rebuildall           <span style="color:#75715e"># Always build all AUR packages</span>
+    --norebuild            <span style="color:#75715e"># Skip package build if in cache and up to date</span>
+    --rebuildtree          <span style="color:#75715e"># Always build all AUR packages even if installed</span>
+    --redownload           <span style="color:#75715e"># Always download pkgbuilds of targets</span>
+    --noredownload         <span style="color:#75715e"># Skip pkgbuild download if in cache and up to date</span>
+    --redownloadall        <span style="color:#75715e"># Always download pkgbuilds of all AUR packages</span>
+    --provides             <span style="color:#75715e"># Look for matching providers when searching for packages</span>
+    --noprovides           <span style="color:#75715e"># Just look for packages by pkgname</span>
+    --pgpfetch             <span style="color:#75715e"># Automatically resolve conflicts using pacman&#39;s ask flag</span>
+    --nouseask             <span style="color:#75715e"># Confirm conflicts manually during the install</span>
+    --combinedupgrade      <span style="color:#75715e"># Refresh then perform the repo and AUR upgrade together</span>
+    --nocombinedupgrade    <span style="color:#75715e"># Perform the repo upgrade and AUR upgrade separately</span>
+
+    --sudoloop             <span style="color:#75715e"># Loop sudo calls in the background to avoid timeout</span>
+    --nosudoloop           <span style="color:#75715e"># Do not loop sudo calls in the background</span>
+
+    --timeupdate           <span style="color:#75715e"># Check packages&#39; AUR page for changes during sysupgrade</span>
+    --notimeupdate         <span style="color:#75715e"># Do not check packages&#39; AUR page for changes</span>
+</code></pre></div><p>Show specific options:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    -c --complete         <span style="color:#75715e"># Used for completions</span>
+    -d --defaultconfig    <span style="color:#75715e"># Print default pi configuration</span>
+    -g --currentconfig    <span style="color:#75715e"># Print current pi configuration</span>
+    -s --stats            <span style="color:#75715e"># Display system package statistics</span>
+    -w --news             <span style="color:#75715e"># Print arch news</span>
+</code></pre></div><p>Pi specific options:</p>
+<pre><code>    -c --clean            # Remove unneeded dependencies
+       --gendb            # Generates development package DB used for updating
+</code></pre><p>get pkgbuild specific options:</p>
+<pre><code>    -f --force            # Force download for existing tar packages
+</code></pre><p><em>Contributed by @LyhourChhen</em></p>
 </div>
           
           <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 05 Jan 2020</p>

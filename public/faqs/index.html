@@ -354,7 +354,7 @@ your server. To change a password on behalf of a user:</p>
 </div>
   </div>
 </div>
-<p>
+
 
 <div class="card mb-4 rounded-0 shadow border-0">
   <div class="card-header rounded-0 bg-white border p-0 border-0">
@@ -401,7 +401,24 @@ your server. To change a password on behalf of a user:</p>
 <pre><code>pacman -Rns $(pacman -Qqtd)
 </code></pre></div>
   </div>
-</div></p>
+</div>
+
+
+<div class="card mb-4 rounded-0 shadow border-0">
+  <div class="card-header rounded-0 bg-white border p-0 border-0">
+    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#conflicted-with-python-pygmets-how-to-fix-it">
+      <span>Conflicted with python-pygmets, How to fix it ?</span> <i class="ti-plus text-primary text-right"></i>
+    </a>
+  </div>
+  <div id="conflicted-with-python-pygmets-how-to-fix-it" class="collapse" data-parent="#accordion">
+    <div class="card-body font-secondary text-color"><p>In order to solve this conflicted, you need to remove the existing packages in the file system by running this command below:</p>
+<pre><code>sudo rm -rf /usr/bin/pygmentize
+</code></pre><p>After that try to update your system with command:</p>
+<pre><code>pi -Syu
+</code></pre><div class="notices info" ><p>All the commands must run in <strong>Konsole</strong>.</p></div>
+</div>
+  </div>
+</div>
 
 
 <div class="card mb-4 rounded-0 shadow border-0">
@@ -438,6 +455,21 @@ Errors occurred, no packages were upgraded.
 have to update key-ring packages that following by command below:</p>
 <pre><code>sudo pacman -S archlinux-keyring
 </code></pre><div class="notices info" ><p>The above command will update the new keys and disable the revoked keys.</p></div>
+</div>
+  </div>
+</div>
+
+
+<div class="card mb-4 rounded-0 shadow border-0">
+  <div class="card-header rounded-0 bg-white border p-0 border-0">
+    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#how-can-i-reset-the-password-of-my-computer">
+      <span>How can I reset the password of my computer?</span> <i class="ti-plus text-primary text-right"></i>
+    </a>
+  </div>
+  <div id="how-can-i-reset-the-password-of-my-computer" class="collapse" data-parent="#accordion">
+    <div class="card-body font-secondary text-color"><p>Dealing with forget password is not an easy thing !!!</p>
+<p>KOOMPI respect <code>user privacy 100%</code>, so KOOMPI knows nothing about user password or any data. It is the <strong>user&rsquo;s responsibility</strong> to take care of their data and password. However, there is still a way to <code>set a new password</code>, but it requires <strong>advanced administration skills</strong>.</p>
+<p>Please bring your laptop to the KOOMPI office.</p>
 </div>
   </div>
 </div>

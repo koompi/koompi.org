@@ -108,6 +108,7 @@ In order to solve this problem, you have to run this command and follow all inst
 sudo pacman -Rdd pyqt5-common
 ```
 {{</ faq >}}
+
 {{< faq "Still having Conflict with python-pyqt5 and pyqt5-common, How to fix it ?" >}}
 
 You need to run this other command
@@ -123,6 +124,21 @@ After update just does this next command, you will be finished:
 pacman -Rns $(pacman -Qqtd)
 ```
 {{</ faq >}}
+
+{{< faq "Conflicted with python-pygmets, How to fix it ?" >}}
+In order to solve this conflicted, you need to remove the existing packages in the file system by running this command below:
+```
+sudo rm -rf /usr/bin/pygmentize
+```
+After that try to update your system with command:
+```
+pi -Syu
+```
+{{< notice info >}}
+All the commands must run in **Konsole**.
+{{< /notice >}}
+{{</ faq >}}
+
 
 {{< faq "Missing Qt5 dependency, How to install it back ? " >}}
 If you accidentally delete QT5 dependency you can install it back by:
@@ -153,4 +169,10 @@ The above command will update the new keys and disable the revoked keys.
 {{< /notice >}}
 {{</ faq >}}
 
+{{< faq "How can I reset the password of my computer? " >}}
+Dealing with forget password is not an easy thing !!!
 
+KOOMPI respect `user privacy 100%`, so KOOMPI knows nothing about user password or any data. It is the **user's responsibility** to take care of their data and password. However, there is still a way to `set a new password`, but it requires **advanced administration skills**.
+
+Please bring your laptop to the KOOMPI office.
+{{</ faq >}}
