@@ -18,12 +18,12 @@ unsafe= true
 ################################# navigation ################################
 [[menu.main]]
 name = "Faqs"
-url = "/faqs"
+url = "https://www.koompi.org/faqs"
 weight = 1
 
 [[menu.main]]
 name = "contact"
-url = "/contact"
+url = "https://www.koompi.org/contact"
 weight = 2
 
 [[menu.main]]
