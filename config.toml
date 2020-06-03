@@ -18,12 +18,12 @@ unsafe= true
 ################################# navigation ################################
 [[menu.main]]
 name = "Faqs"
-url = "faqs"
+url = "/faqs"
 weight = 1
 
 [[menu.main]]
 name = "contact"
-url = "contact"
+url = "/contact"
 weight = 2
 
 [[menu.main]]
