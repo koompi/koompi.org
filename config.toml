@@ -23,7 +23,7 @@ weight = 1
 
 [[menu.main]]
 name = "contact"
-url = "https://www.koompi.org/applications"
+url = "https://www.koompi.org/contact"
 weight = 2
 
 [[menu.main]]
@@ -128,7 +128,7 @@ content = "If you could not find any answers related to the problems, let us kno
 [Languages.en.params.cta.button]
 enable = true
 label = "contact us"
-link = "contact"
+link = "applications"
 
 
 ################################### Khmer Language ######################
