@@ -6,9 +6,67 @@ icon: "ti-help-alt"
 description: "Solutions and Problems that happened in the Operating System have been noted here."
 type : "docs"
 ---
+On this content, it provides to all questions and answers that have been facing in common. We hope that it helps the situations you are in . 
+
+{{< notice info >}}
+If there aren't any questions or answers you were looking for please contacts us. We are 
+very happy about your request and participate in our community.
+{{< /notice >}}
+----
+----
+{{< faq " Error locale !!" >}}
+Error locale is commonly seen. Sometimes, it can be seen while your time or date isn't correct with your location. So, the solution you can just reset the time or use this:
+```
+sudo locale-gen
+```
+{{< notice info >}}
+While you are trying to reset automically your time, you must connect to internet.
+{{< /notice >}}
+{{</ faq >}}
+
+{{< faq " How can I change default apps has been used ?" >}}
+In general, After you have installed the OS each of the apps will choose their own default app which has been decided by developer but you can change it with the following steps:
+1. you need to search for `System setting`.
+1. After that, you have to find the `Applications` section.
+1. Then, you will find the `Default Applications` layout.
+1. Finally, Selecting the program you want it to change and applying it.
+
+Sample: As my web browser has been using elinks as my default app, so I want to change it and using firefox instead. I follow the following step and in the `Default applications` section. I look for web browser and apply firefox instead of elinks. That's done. now I have used firefox as my deffault browser.
+{{</ faq >}}
+
+{{< faq "Zoom issue and can not run !!!" >}}
+As the `ZOOM` is requiring the `QT5`, you can run the command below:
+```
+pi -S --noconfirm xz qt5-webengine zoom
+```
+After, Finish the command and zoom still not running, [Click here](#).
+{{</ faq >}}
+
+{{< faq "Can KOOMPI OS be able to install Spotify ?" >}}
+Of Course, you can install it. [Visiting here to know how to install applications in KOOMPI OS](https://www.koompi.org/applications/).
+{{< notice note >}}
+As you know spotify is not available in some countries !!
+{{< /notice >}}
+{{</ faq >}}
+
+{{< faq "Can KOOMPI OS run with IOS ?" >}}
+In the meantime, our software isn't supporting the IOS system yet, but we are looking forward to doing it.
+{{</ faq >}}
+
+{{< faq "Can KOOMPI OS run Adobe Lightroom ?" >}}
+In the meantime, We can’t run Lightroom in KOOMPI Operating yet, but many other applications have similar features and high quality as them. 
+
+For example, GIMP which is supporting many works such as graphics editor, Image retouching and editing, free-form drawing, converting between different image formats, and more specialized tasks. 
+
+For Adobe Lightroom, Our team is trying their best to bring it as much as possible.
+{{</ faq >}}
+
+{{< faq "Can KOOMPI OS run Adobe Photoshop ?" >}}
+Not extacly, You can for some reasns. In order to install it, you need to instal `pix` first, [Click here](#).
+{{</ faq >}}
 
 {{< faq "How to install KOOMPI OS?" >}}
-In order to install KOOMPI OS, you need to click the link below which is the source of the OS. And it will be download somewhere in your folder. Copy that source code and make it as booted drive. After that input your dive in to the pc you want to install while you were
+<!-- In order to install KOOMPI OS, you need to click the link below which is the source of the OS. And it will be download somewhere in your folder. Copy that source code and make it as booted drive. After that input your dive in to the pc you want to install while you were -->
 {{</ faq >}}
 
 {{< faq "When will new version of KOOMPI OS release?" >}}
@@ -22,6 +80,26 @@ pi -Sy
 ```
 {{</ faq >}}
 
+{{< faq "Applications can not run, How to solve it ?" >}}
+As your apps can not run, you might be facing error related to missing dependencies of the apps. In order to know, what kind of dependencies that your apps required. You need to run the keyword of the package name, and it  will show your missing dependencies.[Visit here to see all the dependencies](#).
+
+Sample: I am facing with can not run **telegram app**. So, the keyword pacckages of telegram app is `telegram-desktop`. I run the keyword in konsole:
+```
+telegram-desktop
+```
+The output will be showing and you can see name of dependencies that are missing, mostly all apps are missing QT5, libicu. We can install dependency packages back by  run:
+```
+pi -S <Name of dependency packages>
+```
+{{</ faq >}}
+
+{{< faq "How to install pi or pacman" >}}
+As pi is our primary command, it has been always created since you install the Operating System. In case, your pi error or missing, you can install pi or pacman by pix command, to do so:
+```
+pix i pi
+```
+{{</ faq >}}
+
 {{< faq "Is KOOMPI OS is free to use?" >}}
 KOOMPI OS  is the `free open-source software`, it is free to use as much as everyone like it. KOOMPI OS is fully customized and self-customizable which make it more special.
 {{</ faq >}}
@@ -29,7 +107,7 @@ KOOMPI OS  is the `free open-source software`, it is free to use as much as ever
 {{< faq "What is pi ?" >}}
 The `pi` which is the shortcut formation of `pacman` is one of the majority features of our System. It is a combination of simple binary package manager with the easy-open-source-to-use build system.
 
-If you want to know more details [click here]().
+If you want to know more details [click here](#).
 {{</ faq >}}
 
 {{< faq "What is sudo ?" >}}
@@ -37,14 +115,14 @@ If you want to know more details [click here]().
 you want any command to be done with administrative or root privileges, you can use the sudo 
 command.
 
-If you want to know more details [click here]().
+If you want to know more details [click here](#).
 {{</ faq >}}
 
 {{< faq "What is different between pi and pix ?" >}}
 As you know that pi is the shortcut form of pacman which we are using it to install applications and 
 packages. Even though we had some updates we still using pi as the main command. 
 
-Pix sounds familiar, but it is quite different because it stands for **pacman extended or extra** which is supported by many more applications.., etc. that **Pi** can't support like Microsoft office. 
+Pix sounds familiar to `pi`, but it is quite different because it stands for **pacman extended or extra** which is supported by many more applications.., etc. that **Pi** can't support like Microsoft office. 
 {{</ faq >}}
 
 {{< faq "How to install pi or pacman" >}}
@@ -67,9 +145,13 @@ In order to install the application in KOOMPI OS, you have to use commands in te
 ```
  pi -S Package_Name
 ```
-
+For example: In order to install `firefox`,
+```
+pi -S firefox
+```
 Please, click [here](https://www.koompi.org/applications/) for more info.
 {{</ faq >}}
+
 
 
 {{< faq "How to Change password in KOOMPI OS ?" >}}
@@ -84,95 +166,11 @@ your server. To change a password on behalf of a user:
 For more info about password: [Click here]()
 {{</ faq >}}
 
-{{< faq "Conflicting python-pyqt5 and pyqt5-common, How to fix it ?" >}}
-If you run command to update the system and facing erro like below:
-```Text
- :: Synchronizing package databases...
- The core is up to date
- extra is up to date
- community is up to date
- :: Starting a full system upgrade...
- :: Replace ilmbase with extra/openexr? [Y/n] 
- :: Replace libmagick with extra/imagemagick? [Y/n] 
- :: Replace pygobject2-devel with extra/python2-gobject2? [Y/n] 
- resolving dependencies...
- looking for conflicting packages...
- :: python-pyqt5 and pyqt5-common are in conflict. Remove pyqt5-common? [y/N] 
- error: unresolvable package conflicts detected
- error: failed to prepare transaction (conflicting dependencies)
- :: python-pyqt5 and pyqt5-common are in conflict
- Error installing repo packages
-```
-In order to solve this problem, you have to run this command and follow all instuctions have been given.
-```
-sudo pacman -Rdd pyqt5-common
-```
-{{</ faq >}}
-
-{{< faq "Still having Conflict with python-pyqt5 and pyqt5-common, How to fix it ?" >}}
-
-You need to run this other command
-```
-sudo pacman -Rdd libdmx libxxf86dga
-```
-After that is done, run the updated command:
-```
-pi -Syu
-```
-After update just does this next command, you will be finished:
-```
-pacman -Rns $(pacman -Qqtd)
-```
-{{</ faq >}}
-
-{{< faq "Conflicted with python-pygmets, How to fix it ?" >}}
-In order to solve this conflicted, you need to remove the existing packages in the file system by running this command below:
-```
-sudo rm -rf /usr/bin/pygmentize
-```
-After that try to update your system with command:
-```
-pi -Syu
-```
-{{< notice info >}}
-All the commands must run in **Konsole**.
-{{< /notice >}}
-{{</ faq >}}
-
-
-{{< faq "Missing Qt5 dependency, How to install it back ? " >}}
-If you accidentally delete QT5 dependency you can install it back by:
-```
-pi -S qt5-base
-
-```
-{{</ faq >}}
-
-{{< faq "How To Fix “invalid or corrupted package (PGP signature) ? " >}}
-I tried to upgrade my Arch Linux server using the command `sudo pacman -Syu`, and You got the 
-following error:
-```
-[...]
-:: File /var/cache/pacman/pkg/libpsl-0.16.1-1-x86_64.pkg.tar.xz is corrupted (invalid or 
-corrupted package (PGP signature)).
-Do you want to delete it? [Y/n] y
-error: failed to commit transaction (invalid or corrupted package)
-Errors occurred, no packages were upgraded.
-```
-Even you try other commands like `$ pi -Syyu`, It still got the same error. To fix this issues one for all you 
-have to update key-ring packages that following by command below:
-```
-sudo pacman -S archlinux-keyring
-```
-{{< notice info >}}
-The above command will update the new keys and disable the revoked keys.
-{{< /notice >}}
-{{</ faq >}}
-
-{{< faq "How can I reset the password of my computer? " >}}
+{{< faq "How can I reset the password of the computer ? " >}}
 Dealing with forget password is not an easy thing !!!
 
 KOOMPI respect `user privacy 100%`, so KOOMPI knows nothing about user password or any data. It is the **user's responsibility** to take care of their data and password. However, there is still a way to `set a new password`, but it requires **advanced administration skills**.
 
 Please bring your laptop to the KOOMPI office.
 {{</ faq >}}
+

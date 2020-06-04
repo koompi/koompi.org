@@ -6,4 +6,3 @@ description: "Informing the new features and functions about the latest version 
 type : "docs"
 ---
 
-# Coming soon !!!
