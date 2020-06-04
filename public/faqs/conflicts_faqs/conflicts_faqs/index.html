@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
   <meta charset="utf-8">
-  <title>Tags</title>
+  <title>Conflicted FAQs</title>
 
   <meta name="generator" content="Hugo 0.72.0" />
 
@@ -115,22 +115,10 @@
         
         
         
-        <option id="en" value="https://www.koompi.org/tags/" selected>En
+        <option id="en" value="https://www.koompi.org/faqs/conflicts_faqs/conflicts_faqs/" selected>En
         </option>
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <option id="kh" value="https://www.koompi.org/kh/tags/">Kh</option>
         
         
         
@@ -163,6 +151,52 @@
             
               
             
+               
+              
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.koompi.org/faqs/" title="FAQs" class="sidelist
+  ">
+  <a href="https://www.koompi.org/faqs/">
+    FAQs
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.koompi.org/faqs/conflicts_faqs/conflicts_faqs/" title="Conflicted FAQs" class="sidelist
+  active">
+  <a href="https://www.koompi.org/faqs/conflicts_faqs/conflicts_faqs/">
+    Conflicted FAQs
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
               
             
               
@@ -172,33 +206,166 @@
       </div>
       <div class="col-lg-9">
         <div class="p-lg-5 p-4 bg-white">
-          <h2 class="mb-5">Tags</h2>
+          <h2 class="mb-5">Conflicted FAQs</h2>
           
-          <div class="bg-light p-4">
-            <ul class="page-list">
-              
+          <div class="content">
+
+<div class="card mb-4 rounded-0 shadow border-0">
+  <div class="card-header rounded-0 bg-white border p-0 border-0">
+    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#conflicting-with-p11-kit-trust">
+      <span>Conflicting with  p11-kit-trust ?</span> <i class="ti-plus text-primary text-right"></i>
+    </a>
+  </div>
+  <div id="conflicting-with-p11-kit-trust" class="collapse" data-parent="#accordion">
+    <div class="card-body font-secondary text-color"><p>Meanwhile, you are updating the OS and you are facing this kind of conflicting.</p>
+<p>Sample of output you are commonly facing:</p>
+<pre><code>problem: nss: /usr/lib/p11-kit-trust.so exists in filesystem
+lib32-nss: /usr/lib32/p11-kit-trust.so exists in filesystem
+</code></pre><p>As you can notice that <code>p11-kit-trust.so</code>, you need to overwrite it.</p>
+<pre><code>sudo pacman -Syu --overwrite /usr/lib\*/p11-kit-trust.so
+</code></pre></div>
+  </div>
+</div>
 
 
+<div class="card mb-4 rounded-0 shadow border-0">
+  <div class="card-header rounded-0 bg-white border p-0 border-0">
+    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#facing-xorgprotol-issues">
+      <span>Facing Xorgprotol issues !!</span> <i class="ti-plus text-primary text-right"></i>
+    </a>
+  </div>
+  <div id="facing-xorgprotol-issues" class="collapse" data-parent="#accordion">
+    <div class="card-body font-secondary text-color"><p>As the Xorgprotol issues is not an easy problem. First, we need to remove it and upgrade the system</p>
+<pre><code>pi -Rdd xorgproto
+</code></pre><div class="notices info" ><p>DO NOT worry, <code>Xorgprotol package</code> is safe for removing.</p></div>
+<p>Despite this thread being <code>[SOLVED]</code>, Facing nonethless with notified status.</p>
+<pre><code>removing xorgproto breaks dependency 'xorgproto' required by xorg-server-devel
+</code></pre><p>in this case, the <code>xorgproto packages</code> has been used by xorg-server-devel packages, we can remove the packages and start remove <strong>xorgprotol again.</strong></p>
+<pre><code>pi -Rdd xorg-server-devel
+</code></pre></div>
+  </div>
+</div>
 
 
+<div class="card mb-4 rounded-0 shadow border-0">
+  <div class="card-header rounded-0 bg-white border p-0 border-0">
+    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#missing-qt5-dependency-how-to-install-it-back">
+      <span>Missing Qt5 dependency, How to install it back ?</span> <i class="ti-plus text-primary text-right"></i>
+    </a>
+  </div>
+  <div id="missing-qt5-dependency-how-to-install-it-back" class="collapse" data-parent="#accordion">
+    <div class="card-body font-secondary text-color"><p>If you accidentally delete QT5 dependency or while you are trying to install some app and it required the Qt5 pacckages, you can install it back by:</p>
+<pre><code>pi -S qt5-base
+</code></pre></div>
+  </div>
+</div>
 
 
+<div class="card mb-4 rounded-0 shadow border-0">
+  <div class="card-header rounded-0 bg-white border p-0 border-0">
+    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#how-to-fix-invalid-or-corrupted-package-pgp-signature">
+      <span>How To Fix “invalid or corrupted package (PGP signature) ?</span> <i class="ti-plus text-primary text-right"></i>
+    </a>
+  </div>
+  <div id="how-to-fix-invalid-or-corrupted-package-pgp-signature" class="collapse" data-parent="#accordion">
+    <div class="card-body font-secondary text-color"><p>I tried to upgrade my Arch Linux server using the command <code>sudo pacman -Syu</code>, and You got the
+following error:</p>
+<pre><code>[...]
+:: File /var/cache/pacman/pkg/libpsl-0.16.1-1-x86_64.pkg.tar.xz is corrupted (invalid or 
+corrupted package (PGP signature)).
+Do you want to delete it? [Y/n] y
+error: failed to commit transaction (invalid or corrupted package)
+Errors occurred, no packages were upgraded.
+</code></pre><p>Even you try other commands like <code>$ pi -Syyu</code>, It still got the same error. To fix this issues one for all you
+have to update key-ring packages that following by command below:</p>
+<pre><code>sudo pacman -S archlinux-keyring
+</code></pre><div class="notices info" ><p>The above command will update the new keys and disable the revoked keys.</p></div>
+</div>
+  </div>
+</div>
 
 
-<li data-nav-id="https://www.koompi.org/tags/" title="Tags" class="sidelist
-  active">
-  <a href="https://www.koompi.org/tags/">
-    Tags
-  </a>
-  
-  
-</li>
+<div class="card mb-4 rounded-0 shadow border-0">
+  <div class="card-header rounded-0 bg-white border p-0 border-0">
+    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#facing-errors-with-mirrors-out-of-date">
+      <span>Facing errors with mirrors out of date !!</span> <i class="ti-plus text-primary text-right"></i>
+    </a>
+  </div>
+  <div id="facing-errors-with-mirrors-out-of-date" class="collapse" data-parent="#accordion">
+    <div class="card-body font-secondary text-color"><p>Nothing to worry, as it is out of date not out of sync, we can solve it with only command:</p>
+<pre><code>sudo pacman-mirrors -f 5
+</code></pre><p>After, it has done running, try to update with command <code>pii -Syyu</code>.</p>
+</div>
+  </div>
+</div>
 
 
-            </ul>
-          </div>
+<div class="card mb-4 rounded-0 shadow border-0">
+  <div class="card-header rounded-0 bg-white border p-0 border-0">
+    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#conflicting-python-pyqt5-and-pyqt5-common-how-to-fix-it">
+      <span>Conflicting python-pyqt5 and pyqt5-common, How to fix it ?</span> <i class="ti-plus text-primary text-right"></i>
+    </a>
+  </div>
+  <div id="conflicting-python-pyqt5-and-pyqt5-common-how-to-fix-it" class="collapse" data-parent="#accordion">
+    <div class="card-body font-secondary text-color"><p>If you run command to update the system and facing erro like below:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Text" data-lang="Text"> :: Synchronizing package databases...
+ The core is up to date
+ extra is up to date
+ community is up to date
+ :: Starting a full system upgrade...
+ :: Replace ilmbase with extra/openexr? [Y/n] 
+ :: Replace libmagick with extra/imagemagick? [Y/n] 
+ :: Replace pygobject2-devel with extra/python2-gobject2? [Y/n] 
+ resolving dependencies...
+ looking for conflicting packages...
+ :: python-pyqt5 and pyqt5-common are in conflict. Remove pyqt5-common? [y/N] 
+ error: unresolvable package conflicts detected
+ error: failed to prepare transaction (conflicting dependencies)
+ :: python-pyqt5 and pyqt5-common are in conflict
+ Error installing repo packages
+</code></pre></div><p>In order to solve this problem, you have to run this command and follow all instuctions have been given.</p>
+<pre><code>sudo pacman -Rdd pyqt5-common
+</code></pre></div>
+  </div>
+</div>
+
+
+<div class="card mb-4 rounded-0 shadow border-0">
+  <div class="card-header rounded-0 bg-white border p-0 border-0">
+    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#still-having-conflict-with-python-pyqt5-and-pyqt5-common-how-to-fix-it">
+      <span>Still having Conflict with python-pyqt5 and pyqt5-common, How to fix it ?</span> <i class="ti-plus text-primary text-right"></i>
+    </a>
+  </div>
+  <div id="still-having-conflict-with-python-pyqt5-and-pyqt5-common-how-to-fix-it" class="collapse" data-parent="#accordion">
+    <div class="card-body font-secondary text-color"><p>You need to run this other command</p>
+<pre><code>sudo pacman -Rdd libdmx libxxf86dga
+</code></pre><p>After that is done, run the updated command:</p>
+<pre><code>pi -Syu
+</code></pre><p>After update just does this next command, you will be finished:</p>
+<pre><code>pacman -Rns $(pacman -Qqtd)
+</code></pre></div>
+  </div>
+</div>
+
+
+<div class="card mb-4 rounded-0 shadow border-0">
+  <div class="card-header rounded-0 bg-white border p-0 border-0">
+    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#conflicted-with-python-pygmets-how-to-fix-it">
+      <span>Conflicted with python-pygmets, How to fix it ?</span> <i class="ti-plus text-primary text-right"></i>
+    </a>
+  </div>
+  <div id="conflicted-with-python-pygmets-how-to-fix-it" class="collapse" data-parent="#accordion">
+    <div class="card-body font-secondary text-color"><p>In order to solve this conflicted, you need to remove the existing packages in the file system by running this command below:</p>
+<pre><code>sudo rm -rf /usr/bin/pygmentize
+</code></pre><p>After that try to update your system with command:</p>
+<pre><code>pi -Syu
+</code></pre><div class="notices info" ><p>All the commands must run in <strong>Konsole</strong>.</p></div>
+</div>
+  </div>
+</div>
+</div>
           
-          <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 01 Jan 0001</p>
+          <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 05 Jan 2020</p>
           <nav class="pagination mt-3">
             
             
@@ -628,29 +795,12 @@
             
             
             
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
             
 
             
             
             
 
-            
-            
-            
-            
-            
             
             
             
@@ -672,10 +822,34 @@
             
             
             
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
 
             
             
-            <a class="nav nav-next" href="https://www.koompi.org/basic/"> <span class="d-none d-md-block">Basic Linux Commands</span><i class="ti-arrow-right ml-2"></i></a>
+            
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+            <a class="nav nav-prev" href="https://www.koompi.org/faqs/"><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">FAQs</span></a>
+            
+            
+            <a class="nav nav-next" href="https://www.koompi.org/contact/"> <span class="d-none d-md-block">Got Any Questions</span><i class="ti-arrow-right ml-2"></i></a>
             
           </nav>
         </div>

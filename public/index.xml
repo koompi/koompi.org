@@ -45,6 +45,18 @@ According to the language used to code, the code editors highlight special keywo
     </item>
     
     <item>
+      <title>Conflicted FAQs</title>
+      <link>https://www.koompi.org/faqs/conflicts_faqs/conflicts_faqs/</link>
+      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
+      
+      <guid>https://www.koompi.org/faqs/conflicts_faqs/conflicts_faqs/</guid>
+      <description>Conflicting with p11-kit-trust ?    Meanwhile, you are updating the OS and you are facing this kind of conflicting.
+Sample of output you are commonly facing:
+problem: nss: /usr/lib/p11-kit-trust.so exists in filesystem lib32-nss: /usr/lib32/p11-kit-trust.so exists in filesystem As you can notice that p11-kit-trust.so, you need to overwrite it.
+sudo pacman -Syu --overwrite /usr/lib\*/p11-kit-trust.so    Facing Xorgprotol issues !!    As the Xorgprotol issues is not an easy problem.</description>
+    </item>
+    
+    <item>
       <title>Converting Apps</title>
       <link>https://www.koompi.org/applications/converter/converter/</link>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
@@ -96,7 +108,7 @@ pi -S git  Make sure you have already run command pi -Syu to update your system.
       
       <guid>https://www.koompi.org/applications/graphic-editor/graphic_editor/</guid>
       <description>As we all know that graphic editor is one of the common app for demand of editing the images wheather they are digital photographs, traditional photo-chemical photographs, or illustrations. So, Here is the document that describes and provides more info and app for using.
-Please, make sure you have already updated your system with this command &amp;ldquo;pi -Syu&amp;quot;.
+Please, make sure you have already updated your system with this command &amp;ldquo;pi -Syu&amp;rdquo;.
   Darktable I let you store all the precious digital negatives in a database that you can, later on, develop raw images.</description>
     </item>
     
@@ -133,12 +145,13 @@ This document is containing only apps that possibly to install in the OS, If you
     </item>
     
     <item>
-      <title>Pix Update</title>
+      <title>Pix Release</title>
       <link>https://www.koompi.org/release/pix-release/pix_release/</link>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
       <guid>https://www.koompi.org/release/pix-release/pix_release/</guid>
-      <description>coming soon!!!</description>
+      <description>Pix sounds familiar to pi but it is quite different because it stands for pacman extended or extra which is supported by many more applications which Pi can’t do. So, Our team has been trying to creat this functional in case users want to install some apps which our OS officially support yet.
+In this document, The details about what pix will be providing to the all users. First thing first, As pix is just relesed we have to install it by following the steps below:</description>
     </item>
     
     <item>
