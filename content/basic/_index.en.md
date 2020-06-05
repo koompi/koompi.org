@@ -2,21 +2,21 @@
 title: "Basic Linux Commands"
 date: 2018-12-28T11:02:05+06:00
 icon: "ti-files"
-description: "This section is available only the command lines supported in the open source world. "
+description: "This section is available only the command lines supported in the open-source world. "
 type : "docs"
 ---
-In this section, it gives you the basic commands to keep your system up and running. Keep in mind that these commands can both install packages from the any open-source repository and  packages from the AUR.
+This section gives you the basic commands to keep your system up and running. Keep in mind that these commands can both install packages from any open-source repository and packages from the AUR.
 
-As KOOMPI OS is operating base on Arch Linux and Plasma.This means your system always receives the latest packages.
+As KOOMPI OS is operating base on Arch Linux and Plasma. This means your system always receives the latest packages.
 
 ----
 
 ## Pi or Pacman
-The `pi` that is **Pacman's shortcut** is one of our system's primary most efficient commands. It is a powerful tool at the center of the system, that allows you to maintain, expand and update the system.
+The `pi` that is **Pacman's shortcut** is one of our system's primary most efficient commands. It is a powerful tool at the center of the system, that allows you to maintain, expand, and update the system.
 
 Since you installed the operating system, `pi command` has always been installed, but We can also install `pacman or pi packages` on the system with `pix`. Here is the command:
 ```
- pix i pi
+ pix I pi
 ```
 
 {{< notice info >}}
@@ -77,7 +77,7 @@ To see what inside the package group, run
 ---
 
 ## Removing Packages
-A package is always installed with other packages that it *depends on*, `called dependencies`. Quite often those dependencies are already, or partially installed on your system, because other **packages also depend on it**.
+A package is always installed with other packages that it *depends on*, `called dependencies`. Quite often those dependencies are already, or partially installed on your system because other **packages also depend on it**.
 
 If you just want to remove the package, the command following will be enough
 ```    
@@ -120,7 +120,7 @@ Install packages with no confirm.
  pi -S --noconfirm <Package name>
 ```
 ## Refreshing mirrors
-Sometimes it can happen that your system can’t find the updates or packages.In that case, there’s a problem with the mirrors you’re trying to connect to. You can simply refresh the mirrors with this command.
+Sometimes it can happen that your system can’t find the updates or packages. In that case, there’s a problem with the mirrors you’re trying to connect to. You can simply refresh the mirrors with this command.
 ```
  pi -Syyu
 ```
