@@ -14,13 +14,15 @@
     
     <item>
       <title>Basic</title>
-      <link>https://www.koompi.org/basic/basic-command/basic_command/</link>
+      <link>https://www.koompi.org/basic/flies-and-folders/flie-folder/</link>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
-      <guid>https://www.koompi.org/basic/basic-command/basic_command/</guid>
-      <description>This document is a guide for beginners who do not know anything about the command lines. All the basic command lines will be provided here with the explaination plus the example.
+      <guid>https://www.koompi.org/basic/flies-and-folders/flie-folder/</guid>
+      <description>This document is a guide for information related to Files and Folders. All the Command lines will be provided here with the explaination plus the example.
 For more details instruction, see the KOOMPI OS website articles or the various program section, both linked from this guide.
-Basic commands should be all run on the konsole, terminal or command line tools. If you could not find anything related to what you are looking for, submit the question.</description>
+  Pwd Command To show the directory you are currently in:
+ [koompi@koompi-pc ~]$ pwd Output :
+ /home/koompi   Ls Command Use &amp;ldquo;ls&amp;rdquo; for showing all the files in your directory:</description>
     </item>
     
     <item>
