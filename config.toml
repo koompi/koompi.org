@@ -65,7 +65,7 @@ weight = 3
 ############################# Default Parameters ##########################
 [params]
 # logo is for all page
-logo = ""
+logo = "KOOOMPI"
 # logo white is for homepage logo, you can use colorful logo too...
 logo_white =""
 # when logo is empty, it will shown your site title

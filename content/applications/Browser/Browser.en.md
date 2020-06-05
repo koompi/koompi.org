@@ -17,7 +17,7 @@ Before continuing with this document, make sure you know how to use [**terminal 
 
 In this chart list below is all the browser apps that KOOMPI OS is supported and with commands installation:
 
-| Browser Names  | Installing Commands| 
+| Browser Names  | Installing Command| 
 |:-------------|:-------------|
 | **Brave**|      `pi -S brave-bin`|
 | **Chromium** |      `pi -S chromium`|

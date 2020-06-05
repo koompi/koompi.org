@@ -7,11 +7,10 @@ draft: false
 keywords: ["induct", "instate"]
 ---
 
-This document is a guide for beginners who do not know anything about the command lines. All the basic command lines will be provided here with the explaination plus the example.
+This document is a guide for information related to **Files and Folders**. All the Command lines will be provided here with the explaination plus the example.
 
 For more details instruction, see the [KOOMPI OS website](www.koompi.org) articles or the various [program section](www.koompi.org/applications/), both linked from this guide.
 
-Basic commands should be all run on the konsole, terminal or command line tools. If you could not find anything related to what you are looking for, submit the question.
 
 ---
 ---
