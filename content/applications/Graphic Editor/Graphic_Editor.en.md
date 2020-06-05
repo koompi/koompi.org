@@ -6,7 +6,7 @@ draft: false
 # search related keywords
 keywords: ["induct", "instate"]
 ---
-As we all know that graphic editor is one of the common app for demand of editing the images wheather they are digital photographs, traditional photo-chemical photographs, or illustrations. So, Here is the document that describes and provides more info and app for using.
+As we all know that graphic editor is one of the common apps for the demand of editing the images whether they are digital photographs, traditional photo-chemical photographs, or illustrations. So, Here is the document that describes and provides more info and an app for using.
 
 {{< notice note >}}
 Please, make sure you have already updated your system with this command "**pi -Syu**".
@@ -48,17 +48,16 @@ After you used that command, it will give you instructions. please, kindly follo
 ## How to install DigiKam
 We can download it with only one command:
 ```
-pi -S digikam
+pi -S digital
 ```
 {{< notice tip >}}
-DigiKam has its own widget style setting. If tooltips are either blank (empty rectangles), or 
-unreadable due to a poor foreground and background combination, choose a different widget style.
+DigiKam has its own widget style setting. If tooltips are either blank (empty rectangles), or unreadable due to a poor foreground and background combination, choose a different widget style.
 {{< /notice >}}
 
 ## Steps for doing it .
 > 1. Navigate to Settings > Configure digiKam > Miscellaneous
 
-> 2. Now in Widget Style, choose "Cleanlooks"
+> 2. Now in Widget Style, choose "Clean looks"
 
 ---
 
@@ -67,13 +66,13 @@ GIMP is an insanely popular open-source **Free Photo Editing Software** Like Pho
 platform supported software which supports various system like Windows, Linux, Mac OS X and so does 
 KOOMPI OS. Users can easily complete the job with this free software.
 
-It provides a set of advanced tools so that the scientists, photographers, and designers can accomplish the jobs smoothly. Without any doubt, this is one of the best photoshop alternative free picture editor.
+It provides a set of advanced tools so that the scientists, photographers, and designers can accomplish the jobs smoothly. Without any doubt, this is one of the best photoshop alternative free picture editors.
 
 {{< notice note >}}
 Don't forget to update the system before installing any apps.
 {{< /notice >}}
 ## How to install GIMP
-You can easily installed this by only one command, and here it is :
+You can easily install this by only one command, and here it is :
 ```
 pi -S gimp
 ```
@@ -91,27 +90,27 @@ pi -S gimp
 - Press Delete
 
 {{< notice note >}}
-Grow and Border give the same result.
+Grow and Border gives the same result.
 {{< /notice >}}
 
 ---
 # Inkscape
-**Inkscape** is an amazing open source and free vector design tool. It’s very powerful with lots of tools and features for `digital vector work and posters creations`. This tool is very similar and alternative to `Adobe Illustrator` but there are many features available in photoshop also thus it can be considered as `photoshop and Illustrator alternative`.
+**Inkscape** is an amazing open-source and free vector design tool. It’s very powerful with lots of tools and features for `digital vector work and posters creations`. This tool is very similar and alternative to `Adobe Illustrator` but there are many features available in photoshop also thus it can be considered as `photoshop and Illustrator alternative`.
 
 
-**Inkscape** is a compact software package including vector editor, text tools, drawing tools, support for Bezier and spiro curves etc.
+**Inkscape** is a compact software package including vector editor, text tools, drawing tools, support for Bezier and spiro curves, etc.
 ## How to install Inkscape
-Here is the one way to install it, Go into terminal and Run this command:
+Here is the one way to install it, Go into terminal and run this command:
 ```
 pi -S inkscape
 ```
 ---
 # Krita
 **Krita** is a raster graphics editor designed primarily for digital painting and animation. It is a 
-fast,flexible, and free Photoshop alternative built by artists and perfect for everyone from amateur to professional. Krita gives budding artists and illustrators a pro-level set of tools with a natural painting toolbox.
+fast, flexible, and free Photoshop alternative built by artists and perfect for everyone from amateur to professional. Krita gives budding artists and illustrators a pro-level set of tools with a natural painting toolbox.
 
 ## The way to install Krita
-Krita are commonly seen in every open-source, so in order to install it you must be in konsole and run command below: 
+Krita is commonly seen in every open-source, so in order to install it you must be in konsole and run the command below: 
 ``` 
  pi -S krita
 ```
@@ -127,7 +126,7 @@ Krita are commonly seen in every open-source, so in order to install it you must
 # Pinta
 **Pinta** is one of the best Photoshop alternative free picture editor available out there. Pinta provides some basic editing tools and core functions including full edit history, unlimited layers, effect tools, etc for quick image retouching and simple edit. 
 ## How to install Pinta
-You can install this one by use this command below:
+You can install this one by using this command below:
 ```
 pi -S pinta
 ```
@@ -139,7 +138,7 @@ can cater to a wide range of artistic professionals and hobbyists.
 
 
 {{< notice info >}}
-We have just made this app to possible to run on `Pix version`.
+We have just made this app possible to run on `Pix version`.
 {{< /notice >}}
 
 To install it, please following the steps below:
@@ -149,7 +148,7 @@ curl -s https://repo.koompi.org/script/pix.sh -o pix && chmod +x pix && sudo mv 
 ## How to install Photoshop in Pix version
 And then run this command to install photoshop
 ```
-pix i adope-photoshop-cc
+pix i adobe-photoshop-cc
 ```
 ---
 # RawTherapee
@@ -159,7 +158,7 @@ still, as it’s related to raw image editing and the output files can be import
 This application offers vast and featured full tools for processing raw images as non-destructive picture editing.
 
 ## How to install RawTherapee
-What you need to do is that you have to open terminal and then run this following command:
+What you need to do is that you have to open a terminal and then run this following command:
 ```
 pi -S rawtherapee
 ```
@@ -168,7 +167,7 @@ Make sure your system has already updated. If not run this `pi -Syu`
 {{< /notice >}}
 
 {{< notice info >}}
-After run the command above, please follow the instructions have been given.
+After running the command above, please follow the instructions that have been given.
 {{< /notice >}}
 
 ---
