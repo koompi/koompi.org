@@ -41,7 +41,8 @@ According to the language used to code, the code editors highlight special keywo
       <guid>https://www.koompi.org/applications/converter/converter/</guid>
       <description>Converter is the app that helps the user for converting text file formats, documents, media file format (image, audio, and even video).
 In this article, we are going to introduce you guys the converting applications that mostly use in the KOOMPI OS.
- Audio Convert Audio Convert is a script that converts between WAV, Ogg, MP3, MPC, FLAC, APE, AAC, and WMA files. It has an easy-to-use interface that makes it possible to fill in the tags for a few formats, copy the tags from input files into the new files, and choose the quality of compression.</description>
+ Chart list below is providing the Name and commands:
+   Converter Names Installing Commands     Audio Convert pi -S audio-convert    HandBrake pi -S handbrake    SoundConverter pi -S soundconverter    Soundkonverter pi -S soundkonverter      Audio Convert Audio Convert is a script that converts between WAV, Ogg, MP3, MPC, FLAC, APE, AAC, and WMA files.</description>
     </item>
     
     <item>
@@ -74,7 +75,8 @@ You can categorize each file as you download it, and then access all downloads r
       <guid>https://www.koompi.org/applications/graphic-editor/graphic_editor/</guid>
       <description>As we all know that graphic editor is one of the common app for demand of editing the images wheather they are digital photographs, traditional photo-chemical photographs, or illustrations. So, Here is the document that describes and provides more info and app for using.
 Please, make sure you have already updated your system with this command &amp;ldquo;pi -Syu&amp;rdquo;.
-  Darktable I let you store all the precious digital negatives in a database that you can, later on, develop raw images.</description>
+  Chart list of Graphic Editors:
+   Graphic Editor Names Installing Commands     Darktable pi -S darktable    Digikam pi -S digikam    GIMP pi -S gimp   Inkscape pi -S inkscape    Krita pi -S krita    Pinta pi -S pinta    Photoshop pix -i adope-photoshop-cc    RawTherapee pi -S rawtherapee      Darktable I let you store all the precious digital negatives in a database that you can, later on, develop raw images.</description>
     </item>
     
     <item>

@@ -16,6 +16,18 @@ If you have questions about the anything, you can check it [here](#) for the ans
 {{< /notice >}}
 
 ----
+In this chart list below is all the Name with commands installation of Docs(Worksheets):
+
+| Document Applicantion Names | Installing Commands| 
+|:-------------|:-------------|
+| **Libre Office**|      `pi -S libreoffice-fresh`|
+| **Master PDF Editor 4**|      `pi -S masterpdfeditor-free`|
+| **Master PDF Editor 5**|      `pi -S masterpdfeditor`|
+| **Okular**|      `pi -S okular`|
+| **Simplenote**|      `pi -S simplenote-electron-bin`|
+| **WPS Office**|      `pi -S wps-office`|
+
+----
 
 # Libre Office
 **Libra Office** is the free power-packed Open-Source personal productivity suite for Windows, Macintosh,KOOMPI OS, and any other Linuxs, that gives you six feature-rich applications for all your document production and data processing needs: Writer, Calc, Impress, Draw, Math and Base.
@@ -50,7 +62,7 @@ Applications features include full PDF files support, import/export of PDF pages
 
 Each control element can have event handlers assigned for predefined user actions, such as click, scroll, or selection. Your work will become even simpler than ever before with powerful comment tools like Sticky Note and Stamp.s
 
-# How to install Master PDF Editor
+## How to install Master PDF Editor
 There are two types of Master PDF Editor, One is **Master PDF 5** which can be install by using this command:
 ```
 pi -S masterpdfeditor

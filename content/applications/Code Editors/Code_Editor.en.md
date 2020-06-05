@@ -13,11 +13,15 @@ According to the language used to code, the code editors highlight special keywo
 ---
 This document providesa completed details of the list of available coding apps that could be install in KOOMPI OS.
 
-This chart shows the result of which code editors that user usually use:
+This chart shows the result of which code editors tcommands:
 
-| Code Editor Name  |  Percent (%) | 
+| Code Editor Names  |  Installing Commands | 
 |:-------------|:-------------|
-|  |      |
+| **Android Studio** | `pi -S android-stud`     |
+|**Atom**  |  `pi -S atom`    |
+|**TeXmaker**  | `pi -S texmak`     |
+|**Mousepad**  |   `pi -S mousepad`   |
+|**Visual Studio Code**  |  `pi -S code --classic`    |
 
 
 ---
@@ -84,7 +88,7 @@ If you want to install it, you can use this command **pi -Rdd texmak**.
 
 ---
 
-## Mousepad
+# Mousepad
 
 Nothing can beat command-line text editors like – nano, vim ,etc. In terms of being lightweight, but if you want a graphical interface, here it is — The **Mousepad** is a minimal text editor. 
 

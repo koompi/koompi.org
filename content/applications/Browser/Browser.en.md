@@ -15,17 +15,17 @@ In this document, We will show you the details about some browsers and how to in
 
 Before continuing with this document, make sure you know how to use [**terminal or konsole, first**](#)
 
-In this chart list below is all the browser apps that KOOMPI OS is supported:
+In this chart list below is all the browser apps that KOOMPI OS is supported and with commands installation:
 
-| Application Name  |  Guidance| 
+| Browser Names  | Installing Commands| 
 |:-------------|:-------------|
-| [Brave]() |       Yes|
-| [Chromium]() |       Yes|
-| [Firefox]() |       Yes|
-| [Google Chrome]() |       Yes|
-| [Midori]() |       No|
-| [Opera]() |       Yes|
-| [Thunderbird]() |      No|
+| **Brave**|      `pi -S brave-bin`|
+| **Chromium** |      `pi -S chromium`|
+| **Firefox** |       `pi -S firefox`|
+| **Google Chrome** |       `pi -S google-chrome`|
+| **Midori**|       `pi -S midori`|
+| **Opera** |      `pi -S opera`|
+| **Thunderbird** |   `pi -S thunderbird` |
 
 ---
 

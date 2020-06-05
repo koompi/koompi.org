@@ -14,6 +14,18 @@ Beside, Our team makes sure to do everything they can to produce more. If you ha
 
 ---
 
+| Music App Names |  Installing Commands | 
+|:-------------|:-------------|
+| **Audacity** | `pi -S audacity `     |
+| **Babe** | `pi -S babe `     |
+| **Deepin Music** | `pi -S deepin-music`     |
+| **Picard** | `pi -S picard-git`     |
+| **Spotify** | `pi -S spotify`     |
+| **Elisa** | `pi -S elisa`     |
+
+
+---
+
 # Audacity
 [Audacity](https://www.audacityteam.org/) is more of an audio editor than an audio player. You can 
 record and edit audio with this free and open source tool. It is also available for Linux, Windows and macOS. 

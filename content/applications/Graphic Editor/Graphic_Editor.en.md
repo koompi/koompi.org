@@ -13,6 +13,20 @@ Please, make sure you have already updated your system with this command "**pi -
 {{< /notice >}}
 
 ---
+Chart list of Graphic Editors:
+
+| Graphic Editor Names  |  Installing Commands | 
+|:-------------|:-------------|
+| **Darktable** | `pi -S darktable `     |
+| **Digikam** | `pi -S digikam `     |
+| **GIMP** | `pi -S gimp`     |
+| **Inkscape** | `pi -S inkscape `     |
+| **Krita** | `pi -S krita `     |
+| **Pinta** | `pi -S pinta `     |
+| **Photoshop** | `pix -i adope-photoshop-cc `     |
+| **RawTherapee** | `pi -S rawtherapee `     |
+
+---
 
 # Darktable
 

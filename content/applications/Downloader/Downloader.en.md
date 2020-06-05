@@ -18,6 +18,15 @@ Before you install any apps, make sure your system have been updated.If you have
 {{< /notice >}}
 
 ---
+Command installation and Name of the Download managers have been written in the following chart list.
+
+| Downloader App Names  |  Installing Commands | 
+|:-------------|:-------------|
+| **UGet** | `pi -S uget `     |
+| **Clipgrab** | `pi -S clipgrab `     |
+
+
+---
 
 # UGet
 

@@ -12,6 +12,16 @@ Converter is the app that helps the user for converting text file formats, docum
 In this article, we are going to introduce you guys the converting applications that mostly use in the KOOMPI OS.
 
 ----
+Chart list below is providing the Name and commands:
+
+| Converter Names  |  Installing Commands | 
+|:-------------|:-------------|
+| **Audio Convert** | `pi -S audio-convert `     |
+| **HandBrake** | `pi -S handbrake `     |
+| **SoundConverter** | `pi -S soundconverter `     |
+| **Soundkonverter** | `pi -S soundkonverter `     |
+
+----
 
 # Audio Convert
 **Audio Convert** is a script that converts between WAV, Ogg, MP3, MPC, FLAC, APE, AAC, and WMA files. It has an easy-to-use interface that makes it possible to fill in the tags for a few formats, copy the tags from input files into the new files, and choose the quality of compression.
@@ -72,5 +82,4 @@ It is easy to install, run this command below:
 pi -S soundkonverter
 ```
 
-![29024-1.png](/29024-1.png)
 ---
