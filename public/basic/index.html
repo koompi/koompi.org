@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Basic Linux Commands</title>
 
-  <meta name="generator" content="Hugo 0.72.0" />
+  <meta name="generator" content="Hugo 0.71.1" />
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -71,9 +71,7 @@
       
       
       
-      
-      <img class="img-fluid" src="https://www.koompi.org/KOOOMPI" alt="KOOMPI OS">
-      
+      KOOMPI OS
       
     </a>
     <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
@@ -354,13 +352,13 @@
         <div class="p-lg-5 p-4 bg-white">
           <h2 class="mb-5">Basic Linux Commands</h2>
           
-          <div class="content"><p>In this section, it gives you the basic commands to keep your system up and running. Keep in mind that these commands can both install packages from the any open-source repository and  packages from the AUR.</p>
-<p>As KOOMPI OS is operating base on Arch Linux and Plasma.This means your system always receives the latest packages.</p>
+          <div class="content"><p>This section gives you the basic commands to keep your system up and running. Keep in mind that these commands can both install packages from any open-source repository and packages from the AUR.</p>
+<p>As KOOMPI OS is operating base on Arch Linux and Plasma. This means your system always receives the latest packages.</p>
 <hr>
 <h2 id="pi-or-pacman">Pi or Pacman</h2>
-<p>The <code>pi</code> that is <strong>Pacman&rsquo;s shortcut</strong> is one of our system&rsquo;s primary most efficient commands. It is a powerful tool at the center of the system, that allows you to maintain, expand and update the system.</p>
+<p>The <code>pi</code> that is <strong>Pacman&rsquo;s shortcut</strong> is one of our system&rsquo;s primary most efficient commands. It is a powerful tool at the center of the system, that allows you to maintain, expand, and update the system.</p>
 <p>Since you installed the operating system, <code>pi command</code> has always been installed, but We can also install <code>pacman or pi packages</code> on the system with <code>pix</code>. Here is the command:</p>
-<pre><code> pix i pi
+<pre><code> pix I pi
 </code></pre>
 
 <div class="notices info" ><p>If you don&rsquo;t know how to install pix, <a href="#">Click here</a>.</p></div>
@@ -395,7 +393,7 @@
 <pre><code> pi -Sg &lt;Package group name&gt;
 </code></pre><hr>
 <h2 id="removing-packages">Removing Packages</h2>
-<p>A package is always installed with other packages that it <em>depends on</em>, <code>called dependencies</code>. Quite often those dependencies are already, or partially installed on your system, because other <strong>packages also depend on it</strong>.</p>
+<p>A package is always installed with other packages that it <em>depends on</em>, <code>called dependencies</code>. Quite often those dependencies are already, or partially installed on your system because other <strong>packages also depend on it</strong>.</p>
 <p>If you just want to remove the package, the command following will be enough</p>
 <pre><code> pi -R &lt;Package name&gt;
 </code></pre><p>If you rather want to avoid a <code>cluttered system</code> you can remove a package and its dependencies, without removing dependencies that are used by other installed packages, use the following command.</p>
@@ -419,7 +417,7 @@
 
 <pre><code> pi -S --noconfirm &lt;Package name&gt;
 </code></pre><h2 id="refreshing-mirrors">Refreshing mirrors</h2>
-<p>Sometimes it can happen that your system can’t find the updates or packages.In that case, there’s a problem with the mirrors you’re trying to connect to. You can simply refresh the mirrors with this command.</p>
+<p>Sometimes it can happen that your system can’t find the updates or packages. In that case, there’s a problem with the mirrors you’re trying to connect to. You can simply refresh the mirrors with this command.</p>
 <pre><code> pi -Syyu
 </code></pre><hr>
 </div>
