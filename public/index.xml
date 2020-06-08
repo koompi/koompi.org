@@ -13,19 +13,6 @@
     
     
     <item>
-      <title>Basic</title>
-      <link>https://www.koompi.org/basic/flies-and-folders/flie-folder/</link>
-      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
-      
-      <guid>https://www.koompi.org/basic/flies-and-folders/flie-folder/</guid>
-      <description>This document is a guide for information related to Files and Folders. All the Command lines will be provided here with the explaination plus the example.
-For more details instruction, see the KOOMPI OS website articles or the various program section, both linked from this guide.
-  Pwd Command To show the directory you are currently in:
- [koompi@koompi-pc ~]$ pwd Output :
- /home/koompi   Ls Command Use &amp;ldquo;ls&amp;rdquo; for showing all the files in your directory:</description>
-    </item>
-    
-    <item>
       <title>Browser Apps</title>
       <link>https://www.koompi.org/applications/browser/browser/</link>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
@@ -93,6 +80,17 @@ You can categorize each file as you download it, and then access all downloads r
     </item>
     
     <item>
+      <title>Files/Folders</title>
+      <link>https://www.koompi.org/basic/flies-and-folders/flie-folder/</link>
+      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
+      
+      <guid>https://www.koompi.org/basic/flies-and-folders/flie-folder/</guid>
+      <description>This document is a guide for information related to Files and Folders. All the Command lines will be provided here with the explanation plus the example.
+For more details of the instruction, see KOOMPI OS website articles or the various program section, both linked from this guide.
+  Create File Knowing how to create a new file is an important skill for anyone using open-source regularly. You can create a new file either from the command line or from the desktop file manager.</description>
+    </item>
+    
+    <item>
       <title>GitHub</title>
       <link>https://www.koompi.org/basic/github/git_command/</link>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
@@ -111,7 +109,7 @@ pi -S git  Make sure you have already run command pi -Syu to update your system.
       
       <guid>https://www.koompi.org/applications/graphic-editor/graphic_editor/</guid>
       <description>As we all know that graphic editor is one of the common apps for the demand of editing the images whether they are digital photographs, traditional photo-chemical photographs, or illustrations. So, Here is the document that describes and provides more info and an app for using.
-Please, make sure you have already updated your system with this command &amp;ldquo;pi -Syu&amp;quot;.
+Please, make sure you have already updated your system with this command &amp;ldquo;pi -Syu&amp;rdquo;.
   Chart list of Graphic Editors:
    Graphic Editor Names Installing Commands     Darktable pi -S darktable    Digikam pi -S digikam    GIMP pi -S gimp   Inkscape pi -S inkscape    Krita pi -S krita    Pinta pi -S pinta    Photoshop pix -i adope-photoshop-cc    RawTherapee pi -S rawtherapee      Darktable I let you store all the precious digital negatives in a database that you can, later on, develop raw images.</description>
     </item>
@@ -122,11 +120,10 @@ Please, make sure you have already updated your system with this command &amp;ld
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
       <guid>https://www.koompi.org/basic/intermediate-command/intermediate/</guid>
-      <description>Installing Packages Follow the following command to install a signal package including the dependencies:
-pi -S &amp;lt;Package name&amp;gt; or pi -i &amp;lt;Package name&amp;gt; For the list of packages installation:
-pi -S &amp;lt;Package name1 Package name2 ...&amp;gt; Installing Package Group Some packages belong to a group of packages that simultaneously call installation. As in here, for instance:
-pi -S &amp;lt;Package group name&amp;gt; To see what inside the package group, run:
-pi -Sg &amp;lt;Package group name&amp;gt; Removing Packages If you just want to remove the package, the command following will be enough:</description>
+      <description>Note: All operations have required a password. Then if you aren’t satisfied with the build tool and configuration choices, you can eject at any time. This command will remove the single build dependency from your operation. {.is-info}
+  Tips: Here Special usage to automate the install procedure (Recommend): {.is-success}
+ yes | pi -S &amp;lt;Package name&amp;gt;  Tips: Install packages with no confirm {.is-success}
+  pi -S --noconfirm &amp;lt;Package name&amp;gt; Listing Packages You may want to get the list of installed packages with their version, which is useful while reporting bugs or discussing installed packages.</description>
     </item>
     
     <item>

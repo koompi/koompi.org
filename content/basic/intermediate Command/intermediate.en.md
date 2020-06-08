@@ -2,7 +2,7 @@
 title: "Intermediate"
 date: 2018-12-29T11:02:05+06:00
 lastmod: 2020-01-05T10:42:26+06:00
-draft: false
+draft: true
 # search related keywords
 keywords: ["induct", "instate"]
 ---
@@ -11,44 +11,7 @@ keywords: ["induct", "instate"]
 
 
 
-# Installing Packages
-Follow the following command to install a signal package including the dependencies:
-```shell
-     pi -S <Package name> or pi -i <Package name>
-```
-For the list of packages installation:
-```shell
-     pi -S <Package name1 Package name2 ...>
-```
-# Installing Package Group
-Some packages belong to a **group of packages** that simultaneously call installation. As in here, for instance:
 
-
-```shell
-    pi -S <Package group name>
-```
-To see what inside the package group, run:
-```shell
-     pi -Sg <Package group name>
-```
-# Removing Packages
-If you just want to remove the package, the command following will be enough:
-```    
-     pi -R <Package name>
-```
-To remove the package and those of its dependencies that aren’t needed by any other application, do:
-```
-     pi -Rs <Package name>
-```
-To remove a package, its dependencies and all the packages that depend on the target package:
-```
-     pi -Rsc <Package name>
-```
- For deleting a package that other packages need without deleting their dependency package:
-
-```
-     pi -Rdd <Package name>
-```
 > **Note:** All operations have required a password. Then if you aren’t satisfied with the build tool and configuration choices, you can eject at any time. This command will remove the single build dependency from your operation.
 {.is-info}
 

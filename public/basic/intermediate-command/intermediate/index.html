@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Intermediate</title>
 
-  <meta name="generator" content="Hugo 0.71.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -172,10 +172,10 @@
 
 
 
-<li data-nav-id="https://www.koompi.org/basic/flies-and-folders/flie-folder/" title="Basic" class="sidelist
+<li data-nav-id="https://www.koompi.org/basic/flies-and-folders/flie-folder/" title="Files/Folders" class="sidelist
   ">
   <a href="https://www.koompi.org/basic/flies-and-folders/flie-folder/">
-    Basic
+    Files/Folders
   </a>
   
   
@@ -340,26 +340,7 @@
         <div class="p-lg-5 p-4 bg-white">
           <h2 class="mb-5">Intermediate</h2>
           
-          <div class="content"><h1 id="installing-packages">Installing Packages</h1>
-<p>Follow the following command to install a signal package including the dependencies:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">     pi -S &lt;Package name&gt; or pi -i &lt;Package name&gt;
-</code></pre></div><p>For the list of packages installation:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">     pi -S &lt;Package name1 Package name2 ...&gt;
-</code></pre></div><h1 id="installing-package-group">Installing Package Group</h1>
-<p>Some packages belong to a <strong>group of packages</strong> that simultaneously call installation. As in here, for instance:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">    pi -S &lt;Package group name&gt;
-</code></pre></div><p>To see what inside the package group, run:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">     pi -Sg &lt;Package group name&gt;
-</code></pre></div><h1 id="removing-packages">Removing Packages</h1>
-<p>If you just want to remove the package, the command following will be enough:</p>
-<pre><code>     pi -R &lt;Package name&gt;
-</code></pre><p>To remove the package and those of its dependencies that aren’t needed by any other application, do:</p>
-<pre><code>     pi -Rs &lt;Package name&gt;
-</code></pre><p>To remove a package, its dependencies and all the packages that depend on the target package:</p>
-<pre><code>     pi -Rsc &lt;Package name&gt;
-</code></pre><p>For deleting a package that other packages need without deleting their dependency package:</p>
-<pre><code>     pi -Rdd &lt;Package name&gt;
-</code></pre><blockquote>
+          <div class="content"><blockquote>
 <p><strong>Note:</strong> All operations have required a password. Then if you aren’t satisfied with the build tool and configuration choices, you can eject at any time. This command will remove the single build dependency from your operation.
 {.is-info}</p>
 </blockquote>

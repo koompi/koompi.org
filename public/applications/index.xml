@@ -74,7 +74,7 @@ You can categorize each file as you download it, and then access all downloads r
       
       <guid>https://www.koompi.org/applications/graphic-editor/graphic_editor/</guid>
       <description>As we all know that graphic editor is one of the common apps for the demand of editing the images whether they are digital photographs, traditional photo-chemical photographs, or illustrations. So, Here is the document that describes and provides more info and an app for using.
-Please, make sure you have already updated your system with this command &amp;ldquo;pi -Syu&amp;quot;.
+Please, make sure you have already updated your system with this command &amp;ldquo;pi -Syu&amp;rdquo;.
   Chart list of Graphic Editors:
    Graphic Editor Names Installing Commands     Darktable pi -S darktable    Digikam pi -S digikam    GIMP pi -S gimp   Inkscape pi -S inkscape    Krita pi -S krita    Pinta pi -S pinta    Photoshop pix -i adope-photoshop-cc    RawTherapee pi -S rawtherapee      Darktable I let you store all the precious digital negatives in a database that you can, later on, develop raw images.</description>
     </item>

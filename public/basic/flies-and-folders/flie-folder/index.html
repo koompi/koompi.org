@@ -2,9 +2,9 @@
 <html lang="en-us">
   <head>
   <meta charset="utf-8">
-  <title>Basic</title>
+  <title>Files/Folders</title>
 
-  <meta name="generator" content="Hugo 0.71.1" />
+  <meta name="generator" content="Hugo 0.72.0" />
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -172,10 +172,10 @@
 
 
 
-<li data-nav-id="https://www.koompi.org/basic/flies-and-folders/flie-folder/" title="Basic" class="sidelist
+<li data-nav-id="https://www.koompi.org/basic/flies-and-folders/flie-folder/" title="Files/Folders" class="sidelist
   active">
   <a href="https://www.koompi.org/basic/flies-and-folders/flie-folder/">
-    Basic
+    Files/Folders
   </a>
   
   
@@ -338,138 +338,178 @@
       </div>
       <div class="col-lg-9">
         <div class="p-lg-5 p-4 bg-white">
-          <h2 class="mb-5">Basic</h2>
+          <h2 class="mb-5">Files/Folders</h2>
           
-          <div class="content"><p>This document is a guide for information related to <strong>Files and Folders</strong>. All the Command lines will be provided here with the explaination plus the example.</p>
-<p>For more details instruction, see the <a href="www.koompi.org">KOOMPI OS website</a> articles or the various <a href="www.koompi.org/applications/">program section</a>, both linked from this guide.</p>
+          <div class="content"><p>This document is a guide for information related to <strong>Files and Folders</strong>. All the Command lines will be provided here with the explanation plus the example.</p>
+<p>For more details of the instruction, see <a href="www.koompi.org">KOOMPI OS website</a> articles or the various <a href="www.koompi.org/applications/">program section</a>, both linked from this guide.</p>
 <hr>
 <hr>
-<h3 id="pwd-command">Pwd Command</h3>
-<p>To show the directory you are currently in:</p>
-<pre><code> [koompi@koompi-pc ~]$ pwd
-</code></pre><p><strong>Output :</strong></p>
-<pre><code> /home/koompi
-</code></pre><hr>
-<hr>
-<h3 id="ls-command">Ls Command</h3>
-<p>Use &ldquo;ls&rdquo; for showing all the files in your directory:</p>
-<pre><code> [koompi@koompi-pc ~]$ ls
-</code></pre><p>Output :</p>
-<pre><code>Desktop         Save            dconf           
-Documents       Videos          Downloads code 
-Musics          example.desktop mkrepo 
-</code></pre><p>Use &ldquo;ls -a&rdquo; to list down even the hidden files:</p>
-<pre><code> [koompi@koompi-pc ~]$ ls -a
-</code></pre><p><strong>Output :</strong></p>
-<pre><code> .              ..          .mozilla    .viminfo
- .vscode-oss    Save        dconf       mkrepo 
- Desktop        Videos      Documents   Downloads 
- Musics         example.desktop code
-</code></pre><hr>
-<hr>
-<h3 id="cd-command">Cd Command</h3>
-<p>&quot; cd &quot; ― Use this command for go into other directory.If you are in /home/koompi you want go into
-<em>Documents</em>:</p>
-<pre><code> [koompi@koompi-pc ~]$ pwd
- /home/koompi
- [koompi@koompi-pc ~]$ cd Documents/
-</code></pre><p>Output :</p>
-<pre><code> [koompi@koompi-pc Documents]$
-</code></pre><h3 id="touch-command">Touch Command</h3>
-<p>To create file &quot; touch &ldquo;:</p>
-<pre><code>touch &lt;file name with extension &gt;
-</code></pre><p><strong>For example :</strong></p>
-<pre><code>touch Name.txt
-</code></pre><hr>
-<hr>
-<h3 id="mkdir-command">Mkdir Command</h3>
-<p>To create a directory, you must use:</p>
-<pre><code>mkdir &lt;name of directory you want to put&gt;
-</code></pre><p>For removing the directory, you can use:</p>
-<pre><code>rmdir &lt;name of directory you want to delete&gt;
+<h2 id="create-file">Create File</h2>
+<p>Knowing how to create a new file is an <strong>important skill</strong> for anyone using open-source regularly. You can create a new file either from the <code>command line</code> or from the <code>desktop file manager</code>.</p>
+<p>The <code>touch</code> command allows us to update the t<strong>imestamps on existing files and directories</strong> as well as creating, empty files. The only easiest and most memorable way to create new, empty files is by using the <code>touch command</code>.</p>
+<p>To create a new file simply run the touch command followed by the name of file you want to create:</p>
+<pre><code> touch Files_Name.txt
+</code></pre><p>You can also create multiple files at once by specify the file names separated by space.</p>
+<pre><code> touch File_Name1.txt File_Name2.txt File_Name3.txt
 </code></pre>
 
-<div class="notices note" ><p>This command only working when your directory is empty.</p></div>
+<div class="notices info" ><p><code>.txt</code> stand for the text file. You can also use other extension for kind of files you want to use.</p></div>
 
-<hr>
-<hr>
-<h3 id="rm-command">Rm Command</h3>
-<p>To delete directory or files, &ldquo;rm&rdquo; it is:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">rm &lt;file&#39;s name or directory&#39;s name&gt;
-</code></pre></div>
+<p>Besides <code>Touch</code>, <code>echo</code> can also use to create file too. The <code>echo</code> command prints the <strong>strings</strong> that are passed as arguments to the standard output, which can be <em>redirected</em> to a file.</p>
+<pre><code> echo &quot;some line&quot; &gt;&gt; File_Name.txt
+</code></pre><p>For Example:</p>
+<pre><code> echo $null &gt;&gt; sample.txt
+</code></pre>
 
-<div class="notices tip" ><p>we are Strongly not Recommended it.</p></div>
+<div class="notices note" ><p><code>$null</code> here is standing for no. It means there will be no arguments redirected into the file.</p></div>
 
-<p>
+<h2 id="deleting-file">Deleting File</h2>
+<p>Deleting File is one of the frequently done operation. Run <code>rm</code> command with the name of the file you want to remove:</p>
+<pre><code> rm File_Name
+</code></pre><p>Here is an example</p>
+<pre><code> rm sample.txt 
+</code></pre><h2 id="display-file-content">Display File Content</h2>
+<p>Cat(concatenate) command is very frequently used in open-source. It reads data from the file and gives their content as output. It helps us to create, view, concatenate files. So let us see some frequently used cat commands.</p>
+<pre><code> cat File_Name
+</code></pre><h2 id="edit-text-file">Edit Text File</h2>
+<p>There are many ways to edit files through command line such as vi, emacs, pico, ed, and nano. Among those only Nano is regularly using.</p>
+<pre><code> nano File_Name
+</code></pre>
 
-<div class="notices warning" ><p>Not only empty directory or file, but also everything!!!</p></div>
+<div class="notices note" ><p>Sometimes, we need to add <code>sudo</code>; which stand for <strong>superuser do</strong>, in front of it to edit.</p></div>
 
-If you cant&rsquo;t delete, you can use command below to force remove:</p>
-<pre><code>rm -rf &lt;directory or files's name&gt;
-</code></pre><p>Need some helps with commands, this would be useful:</p>
-<pre><code>man cd or $ cd --help
+<pre><code> sudo nano File_Name
+</code></pre><h2 id="copy-file-or-folder">Copy File or Folder</h2>
+<p>A basic example of the cp command to copy files (keep the original file and make a duplicate of it) might look like:</p>
+<pre><code> cp File_Name NewFile_Name
+</code></pre><h3 id="options">Options</h3>
+<p><code>-i</code>  for interactive, asks you to confirm if an existing file (perhaps a version of joe_expenses already exists in the cashflow directory) should be over written in the copying process.</p>
+<p><code>-r</code> for recursive, to copy all the subdirectories and files in a given directory and preserve the tree structure.</p>
+<p><code>-v</code> for verbose, shows files being copied one by one.</p>
+<h2 id="moverename-file-or-folder">Move/Rename file or folder</h2>
+<p>For instance, to instantly seek out and move all of the files. Your command line instruction would simply be:</p>
+<pre><code> mv File_Name NewFile_Name
+</code></pre><h2 id="create-folder">Create Folder</h2>
+<p>we can create directories from command line using the command <code>mkdir</code>. Syntax of this command is explained below.</p>
+<pre><code> mkdir Folder_Name
+</code></pre><p>For example, to create a folder named ‘newfolder‘ the command is:</p>
+<pre><code> mkdir NewFolder
+</code></pre><h2 id="remove-folder">Remove Folder</h2>
+<p>Removing folder is like removing file, too but it has alittle bit different. You have to add <code>-r</code> after <code>rm command</code>.</p>
+<pre><code> rm -r Folder_Name
+</code></pre><h2 id="list-folder-contents">List Folder Contents</h2>
+<p>Listing Command (ls) allows us to see all the contents in the direcctory we are in.</p>
+<pre><code> ls
+</code></pre><h3 id="options-1">Options</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Options</th>
+<th align="left">Descriptions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>ls -a</strong></td>
+<td align="left"><code>list all files including hidden file starting with '.'</code></td>
+</tr>
+<tr>
+<td align="left"><strong>ls &ndash;color</strong></td>
+<td align="left"><code>colored list [=always/never/auto]</code></td>
+</tr>
+<tr>
+<td align="left"><strong>ls -d</strong></td>
+<td align="left"><code>list directories - with ' */'</code></td>
+</tr>
+<tr>
+<td align="left"><strong>ls -F</strong></td>
+<td align="left"><code>add one char of */=&gt;@| to enteries</code></td>
+</tr>
+<tr>
+<td align="left"><strong>ls -i</strong></td>
+<td align="left"><code>list file's inode index number</code></td>
+</tr>
+<tr>
+<td align="left"><strong>ls -l</strong></td>
+<td align="left"><code>list with long format - show permissions</code></td>
+</tr>
+<tr>
+<td align="left"><strong>ls -la</strong></td>
+<td align="left"><code>list long format including hidden files</code></td>
+</tr>
+<tr>
+<td align="left"><strong>ls -lh</strong></td>
+<td align="left"><code>list long format with readable file size</code></td>
+</tr>
+<tr>
+<td align="left"><strong>ls -ls</strong></td>
+<td align="left"><code>list with long format with file size</code></td>
+</tr>
+<tr>
+<td align="left"><strong>ls -r</strong></td>
+<td align="left"><code>list in reverse order</code></td>
+</tr>
+<tr>
+<td align="left"><strong>ls -R</strong></td>
+<td align="left"><code>list recursively directory tree</code></td>
+</tr>
+</tbody>
+</table>
+<p>For more info use <code>--help</code> after the command like this `ls &ndash;help``.</p>
+<h2 id="change-folder-or-directory">Change Folder or Directory</h2>
+<p><code>cd</code> is the command for changing the folder/directory of the command line. Here its syntax:</p>
+<pre><code> cd Folder_Name
+</code></pre><p>Changing to home directory (determined by $HOME environment variable):</p>
+<pre><code> cd
+</code></pre><p>Also change to home directory:</p>
+<pre><code> cd .
+</code></pre><p>Change to parent directory:</p>
+<pre><code> cd ..
+</code></pre><p>Change to subdirectory Documents:</p>
+<pre><code> cd Documents
+</code></pre><p>Change to directory with absolute path</p>
+<pre><code> cd path1/path2/path3
+</code></pre><p>Change to directory name with white space -<em>path Name</em></p>
+<pre><code> cd path\ Name 
+</code></pre>
+
+<div class="notices tip" ><p><code>\</code> here is stand for white space !!!</p></div>
+
+<h2 id="show-current-folder">Show Current Folder</h2>
+<p>To show the directory you are currently in:</p>
+<pre><code> pwd
+</code></pre><p><strong>Output :</strong></p>
+<pre><code> /home/koompi
+</code></pre><h2 id="create-pysical-link-to-file-or-folder">Create Pysical Link to File or Folder</h2>
+<p>To make links between files you need to use <code>ln</code> command. A symbolic link (also known as a soft link or symlink) consists of a special type of file that serves as a reference to another file or directory.</p>
+<pre><code>ln [FileName] [LinkName]
+</code></pre><h2 id="find-phrase-within-file">Find Phrase Within File</h2>
+<p>The grep command is used to search text. It searches the given file for lines containing a match to the given strings or words. It is one of the most useful commands.</p>
+<p>Below is some standard grep command explained with examples to get you started with grep. Search any line that contains the word in filename.</p>
+<pre><code> grep 'Strings' FileName
+</code></pre><p>Perform a case-insensitive search for the word:</p>
+<pre><code> grep -i 'Strings' FileName
+</code></pre><p>Looking for all files in the current directory and in all of its subdirectories.</p>
+<pre><code> grep -R 'Strings'
+</code></pre><p>Searching and displaying the total number of times that the string appear in FileName.</p>
+<pre><code> grep -c 'Strings' FileName
+</code></pre><p>Seaching by paths:</p>
+<pre><code> grep 'Strings' path/path/path
+</code></pre><!-- ## Get Filesystem of Partition
+
+```
+file -sL [partition]
+``` -->
+<h2 id="mount-filesystem">Mount Filesystem</h2>
+<p>You can mount filesystem with the syntax below:</p>
+<pre><code> mount /dev/[device] [path]
+</code></pre><h2 id="unmount-filesystem">Unmount Filesystem</h2>
+<p>You can also unmount filesystem with command below.</p>
+<pre><code> unmount [path]
+</code></pre><h2 id="make-file-executable">Make File Executable</h2>
+<p>Change the rights to a file so that it can run as a program.</p>
+<pre><code> chmod +x filename
 </code></pre><hr>
-<hr>
-<h3 id="cd-command-1">Cd Command</h3>
-<p>(&rdquo; cd &ldquo;) is the command you might need to know more infomation.
-Output :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">cd: cd <span style="color:#f92672">[</span>-L|<span style="color:#f92672">[</span>-P <span style="color:#f92672">[</span>-e<span style="color:#f92672">]]</span> <span style="color:#f92672">[</span>-@<span style="color:#f92672">]]</span> <span style="color:#f92672">[</span>dir<span style="color:#f92672">]</span>
-</code></pre></div><p>Change shell working directory.
-Change the current directory to DIR. The default DIR is the value
-OME shell variable.</p>
-<p>The variable CDPATH defines the search path for the directory conta
-DIR. Alternative directory names in CDPATH are separated by a colo
-A null directory name is the same as the current directory. If DIR
-with a slash (/), then CDPATH is not used.</p>
-<p>If the directory is not found, and the shell option `cdable_vars&rsquo; i
-the word is assumed to be a variable name. If that variable has a
-its value is used for DIR.</p>
-<p><strong>Options:</strong></p>
-<ul>
-<li><code>L</code> force symbolic links to be followed: resolve symbolic
-links in DIR after processing instances of `..&rsquo;</li>
-<li><code>P</code> use the physical directory structure without following
-symbolic links: resolve symbolic links in DIR before
-processing instances of `..&rsquo;</li>
-<li><code>e</code> if the -P option is supplied, and the current working
-directory cannot be determined successfully, exit with
-a non-zero status</li>
-<li><code>@</code> on systems that support it, present a file with extende
-attributes as a directory containing the file attribute</li>
-</ul>
-<p>The default is to follow symbolic links, as if <code>-L' were specified.</code>..&rsquo; is processed by removing the immediately previous pathname com
-back to a slash or the beginning of DIR.</p>
-<p><strong>Exit Status:</strong></p>
-<p>Returning <code>0</code> if the directory is changed, and if $PWD is set successful:</p>
-<pre><code> -P is used; non-zero otherwise.
-</code></pre><hr>
-<hr>
-<h3 id="cp-command">Cp Command</h3>
-<p>&ldquo;Cp&rdquo;, You know, you can also copy file through command. It takes only two arguments: The first is the location of the file to be copied, the second is where to copy.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#f92672">[</span>koompi@koompi-pc ~<span style="color:#f92672">]</span>$ ls
-Desktop            Save                    dconf               mkrepo
-Documents          Videos                  Downloads code
-Musics             example.desktop         New.txt
-<span style="color:#f92672">[</span>koompi@koompi-pc ~<span style="color:#f92672">]</span>$ cp New.txt /Documents
-</code></pre></div><p>Let&rsquo;s check in <em>Documents</em> directory:</p>
-<pre><code>[koompi@koompi-pc ~]$ ls Documents/
-New.txt
-</code></pre><hr>
-<hr>
-<h3 id="mv-command">Mv Command</h3>
-<p>&ldquo;mv&rdquo; ― You know, you can also move file through command. It takes only two arguments like <code>cp</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#f92672">[</span>koompi@koompi-pc ~<span style="color:#f92672">]</span>$ ls
-Desktop    Save    dconf       mkrepo 
-Documents  Videos  Downloads   code 
-Musics     example.desktop     New.txt
-<span style="color:#f92672">[</span>koompi@koompi-pc ~<span style="color:#f92672">]</span>$ mv New.txt /Documents
-</code></pre></div><p>Here in <strong>Documents</strong> directory:</p>
-<pre><code>[koompi@koompi-pc ~]$ ls Documents/
-New.txt
-</code></pre><p>If you want to search for the locateion of the file, you can use <strong>locate</strong>:</p>
-<pre><code>locate &lt;file_name&gt;
-</code></pre><hr>
-<hr>
 <hr>
 </div>
           
