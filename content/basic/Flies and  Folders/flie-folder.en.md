@@ -212,6 +212,16 @@ Change the rights to a file so that it can run as a program.
 ```
  chmod +x filename
 ```
+## List Trash Files
+As you have already known what is `ls`  command, you should know path of trash file.
+```
+ ls -l files ~/.local/share/Trash/files
+```
+## Empty Trash
+Above are the paths of trash file, we can empty it with `rm -r` command:
+```
+ rm -r ~/.locale/share/Trash
+```
 
 ---
 ---
