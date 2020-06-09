@@ -1,6 +1,6 @@
 # [koompi.org](https://koompi.org)
 
-# **Installation**
+### **Installation**
 
 * Requirement
 
