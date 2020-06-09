@@ -1,11 +1,12 @@
-# [koompi.org](https://koompi.org)
-
 | Develop | [![CircleCI](https://circleci.com/gh/koompi/koompi.org.svg?style=svg)](https://circleci.com/gh/koompi/koompi.org)  |
 |---------|-----------------------------------------------------------------------------------------------------------------------------|
 
-### **Installation**
+# [koompi.org](https://koompi.org)
 
-* Requirement
+
+## **INSTALLATION**
+
+* **Requirement**
 
     **hugo** package
 
@@ -13,7 +14,7 @@
     $ sudo pacman -Sy hugo
     ```
 
-* Set up this project
+* **Set up this project**
 
     Cloning the repository and preliminary steps
 
