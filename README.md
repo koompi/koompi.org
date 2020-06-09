@@ -1,7 +1,6 @@
 | Develop | [![CircleCI](https://circleci.com/gh/koompi/koompi.org.svg?style=svg)](https://circleci.com/gh/koompi/koompi.org)  |
 |---------|-----------------------------------------------------------------------------------------------------------------------------|
 
-# [koompi.org](https://koompi.org)
 
 
 ## **INSTALLATION**
@@ -24,4 +23,4 @@
     $ hugo server
     ```
 
-    Open this browser and run http://localhost:1313
+    Open browser and run http://localhost:1313
