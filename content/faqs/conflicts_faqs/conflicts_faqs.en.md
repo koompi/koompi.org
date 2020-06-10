@@ -20,6 +20,30 @@ sudo pacman -Syu --overwrite /usr/lib\*/p11-kit-trust.so
 ```
 {{</ faq >}}
 
+{{< faq " Invalid or corrupted packages !!!" >}}
+First, Run this other command for clearing cache and the database directory
+```
+pi -Scc
+```
+After that, run this comman to reinstalling the database and resync repo:
+```
+pi -Syyu
+```
+{{</ faq >}}
+
+{{< faq "Facing error with connecting libalpm !!!" >}}
+If you facing this probelm run commands below:
+**For libalpm:so.11:**
+```
+sudo ln -s /usr/lib/libalpm.so.10 /usr/lib/libalpm.so.11
+```
+**For libalpm:so.12:**
+```
+sudo ln -s /usr/lib/libalpm.so.12 /usr/lib/libalpm.so.11
+```
+After you finish with tthe command above, you may face other problem realated to `pi error while loading...`. You need to install pi back [click here](https://www.koompi.org/faqs/#how-to-install-pi-or-pacman)
+{{</ faq >}}
+
 {{< faq "Facing Xorgprotol issues !!" >}}
 As the Xorgprotol issues is not an easy problem. First, we need to remove it and upgrade the system
 ```

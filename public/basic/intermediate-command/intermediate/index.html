@@ -260,6 +260,28 @@
 
 
 
+<li data-nav-id="https://www.koompi.org/basic/search-and-find/searchfind/" title="Network Information" class="sidelist
+  ">
+  <a href="https://www.koompi.org/basic/search-and-find/searchfind/">
+    Network Information
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
 <li data-nav-id="https://www.koompi.org/basic/printing/printing/" title="Printing Information" class="sidelist
   ">
   <a href="https://www.koompi.org/basic/printing/printing/">
@@ -340,39 +362,7 @@
         <div class="p-lg-5 p-4 bg-white">
           <h2 class="mb-5">Intermediate</h2>
           
-          <div class="content"><blockquote>
-<p><strong>Note:</strong> All operations have required a password. Then if you aren’t satisfied with the build tool and configuration choices, you can eject at any time. This command will remove the single build dependency from your operation.
-{.is-info}</p>
-</blockquote>
-<blockquote>
-<p><strong>Tips:</strong> Here Special usage to automate the install procedure (Recommend):
-{.is-success}</p>
-</blockquote>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"> yes | pi -S &lt;Package name&gt; 
-</code></pre></div><blockquote>
-<p><strong>Tips:</strong> Install packages with no confirm
-{.is-success}</p>
-</blockquote>
-<pre><code> pi -S --noconfirm &lt;Package name&gt;
-</code></pre><h1 id="listing-packages">Listing Packages</h1>
-<p>You may want to get the list of installed packages with their version, which is useful while reporting bugs or discussing installed packages.</p>
-<ul>
-<li>List all explicitly installed packages: <code>pi -Qe</code>.
-List all packages in the <strong>package group</strong> named group: <code>pi -Sg group</code></li>
-<li>List all explicitly installed native packages (i.e. present in the sync database) that are not direct or optional dependencies: <code>pi -Qent</code>.</li>
-<li>List all foreign packages (typically manually downloaded and installed or packages removed from the repositories): <code>pi -Qm</code>.</li>
-<li>List all native packages (installed from the sync database(s)): <code>pi -Qn</code>.</li>
-<li>List packages by regex: <code>pi -Qs regex</code>.</li>
-<li>List packages by regex with custom output format: <code>expac -s &quot;%-30n %v&quot; regex</code> (needs <strong>expac</strong>).</li>
-</ul>
-<h3 id="listing-changed-backup-files">Listing Changed Backup Files</h3>
-<p>If you want to backup your system configuration files you could copy all files in <code>/etc/</code>, but usually, you are only interested in the files that you have changed. Modified <strong>backup files</strong> can be viewed with the following command:</p>
-<pre><code>     pi -Qii | awk '/^MODIFIED/ {print $ 2}'
-</code></pre><p>Running this command with root permissions will ensure that files readable only by root (such as /etc/sudoers) are included in the output.</p>
-<h3 id="listing-all-changed-files-from-packages">Listing All Changed Files From Packages</h3>
-<p>If you are suspecting file corruption (e.g. by software/hardware failure), but are unsure if files were corrupted, you might want to compare with the hash sums in the packages.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">     paccheck --md5sum --quiet
-</code></pre></div><h1 id="removing-unused-packages-orphans">Removing Unused Packages (orphans)</h1>
+          <div class="content"><h1 id="removing-unused-packages-orphans">Removing Unused Packages (orphans)</h1>
 <p>For recursively removing orphans and their configuration files:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">     pi -Rns $ <span style="color:#f92672">(</span>pi -Qtdq<span style="color:#f92672">)</span>
 </code></pre></div><p>If no orphans were found pacman outputs <code>error: no targets specified</code>. This is expected as no arguments were passed to <code>pi -Rns</code>.</p>
@@ -759,6 +749,22 @@ If you get an &ldquo;authentication error&rdquo; message, your root account is l
             
             
             
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
             
             
             

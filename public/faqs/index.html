@@ -220,14 +220,7 @@
         <div class="p-lg-5 p-4 bg-white">
           <h2 class="mb-5">FAQs</h2>
           
-          <div class="content"><p>On this content, it provides to all questions and answers that have been facing in common. We hope that it helps the situations you are in .</p>
-<h2 id="hahahugoshortcode-s0-hbhb">
-
-<div class="notices info" ><p>If there aren&rsquo;t any questions or answers you were looking for please contacts us. We are
-very happy about your request and participate in our community.</p></div>
-</h2>
-<hr>
-
+          <div class="content">
 
 <div class="card mb-4 rounded-0 shadow border-0">
   <div class="card-header rounded-0 bg-white border p-0 border-0">
@@ -339,7 +332,23 @@ very happy about your request and participate in our community.</p></div>
     </a>
   </div>
   <div id="how-to-install-koompi-os" class="collapse" data-parent="#accordion">
-    <div class="card-body font-secondary text-color"><!-- In order to install KOOMPI OS, you need to click the link below which is the source of the OS. And it will be download somewhere in your folder. Copy that source code and make it as booted drive. After that input your dive in to the pc you want to install while you were --></div>
+    <div class="card-body font-secondary text-color"><p>There are two main steps of installing it.</p>
+<p><strong>First Step (Create a bootable USB)</strong></p>
+<ul>
+<li>Get a USB minimum of 4GB.</li>
+<li>Install the Etcher.</li>
+<li>Download the OS source through this <a href="https://repo.koompi.org/iso/KOOMPI-OS-2020.04.26-x86_64.iso">link</a>.</li>
+<li>Move those source into the USB and start making it a bootable drive.
+<strong>Second Step (Setup OS into the PC)</strong></li>
+<li>Plug the USB  to your PC.</li>
+<li>Open the PC and Move into the BIOS Boot(When you opened press key <code>Esc</code>.).</li>
+<li>Go to Booting Menu.</li>
+<li>After that Select the USB.</li>
+<li>After that your will run some process and when it finished, your screen is going to show Desktop.</li>
+<li>Connect to Internet and Click on App that use for installing and follow the instructions have been given.</li>
+</ul>
+<p>For making it easier, click this <a href="https://youtu.be/DnavvK4NU6A">link for the video</a>.</p>
+</div>
   </div>
 </div>
 
@@ -456,17 +465,46 @@ packages. Even though we had some updates we still using pi as the main command.
 </div>
   </div>
 </div>
-
+<p>
 
 <div class="card mb-4 rounded-0 shadow border-0">
   <div class="card-header rounded-0 bg-white border p-0 border-0">
     <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#how-to-install-pi-or-pacman">
-      <span>How to install pi or pacman</span> <i class="ti-plus text-primary text-right"></i>
+      <span>How to install pi or pacman?</span> <i class="ti-plus text-primary text-right"></i>
     </a>
   </div>
   <div id="how-to-install-pi-or-pacman" class="collapse" data-parent="#accordion">
     <div class="card-body font-secondary text-color"><p>you can install pi or pacman by pix command, to do so</p>
 <pre><code>pix i pi
+</code></pre></div>
+  </div>
+</div>
+
+
+<div class="card mb-4 rounded-0 shadow border-0">
+  <div class="card-header rounded-0 bg-white border p-0 border-0">
+    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#how-to-setup-keyboad-font-and-more">
+      <span>How to setup keyboad, font and more?</span> <i class="ti-plus text-primary text-right"></i>
+    </a>
+  </div>
+  <div id="how-to-setup-keyboad-font-and-more" class="collapse" data-parent="#accordion">
+    <div class="card-body font-secondary text-color">There are different ways to install each feature, please <a href="#">visit this for guide-line and details</a>.</div>
+  </div>
+</div></p>
+<p>
+
+<div class="card mb-4 rounded-0 shadow border-0">
+  <div class="card-header rounded-0 bg-white border p-0 border-0">
+    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#i-cant-update-my-computer-and-it-is-requiring-keys">
+      <span>I can&rsquo;t update my computer and it is requiring keys!</span> <i class="ti-plus text-primary text-right"></i>
+    </a>
+  </div>
+  <div id="i-cant-update-my-computer-and-it-is-requiring-keys" class="collapse" data-parent="#accordion">
+    <div class="card-body font-secondary text-color"><p>It means you are no longer sync with OS Repo or your repo has been corrupted or invalided. You can
+solve the problems by running three commands below:</p>
+<pre><code>sudo pacman -Scc
+sudo pacman-key --refresh-keys
+sudo pacman -Syyu
 </code></pre></div>
   </div>
 </div>
@@ -484,7 +522,7 @@ used to configure and control the computer and to view messages from the operati
 <p>When a Linux server first boots, it prints status messages to the console, the familiar scroll of text that brings joy to many a Linux user. When you interact with your server, you connect a terminal to a program running in a console.</p>
 </div>
   </div>
-</div>
+</div></p>
 
 
 <div class="card mb-4 rounded-0 shadow border-0">
@@ -538,6 +576,109 @@ your server. To change a password on behalf of a user:</p>
 </div>
   </div>
 </div>
+
+
+<div class="card mb-4 rounded-0 shadow border-0">
+  <div class="card-header rounded-0 bg-white border p-0 border-0">
+    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#how-can-i-change-screen-resolution">
+      <span>How can I change screen resolution ?</span> <i class="ti-plus text-primary text-right"></i>
+    </a>
+  </div>
+  <div id="how-can-i-change-screen-resolution" class="collapse" data-parent="#accordion">
+    <div class="card-body font-secondary text-color"><p>You can change the screen resolution by going into <code>System Setting</code> and then <code>Hardware</code> and then move on to <code>Display and Monitor</code> section. After that <strong>Click</strong> <code>Display Configuration</code>.</p>
+<p>The default resolution for most PCs is <strong>1920x1080</strong> so does KOOMPI. So, set it to that resolution.</p>
+</div>
+  </div>
+</div>
+
+
+<div class="card mb-4 rounded-0 shadow border-0">
+  <div class="card-header rounded-0 bg-white border p-0 border-0">
+    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#sound-problem-what-should-i-do">
+      <span>Sound problem, What should I do ?</span> <i class="ti-plus text-primary text-right"></i>
+    </a>
+  </div>
+  <div id="sound-problem-what-should-i-do" class="collapse" data-parent="#accordion">
+    <div class="card-body font-secondary text-color"><p>There are two solutions we are recommending for you.</p>
+<hr>
+<p>If you are surely having sound problems, Please, Following these instructions:</p>
+<ul>
+<li>Open your terminal and run this command for killing your audio.</li>
+</ul>
+<pre><code>pulseaudio -k
+</code></pre><ul>
+<li>After that run another command below to make your audio work again.</li>
+</ul>
+<pre><code>pulseaudio --start
+</code></pre><hr>
+<p>If the first solution isn&rsquo;t working you can try with <code>pavucontroll</code> which is the app that supporting the audio
+configuration.</p>
+<p>To install it run this command below:</p>
+<pre><code>pi -S pavucontrol
+</code></pre><p>After you have installed it, you can search and open it for configuring the input and output audio.</p>
+<p>If you try everyone of the solutions have been provided and still have problems, please it to our office for fixing.</p>
+</div>
+  </div>
+</div>
+
+
+<div class="card mb-4 rounded-0 shadow border-0">
+  <div class="card-header rounded-0 bg-white border p-0 border-0">
+    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#my-internet-is-not-working-how-to-fix-it">
+      <span>My internet is not working, How to fix it ?</span> <i class="ti-plus text-primary text-right"></i>
+    </a>
+  </div>
+  <div id="my-internet-is-not-working-how-to-fix-it" class="collapse" data-parent="#accordion">
+    <div class="card-body font-secondary text-color"><p>We suggest you to reset the <strong>network manager</strong> with the commands below.</p>
+<pre><code>sudo systemctl restart NetworkManager
+</code></pre><p>If it still has the problem, we recommend you to bring it to our office.</p>
+</div>
+  </div>
+</div>
+
+
+<div class="card mb-4 rounded-0 shadow border-0">
+  <div class="card-header rounded-0 bg-white border p-0 border-0">
+    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#how-can-i-know-about-my-pc-specs">
+      <span>How can I know about my pc specs?</span> <i class="ti-plus text-primary text-right"></i>
+    </a>
+  </div>
+  <div id="how-can-i-know-about-my-pc-specs" class="collapse" data-parent="#accordion">
+    <div class="card-body font-secondary text-color">You need to do is that you have to open <strong>Settings</strong> <code>--&gt;</code><strong>System Setting</strong> <code>--&gt;</code> <strong>System Information</strong>. Finally, now
+you can see all details about your pc.</div>
+  </div>
+</div>
+
+
+<div class="card mb-4 rounded-0 shadow border-0">
+  <div class="card-header rounded-0 bg-white border p-0 border-0">
+    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#i-cant-remove-the-note-from-my-desktop">
+      <span>I can&rsquo;t remove the note from my desktop?</span> <i class="ti-plus text-primary text-right"></i>
+    </a>
+  </div>
+  <div id="i-cant-remove-the-note-from-my-desktop" class="collapse" data-parent="#accordion">
+    <div class="card-body font-secondary text-color"><p>you need to do is that you need to hold the right click of your mouse on the note. And then the
+remove icon will pop up. That&rsquo;s all.</p>
+<p>For more details is that when some app or icon pops up just follow the previous solution.</p>
+</div>
+  </div>
+</div>
+
+
+<div class="card mb-4 rounded-0 shadow border-0">
+  <div class="card-header rounded-0 bg-white border p-0 border-0">
+    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#how-to-enable-the-touch-pad-while-it-was-off">
+      <span>How to enable the touch pad while it was off?</span> <i class="ti-plus text-primary text-right"></i>
+    </a>
+  </div>
+  <div id="how-to-enable-the-touch-pad-while-it-was-off" class="collapse" data-parent="#accordion">
+    <div class="card-body font-secondary text-color"><p>You can open your touchpad through your keyboard. First, you need to go into the <strong>setting</strong> Enter
+and Click <strong>System Settings</strong>. And then you will have to find <strong>Input Devices</strong>, Select
+<strong>Touchpad</strong> feature, and then <code>Enable it</code> and you will be done.</p>
+<div class="notices note" ><p>Use <code>tab key</code> for changing you are selected. If you are finding it hard to do with keyboard, we recommend using the external mouse instead.</p></div>
+</div>
+  </div>
+</div>
 </div>
           
           <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 26 Dec 2018</p>
@@ -575,6 +716,22 @@ your server. To change a password on behalf of a user:</p>
             
             
 
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
             
             
             

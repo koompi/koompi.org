@@ -7,53 +7,6 @@ draft: true
 keywords: ["induct", "instate"]
 ---
 
-
-
-
-
-
-> **Note:** All operations have required a password. Then if you aren’t satisfied with the build tool and configuration choices, you can eject at any time. This command will remove the single build dependency from your operation.
-{.is-info}
-
-
-> **Tips:** Here Special usage to automate the install procedure (Recommend):
-{.is-success}
-
-```shell
- yes | pi -S <Package name> 
-```
-> **Tips:** Install packages with no confirm	
-{.is-success}
-```
- pi -S --noconfirm <Package name>
-```
-
-
-# Listing Packages
-You may want to get the list of installed packages with their version, which is useful while reporting bugs or discussing installed packages.
-
-- List all explicitly installed packages: `pi -Qe`.
-List all packages in the **package group** named group: `pi -Sg group`
-- List all explicitly installed native packages (i.e. present in the sync database) that are not direct or optional dependencies: `pi -Qent`.
-- List all foreign packages (typically manually downloaded and installed or packages removed from the repositories): `pi -Qm`.
-- List all native packages (installed from the sync database(s)): `pi -Qn`.
-- List packages by regex: `pi -Qs regex`.
-- List packages by regex with custom output format: `expac -s "%-30n %v" regex` (needs **expac**).
-
-### Listing Changed Backup Files
-If you want to backup your system configuration files you could copy all files in `/etc/`, but usually, you are only interested in the files that you have changed. Modified **backup files** can be viewed with the following command:
-```
-     pi -Qii | awk '/^MODIFIED/ {print $ 2}'
-```
-
-Running this command with root permissions will ensure that files readable only by root (such as /etc/sudoers) are included in the output.
-
-### Listing All Changed Files From Packages
-If you are suspecting file corruption (e.g. by software/hardware failure), but are unsure if files were corrupted, you might want to compare with the hash sums in the packages. 
-```shell
-     paccheck --md5sum --quiet
-```
-
 # Removing Unused Packages (orphans)
 For recursively removing orphans and their configuration files:
 ```shell

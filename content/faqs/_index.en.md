@@ -6,14 +6,7 @@ icon: "ti-help-alt"
 description: "Solutions and Problems that happened in the Operating System have been noted here."
 type : "docs"
 ---
-On this content, it provides to all questions and answers that have been facing in common. We hope that it helps the situations you are in . 
 
-{{< notice info >}}
-If there aren't any questions or answers you were looking for please contacts us. We are 
-very happy about your request and participate in our community.
-{{< /notice >}}
-----
-----
 {{< faq " Error locale !!" >}}
 Error locale is commonly seen. Sometimes, it can be seen while your time or date isn't correct with your location. So, the solution you can just reset the time or use this:
 ```
@@ -66,7 +59,22 @@ Not extacly, You can for some reasns. In order to install it, you need to instal
 {{</ faq >}}
 
 {{< faq "How to install KOOMPI OS?" >}}
-<!-- In order to install KOOMPI OS, you need to click the link below which is the source of the OS. And it will be download somewhere in your folder. Copy that source code and make it as booted drive. After that input your dive in to the pc you want to install while you were -->
+There are two main steps of installing it.
+
+**First Step (Create a bootable USB)**
+- Get a USB minimum of 4GB.
+- Install the Etcher.
+- Download the OS source through this [link](https://repo.koompi.org/iso/KOOMPI-OS-2020.04.26-x86_64.iso).
+- Move those source into the USB and start making it a bootable drive.
+**Second Step (Setup OS into the PC)**
+- Plug the USB  to your PC.
+- Open the PC and Move into the BIOS Boot(When you opened press key `Esc`.).
+- Go to Booting Menu.
+- After that Select the USB.
+- After that your will run some process and when it finished, your screen is going to show Desktop.
+- Connect to Internet and Click on App that use for installing and follow the instructions have been given.
+
+For making it easier, click this [link for the video](https://youtu.be/DnavvK4NU6A).
 {{</ faq >}}
 
 {{< faq "When will new version of KOOMPI OS release?" >}}
@@ -125,13 +133,27 @@ packages. Even though we had some updates we still using pi as the main command.
 Pix sounds familiar to `pi`, but it is quite different because it stands for **pacman extended or extra** which is supported by many more applications.., etc. that **Pi** can't support like Microsoft office. 
 {{</ faq >}}
 
-{{< faq "How to install pi or pacman" >}}
+{{< faq "How to install pi or pacman?" >}}
 you can install pi or pacman by pix command, to do so 
 ```
 pix i pi
 ```
 {{</ faq >}}
+{{< faq "How to setup keyboad, font and more?" >}}
+There are different ways to install each feature, please [visit this for guide-line and details](#).
+{{</ faq >}}
 
+
+{{< faq "I can't update my computer and it is requiring keys!" >}}
+It means you are no longer sync with OS Repo or your repo has been corrupted or invalided. You can 
+solve the problems by running three commands below:
+
+```
+sudo pacman -Scc
+sudo pacman-key --refresh-keys
+sudo pacman -Syyu
+```
+{{</ faq >}}
 {{< faq "What is terminal or konsole ?" >}}
 Originally, a konsole was a terminal “plugged into” the computer: it provided the interface that was 
 used to configure and control the computer and to view messages from the operating system.
@@ -174,3 +196,65 @@ KOOMPI respect `user privacy 100%`, so KOOMPI knows nothing about user password 
 Please bring your laptop to the KOOMPI office.
 {{</ faq >}}
 
+{{< faq "How can I change screen resolution ? " >}}
+You can change the screen resolution by going into `System Setting` and then `Hardware` and then move on to `Display and Monitor` section. After that **Click** `Display Configuration`.
+
+The default resolution for most PCs is **1920x1080** so does KOOMPI. So, set it to that resolution.
+{{</ faq >}}
+
+{{< faq "Sound problem, What should I do ? " >}}
+There are two solutions we are recommending for you.
+
+---
+If you are surely having sound problems, Please, Following these instructions:
+- Open your terminal and run this command for killing your audio.
+```
+pulseaudio -k
+```
+- After that run another command below to make your audio work again. 
+```
+pulseaudio --start
+```
+---
+If the first solution isn't working you can try with `pavucontroll` which is the app that supporting the audio 
+configuration.
+
+To install it run this command below:
+```
+pi -S pavucontrol
+```
+After you have installed it, you can search and open it for configuring the input and output audio.
+
+If you try everyone of the solutions have been provided and still have problems, please it to our office for fixing.
+{{</ faq >}}
+
+{{< faq "My internet is not working, How to fix it ? " >}}
+We suggest you to reset the **network manager** with the commands below.
+```
+sudo systemctl restart NetworkManager
+```
+If it still has the problem, we recommend you to bring it to our office.
+{{</ faq >}}
+
+ 
+{{< faq "How can I know about my pc specs?" >}}
+You need to do is that you have to open **Settings** `-->`**System Setting** `-->` **System Information**. Finally, now 
+you can see all details about your pc.
+{{</ faq >}}
+
+{{< faq "I can't remove the note from my desktop?" >}}
+you need to do is that you need to hold the right click of your mouse on the note. And then the 
+remove icon will pop up. That's all.
+
+For more details is that when some app or icon pops up just follow the previous solution.
+{{</ faq >}}
+
+{{< faq "How to enable the touch pad while it was off?" >}}
+You can open your touchpad through your keyboard. First, you need to go into the **setting** Enter
+and Click **System Settings**. And then you will have to find **Input Devices**, Select 
+**Touchpad** feature, and then `Enable it` and you will be done.
+
+{{< notice note >}}
+Use `tab key` for changing you are selected. If you are finding it hard to do with keyboard, we recommend using the external mouse instead.
+{{< /notice >}}
+{{</ faq >}}

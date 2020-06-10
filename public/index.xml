@@ -42,7 +42,7 @@ According to the language used to code, the code editors highlight special keywo
       <description>Conflicting with p11-kit-trust ?    Meanwhile, you are updating the OS and you are facing this kind of conflicting.
 Sample of output you are commonly facing:
 problem: nss: /usr/lib/p11-kit-trust.so exists in filesystem lib32-nss: /usr/lib32/p11-kit-trust.so exists in filesystem As you can notice that p11-kit-trust.so, you need to overwrite it.
-sudo pacman -Syu --overwrite /usr/lib\*/p11-kit-trust.so    Facing Xorgprotol issues !!    As the Xorgprotol issues is not an easy problem.</description>
+sudo pacman -Syu --overwrite /usr/lib\*/p11-kit-trust.so    Invalid or corrupted packages !!!    First, Run this other command for clearing cache and the database directory</description>
     </item>
     
     <item>
@@ -120,10 +120,10 @@ Please, make sure you have already updated your system with this command &amp;ld
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
       <guid>https://www.koompi.org/basic/intermediate-command/intermediate/</guid>
-      <description>Note: All operations have required a password. Then if you aren’t satisfied with the build tool and configuration choices, you can eject at any time. This command will remove the single build dependency from your operation. {.is-info}
-  Tips: Here Special usage to automate the install procedure (Recommend): {.is-success}
- yes | pi -S &amp;lt;Package name&amp;gt;  Tips: Install packages with no confirm {.is-success}
-  pi -S --noconfirm &amp;lt;Package name&amp;gt; Listing Packages You may want to get the list of installed packages with their version, which is useful while reporting bugs or discussing installed packages.</description>
+      <description>Removing Unused Packages (orphans) For recursively removing orphans and their configuration files:
+pi -Rns $ (pi -Qtdq) If no orphans were found pacman outputs error: no targets specified. This is expected as no arguments were passed to pi -Rns.
+Backup The Pi Database The following command can be used to back up the local pi database:
+ tar -cjf pacman_database.tar.bz2 /var/lib/pacman/local  Noted: If the pi database files are corrupted, and there is no backup file available, there exists some hope of rebuilding the pi database.</description>
     </item>
     
     <item>
@@ -143,6 +143,15 @@ This document is containing only apps that possibly to install in the OS, If you
       
       <guid>https://www.koompi.org/basic/network/network/</guid>
       <description>coming soon!!! </description>
+    </item>
+    
+    <item>
+      <title>Network Information</title>
+      <link>https://www.koompi.org/basic/search-and-find/searchfind/</link>
+      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
+      
+      <guid>https://www.koompi.org/basic/search-and-find/searchfind/</guid>
+      <description>coming soon !!! </description>
     </item>
     
     <item>
