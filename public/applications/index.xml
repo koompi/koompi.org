@@ -104,7 +104,9 @@ This document is containing only apps that possibly to install in the OS, If you
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
       <guid>https://www.koompi.org/applications/media/media/</guid>
-      <description></description>
+      <description>As the social media platform has been the most powerful application which not only for communication but also for gathering a lot of information around everywhere in the world. Even they have been developed by many different companies but still focus on one main point that makes the users stay connected.
+So in this section, we are going to introduce many social platforms and a little details about them.
+ Here is the list chart on the Media apps plus command to install them.</description>
     </item>
     
     <item>
@@ -113,7 +115,8 @@ This document is containing only apps that possibly to install in the OS, If you
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
       <guid>https://www.koompi.org/applications/video-editor/video_editor/</guid>
-      <description></description>
+      <description>As Window has widely used photo editor enterprise-level Photo management and editing software. So does KoompiOS which contain a large number of open-source industry professionals software.Down here are the avaible software you can install in the KOOMPI OS. And surprisingly all comes with a handful of features and tools to fulfill your image editing or painting or designing task.
+Kdenlive Kdenlive is a non-linear video editing software featuring multi-track editing with a timeline.</description>
     </item>
     
     <item>
@@ -122,7 +125,8 @@ This document is containing only apps that possibly to install in the OS, If you
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
       <guid>https://www.koompi.org/applications/video-player/video_player/</guid>
-      <description></description>
+      <description>VLC VLC Media Player is one of the best and most popular Best Linux Software in the category of video players. It is an open source media player which support almost all media file types. VLC Media Player support network shares are browsing, downloading subtitles, video playlists, pop-up video, etc.
+pi -S vlc MPlayer [MPlayer](https://www.google.com/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=26&amp;amp;cad=rja&amp;amp;uact=8&amp;amp; ved=2ahUKEwj38fXn2LDoAhX3yzgGHbJTAFEQoC4oATAZegQIDxAD&amp;amp;url=http%3A%2F%2Fmplayerhq.hu %2F&amp;amp;usg=AOvVaw0uY4Dx26TaPNLypVxmUBtY) is a popular movie player. It has supported for most video and audio formats and is thus highly versatile, even if it is mostly used for viewing videos.</description>
     </item>
     
     <item>
@@ -142,7 +146,8 @@ This guide is written for a non-root user. Commands that require elevated privil
       <pubDate>Thu, 27 Dec 2018 11:02:05 +0600</pubDate>
       
       <guid>https://www.koompi.org/applications/others/others/</guid>
-      <description></description>
+      <description>Abiword Abiword is free word processing program similar to Microsoft® Word. It is suitable for a wide variety of word processing tasks. To install it run this command in terminal:
+pi -S abiword FonteForge FontForge is a font editor which supports many common font formats. FontForge is free software and is distributed under a mix of the GNU General Public License Version 3 and the 3-clause BSD license. We can install it by terminal:</description>
     </item>
     
   </channel>
