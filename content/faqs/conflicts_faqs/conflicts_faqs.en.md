@@ -20,6 +20,13 @@ sudo pacman -Syu --overwrite /usr/lib\*/p11-kit-trust.so
 ```
 {{</ faq >}}
 
+{{< faq "Error with Modprobe and Vboxdrv ?" >}}
+It appears that I have problem with `modprobe vboxdrv`.You can sovle this problem by run command below:
+```
+sudo modprobe -a vboxdrv
+```
+{{</ faq >}}
+
 {{< faq " Invalid or corrupted packages !!!" >}}
 First, Run this other command for clearing cache and the database directory
 ```

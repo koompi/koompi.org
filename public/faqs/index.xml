@@ -21,7 +21,7 @@
       <description>Conflicting with p11-kit-trust ?    Meanwhile, you are updating the OS and you are facing this kind of conflicting.
 Sample of output you are commonly facing:
 problem: nss: /usr/lib/p11-kit-trust.so exists in filesystem lib32-nss: /usr/lib32/p11-kit-trust.so exists in filesystem As you can notice that p11-kit-trust.so, you need to overwrite it.
-sudo pacman -Syu --overwrite /usr/lib\*/p11-kit-trust.so    Invalid or corrupted packages !!!    First, Run this other command for clearing cache and the database directory</description>
+sudo pacman -Syu --overwrite /usr/lib\*/p11-kit-trust.so    Error with Modprobe and Vboxdrv ?    It appears that I have problem with modprobe vboxdrv.</description>
     </item>
     
   </channel>

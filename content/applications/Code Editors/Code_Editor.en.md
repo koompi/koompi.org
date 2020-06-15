@@ -19,6 +19,7 @@ This chart shows the result of which code editors tcommands:
 |:-------------|:-------------|
 | **Android Studio** | `pi -S android-stud`     |
 |**Atom**  |  `pi -S atom`    |
+|**RStudio**  |  `pi -S rstudio-desktop-bin`    |
 |**TeXmaker**  | `pi -S texmak`     |
 |**Mousepad**  |   `pi -S mousepad`   |
 |**Visual Studio Code**  |  `pi -S code --classic`    |
@@ -73,7 +74,19 @@ After you type the command in konsole, please follow all instructions that have 
 - Packages and them
 
 ---
+## RStudio
+[RStudio](https://rstudio.com/) is an integrated development environment for R, a programming
+language for statistical computing and graphics. It is available in two formats: RStudio Desktop is a
+regular desktop application while RStudio Server runs on a remote server and allows accessing RStudio
+using a web browser.
 
+### How to install RStudio
+You can install them by go to terminal, running this command:
+````
+pi -S rstudio-desktop-bin
+````
+
+---
 # TeXmaker
 In the arena of `Open-Source`, **LaTeX** is considered as a standard markup language. It helps the users for **editing the documents** to the markup level. TeXmaker is one of the best LaTeX editors available out here. It’s the most user-friendly LaTeX IDE for the newbie.
 

@@ -230,6 +230,20 @@ lib32-nss: /usr/lib32/p11-kit-trust.so exists in filesystem
 
 <div class="card mb-4 rounded-0 shadow border-0">
   <div class="card-header rounded-0 bg-white border p-0 border-0">
+    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#error-with-modprobe-and-vboxdrv">
+      <span>Error with Modprobe and Vboxdrv ?</span> <i class="ti-plus text-primary text-right"></i>
+    </a>
+  </div>
+  <div id="error-with-modprobe-and-vboxdrv" class="collapse" data-parent="#accordion">
+    <div class="card-body font-secondary text-color"><p>It appears that I have problem with <code>modprobe vboxdrv</code>.You can sovle this problem by run command below:</p>
+<pre><code>sudo modprobe -a vboxdrv
+</code></pre></div>
+  </div>
+</div>
+
+
+<div class="card mb-4 rounded-0 shadow border-0">
+  <div class="card-header rounded-0 bg-white border p-0 border-0">
     <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#invalid-or-corrupted-packages">
       <span>Invalid or corrupted packages !!!</span> <i class="ti-plus text-primary text-right"></i>
     </a>
