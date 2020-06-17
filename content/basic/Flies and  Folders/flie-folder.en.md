@@ -192,11 +192,7 @@ Seaching by paths:
 ```
  grep 'Strings' path/path/path
 ```
-<!-- ## Get Filesystem of Partition
 
-```
-file -sL [partition]
-``` -->
 ## Mount Filesystem
 You can mount filesystem with the syntax below:
 ```
