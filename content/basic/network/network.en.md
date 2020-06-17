@@ -331,7 +331,7 @@ Now , typing `ip route` command to see what it gives. As our new route is now in
 sudo ip route delete 192.168.4.0/24 dev wlan2
 ```
 
-We should now have a new route that points all traffic destined for IP range 192.168.121.0/24 through interface wlan2. It should also be the only route that uses our new interface.
+We should now have a new route that points all traffic destined for IP range 192.168.121.0/24 through interface `wlan2`. It should also be the only route that uses our new interface.
 
 ## Taken Route, Not Taken Root
 

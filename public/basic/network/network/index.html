@@ -606,7 +606,7 @@ PING 192.168.4.44 (192.168.4.44) 56(84) bytes of data.
 <pre><code>sudo ip route add 192.168.121.0/24 dev wlan2 metric 100
 </code></pre><p>Now , typing <code>ip route</code> command to see what it gives. As our new route is now in place;however, we still have the 192.168.4.0/24 route that points to interface enp0s8—we type the following to remove it:</p>
 <pre><code>sudo ip route delete 192.168.4.0/24 dev wlan2
-</code></pre><p>We should now have a new route that points all traffic destined for IP range 192.168.121.0/24 through interface wlan2. It should also be the only route that uses our new interface.</p>
+</code></pre><p>We should now have a new route that points all traffic destined for IP range 192.168.121.0/24 through interface <code>wlan2</code>. It should also be the only route that uses our new interface.</p>
 <h2 id="taken-route-not-taken-root">Taken Route, Not Taken Root</h2>
 <p>The great thing about these commands is they’re not permanent. If you want to clear them, just reboot your system. This means you can experiment with them until they work the way you want. And it’s a very good thing if you make a terrible mess of your system—a simple reboot will restore order.</p>
 <p>On the other hand, if you want the changes to be permanent, you have to do some more work. Exactly what varies depending on the distribution family, but they all involve changing config files.</p>
