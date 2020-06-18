@@ -2,12 +2,12 @@
 title: "Intermediate"
 date: 2018-12-29T11:02:05+06:00
 lastmod: 2020-01-05T10:42:26+06:00
-draft: true
+draft: false
 # search related keywords
 keywords: ["induct", "instate"]
 ---
-
-# Removing Unused Packages (orphans)
+## Coming soon!!
+<!-- # Removing Unused Packages (orphans)
 For recursively removing orphans and their configuration files:
 ```shell
      pi -Rns $ (pi -Qtdq)
@@ -422,4 +422,4 @@ get pkgbuild specific options:
     -f --force            # Force download for existing tar packages
 ```
 *Contributed by @LyhourChhen*
-
+ -->

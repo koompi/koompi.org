@@ -120,10 +120,7 @@ Please, make sure you have already updated your system with this command &amp;ld
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
       <guid>https://www.koompi.org/basic/intermediate-command/intermediate/</guid>
-      <description>Removing Unused Packages (orphans) For recursively removing orphans and their configuration files:
-pi -Rns $ (pi -Qtdq) If no orphans were found pacman outputs error: no targets specified. This is expected as no arguments were passed to pi -Rns.
-Backup The Pi Database The following command can be used to back up the local pi database:
- tar -cjf pacman_database.tar.bz2 /var/lib/pacman/local  Noted: If the pi database files are corrupted, and there is no backup file available, there exists some hope of rebuilding the pi database.</description>
+      <description>Coming soon!! **Noted**: If the **pi** database files are corrupted, and there is no backup file available, there exists some hope of rebuilding the pi database. {.is-info} # Reinstalling all packages To reinstall all native packages, use: ```shell pi -Qqn | pi -S - ``` # Password Info Both **KOOMPI OS** and **Linux** operating systems use the `passwd` command to change the user password. The `passwd` is used to update a user’s authentication token (password) stored in `/etc/shadow file`.</description>
     </item>
     
     <item>
@@ -158,7 +155,7 @@ In this document, The details about what pix will be providing to the all users.
     </item>
     
     <item>
-      <title>Printing Information</title>
+      <title>Printing</title>
       <link>https://www.koompi.org/basic/printing/printing/</link>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
