@@ -77,12 +77,13 @@ Check the connection To ensure about the network connection, go through the foll
     </item>
     
     <item>
-      <title>System Control</title>
+      <title>System Manager</title>
       <link>https://www.koompi.org/basic/system-control/system_control/</link>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
       <guid>https://www.koompi.org/basic/system-control/system_control/</guid>
-      <description>coming soon!!! </description>
+      <description>Systemctl is init system and system manager that is widely becoming the new standard for opensource machines. While there are considerable opinions about whether systemd is an improvement over the traditional SysV init systems it is replacing, the majority of distributions plan to adopt it or have already done so.
+Due to its heavy adoption, familiarizing yourself with systemd is well worth the trouble, as it will make administering servers considerably easier.</description>
     </item>
     
     <item>
