@@ -148,15 +148,6 @@ Check the connection To ensure about the network connection, go through the foll
     </item>
     
     <item>
-      <title>Network Information</title>
-      <link>https://www.koompi.org/basic/search-and-find/searchfind/</link>
-      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
-      
-      <guid>https://www.koompi.org/basic/search-and-find/searchfind/</guid>
-      <description>coming soon !!! </description>
-    </item>
-    
-    <item>
       <title>Pix Release</title>
       <link>https://www.koompi.org/release/pix-release/pix_release/</link>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
@@ -182,6 +173,15 @@ In this document, The details about what pix will be providing to the all users.
       
       <guid>https://www.koompi.org/applications/recorder/recorder/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Search</title>
+      <link>https://www.koompi.org/basic/search-and-find/searchfind/</link>
+      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
+      
+      <guid>https://www.koompi.org/basic/search-and-find/searchfind/</guid>
+      <description>coming soon !!! </description>
     </item>
     
     <item>

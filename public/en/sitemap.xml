@@ -78,11 +78,6 @@
   </url>
   
   <url>
-    <loc>https://www.koompi.org/basic/search-and-find/searchfind/</loc>
-    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.koompi.org/release/pix-release/pix_release/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
@@ -94,6 +89,11 @@
   
   <url>
     <loc>https://www.koompi.org/applications/recorder/recorder/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.koompi.org/basic/search-and-find/searchfind/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
