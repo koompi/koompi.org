@@ -8,9 +8,6 @@ keywords: ["induct", "instate"]
 ---
 This module is a guide for details and usage of github. If you are a newbie especialy coding beginners and get to know what it is. 
 
----
----
-
 ## Install git 
 We can start to install git by run a command in konsole:
 ```

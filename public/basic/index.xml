@@ -30,7 +30,7 @@ For more details of the instruction, see KOOMPI OS website articles or the vario
       
       <guid>https://www.koompi.org/basic/github/git_command/</guid>
       <description>This module is a guide for details and usage of github. If you are a newbie especialy coding beginners and get to know what it is.
-  Install git We can start to install git by run a command in konsole:
+Install git We can start to install git by run a command in konsole:
 pi -S git  Make sure you have already run command pi -Syu to update your system.
   Clone an existing repository If you want to clone your existing repository or you clone other people&amp;rsquo;s repository, you run command below:</description>
     </item>
