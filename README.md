@@ -1,7 +1,7 @@
 | Develop | [![CircleCI](https://circleci.com/gh/koompi/koompi.org.svg?style=svg)](https://circleci.com/gh/koompi/koompi.org)  |
 |---------|-----------------------------------------------------------------------------------------------------------------------------|
-
-
+## Introduction
+KOOMPI OS is a Linux-based software, which means it is open source and free for everyone. It is an info bank for instructions on installment, updates, and problem solving. It is also providing the latest releases for features and new environments as our team is always trying their best to deliver the optimal user experience. 
 
 ## **INSTALLATION**
 
