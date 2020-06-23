@@ -31,3 +31,64 @@ If, however, you were to alter the command by using the -iname option, the find 
 ```
 sudo find / -iname filename.extension
 ```
+Sample:
+```
+sudo find / -iname text.txt
+```
+
+### Find By Type
+What if you’re not so concerned with locating a file by name but would rather locate all files of a certain type? Some of the more common file descriptors are:
+
+|    Options| Description         | 
+|:----------:|:--------------------|
+| **f**     |      `Regular File` |
+| **d**     |      `Directory`    |
+| **l**     |      `Symbolic Link`|
+| **c**     |      `Chracter Devices`|
+| **b**     |      `Block Devices`|
+
+Now, suppose you want to locate all `block devices` (a file that refers to a device) on your system. With the help of the `-type` option, we can do that like so:
+```
+sudo find / -type b
+```
+
+We can use the same option to help us look for configuration files. Say, for instance, you want to locate all regular files that end in the `.conf` extension. This command would look something like:
+````
+sudo find / -type  f -name "*.conf"
+````
+### Find Modified Files Since Last 60 minutes
+
+```
+find / -mmin -60
+```
+### Find Change Files Since Last 6 minutes
+
+```
+find / -cmin -60
+```
+### Find All Files Which Are Accessed 7 days
+```
+find / -atim 7
+```
+### Finding Files By Size
+We can use the find command to locate files of a certain size. Say, for instance, you want to go large and locate files that are over **1000MB**. The find command can be issued, with the help of the `-size` option, like so:
+```
+find / -size +1000M
+```
+You can also find all files which are greater than or less than, too. For example, `( Greater than 10MB Less than 100MB )`
+```
+find / -size +10M -size -10M
+```
+With the output from the command, you can comb through the directory structure and free up space or troubleshoot to find out what is mysteriously filling up your drive.
+
+You can search with the following size descriptions:
+
+|    Options| Description         | 
+|:----------:|:--------------------|
+| **c**     |      `Bytes` |
+| **k**     |      `Kilobytes`    |
+| **M**     |      `Megabytes`|
+| **G**     |      `Gigabytes`|
+| **b**     |      `512-byte blocks`|
+
+----

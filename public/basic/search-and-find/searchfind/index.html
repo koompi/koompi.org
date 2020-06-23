@@ -386,7 +386,89 @@
 <pre><code>sudo find / -name text.txt
 </code></pre><p>If, however, you were to alter the command by using the -iname option, the find command would locate your file, regardless of case. So the new command looks like:</p>
 <pre><code>sudo find / -iname filename.extension
-</code></pre></div>
+</code></pre><p>Sample:</p>
+<pre><code>sudo find / -iname text.txt
+</code></pre><h3 id="find-by-type">Find By Type</h3>
+<p>What if you’re not so concerned with locating a file by name but would rather locate all files of a certain type? Some of the more common file descriptors are:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Options</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>f</strong></td>
+<td align="left"><code>Regular File</code></td>
+</tr>
+<tr>
+<td align="center"><strong>d</strong></td>
+<td align="left"><code>Directory</code></td>
+</tr>
+<tr>
+<td align="center"><strong>l</strong></td>
+<td align="left"><code>Symbolic Link</code></td>
+</tr>
+<tr>
+<td align="center"><strong>c</strong></td>
+<td align="left"><code>Chracter Devices</code></td>
+</tr>
+<tr>
+<td align="center"><strong>b</strong></td>
+<td align="left"><code>Block Devices</code></td>
+</tr>
+</tbody>
+</table>
+<p>Now, suppose you want to locate all <code>block devices</code> (a file that refers to a device) on your system. With the help of the <code>-type</code> option, we can do that like so:</p>
+<pre><code>sudo find / -type b
+</code></pre><p>We can use the same option to help us look for configuration files. Say, for instance, you want to locate all regular files that end in the <code>.conf</code> extension. This command would look something like:</p>
+<pre><code>sudo find / -type  f -name &quot;*.conf&quot;
+</code></pre><h3 id="find-modified-files-since-last-60-minutes">Find Modified Files Since Last 60 minutes</h3>
+<pre><code>find / -mmin -60
+</code></pre><h3 id="find-change-files-since-last-6-minutes">Find Change Files Since Last 6 minutes</h3>
+<pre><code>find / -cmin -60
+</code></pre><h3 id="find-all-files-which-are-accessed-7-days">Find All Files Which Are Accessed 7 days</h3>
+<pre><code>find / -atim 7
+</code></pre><h3 id="finding-files-by-size">Finding Files By Size</h3>
+<p>We can use the find command to locate files of a certain size. Say, for instance, you want to go large and locate files that are over <strong>1000MB</strong>. The find command can be issued, with the help of the <code>-size</code> option, like so:</p>
+<pre><code>find / -size +1000M
+</code></pre><p>You can also find all files which are greater than or less than, too. For example, <code>( Greater than 10MB Less than 100MB )</code></p>
+<pre><code>find / -size +10M -size -10M
+</code></pre><p>With the output from the command, you can comb through the directory structure and free up space or troubleshoot to find out what is mysteriously filling up your drive.</p>
+<p>You can search with the following size descriptions:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Options</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>c</strong></td>
+<td align="left"><code>Bytes</code></td>
+</tr>
+<tr>
+<td align="center"><strong>k</strong></td>
+<td align="left"><code>Kilobytes</code></td>
+</tr>
+<tr>
+<td align="center"><strong>M</strong></td>
+<td align="left"><code>Megabytes</code></td>
+</tr>
+<tr>
+<td align="center"><strong>G</strong></td>
+<td align="left"><code>Gigabytes</code></td>
+</tr>
+<tr>
+<td align="center"><strong>b</strong></td>
+<td align="left"><code>512-byte blocks</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</div>
           
           <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 05 Jan 2020</p>
           <nav class="pagination mt-3">
