@@ -65,12 +65,12 @@ Check the connection To ensure about the network connection, go through the foll
     </item>
     
     <item>
-      <title>Search</title>
+      <title>Search/ Find</title>
       <link>https://www.koompi.org/basic/search-and-find/searchfind/</link>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
       <guid>https://www.koompi.org/basic/search-and-find/searchfind/</guid>
-      <description>coming soon !!! </description>
+      <description>In this tutorial we&amp;rsquo;ll look at the find command and how you can quickly use it to locate files in your filesystem. Find is a powerful utility capable of locating files anywhere on your system including mounted drives and removable storage, processing regular expressions, and even running other commands on those files. Fortunately only a few simple options are needed to provide most users with all the capability they need.</description>
     </item>
     
     <item>
