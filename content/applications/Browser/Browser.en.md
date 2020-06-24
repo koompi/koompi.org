@@ -8,12 +8,12 @@ keywords: ["induct", "instate"]
 ---
 A web browser, or simply "**browser**," is a software application for accessing information on the World Wide Web. When a user requests a web page from a particular website, the web browser retrieves the necessary content from a web server and then displays the page on the screen. 
 
-The most popular browsers have a number of features in common. They allow users to set bookmarks and browse in a private mode. They also can be customized with extensions, and some of them provide a sync service. 
+The most popular browsers have several features in common. They allow users to set bookmarks and browse in a private mode. They also can be customized with extensions, and some of them provide a sync service. 
 
 ---
 In this document, We will show you the details about some browsers and how to install some of those **Web Browsers** that are supported in KOOMPI OS.
 
-Before continuing with this document, make sure you know how to use [**terminal or konsole, first**](#)
+Before continuing with this document, make sure you know how to use [**terminal or Konsole, first**](#)
 
 In this chart list below is all the browser apps that KOOMPI OS is supported and with commands installation:
 
@@ -59,7 +59,7 @@ Open terminal either via **Ctrl+Alt+T** keyboard shortcut or by searching for `t
 {{% tabs %}}
 
 {{< notice tip >}}
-It will require your password. Your password won't be appeared on your screen and it is hidde so just typing it down. 
+It will require your password. Your password won't appear on your screen and it is hidden so just typing it down. 
 {{< /notice >}}
 
 ---
@@ -82,7 +82,7 @@ pi -S chromium
 ---
 # Firefox
 
-[**Mozilla Firefox** or simple called **Firefox**](#) browser is the default web browser in a number of open-source Linux distributions and KOOMPI OS is one of them. 
+[**Mozilla Firefox** or simply called **Firefox**](#) browser is the default web browser in many open-source Linux distributions and KOOMPI OS is one of them. 
 
 ## How to install firefox
 
@@ -91,7 +91,7 @@ As I said before, **Firefox** is available in almost all the open-source distrib
 If that’s not the case, you should stick to the official package manager provided by your distribution for installing Firefox. That’s the easiest and best method.
 
 {{< notice tip >}}
-Before installing any application, make sure your system is up to dated!!!
+Before installing any application, make sure your system is up to date!!!
 {{< /notice >}}
 
 You can easily install firefox with only a command:
@@ -106,7 +106,7 @@ A **Google Chrome** App, or commonly just Chrome App, is a web application that 
 Chrome web browser. Chrome apps can be obtained from the Chrome Web Store where apps, 
 extensions, and themes can be installed or bought.
 
-## How install Google Chrome
+## How to install Google Chrome
 In order to install chrome, all you need to know is its keyword like I have said before. So, the command you need to know it below:
 
 ```
@@ -137,7 +137,7 @@ Opera is a Chromium-based browser using the Blink layout engine. It differentiat
 
 ## How to install Opera
 
-On open-source operating system, We can install **opera** through many ways. In KOOMPI OS, it has its own way, too. You can install it by a command below:
+On open-source operating system, We can install **opera** through many ways. In KOOMPI OS, it has its way, too. You can install it by a command below:
 ```
 pi -S opera
 ```

@@ -20,18 +20,18 @@ Knowing how to create a new file is an **important skill** for anyone using open
 The `touch` command allows us to update the t**imestamps on existing files and directories** as well as creating, empty files. The only easiest and most memorable way to create new, empty files is by using the `touch command`.
 
 
-To create a new file simply run the touch command followed by the name of file you want to create:
+To create a new file simply run the touch command followed by the name of the file you want to create:
 ```
  touch Files_Name.txt
 ```
 
-You can also create multiple files at once by specify the file names separated by space.
+You can also create multiple files at once by specifying the file names separated by space.
 ```
  touch File_Name1.txt File_Name2.txt File_Name3.txt
 ```
 
 {{< notice info >}}
-`.txt` stand for the text file. You can also use other extension for kind of files you want to use.
+`.txt` stand for the text file. You can also use other extensions for the kind of files you want to use.
 {{< /notice >}}
 
 Besides `Touch`, `echo` can also use to create file too. The `echo` command prints the **strings** that are passed as arguments to the standard output, which can be *redirected* to a file.
@@ -77,14 +77,14 @@ A basic example of the cp command to copy files (keep the original file and make
  cp File_Name NewFile_Name
 ```
 ### Options
-`-i`  for interactive, asks you to confirm if an existing file (perhaps a version of joe_expenses already exists in the cashflow directory) should be over written in the copying process.
+`-i`  for interactive, asks you to confirm if an existing file (perhaps a version of joe_expenses already exists in the cashflow directory) should be overwritten in the copying process.
 
 `-r` for recursive, to copy all the subdirectories and files in a given directory and preserve the tree structure.
 
 `-v` for verbose, shows files being copied one by one.
 
 ## Move/Rename file or folder
-For instance, to instantly seek out and move all of the files. Your command line instruction would simply be:
+For instance, to instantly seek out and move all of the files. Your command-line instruction would simply be:
 ```
  mv File_Name NewFile_Name
 ```
@@ -98,12 +98,12 @@ For example, to create a folder named ‘newfolder‘ the command is:
  mkdir NewFolder
 ```
 ## Remove Folder
-Removing folder is like removing file, too but it has alittle bit different. You have to add `-r` after `rm command`.
+Removing folder is like removing the file, too but it has a little bit different. You have to add `-r` after `rm command`.
 ```
  rm -r Folder_Name
 ```
 ## List Folder Contents
-Listing Command (ls) allows us to see all the contents in the direcctory we are in.
+Listing Command (ls) allows us to see all the contents in the directory we are in.
 ```
  ls
 ```
@@ -164,7 +164,7 @@ To show the directory you are currently in:
 ```
  /home/koompi
 ```
-## Create Pysical Link to File or Folder
+## Create Physical Link to File or Folder
 To make links between files you need to use `ln` command. A symbolic link (also known as a soft link or symlink) consists of a special type of file that serves as a reference to another file or directory.
 ```
 ln [FileName] [LinkName]
@@ -184,17 +184,17 @@ Looking for all files in the current directory and in all of its subdirectories.
 ```
  grep -R 'Strings'
 ```
-Searching and displaying the total number of times that the string appear in FileName.
+Searching and displaying the total number of times that the string appears in FileName.
 ```
  grep -c 'Strings' FileName
 ```
-Seaching by paths:
+Searching by paths:
 ```
  grep 'Strings' path/path/path
 ```
 
 ## Mount Filesystem
-You can mount filesystem with the syntax below:
+You can mount the filesystem with the syntax below:
 ```
  mount /dev/[device] [path]
 ```
@@ -209,7 +209,7 @@ Change the rights to a file so that it can run as a program.
  chmod +x filename
 ```
 ## List Trash Files
-As you have already known what is `ls`  command, you should know path of trash file.
+As you have already known what is `ls`  command, you should know the path of the trash file.
 ```
  ls -l files ~/.local/share/Trash/files
 ```

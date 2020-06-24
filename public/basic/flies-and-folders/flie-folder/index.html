@@ -290,10 +290,10 @@
 
 
 
-<li data-nav-id="https://www.koompi.org/basic/search-and-find/searchfind/" title="Search/ Find" class="sidelist
+<li data-nav-id="https://www.koompi.org/basic/search-and-find/searchfind/" title="Searching/History" class="sidelist
   ">
   <a href="https://www.koompi.org/basic/search-and-find/searchfind/">
-    Search/ Find
+    Searching/History
   </a>
   
   
@@ -379,13 +379,13 @@
 <h2 id="create-file">Create File</h2>
 <p>Knowing how to create a new file is an <strong>important skill</strong> for anyone using open-source regularly. You can create a new file either from the <code>command line</code> or from the <code>desktop file manager</code>.</p>
 <p>The <code>touch</code> command allows us to update the t<strong>imestamps on existing files and directories</strong> as well as creating, empty files. The only easiest and most memorable way to create new, empty files is by using the <code>touch command</code>.</p>
-<p>To create a new file simply run the touch command followed by the name of file you want to create:</p>
+<p>To create a new file simply run the touch command followed by the name of the file you want to create:</p>
 <pre><code> touch Files_Name.txt
-</code></pre><p>You can also create multiple files at once by specify the file names separated by space.</p>
+</code></pre><p>You can also create multiple files at once by specifying the file names separated by space.</p>
 <pre><code> touch File_Name1.txt File_Name2.txt File_Name3.txt
 </code></pre>
 
-<div class="notices info" ><p><code>.txt</code> stand for the text file. You can also use other extension for kind of files you want to use.</p></div>
+<div class="notices info" ><p><code>.txt</code> stand for the text file. You can also use other extensions for the kind of files you want to use.</p></div>
 
 <p>Besides <code>Touch</code>, <code>echo</code> can also use to create file too. The <code>echo</code> command prints the <strong>strings</strong> that are passed as arguments to the standard output, which can be <em>redirected</em> to a file.</p>
 <pre><code> echo &quot;some line&quot; &gt;&gt; File_Name.txt
@@ -415,11 +415,11 @@
 <p>A basic example of the cp command to copy files (keep the original file and make a duplicate of it) might look like:</p>
 <pre><code> cp File_Name NewFile_Name
 </code></pre><h3 id="options">Options</h3>
-<p><code>-i</code>  for interactive, asks you to confirm if an existing file (perhaps a version of joe_expenses already exists in the cashflow directory) should be over written in the copying process.</p>
+<p><code>-i</code>  for interactive, asks you to confirm if an existing file (perhaps a version of joe_expenses already exists in the cashflow directory) should be overwritten in the copying process.</p>
 <p><code>-r</code> for recursive, to copy all the subdirectories and files in a given directory and preserve the tree structure.</p>
 <p><code>-v</code> for verbose, shows files being copied one by one.</p>
 <h2 id="moverename-file-or-folder">Move/Rename file or folder</h2>
-<p>For instance, to instantly seek out and move all of the files. Your command line instruction would simply be:</p>
+<p>For instance, to instantly seek out and move all of the files. Your command-line instruction would simply be:</p>
 <pre><code> mv File_Name NewFile_Name
 </code></pre><h2 id="create-folder">Create Folder</h2>
 <p>we can create directories from command line using the command <code>mkdir</code>. Syntax of this command is explained below.</p>
@@ -427,10 +427,10 @@
 </code></pre><p>For example, to create a folder named ‘newfolder‘ the command is:</p>
 <pre><code> mkdir NewFolder
 </code></pre><h2 id="remove-folder">Remove Folder</h2>
-<p>Removing folder is like removing file, too but it has alittle bit different. You have to add <code>-r</code> after <code>rm command</code>.</p>
+<p>Removing folder is like removing the file, too but it has a little bit different. You have to add <code>-r</code> after <code>rm command</code>.</p>
 <pre><code> rm -r Folder_Name
 </code></pre><h2 id="list-folder-contents">List Folder Contents</h2>
-<p>Listing Command (ls) allows us to see all the contents in the direcctory we are in.</p>
+<p>Listing Command (ls) allows us to see all the contents in the directory we are in.</p>
 <pre><code> ls
 </code></pre><h3 id="options-1">Options</h3>
 <table>
@@ -512,7 +512,7 @@
 <pre><code> pwd
 </code></pre><p><strong>Output :</strong></p>
 <pre><code> /home/koompi
-</code></pre><h2 id="create-pysical-link-to-file-or-folder">Create Pysical Link to File or Folder</h2>
+</code></pre><h2 id="create-physical-link-to-file-or-folder">Create Physical Link to File or Folder</h2>
 <p>To make links between files you need to use <code>ln</code> command. A symbolic link (also known as a soft link or symlink) consists of a special type of file that serves as a reference to another file or directory.</p>
 <pre><code>ln [FileName] [LinkName]
 </code></pre><h2 id="find-phrase-within-file">Find Phrase Within File</h2>
@@ -523,12 +523,12 @@
 <pre><code> grep -i 'Strings' FileName
 </code></pre><p>Looking for all files in the current directory and in all of its subdirectories.</p>
 <pre><code> grep -R 'Strings'
-</code></pre><p>Searching and displaying the total number of times that the string appear in FileName.</p>
+</code></pre><p>Searching and displaying the total number of times that the string appears in FileName.</p>
 <pre><code> grep -c 'Strings' FileName
-</code></pre><p>Seaching by paths:</p>
+</code></pre><p>Searching by paths:</p>
 <pre><code> grep 'Strings' path/path/path
 </code></pre><h2 id="mount-filesystem">Mount Filesystem</h2>
-<p>You can mount filesystem with the syntax below:</p>
+<p>You can mount the filesystem with the syntax below:</p>
 <pre><code> mount /dev/[device] [path]
 </code></pre><h2 id="unmount-filesystem">Unmount Filesystem</h2>
 <p>You can also unmount filesystem with command below.</p>
@@ -537,7 +537,7 @@
 <p>Change the rights to a file so that it can run as a program.</p>
 <pre><code> chmod +x filename
 </code></pre><h2 id="list-trash-files">List Trash Files</h2>
-<p>As you have already known what is <code>ls</code>  command, you should know path of trash file.</p>
+<p>As you have already known what is <code>ls</code>  command, you should know the path of the trash file.</p>
 <pre><code> ls -l files ~/.local/share/Trash/files
 </code></pre><h2 id="empty-trash">Empty Trash</h2>
 <p>Above are the paths of trash file, we can empty it with <code>rm -r</code> command:</p>

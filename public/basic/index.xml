@@ -29,10 +29,10 @@ For more details of the instruction, see KOOMPI OS website articles or the vario
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
       <guid>https://www.koompi.org/basic/github/git_command/</guid>
-      <description>This module is a guide for details and usage of github. If you are a newbie especialy coding beginners and get to know what it is.
-Install git We can start to install git by run a command in konsole:
-pi -S git  Make sure you have already run command pi -Syu to update your system.
-  Clone an existing repository If you want to clone your existing repository or you clone other people&amp;rsquo;s repository, you run command below:</description>
+      <description>This module is a guide for details and usage of GitHub. If you are a newbie especially coding beginners and get to know what it is.
+Install git We can start to install git by running a command in Konsole:
+pi -S git  Make sure you have already run the command pi -Syu to update your system.
+  Clone an existing repository If you want to clone your existing repository or you clone other people&amp;rsquo;s repository, you run the command below:</description>
     </item>
     
     <item>
@@ -65,12 +65,12 @@ Check the connection To ensure about the network connection, go through the foll
     </item>
     
     <item>
-      <title>Search/ Find</title>
+      <title>Searching/History</title>
       <link>https://www.koompi.org/basic/search-and-find/searchfind/</link>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
       <guid>https://www.koompi.org/basic/search-and-find/searchfind/</guid>
-      <description>In this tutorial we&amp;rsquo;ll look at the find command and how you can quickly use it to locate files in your filesystem. Find is a powerful utility capable of locating files anywhere on your system including mounted drives and removable storage, processing regular expressions, and even running other commands on those files. Fortunately only a few simple options are needed to provide most users with all the capability they need.</description>
+      <description>In this tutorial, we&amp;rsquo;ll look at the commands and how you can quickly use it to locate files in your filesystem. Finding file is a powerful utility capable of locating files anywhere on your system including mounted drives and removable storage, processing regular expressions, and even running other commands on those files. Fortunately, only a few simple options are needed to provide most users with all the capability they need.</description>
     </item>
     
     <item>

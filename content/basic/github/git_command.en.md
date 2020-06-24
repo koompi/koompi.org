@@ -6,22 +6,22 @@ draft: false
 # search related keywords
 keywords: ["induct", "instate"]
 ---
-This module is a guide for details and usage of github. If you are a newbie especialy coding beginners and get to know what it is. 
+This module is a guide for details and usage of GitHub. If you are a newbie especially coding beginners and get to know what it is. 
 
 ## Install git 
-We can start to install git by run a command in konsole:
+We can start to install git by running a command in Konsole:
 ```
 pi -S git
 ```
 
 {{< notice note >}}
-Make sure you have already run command `pi -Syu` to update your system.
+Make sure you have already run the command `pi -Syu` to update your system.
 {{< /notice >}}
 
 ---
 
 ## Clone an existing repository
-If you want to clone your existing repository or you clone other people's repository, you run command below:
+If you want to clone your existing repository or you clone other people's repository, you run the command below:
 ```
 git clone [url] 
 ```
@@ -32,7 +32,7 @@ git clone [url]
 
 ---
 ## Initialize new version controlled project
-In order, to create new controlled project you have to run this command:
+In order, to create a new controlled project you have to run this command:
 ```
 git init
 ```
@@ -56,8 +56,8 @@ git status
 ```
 
 ---
-## Create new branch
-On github, we can create branches on the same repository if you do not want to use as a master. To create a branch:
+## Create a new branch
+On Github, we can create branches on the same repository if you do not want to use as a master. To create a branch:
 ```
 git branch [branchName]
 ```
@@ -85,7 +85,7 @@ git merge [branchName]
 
 ---
 ## Checkout an existing branch
-When you want to create new branch, you might want to check out if the branch has already made on the same repository. So that you can create other branch instead.
+When you want to create new branch, you might want to check out if the branch has already made on the same repository. So that you can create other branches instead.
 ```
 git checkout -b [branchName]
 ```
@@ -97,7 +97,7 @@ git checkout -b [newBranch]
 
 ---
 ## Create and Delete tag
-Git tags are used as reference points in your development worflow. You might want to create new Git tags in order to have a reference to a given release of your software. Creating tag with this:
+Git tags are used as reference points in your development workflow. You might want to create new Git tags in order to have a reference to a given release of your software. Creating tag with this:
 ```
 git  tag [tagName]
 ```
@@ -163,7 +163,7 @@ git commit -am " message "
 
 ---
 ## Send local commits to the remote repository
-We can send as branch commits to remote repository by:
+We can send as branch commits to the remote repository by:
 ```
 git push [remoteURL/remoteName] [branch]
 ```

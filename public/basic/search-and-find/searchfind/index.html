@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
   <meta charset="utf-8">
-  <title>Search/ Find</title>
+  <title>Searching/History</title>
 
   <meta name="generator" content="Hugo 0.72.0" />
 
@@ -290,10 +290,10 @@
 
 
 
-<li data-nav-id="https://www.koompi.org/basic/search-and-find/searchfind/" title="Search/ Find" class="sidelist
+<li data-nav-id="https://www.koompi.org/basic/search-and-find/searchfind/" title="Searching/History" class="sidelist
   active">
   <a href="https://www.koompi.org/basic/search-and-find/searchfind/">
-    Search/ Find
+    Searching/History
   </a>
   
   
@@ -370,17 +370,19 @@
       </div>
       <div class="col-lg-9">
         <div class="p-lg-5 p-4 bg-white">
-          <h2 class="mb-5">Search/ Find</h2>
+          <h2 class="mb-5">Searching/History</h2>
           
-          <div class="content"><p>In this tutorial we&rsquo;ll look at the <code>find</code> command and how you can quickly use it to <strong>locate</strong> files in your filesystem. Find is a powerful utility capable of locating files anywhere on your system including mounted drives and removable storage, processing regular expressions, and even running other commands on those files. Fortunately only a few simple options are needed to provide most users with all the capability they need.</p>
-<p>The <code>find</code> command is a command line utility for walking a file hierarchy. It can be used to find files and directories and perform subsequent operations on them. It supports searching by file, folder, name, creation date, modification date, owner and permissions.</p>
+          <div class="content"><p>In this tutorial, we&rsquo;ll look at the <code>commands</code> and how you can quickly use it to <strong>locate</strong> files in your filesystem. Finding file  is a powerful utility capable of locating files anywhere on your system including mounted drives and removable storage, processing regular expressions, and even running other commands on those files. Fortunately, only a few simple options are needed to provide most users with all the capability they need.</p>
+<hr>
+<hr>
+<p>The <code>find</code> command is a command-line utility for walking a file hierarchy. It can be used to find files and directories and perform subsequent operations on them. It supports searching by file, folder, name, creation date, modification date, owner and permissions.</p>
 <h3 id="find-file-by-name">Find File By Name</h3>
-<p>As with most open-source commands, you have a number of available options. And we are attempting to find a file by name, we’ll use one of two options:</p>
+<p>As with most open-source commands, you have several available options. And we are attempting to find a file by name, we’ll use one of two options:</p>
 <ul>
 <li><strong>name</strong> – case sensitive</li>
 <li><strong>iname</strong> – case insensitive</li>
 </ul>
-<p>Remember, Open-source is very particular about case, so if you’re looking for a file named Linux.odt, the following command will return no results.</p>
+<p>Remember, Open-source is very particular about the case, so if you’re looking for a file named text.txt, the following command will return no results.</p>
 <pre><code>sudo find / -name filename.extension
 </code></pre><p>Sample:</p>
 <pre><code>sudo find / -name text.txt
@@ -412,7 +414,7 @@
 </tr>
 <tr>
 <td align="center"><strong>c</strong></td>
-<td align="left"><code>Chracter Devices</code></td>
+<td align="left"><code>Character Devices</code></td>
 </tr>
 <tr>
 <td align="center"><strong>b</strong></td>
@@ -425,12 +427,19 @@
 </code></pre><p>We can use the same option to help us look for configuration files. Say, for instance, you want to locate all regular files that end in the <code>.conf</code> extension. This command would look something like:</p>
 <pre><code>sudo find / -type  f -name &quot;*.conf&quot;
 </code></pre><h3 id="find-modified-files-since-last-60-minutes">Find Modified Files Since Last 60 minutes</h3>
+<p>Do you know you can modify your files by for the last 60 minutes or any minutes.</p>
 <pre><code>find / -mmin -60
 </code></pre><h3 id="find-change-files-since-last-6-minutes">Find Change Files Since Last 6 minutes</h3>
+<p>You can also find the changed files that you have been changed for any minutes, too.</p>
 <pre><code>find / -cmin -60
 </code></pre><h3 id="find-all-files-which-are-accessed-7-days">Find All Files Which Are Accessed 7 days</h3>
+<p>Besides finding all the files that have been changed by minutes you can look for the files has been accessed for days.</p>
 <pre><code>find / -atim 7
-</code></pre><h3 id="finding-files-by-size">Finding Files By Size</h3>
+</code></pre>
+
+<div class="notices info" ><p>All the numeric number here, you can put with any other number.</p></div>
+
+<h3 id="finding-files-by-size">Finding Files By Size</h3>
 <p>We can use the find command to locate files of a certain size. Say, for instance, you want to go large and locate files that are over <strong>1000MB</strong>. The find command can be issued, with the help of the <code>-size</code> option, like so:</p>
 <pre><code>find / -size +1000M
 </code></pre><p>You can also find all files which are greater than or less than, too. For example, <code>( Greater than 10MB Less than 100MB )</code></p>
@@ -468,6 +477,53 @@
 </tbody>
 </table>
 <hr>
+<p>The <code>which</code> command locates the executable file associated with a given command. It returns the pathnames of the files (or links) which would be executed in the current environment, had the filename (or filenames) been given as a command (or commands) in a strictly POSIX-conformant shell. It does this by searching the paths in the PATH environment variable for executable files matching the names of the arguments.</p>
+<p>The syntax for <code>which</code> command is as follows:</p>
+<pre><code>which [OPTIONS] FILE_NAME
+</code></pre><h3 id="locate-file-with-which">Locate File With Which</h3>
+<p>For example, to find the full path of the <strong>ping</strong> command, you would type the following:</p>
+<pre><code>which ping
+</code></pre><p>You can also provide more than one arguments to the which command:</p>
+<pre><code>which ping uptime
+</code></pre><p>The output will include full paths to both ping and uptime executables:</p>
+<pre><code>/usr/bin/ping
+/usr/bin/uptime
+</code></pre><p>The search is done from left to right, and if more than one matches are found in the directories listed in the <code>PATH</code> path variable, which will print only the first one. To print all matches, use the <code>-a</code> option:</p>
+<pre><code>which -a touch
+</code></pre>
+
+<div class="notices info" ><p>Usually one of the executables is only a symlink to the other one, but in some cases, you may have two versions of the same command installed in different locations or different commands using the same name.</p></div>
+
+
+
+<div class="notices note" ><p>The <code>which</code> command is used to locate a command by searching the command executable in the directories specified by the environmental variable <code>PATH</code>.</p></div>
+
+<hr>
+<h3 id="showing-history-of-used-commands">Showing History Of Used Commands</h3>
+<p>Since all of our services are currently running on Open-Source. There is a very useful command to show you all of the last commands that have been recently used. The command is simply called <code>history</code>, but can also be accessed by looking at your <code>.bash_history</code> in your home folder.</p>
+<pre><code>history
+</code></pre>
+
+<div class="notices note" ><p>By default, the history command will show you the last five hundred commands you have entered.</p></div>
+
+<h3 id="showing-history-of-used-command-less">Showing History Of Used Command Less</h3>
+<p>If you wish to view the history one page at a time, you can use the command below. Now, you can simply use the spacebar to view one page at a time or use the down arrow to view one line at a time:</p>
+<pre><code>history | less
+</code></pre><p>To view just the last ten commands, you can use the following:</p>
+<pre><code>history | tail
+</code></pre><p>To view the last 25 commands, just use the following:</p>
+<pre><code>history 25
+</code></pre><p>Another way to search history is with the following command. This command will show us all the history of commands have used on the object.</p>
+<pre><code>history | grep &lt;OPTION&gt; &lt;FILE_NAME&gt;
+</code></pre><p>For Example: I want to see how many commands have been used on this file <code>text.txt</code></p>
+<pre><code>history | grep text.txt
+</code></pre><p>Here is the output all the commands have been used on it.</p>
+<pre><code>  394  touch text.txt
+  397  find / -iname text.txt
+  398  sudo find / -iname text.txt
+  408  locate text.txt
+  431  history | grep text.txt
+</code></pre><hr>
 </div>
           
           <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 05 Jan 2020</p>
