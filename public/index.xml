@@ -145,6 +145,18 @@ Check the connection To ensure about the network connection, go through the foll
     </item>
     
     <item>
+      <title>Password</title>
+      <link>https://www.koompi.org/basic/password/password/</link>
+      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
+      
+      <guid>https://www.koompi.org/basic/password/password/</guid>
+      <description>This section will provide the information related to set, change password.
+Set User Password Type the following command to change your own password
+passwd Sample Output:
+[koompi@koompi-pc ~]$ passwd Changing password for koompi. Current password: New password: Retype new password: passwd: password updated successfully The user is first prompted for his/her old password if one is present. This password is then encrypted and compared against the stored password. The user has only one chance to enter the correct password.</description>
+    </item>
+    
+    <item>
       <title>Pix Release</title>
       <link>https://www.koompi.org/release/pix-release/pix_release/</link>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
@@ -208,7 +220,8 @@ Due to its heavy adoption, familiarizing yourself with systemd is well worth the
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
       <guid>https://www.koompi.org/basic/users-and-groups/users-and-groups/</guid>
-      <description>coming soon!!! </description>
+      <description>The id command writes to standard output a message containing the system identifications (ID) for a specified user. The system IDs are numbers which identify users and user groups to the system. The id command writes the following information, when applicable:
+ User name and real user ID Name of the user&amp;rsquo;s group and real group ID Name of user&amp;rsquo;s supplementary groups and supplementary group IDs  Supplementary group information is written only for systems supporting multiple-user groups and only if the specified user belongs to a supplementary group.</description>
     </item>
     
     <item>

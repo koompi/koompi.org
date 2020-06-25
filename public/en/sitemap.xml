@@ -78,6 +78,11 @@
   </url>
   
   <url>
+    <loc>https://www.koompi.org/basic/password/password/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.koompi.org/release/pix-release/pix_release/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
@@ -251,6 +256,10 @@
                 hreflang="en"
                 href="https://www.koompi.org/tags/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://www.koompi.org/tutorial/</loc>
   </url>
   
 </urlset>
