@@ -16,6 +16,8 @@ In this guide, we will be discussing the `systemctl` command, which is the centr
 Please note that although `systemd` has become the default init system for many **Linux distributions**, it isn’t implemented universally across all distros. As you go through this tutorial, if your terminal outputs the `error bash: systemctl` is not installed then it is likely that **your machine has a different init system installed**.
 {{< /notice >}}
 
+----
+----
 
 ## System Service Management
 **The fundamental purpose** of an init system is to initialize the components that must be started after the **Linux kernel** is booted `(traditionally known as “userland” components)`. The init system is also used to manage services and daemons for the server at any point while the system is running. With that in mind, we will start with some simple **service management operations.**

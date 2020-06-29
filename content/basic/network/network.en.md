@@ -1,5 +1,5 @@
 ---
-title: "Network"
+title: "Network Info"
 date: 2018-12-29T11:02:05+06:00
 lastmod: 2020-01-05T10:42:26+06:00
 draft: false
@@ -8,6 +8,8 @@ keywords: ["induct", "instate"]
 ---
 Network is included by two or more computers that are linked to share resources (such as printers and CDs), exchange files, or allow electronic communications. NetworkManager is the configuration of the network on the interfaces, which is the software utility that aims to simplify the use of computer networks.  
 
+---
+---
 ## Check the connection 
 To ensure about the network connection, go through the following conditions below:
  1. Your `network interface` is listed and enabled. Otherwise, check the device driver.

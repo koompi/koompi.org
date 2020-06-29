@@ -1,6 +1,6 @@
 ---
-title: "Intermediate"
-date: 2018-12-29T11:02:05+06:00
+title: "Other"
+date: 2017-12-29T11:02:05+06:00
 lastmod: 2020-01-05T10:42:26+06:00
 draft: false
 # search related keywords
@@ -28,56 +28,11 @@ To reinstall all native packages, use:
 ```shell
  pi -Qqn | pi -S -
 ```
-# Password Info 
-
-Both **KOOMPI OS** and **Linux** operating systems use the `passwd` command to change the user password. The `passwd` is used to update a user’s authentication token (password) stored in `/etc/shadow file`. The `passwd` change passwords for user and group accounts. 
- 
-A normal user may only change the password for his/her own account, `the superuser (or root)` may change the password for any account. 
-
-
-The **administrator** of a group may change the password for the group. It also changes account information, such as the full name of the user, user login shell, or password expiry date and interval.
 
 
 
 
 
-
-
-The **root** account on a KOOMPI OS computer is the account with full privileges. Root access is often necessary for performing commands in PionuxOS, especially commands that affect system files. Because root is so powerful, it's recommended to only request root access when necessary, as opposed to logging in as the root user. This can help prevent accidental damage to important system files.
-
-# Root Info
-### Root Access In Terminal(Konsole)
-
-1. **Open the terminal**. If the terminal is not already open, open it. Many distributions allow you to open it by pressing `Ctrl+Alt+T`.
-1. Type **su -** and **press ↵** Enter. This will attempt to log you in as `super user`. You can actually use this command to log in as any user on the machine, but when left blank it will attempt to log in as root.
-1. **Enter the root password when prompted**. After typing ***su -** and **press ↵** Enter, you'll be prompted for the root password.
-If you get an "authentication error" message, your root account is likely locked. See the next section for instructions on unlocking it.
-1. **Check the command prompt**. When you are logged in as root, the command prompt should end with `#` instead of `$`.
-1. Now you can use any commands that required root.
-
-### Logout Of Root
-You can **Logout of Root** in two ways:
-**+ First Way, Type:**
-
-```
-exit
-```
-**+ Second Way,Press:**
-```
-     CTRL+D
-```
-### Unlocked The Root Account
-1. **Unlock the root account (KOOMPI OS)**. KOOMPI OS locks the root account so that the average user can't access it. This is done because accessing root is rarely necessary when using the `sudo` command (see the previous section). Unlocking the root account will allow you to log in as root.
-```
-sudo passwd root
-```
-2.  **Open the terminal**. If the terminal hasn't opened yet. Many distributions allow you to open it by pressing `Ctrl+Alt+T`.
-3. Type `sudo passwd root` and `press ↵ Enter`. When prompted for a password, enter your *user* password.
-4. `Set a new password`. You'll be prompted to create a new password and enter it twice. Once a password has been set, the root account will be active.
-5. `Lock the root account again`. If you want to lock the root account, enter the following commands to remove the password and lock root:
-```
- sudo passwd -dl root
-```
 
 
 
@@ -157,73 +112,6 @@ To verify the presence of the files installed by a package:
 > **Tips**: Passing the `k` flag twice will perform a more thorough check.
 {.is-success}
 
-# Cleaning The Package Caches
-**Pi** stores its downloaded packages in `/var/cache/pacman/pkg/` and does not remove the old or uninstalled versions automatically. This has some advantages:
-
-**1. It allows to `downgrade a package` without the need to retrieve the previous version through other means, such as the `Arch Linux Archive.`**
-**2. A package that has been uninstalled can easily be reinstalled directly from the cache folder, not requiring a new download from the repository.**
-
-However, it is necessary to `deliberately clean up the cache` periodically to prevent the folder to grow indefinitely in size.
-
-The paccache script, provided within the `pacman-contrib` package, deletes all cached versions of installed and uninstalled packages, except for the most recent 3, by default:
-```
-paccache -r
-```
-**Enable and start** `paccache.timer` to discard unused packages weekly.
-
-> **Tips**: You can create a `hook` to run this automatically after every pi transaction.
-{.is-success}
-
-
-For more **options** aboout `paccache` use :
-```
- paccache -h
-```
-**Pacman** also has some built-in options to clean the cache and the leftover database files from repositories which are no longer listed in the configuration file `/etc/pacman.conf`. 
-
-However, *Pacman* does not offer the possibility to keep a number of past versions and is, therefore, more aggressive than paccache default options.
-
-To remove all the `cached packages` that are not currently installed, and the `unused sync database`, execute:
-```
- pi -Sc
-```
-
-To remove all files from the cache, use the clean switch twice, this is the most aggressive approach and will leave nothing in the cache folder:
-```
-    pi -Scc
-```
-> **Warning**: One should avoid deleting from the cache all past versions of installed packages and all uninstalled packages unless one desperately needs to free some disk space. This will prevent downgrading or reinstalling packages without downloading them again.
-{.is-warning}
-
-> **Tips:** Automatically clean the package cache.
-{.is-success}
-
-
-If you are too lazy to clean the package cache manually, you can automate this task using Pacman hooks. The Pacman hook will automatically clean the package cache after every Pacman transaction.
-
-
-To do so, create a file /etc/pacman.d/hooks/clean_package_cache.hook:
-```Text
-     sudo mkdir /etc/pacman.d/hooks
-```
-Next:
-```Text
-    sudo nano /etc/pacman.d/hooks/clean_package_cache.hook
-```
-Add the following lines:
-```Text
-    [Trigger]
-    Operation = Upgrade
-    Operation = Install
-    Operation = Remove
-    Type = Package
-    Target = *
-    [Action]
-    Description = Cleaning pacman cache...
-    When = PostTransaction
-    Exec = /usr/bin/paccache -r
-```
-Save and close the file. From now on, the package cache will be cleaned automatically after every Pacman transactions (like an upgrade, install, remove). You don’t have to run paccache command manually every time.
 
 
 # Other Operations

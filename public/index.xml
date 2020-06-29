@@ -7,10 +7,33 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright by  © KOOMPI 2020 </copyright>
-    <lastBuildDate>Sat, 29 Dec 2018 11:02:05 +0600</lastBuildDate>
+    <lastBuildDate>Sun, 29 Dec 2019 11:02:05 +0600</lastBuildDate>
     
 	<atom:link href="https://www.koompi.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Install/Remove</title>
+      <link>https://www.koompi.org/basic/install-and-remove/install_remove/</link>
+      <pubDate>Sun, 29 Dec 2019 11:02:05 +0600</pubDate>
+      
+      <guid>https://www.koompi.org/basic/install-and-remove/install_remove/</guid>
+      <description>On Open-source software most applications are installed through Aur that contain app package.So, Here are the details for installing and removing packages details.
+  Installing Packages Follow the following command to install a signal package including the dependencies:
+ pi -S &amp;lt;Package name&amp;gt; or pi -i &amp;lt;Package name&amp;gt; For the list of packages installation:
+ pi -S &amp;lt;Package name1 Package name2 ...&amp;gt;  Installing Package Group Some packages belong to a group of packages that simultaneously call installation.</description>
+    </item>
+    
+    <item>
+      <title>Files/Folders</title>
+      <link>https://www.koompi.org/basic/flies-and-folders/flie-folder/</link>
+      <pubDate>Fri, 29 Nov 2019 11:02:05 +0600</pubDate>
+      
+      <guid>https://www.koompi.org/basic/flies-and-folders/flie-folder/</guid>
+      <description>This document is a guide for information related to Files and Folders. All the Command lines will be provided here with the explanation plus the example.
+For more details of the instruction, see KOOMPI OS website articles or the various program section, both linked from this guide.
+  Create File Knowing how to create a new file is an important skill for anyone using open-source regularly. You can create a new file either from the command line or from the desktop file manager.</description>
+    </item>
     
     <item>
       <title>Browser Apps</title>
@@ -20,6 +43,16 @@
       <guid>https://www.koompi.org/applications/browser/browser/</guid>
       <description>A web browser, or simply &amp;ldquo;browser,&amp;rdquo; is a software application for accessing information on the World Wide Web. When a user requests a web page from a particular website, the web browser retrieves the necessary content from a web server and then displays the page on the screen.
 The most popular browsers have several features in common. They allow users to set bookmarks and browse in a private mode. They also can be customized with extensions, and some of them provide a sync service.</description>
+    </item>
+    
+    <item>
+      <title>Cache Info</title>
+      <link>https://www.koompi.org/basic/cache/cache/</link>
+      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
+      
+      <guid>https://www.koompi.org/basic/cache/cache/</guid>
+      <description>Pi stores its downloaded packages in /var/cache/pacman/pkg/ and does not remove the old or uninstalled versions automatically. This has some advantages:
+ It allows to downgrade a package without the need to retrieve the previous version through other means, such as the Arch Linux Archive. A package that has been uninstalled can easily be reinstalled directly from the cache folder, not requiring a new download from the repository.  However, it is necessary to deliberately clean up the cache periodically to prevent the folder to grow indefinitely in size.</description>
     </item>
     
     <item>
@@ -80,18 +113,7 @@ You can categorize each file as you download it, and then access all downloads r
     </item>
     
     <item>
-      <title>Files/Folders</title>
-      <link>https://www.koompi.org/basic/flies-and-folders/flie-folder/</link>
-      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
-      
-      <guid>https://www.koompi.org/basic/flies-and-folders/flie-folder/</guid>
-      <description>This document is a guide for information related to Files and Folders. All the Command lines will be provided here with the explanation plus the example.
-For more details of the instruction, see KOOMPI OS website articles or the various program section, both linked from this guide.
-  Create File Knowing how to create a new file is an important skill for anyone using open-source regularly. You can create a new file either from the command line or from the desktop file manager.</description>
-    </item>
-    
-    <item>
-      <title>GitHub</title>
+      <title>GitHub Info</title>
       <link>https://www.koompi.org/basic/github/git_command/</link>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
@@ -115,15 +137,6 @@ Please, make sure you have already updated your system with this command &amp;ld
     </item>
     
     <item>
-      <title>Intermediate</title>
-      <link>https://www.koompi.org/basic/intermediate-command/intermediate/</link>
-      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
-      
-      <guid>https://www.koompi.org/basic/intermediate-command/intermediate/</guid>
-      <description>Coming soon!! **Noted**: If the **pi** database files are corrupted, and there is no backup file available, there exists some hope of rebuilding the pi database. {.is-info} # Reinstalling all packages To reinstall all native packages, use: ```shell pi -Qqn | pi -S - ``` # Password Info Both **KOOMPI OS** and **Linux** operating systems use the `passwd` command to change the user password. The `passwd` is used to update a user’s authentication token (password) stored in `/etc/shadow file`.</description>
-    </item>
-    
-    <item>
       <title>Music Player Apps</title>
       <link>https://www.koompi.org/applications/music-platform/music_platform/</link>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
@@ -134,24 +147,24 @@ This document is containing only apps that possibly to install in the OS, If you
     </item>
     
     <item>
-      <title>Network</title>
+      <title>Network Info</title>
       <link>https://www.koompi.org/basic/network/network/</link>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
       <guid>https://www.koompi.org/basic/network/network/</guid>
       <description>Network is included by two or more computers that are linked to share resources (such as printers and CDs), exchange files, or allow electronic communications. NetworkManager is the configuration of the network on the interfaces, which is the software utility that aims to simplify the use of computer networks.
-Check the connection To ensure about the network connection, go through the following conditions below:
+  Check the connection To ensure about the network connection, go through the following conditions below:
  Your network interface is listed and enabled.</description>
     </item>
     
     <item>
-      <title>Password</title>
+      <title>Password Info</title>
       <link>https://www.koompi.org/basic/password/password/</link>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
       <guid>https://www.koompi.org/basic/password/password/</guid>
-      <description>This section will provide the information related to set, change password.
-Set User Password Type the following command to change your own password
+      <description>This section will provide the information related password information.
+  Set User Password Type the following command to change your own password
 passwd Sample Output:
 [koompi@koompi-pc ~]$ passwd Changing password for koompi. Current password: New password: Retype new password: passwd: password updated successfully The user is first prompted for his/her old password if one is present. This password is then encrypted and compared against the stored password. The user has only one chance to enter the correct password.</description>
     </item>
@@ -167,21 +180,21 @@ In this document, The details about what pix will be providing to the all users.
     </item>
     
     <item>
-      <title>Printing</title>
-      <link>https://www.koompi.org/basic/printing/printing/</link>
-      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
-      
-      <guid>https://www.koompi.org/basic/printing/printing/</guid>
-      <description>coming soon!!! </description>
-    </item>
-    
-    <item>
       <title>Recording Apps</title>
       <link>https://www.koompi.org/applications/recorder/recorder/</link>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
       <guid>https://www.koompi.org/applications/recorder/recorder/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Root Info</title>
+      <link>https://www.koompi.org/basic/root/root/</link>
+      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
+      
+      <guid>https://www.koompi.org/basic/root/root/</guid>
+      <description>root is the user name or account that by default has access to all commands and files on a Linux or other Unix-like operating system with full privileges. Root access is often necessary for performing commands in the system, especially commands that affect system files because root is so powerful, it&amp;rsquo;s recommended to only request root access when necessary, as opposed to logging in as the root user. This can help prevent accidental damage to important system files.</description>
     </item>
     
     <item>
@@ -264,6 +277,15 @@ This guide is written for a non-root user. Commands that require elevated privil
       <description>Abiword Abiword is free word processing program similar to Microsoft® Word. It is suitable for a wide variety of word processing tasks.
 How to install Abiword To install it run this command in terminal:
 pi -S abiword  FonteForge FontForge is a font editor which supports many common font formats. FontForge is free software and is distributed under a mix of the GNU General Public License Version 3 and the 3-clause BSD license.</description>
+    </item>
+    
+    <item>
+      <title>Other</title>
+      <link>https://www.koompi.org/basic/other/other/</link>
+      <pubDate>Fri, 29 Dec 2017 11:02:05 +0600</pubDate>
+      
+      <guid>https://www.koompi.org/basic/other/other/</guid>
+      <description>Coming soon!! **Noted**: If the **pi** database files are corrupted, and there is no backup file available, there exists some hope of rebuilding the pi database. {.is-info} # Reinstalling all packages To reinstall all native packages, use: ```shell pi -Qqn | pi -S - ``` # Querying Package Database ```shell $ pi -Q #queries the local package database $ pi -s #sync database $ pi -F #files database ``` For more options about querying: ```shell $ pi -Q --help ``` Options: ```shell -b, --dbpath  # set an alternate database location -c, --changelog # view the changelog of a package -d, --deps # list packages installed as dependencies [filter] -e, --explicit # list packages explicitly installed [filter] -g, --groups # view all members of a package group -i, --info # view package information (-ii for backup files) -k, --check # check that package files exist (-kk for file properties) -l, --list # list the files owned by the queried package -m, --foreign # list installed packages not found in sync db(s) [filter] -n, --native # list installed packages only found in sync db(s) [filter] -o, --owns  # query the package that owns  -p, --file  # query a package file instead of the database -q, --quiet # show less information for query and search -r, --root  # set an alternate installation root -s, --search  # search locally-installed packages for matching strings -t, --unrequired # list packages not (optionally) required by any package (-tt to ignore optdepends) [filter] -u, --upgrades # list outdated packages [filter] -v, --verbose # be verbose --arch  # set an alternate architecture --cachedir  # set an alternate package cache location --color  # colorize the output --config  # set an alternate configuration file --confirm # always ask for confirmation --debug # display debug messages --disable-download-timeout # use relaxed timeouts for download --gpgdir  # set an alternate home directory for GnuPG --hookdir  # set an alternate hook location --logfile  # set an alternate log file --noconfirm # do not ask for any confirmation --sysroot # operate on a mounted guest system (root-only) ```  **Warning**: Sometimes, -s&#39;s builtin ERE (Extended Regular Expressions) can cause a lot of unwanted results, so it has to be limited to match the package name only; not the description nor any other field.</description>
     </item>
     
   </channel>

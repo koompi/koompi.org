@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
   <meta charset="utf-8">
-  <title>Categories</title>
+  <title>Cache Info</title>
 
   <meta name="generator" content="Hugo 0.72.0" />
 
@@ -125,22 +125,10 @@
         
         
         
-        <option id="en" value="https://www.koompi.org/categories/" selected>En
+        <option id="en" value="https://www.koompi.org/basic/cache/cache/" selected>En
         </option>
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <option id="kh" value="https://www.koompi.org/kh/categories/">Kh</option>
         
         
         
@@ -165,6 +153,272 @@
             
             <a class="d-block h4 back-btn" href="/"></a>
             
+               
+              
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.koompi.org/basic/" title="Basic Commands" class="sidelist
+  ">
+  <a href="https://www.koompi.org/basic/">
+    Basic Commands
+  </a>
+  
+  
+    <ul>
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.koompi.org/basic/install-and-remove/install_remove/" title="Install/Remove" class="sidelist
+  ">
+  <a href="https://www.koompi.org/basic/install-and-remove/install_remove/">
+    Install/Remove
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.koompi.org/basic/flies-and-folders/flie-folder/" title="Files/Folders" class="sidelist
+  ">
+  <a href="https://www.koompi.org/basic/flies-and-folders/flie-folder/">
+    Files/Folders
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.koompi.org/basic/cache/cache/" title="Cache Info" class="sidelist
+  active">
+  <a href="https://www.koompi.org/basic/cache/cache/">
+    Cache Info
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.koompi.org/basic/github/git_command/" title="GitHub Info" class="sidelist
+  ">
+  <a href="https://www.koompi.org/basic/github/git_command/">
+    GitHub Info
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.koompi.org/basic/network/network/" title="Network Info" class="sidelist
+  ">
+  <a href="https://www.koompi.org/basic/network/network/">
+    Network Info
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.koompi.org/basic/password/password/" title="Password Info" class="sidelist
+  ">
+  <a href="https://www.koompi.org/basic/password/password/">
+    Password Info
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.koompi.org/basic/root/root/" title="Root Info" class="sidelist
+  ">
+  <a href="https://www.koompi.org/basic/root/root/">
+    Root Info
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.koompi.org/basic/search-and-find/searchfind/" title="Searching/History" class="sidelist
+  ">
+  <a href="https://www.koompi.org/basic/search-and-find/searchfind/">
+    Searching/History
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.koompi.org/basic/system-control/system_control/" title="System Manager" class="sidelist
+  ">
+  <a href="https://www.koompi.org/basic/system-control/system_control/">
+    System Manager
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.koompi.org/basic/users-and-groups/users-and-groups/" title="Users/Groups" class="sidelist
+  ">
+  <a href="https://www.koompi.org/basic/users-and-groups/users-and-groups/">
+    Users/Groups
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.koompi.org/basic/other/other/" title="Other" class="sidelist
+  ">
+  <a href="https://www.koompi.org/basic/other/other/">
+    Other
+  </a>
+  
+  
+</li>
+
+
+        
+      
+    </ul>
+  
+</li>
+
+
               
             
               
@@ -186,33 +440,58 @@
       </div>
       <div class="col-lg-9">
         <div class="p-lg-5 p-4 bg-white">
-          <h2 class="mb-5">Categories</h2>
+          <h2 class="mb-5">Cache Info</h2>
           
-          <div class="bg-light p-4">
-            <ul class="page-list">
-              
+          <div class="content"><p><strong>Pi</strong> stores its downloaded packages in <code>/var/cache/pacman/pkg/</code> and does not remove the old or uninstalled versions automatically. This has some advantages:</p>
+<ol>
+<li>It allows to <code>downgrade a package</code> without the need to retrieve the previous version through other means, such as the <code>Arch Linux Archive.</code></li>
+<li>A package that has been uninstalled can easily be reinstalled directly from the cache folder, not requiring a new download from the repository.</li>
+</ol>
+<p>However, it is necessary to <code>deliberately clean up the cache</code> periodically to prevent the folder to grow indefinitely in size.</p>
+<p>The paccache script, provided within the <code>pacman-contrib</code> package, deletes all cached versions of installed and uninstalled packages, except for the most recent 3, by default:</p>
+<pre><code>paccache -r
+</code></pre><p><strong>Enable and start</strong> <code>paccache.timer</code> to discard unused packages weekly.</p>
+
+
+<div class="notices tip" ><p>You can create a <code>hook</code> to run this automatically after every pi transaction.</p></div>
+
+<p>For more <strong>options</strong> aboout <code>paccache</code> use :</p>
+<pre><code>paccache -h
+</code></pre><p><strong>Pacman</strong> also has some built-in options to clean the cache and the leftover database files from repositories which are no longer listed in the configuration file <code>/etc/pacman.conf</code>.</p>
+<p>However, <em>Pacman</em> does not offer the possibility to keep a number of past versions and is, therefore, more aggressive than paccache default options.</p>
+<p>To remove all the <code>cached packages</code> that are not currently installed, and the <code>unused sync database</code>, execute:</p>
+<pre><code>pi -Sc
+</code></pre><p>To remove all files from the cache, use the clean switch twice, this is the most aggressive approach and will leave nothing in the cache folder:</p>
+<pre><code>pi -Scc
+</code></pre>
+
+<div class="notices warning" ><p>One should avoid deleting from the cache all past versions of installed packages and all uninstalled packages unless one desperately needs to free some disk space. This will prevent downgrading or reinstalling packages without downloading them again.</p></div>
 
 
 
+<div class="notices tip" ><p>Automatically clean the package cache.</p></div>
 
-
-
-
-
-<li data-nav-id="https://www.koompi.org/categories/" title="Categories" class="sidelist
-  active">
-  <a href="https://www.koompi.org/categories/">
-    Categories
-  </a>
-  
-  
-</li>
-
-
-            </ul>
-          </div>
+<p>If you are too lazy to clean the package cache manually, you can automate this task using Pacman hooks. The Pacman hook will automatically clean the package cache after every Pacman transaction.</p>
+<p>To do so, create a file /etc/pacman.d/hooks/clean_package_cache.hook:</p>
+<pre><code>sudo mkdir /etc/pacman.d/hooks
+</code></pre><p>Next:</p>
+<pre><code>sudo nano /etc/pacman.d/hooks/clean_package_cache.hook
+</code></pre><p>Add the following lines:</p>
+<pre><code>[Trigger]
+Operation = Upgrade
+Operation = Install
+Operation = Remove
+Type = Package
+Target = *
+[Action]
+Description = Cleaning pacman cache...
+When = PostTransaction
+Exec = /usr/bin/paccache -r
+</code></pre><p>Save and close the file. From now on, the package cache will be cleaned automatically after every Pacman transactions (like an upgrade, install, remove). You don’t have to run paccache command manually every time.</p>
+<hr>
+</div>
           
-          <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 01 Jan 0001</p>
+          <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 05 Jan 2020</p>
           <nav class="pagination mt-3">
             
             
@@ -240,13 +519,14 @@
             
             
             
+
+            
             
             
 
             
             
             
-
             
             
             
@@ -276,6 +556,7 @@
             
             
 
+            
             
             
             
@@ -303,6 +584,9 @@
             
             
             
+            
+            
+            
 
             
             
@@ -783,9 +1067,11 @@
             
             
 
+            
+            <a class="nav nav-prev" href="https://www.koompi.org/basic/flies-and-folders/flie-folder/"><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">Files/Folders</span></a>
             
             
-            <a class="nav nav-next" href="https://www.koompi.org/basic/"> <span class="d-none d-md-block">Basic Commands</span><i class="ti-arrow-right ml-2"></i></a>
+            <a class="nav nav-next" href="https://www.koompi.org/basic/github/git_command/"> <span class="d-none d-md-block">GitHub Info</span><i class="ti-arrow-right ml-2"></i></a>
             
           </nav>
         </div>
