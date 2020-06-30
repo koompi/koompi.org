@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8">
+  <title>Konsole Details</title>
+
+  <meta name="generator" content="Hugo 0.73.0" />
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://www.koompi.org/plugins/bootstrap/bootstrap.min.css">
+
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="https://www.koompi.org/plugins/themify-icons/themify-icons.css">
+
+  <!-- highlight -->
+  <link rel="stylesheet" href="https://www.koompi.org/plugins/highlight/hybrid.css">
+
+  <!--Favicon-->
+  <link rel="icon" href="https://www.koompi.org/images/KOOMPILogo-Black.png" type="image/x-icon">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+  
+  <style>
+  :root{
+    --primary-color:#02007e;
+    --body-color:#f9f9f9;
+    --text-color:#636363;
+    --text-color-dark:#242738;
+    --white-color:#ffffff;
+    --light-color:#f8f9fa;
+    --font-family:Lato;
+  }
+  </style>
+
+<!-- Main Stylesheet -->
+
+<link href="https://www.koompi.org/css/style.min.css" rel="stylesheet" media="screen"/>
+
+<!-- jquiry -->
+<script src="https://www.koompi.org/plugins/jquery/jquery-1.12.4.js"></script>
+
+<!-- jquary ui -->
+<script src="https://www.koompi.org/plugins/jquery/jquery-ui.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://www.koompi.org/plugins/bootstrap/bootstrap.min.js"></script>
+
+<!-- match-height JS -->
+<script src="https://www.koompi.org/plugins/match-height/jquery.matchHeight-min.js"></script>
+
+<!-- highlight -->
+<script src="https://www.koompi.org/plugins/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+</head>
+  
+  <body>
+    
+    <!-- header -->
+    <header class="shadow-bottom sticky-top bg-white">
+      <nav class="navbar navbar-expand-md navbar-light">
+  <div class="container">
+    <a class="navbar-brand px-2" href="/">
+      
+      
+      
+      KOOMPI OS
+      
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/">Home</a>
+        </li>
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/faqs">Faqs</a>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="https://repo.koompi.org/iso/KOOMPI-OS-2020.04.26-x86_64.iso">Download</a>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            videos
+          </a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="/interview">Interview</a>
+            
+            <a class="dropdown-item" href="/tutorial">Tutorial</a>
+            
+          </div>
+        </li>
+        
+        
+      </ul>
+      
+      <select class="lang-list dark" id="select-language"
+        onchange="location = this.value;">
+        
+        
+        
+        
+        
+        
+        
+        
+        <option id="en" value="https://www.koompi.org/konsole/" selected>En
+        </option>
+        
+        
+        
+        
+        
+        
+      </select>
+      
+    </div>
+  </div>
+</nav>
+    </header>
+    <!-- /header -->
+    
+    
+
+<!-- details page -->
+<section class="single section-sm pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="bg-white pl-lg-4 py-4 pr-4 mb-5 mb-lg-0 sticky-top top-100 overflow-hidden">
+          <ul class="list-styled">
+            
+            <a class="d-block h4 back-btn" href="/"></a>
+            
+              
+            
+               
+              
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.koompi.org/konsole/" title="Konsole Details" class="sidelist
+  active">
+  <a href="https://www.koompi.org/konsole/">
+    Konsole Details
+  </a>
+  
+  
+</li>
+
+
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="p-lg-5 p-4 bg-white">
+          <h2 class="mb-5">Konsole Details</h2>
+          
+          <div class="content"><p>Konsole is the default terminal app of <code>KDE Desktop Environment</code>. In this article, we will introduce you about how konsole work. So, let’s get started.</p>
+<hr>
+<hr>
+<p>Basics of Konsole Terminal:</p>
+<p><img src="./images/basic.png" alt="image example" title="image"></p>
+<p>To run a command, just type it in and press <code>Enter </code>. The command should run and print the output in the Konsole display like below.</p>
+<p>For example, To update the system with command <code>pi -Syu</code></p>
+<p><img src="./images/run.png" alt="image example" title="image"></p>
+<h3 id="working-with-tabs-and-windows">Working with Tabs and Windows</h3>
+<p>To create a new tab, click on <strong>Left Side Corner &gt; File &gt; New Tab.</strong></p>
+<p>To create a new window, click on <strong>Left Side Corner File &gt; New Window.</strong></p>
+<p><img src="./images/winandtab.png" alt="image example" title="image"></p>
+<p>Once a new tab is <code>created</code>, it will show up in the tab bar down below in terminal as you can see in the image below. You can switch between them very easily.</p>
+<p><img src="./images/twokonsole.png" alt="image example" title="image"></p>
+<p>You can also clone tab from <strong>Left Side Corner &gt; File &gt; Clone Tab.</strong></p>
+<p><img src="./images/clone.png" alt="image example" title="image"></p>
+<p>To close a tab, click on <strong>Left Side Corner &gt; File &gt; Close Tab.</strong></p>
+<p>To close a window, click on <strong>Left Side Corner &gt; File &gt; Close Window.</strong></p>
+<p><img src="./images/close.png" alt="image example" title="image"></p>
+<p>You can also <code>right click on a tab</code> and <code>detach</code> (Detach Tab), rename (Rename Tab…) and close (Close Tab) the tab.</p>
+<p><img src="./images/twoopt.png" alt="image example" title="image"></p>
+<h3 id="opening-file-manager-in-current-working-directory">Opening File Manager in Current Working Directory</h3>
+<p>If you want to open the directory you’re currently in on the Konsole terminal with Dolphin file manager, click on <strong>Left Side Corner &gt; File &gt; Open File Manager.</strong></p>
+<p><img src="./images/filemanager.png" alt="image example" title="image"></p>
+<p>The directory should be opened in <code>Dolphin</code>.</p>
+<p><img src="./images/dolphin.png" alt="image example" title="image"></p>
+<h3 id="printing-and-saving-terminal-output">Printing and Saving Terminal Output</h3>
+<p>To save the output of Konsole terminal to a file, click on <strong>Left Side Corner &gt; File &gt; Save Output As</strong></p>
+<p><img src="./images/save.png" alt="image example" title="image">
+Now, select a location and a filename and click on Save.</p>
+<p>You can click on the Filter dropdown menu and select between plain text document format (default) and HTML format.</p>
+<p>Konsole output saved to plain text file.</p>
+<!-- https://linuxhint.com/konsole_terminal_app/ -->
+<p>To print the output, click on File &gt; Print Screen…</p>
+<h3 id="searching-terminal-display">Searching Terminal Display</h3>
+<p>To search for text in the Konsole, click on Edit &gt; Find…</p>
+<h3 id="copying-and-pasting-text">Copying and Pasting Text</h3>
+<p>To copy text, select the text, right click and select Copy.</p>
+<p>To paste, right click and select Paste.</p>
+<h3 id="enlarging-font-shrinking-font-and-setting-character-encoding">Enlarging Font, Shrinking font and Setting Character Encoding</h3>
+<p>To increase the font size on the fly, click on View &gt; Enlarge Font.</p>
+<p>To decrease the font size on the fly, click on View &gt; Shrink Font.</p>
+<p>If you want to set a character set or encoding, click on View &gt; Set Encoding and select your desired character set.</p>
+<h3 id="konsole-split-view">Konsole Split View</h3>
+<p>To split the Konsole view horizontally, click on View &gt; Split View &gt; Split View Left/Right.</p>
+<p>To split the Konsole view vertically, click on View &gt; Split View &gt; Split View Top/Bottom.</p>
+
+
+<div class="notices note" ><p>You can split Kosole horizontally or vertically.</p></div>
+
+<p>To close the active split view, click on View &gt; Split View &gt; Close Active.</p>
+<p>To close the inactive split view, click on View &gt; Split View &gt; Close Others.</p>
+<h3 id="hiding-menubar-and-fullscreen-mode">Hiding Menubar and Fullscreen Mode</h3>
+<p>To hide the Konsole menubar, uncheck <strong>Settings &gt; Show Menubar.</strong></p>
+<p>To display the menubar again, right click on the terminal and check Show Menubar.</p>
+<p>To go to full screen, check Settings &gt; Full Screen Mode.</p>
+<p>Once you’re in full screen mode, press F11 to exit out of full screen mode.</p>
+<h3 id="configuring-konsole">Configuring Konsole</h3>
+<p>To configure Konsole global settings, go to Settings &gt; Configure Konsole</p>
+<p>From the General tab, you can configure default Konsole Window settings.</p>
+<p>You can also configure the Default Search Settings from here.</p>
+<p>From the TabBar tab, you can set when the tab bar will be visible and the position of the tab bar.</p>
+<p>You can also set where new tabs will be placed from the TabBar tab.</p>
+</div>
+          
+          <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 28 Dec 2018</p>
+          <nav class="pagination mt-3">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+            <a class="nav nav-prev" href="https://www.koompi.org/basic/other/other/"><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">Other</span></a>
+            
+            
+            <a class="nav nav-next" href="https://www.koompi.org/applications/"> <span class="d-none d-md-block">Applications Info</span><i class="ti-arrow-right ml-2"></i></a>
+            
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /details page -->
+
+
+
+
+
+    <!-- footer -->
+<footer class="section pb-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8 text-md-left text-center">
+       <p class="mb-md-0 mb-4">Copyright by  © KOOMPI 2020</p>
+      </div>
+      <div class="col-md-4 text-md-right text-center">
+        <ul class="list-inline">
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://www.facebook.com/koompi/"><i class="ti-facebook"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://twitter.com/koompi_official"><i class="ti-twitter-alt"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://github.com/koompi"><i class="ti-github"></i></a></li>
+          
+          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="https://linkedin.com/company/koompi"><i class="ti-linkedin"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- Main Script -->
+
+<script src="https://www.koompi.org/js/script.min.js"></script>
+  </body>
+
+</html>

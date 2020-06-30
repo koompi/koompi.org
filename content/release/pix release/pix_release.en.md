@@ -15,7 +15,7 @@ Here is the command to install **pix** source:
 curl -s https://repo.koompi.org/script/pix.sh -o pix && chmod +x pix && sudo mv pix /usr/bin
 ```
 {{< notice note >}}
-Please make sure you write it down correctly in Konsole. If you do not know anything about the Konsole[Click here](#).
+Please make sure you write it down correctly in Konsole. If you do not know anything about the Konsole [Click here](#).
 {{< /notice >}}
 
 {{< notice tip >}}

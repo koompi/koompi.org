@@ -28,6 +28,16 @@
   </url>
   
   <url>
+    <loc>https://www.koompi.org/basic/users-and-groups/users-and-groups/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.koompi.org/basic/root/root/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.koompi.org/applications/browser/browser/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
@@ -98,11 +108,6 @@
   </url>
   
   <url>
-    <loc>https://www.koompi.org/basic/root/root/</loc>
-    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.koompi.org/basic/search-and-find/searchfind/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
@@ -114,11 +119,6 @@
   
   <url>
     <loc>https://www.koompi.org/basic/system-control/system_control/</loc>
-    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.koompi.org/basic/users-and-groups/users-and-groups/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
@@ -150,6 +150,11 @@
                 hreflang="en"
                 href="https://www.koompi.org/basic/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://www.koompi.org/konsole/</loc>
+    <lastmod>2018-12-28T11:02:05+06:00</lastmod>
   </url>
   
   <url>

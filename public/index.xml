@@ -36,6 +36,25 @@ For more details of the instruction, see KOOMPI OS website articles or the vario
     </item>
     
     <item>
+      <title>Users/Groups</title>
+      <link>https://www.koompi.org/basic/users-and-groups/users-and-groups/</link>
+      <pubDate>Tue, 29 Oct 2019 11:02:05 +0600</pubDate>
+      
+      <guid>https://www.koompi.org/basic/users-and-groups/users-and-groups/</guid>
+      <description>The id command writes to standard output a message containing the system identifications (ID) for a specified user. The system IDs are numbers which identify users and user groups to the system. The id command writes the following information, when applicable:
+ User name and real user ID Name of the user&amp;rsquo;s group and real group ID Name of user&amp;rsquo;s supplementary groups and supplementary group IDs  Supplementary group information is written only for systems supporting multiple-user groups and only if the specified user belongs to a supplementary group.</description>
+    </item>
+    
+    <item>
+      <title>Root Info</title>
+      <link>https://www.koompi.org/basic/root/root/</link>
+      <pubDate>Sun, 29 Sep 2019 11:02:05 +0600</pubDate>
+      
+      <guid>https://www.koompi.org/basic/root/root/</guid>
+      <description>root is the user name or account that by default has access to all commands and files on a Linux or other Unix-like operating system with full privileges. Root access is often necessary for performing commands in the system, especially commands that affect system files because root is so powerful, it&amp;rsquo;s recommended to only request root access when necessary, as opposed to logging in as the root user. This can help prevent accidental damage to important system files.</description>
+    </item>
+    
+    <item>
       <title>Browser Apps</title>
       <link>https://www.koompi.org/applications/browser/browser/</link>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
@@ -189,15 +208,6 @@ In this document, The details about what pix will be providing to the all users.
     </item>
     
     <item>
-      <title>Root Info</title>
-      <link>https://www.koompi.org/basic/root/root/</link>
-      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
-      
-      <guid>https://www.koompi.org/basic/root/root/</guid>
-      <description>root is the user name or account that by default has access to all commands and files on a Linux or other Unix-like operating system with full privileges. Root access is often necessary for performing commands in the system, especially commands that affect system files because root is so powerful, it&amp;rsquo;s recommended to only request root access when necessary, as opposed to logging in as the root user. This can help prevent accidental damage to important system files.</description>
-    </item>
-    
-    <item>
       <title>Searching/History</title>
       <link>https://www.koompi.org/basic/search-and-find/searchfind/</link>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
@@ -225,16 +235,6 @@ So in this section, we are going to introduce many social platforms and a little
       <guid>https://www.koompi.org/basic/system-control/system_control/</guid>
       <description>Systemctl is init system and system manager that is widely becoming the new standard for opensource machines. While there are considerable opinions about whether systemd is an improvement over the traditional SysV init systems it is replacing, the majority of distributions plan to adopt it or have already done so.
 Due to its heavy adoption, familiarizing yourself with systemd is well worth the trouble, as it will make administering servers considerably easier.</description>
-    </item>
-    
-    <item>
-      <title>Users/Groups</title>
-      <link>https://www.koompi.org/basic/users-and-groups/users-and-groups/</link>
-      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
-      
-      <guid>https://www.koompi.org/basic/users-and-groups/users-and-groups/</guid>
-      <description>The id command writes to standard output a message containing the system identifications (ID) for a specified user. The system IDs are numbers which identify users and user groups to the system. The id command writes the following information, when applicable:
- User name and real user ID Name of the user&amp;rsquo;s group and real group ID Name of user&amp;rsquo;s supplementary groups and supplementary group IDs  Supplementary group information is written only for systems supporting multiple-user groups and only if the specified user belongs to a supplementary group.</description>
     </item>
     
     <item>
