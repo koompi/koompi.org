@@ -66,7 +66,7 @@ You can click on the **Filter** dropdown menu and select between plain text docu
 ![image example](./images/savefile.png "image")
 
 {{< notice note >}}
-Konsole output will be saved to plain text file.
+Konsole output will be saved to a plain text file.
 {{< /notice >}}
 
 
@@ -83,7 +83,7 @@ If you have a printer connected, you can print. Otherwise, you can save it as a 
 To search for text in the Konsole, click on **Edit > Find**
 
 {{< notice note >}}
-The searching bar will be appear.
+The searching bar will appear.
 {{< /notice >}}
 
 ### Copying and Pasting Text
@@ -134,7 +134,7 @@ To go to full screen, check **Settings > Full Screen Mode.**
 
 
 {{< notice note >}}
-Once you’re in full screen mode, press F11 to exit out of full screen mode.
+Once you’re in full-screen mode, press F11 to exit out of full-screen mode.
 {{< /notice >}}
 
 ### Configuring Konsole
@@ -154,7 +154,7 @@ You can also set custom environment variables if you want. Just click on **Edit*
 ![image example](./images/gen.png "image")
 
 From the **Appearance tab**, you can set a predefined Color Scheme or create a new one or customize an existing one.
-by Click on **Settting > Edit Current profile > Appearance.**
+by Click on **Setting > Edit Current profile > Appearance.**
 
 ![image example](./images/appearance.png "image")
 
