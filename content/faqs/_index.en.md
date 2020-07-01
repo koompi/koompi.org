@@ -6,26 +6,32 @@ icon: "ti-help-alt"
 description: "Solutions and Problems that happened in the Operating System have been noted here."
 type : "docs"
 ---
+{{< faq "How to install KOOMPI OS?" >}}
+There are two main steps of installing it.
 
-{{< faq " Error locale !!" >}}
-Error locale is commonly seen. Sometimes, it can be seen while your time or date isn't correct with your location. So, the solution you can just reset the time or use this:
-```
-sudo locale-gen
-```
-{{< notice info >}}
-While you are trying to reset automically your time, you must connect to internet.
-{{< /notice >}}
+**First Step (Create a bootable USB)**
+- Get a USB minimum of 4GB.
+- Install the Etcher.
+- Download the OS source through this [link](https://repo.koompi.org/iso/KOOMPI-OS-2020.04.26-x86_64.iso).
+- Move those source into the USB and start making it a bootable drive.
+**Second Step (Setup OS into the PC)**
+- Plug the USB  to your PC.
+- Open the PC and Move into the BIOS Boot(When you opened press key `Esc`.).
+- Go to Booting Menu.
+- After that Select the USB.
+- After that your will run some process and when it finished, your screen is going to show Desktop.
+- Connect to Internet and Click on App that use for installing and follow the instructions have been given.
+
+For making it easier, click this [link for the video](https://youtu.be/DnavvK4NU6A).
 {{</ faq >}}
 
-{{< faq " How can I change default apps has been used ?" >}}
-In general, After you have installed the OS each of the apps will choose their own default app which has been decided by developer but you can change it with the following steps:
-1. you need to search for `System setting`.
-1. After that, you have to find the `Applications` section.
-1. Then, you will find the `Default Applications` layout.
-1. Finally, Selecting the program you want it to change and applying it.
-
-Sample: As my web browser has been using elinks as my default app, so I want to change it and using firefox instead. I follow the following step and in the `Default applications` section. I look for web browser and apply firefox instead of elinks. That's done. now I have used firefox as my deffault browser.
+{{< faq "How to install pi or pacman" >}}
+As pi is our primary command, it has been always created since you install the Operating System. In case, your pi error or missing, you can install pi or pacman by pix command, to do so:
+```
+pix i pi
+```
 {{</ faq >}}
+
 
 {{< faq "Zoom issue and can not run !!!" >}}
 As the `ZOOM` is requiring the `QT5`, you can run the command below:
@@ -58,24 +64,6 @@ For Adobe Lightroom, Our team is trying their best to bring it as much as possib
 Not extacly, You can for some reasns. In order to install it, you need to instal `pix` first, [Click here](#).
 {{</ faq >}}
 
-{{< faq "How to install KOOMPI OS?" >}}
-There are two main steps of installing it.
-
-**First Step (Create a bootable USB)**
-- Get a USB minimum of 4GB.
-- Install the Etcher.
-- Download the OS source through this [link](https://repo.koompi.org/iso/KOOMPI-OS-2020.04.26-x86_64.iso).
-- Move those source into the USB and start making it a bootable drive.
-**Second Step (Setup OS into the PC)**
-- Plug the USB  to your PC.
-- Open the PC and Move into the BIOS Boot(When you opened press key `Esc`.).
-- Go to Booting Menu.
-- After that Select the USB.
-- After that your will run some process and when it finished, your screen is going to show Desktop.
-- Connect to Internet and Click on App that use for installing and follow the instructions have been given.
-
-For making it easier, click this [link for the video](https://youtu.be/DnavvK4NU6A).
-{{</ faq >}}
 
 {{< faq "When will new version of KOOMPI OS release?" >}}
 All Announcement about releasing the new version of KOOMPI OS will be announced in [KOOMPI Telegram Community](https://t.me/koompi). And it will be informed on new release section on the www.koompi.org](https://www.koompi.org/release/) as well.
@@ -101,11 +89,26 @@ pi -S <Name of dependency packages>
 ```
 {{</ faq >}}
 
-{{< faq "How to install pi or pacman" >}}
-As pi is our primary command, it has been always created since you install the Operating System. In case, your pi error or missing, you can install pi or pacman by pix command, to do so:
+
+
+{{< faq " Error locale !!" >}}
+Error locale is commonly seen. Sometimes, it can be seen while your time or date isn't correct with your location. So, the solution you can just reset the time or use this:
 ```
-pix i pi
+sudo locale-gen
 ```
+{{< notice info >}}
+While you are trying to reset automically your time, you must connect to internet.
+{{< /notice >}}
+{{</ faq >}}
+
+{{< faq " How can I change default apps has been used ?" >}}
+In general, After you have installed the OS each of the apps will choose their own default app which has been decided by developer but you can change it with the following steps:
+1. you need to search for `System setting`.
+1. After that, you have to find the `Applications` section.
+1. Then, you will find the `Default Applications` layout.
+1. Finally, Selecting the program you want it to change and applying it.
+
+Sample: As my web browser has been using elinks as my default app, so I want to change it and using firefox instead. I follow the following step and in the `Default applications` section. I look for web browser and apply firefox instead of elinks. That's done. now I have used firefox as my deffault browser.
 {{</ faq >}}
 
 {{< faq "Is KOOMPI OS is free to use?" >}}

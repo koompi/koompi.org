@@ -240,14 +240,27 @@
 
 <div class="card mb-4 rounded-0 shadow border-0">
   <div class="card-header rounded-0 bg-white border p-0 border-0">
-    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#error-locale">
-      <span>Error locale !!</span> <i class="ti-plus text-primary text-right"></i>
+    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#how-to-install-koompi-os">
+      <span>How to install KOOMPI OS?</span> <i class="ti-plus text-primary text-right"></i>
     </a>
   </div>
-  <div id="error-locale" class="collapse" data-parent="#accordion">
-    <div class="card-body font-secondary text-color"><p>Error locale is commonly seen. Sometimes, it can be seen while your time or date isn&rsquo;t correct with your location. So, the solution you can just reset the time or use this:</p>
-<pre><code>sudo locale-gen
-</code></pre><div class="notices info" ><p>While you are trying to reset automically your time, you must connect to internet.</p></div>
+  <div id="how-to-install-koompi-os" class="collapse" data-parent="#accordion">
+    <div class="card-body font-secondary text-color"><p>There are two main steps of installing it.</p>
+<p><strong>First Step (Create a bootable USB)</strong></p>
+<ul>
+<li>Get a USB minimum of 4GB.</li>
+<li>Install the Etcher.</li>
+<li>Download the OS source through this <a href="https://repo.koompi.org/iso/KOOMPI-OS-2020.04.26-x86_64.iso">link</a>.</li>
+<li>Move those source into the USB and start making it a bootable drive.
+<strong>Second Step (Setup OS into the PC)</strong></li>
+<li>Plug the USB  to your PC.</li>
+<li>Open the PC and Move into the BIOS Boot(When you opened press key <code>Esc</code>.).</li>
+<li>Go to Booting Menu.</li>
+<li>After that Select the USB.</li>
+<li>After that your will run some process and when it finished, your screen is going to show Desktop.</li>
+<li>Connect to Internet and Click on App that use for installing and follow the instructions have been given.</li>
+</ul>
+<p>For making it easier, click this <a href="https://youtu.be/DnavvK4NU6A">link for the video</a>.</p>
 </div>
   </div>
 </div>
@@ -255,20 +268,14 @@
 
 <div class="card mb-4 rounded-0 shadow border-0">
   <div class="card-header rounded-0 bg-white border p-0 border-0">
-    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#how-can-i-change-default-apps-has-been-used">
-      <span>How can I change default apps has been used ?</span> <i class="ti-plus text-primary text-right"></i>
+    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#how-to-install-pi-or-pacman">
+      <span>How to install pi or pacman</span> <i class="ti-plus text-primary text-right"></i>
     </a>
   </div>
-  <div id="how-can-i-change-default-apps-has-been-used" class="collapse" data-parent="#accordion">
-    <div class="card-body font-secondary text-color"><p>In general, After you have installed the OS each of the apps will choose their own default app which has been decided by developer but you can change it with the following steps:</p>
-<ol>
-<li>you need to search for <code>System setting</code>.</li>
-<li>After that, you have to find the <code>Applications</code> section.</li>
-<li>Then, you will find the <code>Default Applications</code> layout.</li>
-<li>Finally, Selecting the program you want it to change and applying it.</li>
-</ol>
-<p>Sample: As my web browser has been using elinks as my default app, so I want to change it and using firefox instead. I follow the following step and in the <code>Default applications</code> section. I look for web browser and apply firefox instead of elinks. That&rsquo;s done. now I have used firefox as my deffault browser.</p>
-</div>
+  <div id="how-to-install-pi-or-pacman" class="collapse" data-parent="#accordion">
+    <div class="card-body font-secondary text-color"><p>As pi is our primary command, it has been always created since you install the Operating System. In case, your pi error or missing, you can install pi or pacman by pix command, to do so:</p>
+<pre><code>pix i pi
+</code></pre></div>
   </div>
 </div>
 
@@ -343,34 +350,6 @@
 
 <div class="card mb-4 rounded-0 shadow border-0">
   <div class="card-header rounded-0 bg-white border p-0 border-0">
-    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#how-to-install-koompi-os">
-      <span>How to install KOOMPI OS?</span> <i class="ti-plus text-primary text-right"></i>
-    </a>
-  </div>
-  <div id="how-to-install-koompi-os" class="collapse" data-parent="#accordion">
-    <div class="card-body font-secondary text-color"><p>There are two main steps of installing it.</p>
-<p><strong>First Step (Create a bootable USB)</strong></p>
-<ul>
-<li>Get a USB minimum of 4GB.</li>
-<li>Install the Etcher.</li>
-<li>Download the OS source through this <a href="https://repo.koompi.org/iso/KOOMPI-OS-2020.04.26-x86_64.iso">link</a>.</li>
-<li>Move those source into the USB and start making it a bootable drive.
-<strong>Second Step (Setup OS into the PC)</strong></li>
-<li>Plug the USB  to your PC.</li>
-<li>Open the PC and Move into the BIOS Boot(When you opened press key <code>Esc</code>.).</li>
-<li>Go to Booting Menu.</li>
-<li>After that Select the USB.</li>
-<li>After that your will run some process and when it finished, your screen is going to show Desktop.</li>
-<li>Connect to Internet and Click on App that use for installing and follow the instructions have been given.</li>
-</ul>
-<p>For making it easier, click this <a href="https://youtu.be/DnavvK4NU6A">link for the video</a>.</p>
-</div>
-  </div>
-</div>
-
-
-<div class="card mb-4 rounded-0 shadow border-0">
-  <div class="card-header rounded-0 bg-white border p-0 border-0">
     <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#when-will-new-version-of-koompi-os-release">
       <span>When will new version of KOOMPI OS release?</span> <i class="ti-plus text-primary text-right"></i>
     </a>
@@ -414,14 +393,35 @@
 
 <div class="card mb-4 rounded-0 shadow border-0">
   <div class="card-header rounded-0 bg-white border p-0 border-0">
-    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#how-to-install-pi-or-pacman">
-      <span>How to install pi or pacman</span> <i class="ti-plus text-primary text-right"></i>
+    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#error-locale">
+      <span>Error locale !!</span> <i class="ti-plus text-primary text-right"></i>
     </a>
   </div>
-  <div id="how-to-install-pi-or-pacman" class="collapse" data-parent="#accordion">
-    <div class="card-body font-secondary text-color"><p>As pi is our primary command, it has been always created since you install the Operating System. In case, your pi error or missing, you can install pi or pacman by pix command, to do so:</p>
-<pre><code>pix i pi
-</code></pre></div>
+  <div id="error-locale" class="collapse" data-parent="#accordion">
+    <div class="card-body font-secondary text-color"><p>Error locale is commonly seen. Sometimes, it can be seen while your time or date isn&rsquo;t correct with your location. So, the solution you can just reset the time or use this:</p>
+<pre><code>sudo locale-gen
+</code></pre><div class="notices info" ><p>While you are trying to reset automically your time, you must connect to internet.</p></div>
+</div>
+  </div>
+</div>
+
+
+<div class="card mb-4 rounded-0 shadow border-0">
+  <div class="card-header rounded-0 bg-white border p-0 border-0">
+    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#how-can-i-change-default-apps-has-been-used">
+      <span>How can I change default apps has been used ?</span> <i class="ti-plus text-primary text-right"></i>
+    </a>
+  </div>
+  <div id="how-can-i-change-default-apps-has-been-used" class="collapse" data-parent="#accordion">
+    <div class="card-body font-secondary text-color"><p>In general, After you have installed the OS each of the apps will choose their own default app which has been decided by developer but you can change it with the following steps:</p>
+<ol>
+<li>you need to search for <code>System setting</code>.</li>
+<li>After that, you have to find the <code>Applications</code> section.</li>
+<li>Then, you will find the <code>Default Applications</code> layout.</li>
+<li>Finally, Selecting the program you want it to change and applying it.</li>
+</ol>
+<p>Sample: As my web browser has been using elinks as my default app, so I want to change it and using firefox instead. I follow the following step and in the <code>Default applications</code> section. I look for web browser and apply firefox instead of elinks. That&rsquo;s done. now I have used firefox as my deffault browser.</p>
+</div>
   </div>
 </div>
 

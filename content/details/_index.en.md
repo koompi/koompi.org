@@ -1,7 +1,9 @@
 ---
-title: "Konsole Details"
+title: "Details"
 date: 2018-12-28T11:02:05+06:00
 ---
+
+{{< faq "Konsole Details" >}}
 Konsole is the default terminal app of `KDE Desktop Environment`. In this article, we will introduce you about how konsole work. So, let’s get started.
 
 ----
@@ -56,65 +58,108 @@ The directory should be opened in `Dolphin`.
 To save the output of Konsole terminal to a file, click on **Left Side Corner > File > Save Output As**
 
 ![image example](./images/save.png "image")
+
 Now, select a location and a filename and click on Save.
 
-You can click on the Filter dropdown menu and select between plain text document format (default) and HTML format.
+You can click on the **Filter** dropdown menu and select between plain text document format (default) and HTML format.
 
-Konsole output saved to plain text file.
+![image example](./images/savefile.png "image")
+
+{{< notice note >}}
+Konsole output will be saved to plain text file.
+{{< /notice >}}
+
+
 <!-- https://linuxhint.com/konsole_terminal_app/ -->
 
-To print the output, click on File > Print Screen…
+To print the output, click on **Left Side Corner > File > Print Screen**
 
+![image example](./images/print.png "image")
 
+{{< notice note >}}
+If you have a printer connected, you can print. Otherwise, you can save it as a PDF file.
+{{< /notice >}}
 ### Searching Terminal Display
-To search for text in the Konsole, click on Edit > Find…
+To search for text in the Konsole, click on **Edit > Find**
+
+{{< notice note >}}
+The searching bar will be appear.
+{{< /notice >}}
 
 ### Copying and Pasting Text
-To copy text, select the text, right click and select Copy.
++ To copy text, select the text, **right click and select Copy**.
 
-To paste, right click and select Paste.
-
++ To paste, right **click and select Paste.**
 ### Enlarging Font, Shrinking font and Setting Character Encoding
-To increase the font size on the fly, click on View > Enlarge Font.
+- To increase the font size on the fly, click on **View > Enlarge Font** 
 
-To decrease the font size on the fly, click on View > Shrink Font.
+- To decrease the font size on the fly, click on **View > Shrink Font** 
 
-If you want to set a character set or encoding, click on View > Set Encoding and select your desired character set.
+{{< notice tip >}}
+you can use shortcut by **hold Ctrl Key** with **+ Key** for increase and **- Key** for decrease.
+{{< /notice >}}
 
 ### Konsole Split View
 
-To split the Konsole view horizontally, click on View > Split View > Split View Left/Right.
+To split the Konsole view horizontally, click on **View > Split View > Split View Left/Right.**
 
-To split the Konsole view vertically, click on View > Split View > Split View Top/Bottom.
+To split the Konsole view vertically, click on **View > Split View > Split View Top/Bottom.**
+
+![image example](./images/split.png "image")
 
 {{< notice note >}}
 You can split Kosole horizontally or vertically.
 {{< /notice >}}
 
-To close the active split view, click on View > Split View > Close Active.
+For Horuzontally:
 
-To close the inactive split view, click on View > Split View > Close Others.
+![image example](./images/leftright.png "image")
+
+For Vertically:
+
+![image example](./images/updown.png "image")
 
 ### Hiding Menubar and Fullscreen Mode
 To hide the Konsole menubar, uncheck **Settings > Show Menubar.**
 
-To display the menubar again, right click on the terminal and check Show Menubar.
+![image example](./images/show.png "image")
 
-To go to full screen, check Settings > Full Screen Mode.
+To display the `menubar again`, **right click on the terminal and check Show Menubar.**
 
+![image example](./images/showagain.png "image")
+
+To go to full screen, check **Settings > Full Screen Mode.**
+
+![image example](./images/full.png "image")
+
+
+{{< notice note >}}
 Once you’re in full screen mode, press F11 to exit out of full screen mode.
+{{< /notice >}}
 
 ### Configuring Konsole
 
 To configure Konsole global settings, go to Settings > Configure Konsole
 
-From the General tab, you can configure default Konsole Window settings.
+![image example](./images/conf.png "image")
 
-You can also configure the Default Search Settings from here.
+From the **General tab**, you can configure default Konsole Window settings.
 
+You can also configure the `Default Search Settings` from here.
 
-From the TabBar tab, you can set when the tab bar will be visible and the position of the tab bar.
+![image example](./images/confhere.png "image")
 
+You can also set custom environment variables if you want. Just click on **Edit**
 
+![image example](./images/gen.png "image")
 
-You can also set where new tabs will be placed from the TabBar tab.
+From the **Appearance tab**, you can set a predefined Color Scheme or create a new one or customize an existing one.
+by Click on **Settting > Edit Current profile > Appearance.**
+
+![image example](./images/appearance.png "image")
+
+----
+----
+© Shahriar Shovon
+
+{{</ faq >}}
