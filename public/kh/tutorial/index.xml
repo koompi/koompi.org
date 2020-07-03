@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>វីដេអូបង្ហាញ on KOOMPI OS</title>
+    <link>https://www.koompi.org/kh/tutorial/</link>
+    <description>Recent content in វីដេអូបង្ហាញ on KOOMPI OS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>kh-kh</language>
+    <copyright>រក្សាសិទ្ធិដោយ © គម្ពីរ ២០២០</copyright>
+    
+	<atom:link href="https://www.koompi.org/kh/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

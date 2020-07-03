@@ -275,6 +275,16 @@
   
   <url>
     <loc>https://www.koompi.org/tutorial/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kh"
+                href="https://www.koompi.org/kh/tutorial/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/tutorial/"
+                />
   </url>
   
 </urlset>

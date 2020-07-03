@@ -38,13 +38,13 @@ hasChildren = true
     
   [[menu.main]]
   parent = "videos"
-  name = "Interview"
+  name = "Interviews"
   url = "interview"
   weight = 1
 
   [[menu.main]]
   parent = "videos"
-  name = "Tutorial"
+  name = "Tutorials"
   url = "tutorial"
   weight = 2
 
