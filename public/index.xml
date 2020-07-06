@@ -194,8 +194,7 @@ passwd Sample Output:
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
       <guid>https://www.koompi.org/release/pix-release/pix_release/</guid>
-      <description>Pix sounds familiar to pi but it is quite different because it stands for pacman extended or extra which is supported by many more applications which Pi can’t do. So, Our team has been trying to creat this functional in case users want to install some apps which our OS officially support yet.
-In this document, The details about what pix will be providing to the all users. First thing first, As pix is just relesed we have to install it by following the steps below:</description>
+      <description>Pix sounds familiar to pi but it is quite different because it stands for pacman extended or extra which is supported by many more applications which Pi can’t do. So, Our team has been trying to create this function in case users want to install some apps which our OS officially support yet. After you installed pix or you are in pix version, you still can use pi as normal.</description>
     </item>
     
     <item>

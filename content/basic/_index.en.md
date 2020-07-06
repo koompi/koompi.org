@@ -8,7 +8,7 @@ type : "docs"
 This section gives you the commands to keep your system up and running. Keep in mind that these commands can both install packages from any open-source repository and packages from the AUR.
 
 {{< notice note >}}
-If you do not know anything about the Konsole [Click here](#).
+If you do not know anything about the Konsole [Click here](https://www.koompi.org/details/#konsole-details).
 {{< /notice >}}
 
 As KOOMPI OS is operating base on Arch Linux and Plasma. This means your system always receives the latest packages.
