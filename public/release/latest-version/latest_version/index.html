@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
   <meta charset="utf-8">
-  <title>Conflicted FAQs</title>
+  <title>Latest Version</title>
 
   <meta name="generator" content="Hugo 0.73.0" />
 
@@ -125,7 +125,7 @@
         
         
         
-        <option id="en" value="https://www.koompi.org/faqs/conflicts_faqs/conflicts_faqs/" selected>En
+        <option id="en" value="https://www.koompi.org/release/latest-version/latest_version/" selected>En
         </option>
         
         
@@ -161,8 +161,6 @@
             
               
             
-              
-            
                
               
 
@@ -173,10 +171,10 @@
 
 
 
-<li data-nav-id="https://www.koompi.org/faqs/" title="FAQs" class="sidelist
+<li data-nav-id="https://www.koompi.org/release/" title="New Release" class="sidelist
   ">
-  <a href="https://www.koompi.org/faqs/">
-    FAQs
+  <a href="https://www.koompi.org/release/">
+    New Release
   </a>
   
   
@@ -192,10 +190,32 @@
 
 
 
-<li data-nav-id="https://www.koompi.org/faqs/conflicts_faqs/conflicts_faqs/" title="Conflicted FAQs" class="sidelist
+<li data-nav-id="https://www.koompi.org/release/latest-version/latest_version/" title="Latest Version" class="sidelist
   active">
-  <a href="https://www.koompi.org/faqs/conflicts_faqs/conflicts_faqs/">
-    Conflicted FAQs
+  <a href="https://www.koompi.org/release/latest-version/latest_version/">
+    Latest Version
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.koompi.org/release/pix-release/pix_release/" title="Pix Release" class="sidelist
+  ">
+  <a href="https://www.koompi.org/release/pix-release/pix_release/">
+    Pix Release
   </a>
   
   
@@ -217,216 +237,16 @@
             
               
             
+              
+            
           </ul>
         </div>
       </div>
       <div class="col-lg-9">
         <div class="p-lg-5 p-4 bg-white">
-          <h2 class="mb-5">Conflicted FAQs</h2>
+          <h2 class="mb-5">Latest Version</h2>
           
-          <div class="content">
-
-<div class="card mb-4 rounded-0 shadow border-0">
-  <div class="card-header rounded-0 bg-white border p-0 border-0">
-    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#conflicting-with-p11-kit-trust">
-      <span>Conflicting with  p11-kit-trust ?</span> <i class="ti-plus text-primary text-right"></i>
-    </a>
-  </div>
-  <div id="conflicting-with-p11-kit-trust" class="collapse" data-parent="#accordion">
-    <div class="card-body font-secondary text-color"><p>Meanwhile, you are updating the OS and you are facing this kind of conflicting.</p>
-<p>Sample of output you are commonly facing:</p>
-<pre><code>problem: nss: /usr/lib/p11-kit-trust.so exists in filesystem
-lib32-nss: /usr/lib32/p11-kit-trust.so exists in filesystem
-</code></pre><p>As you can notice that <code>p11-kit-trust.so</code>, you need to overwrite it.</p>
-<pre><code>sudo pacman -Syu --overwrite /usr/lib\*/p11-kit-trust.so
-</code></pre></div>
-  </div>
-</div>
-
-
-<div class="card mb-4 rounded-0 shadow border-0">
-  <div class="card-header rounded-0 bg-white border p-0 border-0">
-    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#error-with-modprobe-and-vboxdrv">
-      <span>Error with Modprobe and Vboxdrv ?</span> <i class="ti-plus text-primary text-right"></i>
-    </a>
-  </div>
-  <div id="error-with-modprobe-and-vboxdrv" class="collapse" data-parent="#accordion">
-    <div class="card-body font-secondary text-color"><p>It appears that I have a problem with <code>modprobe vboxdrv</code>.You can solve this problem by run command below:</p>
-<pre><code>sudo modprobe -a vboxdrv
-</code></pre></div>
-  </div>
-</div>
-
-
-<div class="card mb-4 rounded-0 shadow border-0">
-  <div class="card-header rounded-0 bg-white border p-0 border-0">
-    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#invalid-or-corrupted-packages">
-      <span>Invalid or corrupted packages !!!</span> <i class="ti-plus text-primary text-right"></i>
-    </a>
-  </div>
-  <div id="invalid-or-corrupted-packages" class="collapse" data-parent="#accordion">
-    <div class="card-body font-secondary text-color"><p>First, Run this other command for clearing cache and the database directory</p>
-<pre><code>pi -Scc
-</code></pre><p>After that, run this command to reinstalling the database and resync repo:</p>
-<pre><code>pi -Syyu
-</code></pre></div>
-  </div>
-</div>
-
-
-<div class="card mb-4 rounded-0 shadow border-0">
-  <div class="card-header rounded-0 bg-white border p-0 border-0">
-    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#facing-error-with-connecting-libalpm">
-      <span>Facing error with connecting libalpm !!!</span> <i class="ti-plus text-primary text-right"></i>
-    </a>
-  </div>
-  <div id="facing-error-with-connecting-libalpm" class="collapse" data-parent="#accordion">
-    <div class="card-body font-secondary text-color"><p>If you facing this problem run commands below:
-<strong>For libalpm:so.11:</strong></p>
-<pre><code>sudo ln -s /usr/lib/libalpm.so.10 /usr/lib/libalpm.so.11
-</code></pre><p><strong>For libalpm:so.12:</strong></p>
-<pre><code>sudo ln -s /usr/lib/libalpm.so.12 /usr/lib/libalpm.so.11
-</code></pre><p>After you finish with the command above, you may face other problem related to <code>pi error while loading...</code>. You need to install pi back <a href="https://www.koompi.org/faqs/#how-to-install-pi-or-pacman">click here</a></p>
-</div>
-  </div>
-</div>
-
-
-<div class="card mb-4 rounded-0 shadow border-0">
-  <div class="card-header rounded-0 bg-white border p-0 border-0">
-    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#facing-xorgprotol-issues">
-      <span>Facing Xorgprotol issues !!</span> <i class="ti-plus text-primary text-right"></i>
-    </a>
-  </div>
-  <div id="facing-xorgprotol-issues" class="collapse" data-parent="#accordion">
-    <div class="card-body font-secondary text-color"><p>As the Xorgprotol issues is not an easy problem. First, we need to remove it and upgrade the system</p>
-<pre><code>pi -Rdd xorgproto
-</code></pre><div class="notices info" ><p>DO NOT worry, <code>Xorgprotol package</code> is safe for removing.</p></div>
-<p>Despite this thread being <code>[SOLVED]</code>, Facing nonetheless with notified status.</p>
-<pre><code>removing xorgproto breaks dependency 'xorgproto' required by xorg-server-devel
-</code></pre><p>in this case, the <code>xorgproto packages</code> has been used by xorg-server-devel packages, we can remove the packages and start remove <strong>xorgprotol again.</strong></p>
-<pre><code>pi -Rdd xorg-server-devel
-</code></pre></div>
-  </div>
-</div>
-
-
-<div class="card mb-4 rounded-0 shadow border-0">
-  <div class="card-header rounded-0 bg-white border p-0 border-0">
-    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#missing-qt5-dependency-how-to-install-it-back">
-      <span>Missing Qt5 dependency, How to install it back?</span> <i class="ti-plus text-primary text-right"></i>
-    </a>
-  </div>
-  <div id="missing-qt5-dependency-how-to-install-it-back" class="collapse" data-parent="#accordion">
-    <div class="card-body font-secondary text-color"><p>If you accidentally delete QT5 dependency or while you are trying to install some app and it required the Qt5 packages, you can install it back by:</p>
-<pre><code>pi -S qt5-base
-</code></pre></div>
-  </div>
-</div>
-
-
-<div class="card mb-4 rounded-0 shadow border-0">
-  <div class="card-header rounded-0 bg-white border p-0 border-0">
-    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#how-to-fix-invalid-or-corrupted-package-pgp-signature">
-      <span>How To Fix “invalid or corrupted package (PGP signature) ?</span> <i class="ti-plus text-primary text-right"></i>
-    </a>
-  </div>
-  <div id="how-to-fix-invalid-or-corrupted-package-pgp-signature" class="collapse" data-parent="#accordion">
-    <div class="card-body font-secondary text-color"><p>I tried to upgrade my Arch Linux server using the command <code>sudo pacman -Syu</code>, and You got the
-following error:</p>
-<pre><code>[...]
-:: File /var/cache/pacman/pkg/libpsl-0.16.1-1-x86_64.pkg.tar.xz is corrupted (invalid or 
-corrupted package (PGP signature)).
-Do you want to delete it? [Y/n] y
-error: failed to commit transaction (invalid or corrupted package)
-Errors occurred, no packages were upgraded.
-</code></pre><p>Even you try other commands like <code>$ pi -Syyu</code>, It still got the same error. To fix this issues one for all you
-have to update key-ring packages that following by command below:</p>
-<pre><code>sudo pacman -S archlinux-keyring
-</code></pre><div class="notices info" ><p>The above command will update the new keys and disable the revoked keys.</p></div>
-</div>
-  </div>
-</div>
-
-
-<div class="card mb-4 rounded-0 shadow border-0">
-  <div class="card-header rounded-0 bg-white border p-0 border-0">
-    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#facing-errors-with-mirrors-out-of-date">
-      <span>Facing errors with mirrors out of date !!</span> <i class="ti-plus text-primary text-right"></i>
-    </a>
-  </div>
-  <div id="facing-errors-with-mirrors-out-of-date" class="collapse" data-parent="#accordion">
-    <div class="card-body font-secondary text-color"><p>Nothing to worry, as it is out of date not out of sync, we can solve it with only command:</p>
-<pre><code>sudo pacman-mirrors -f 5
-</code></pre><p>After, it has done running, try to update with command <code>pi -Syyu</code>.</p>
-</div>
-  </div>
-</div>
-
-
-<div class="card mb-4 rounded-0 shadow border-0">
-  <div class="card-header rounded-0 bg-white border p-0 border-0">
-    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#conflicting-python-pyqt5-and-pyqt5-common-how-to-fix-it">
-      <span>Conflicting python-pyqt5 and pyqt5-common, How to fix it ?</span> <i class="ti-plus text-primary text-right"></i>
-    </a>
-  </div>
-  <div id="conflicting-python-pyqt5-and-pyqt5-common-how-to-fix-it" class="collapse" data-parent="#accordion">
-    <div class="card-body font-secondary text-color"><p>If you run command to update the system and facing error like below:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Text" data-lang="Text"> :: Synchronizing package databases...
- The core is up to date
- extra is up to date
- community is up to date
- :: Starting a full system upgrade...
- :: Replace ilmbase with extra/openexr? [Y/n] 
- :: Replace libmagick with extra/imagemagick? [Y/n] 
- :: Replace pygobject2-devel with extra/python2-gobject2? [Y/n] 
- resolving dependencies...
- looking for conflicting packages...
- :: python-pyqt5 and pyqt5-common are in conflict. Remove pyqt5-common? [y/N] 
- error: unresolvable package conflicts detected
- error: failed to prepare transaction (conflicting dependencies)
- :: python-pyqt5 and pyqt5-common are in conflict
- Error installing repo packages
-</code></pre></div><p>To solve this problem, you have to run this command and follow all instructions have been given.</p>
-<pre><code>sudo pacman -Rdd pyqt5-common
-</code></pre></div>
-  </div>
-</div>
-
-
-<div class="card mb-4 rounded-0 shadow border-0">
-  <div class="card-header rounded-0 bg-white border p-0 border-0">
-    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#still-having-conflict-with-python-pyqt5-and-pyqt5-common-how-to-fix-it">
-      <span>Still having Conflict with python-pyqt5 and pyqt5-common, How to fix it ?</span> <i class="ti-plus text-primary text-right"></i>
-    </a>
-  </div>
-  <div id="still-having-conflict-with-python-pyqt5-and-pyqt5-common-how-to-fix-it" class="collapse" data-parent="#accordion">
-    <div class="card-body font-secondary text-color"><p>You need to run this other command</p>
-<pre><code>sudo pacman -Rdd libdmx libxxf86dga
-</code></pre><p>After that is done, run the updated command:</p>
-<pre><code>pi -Syu
-</code></pre><p>After update just does this next command, you will be finished:</p>
-<pre><code>pacman -Rns $(pacman -Qqtd)
-</code></pre></div>
-  </div>
-</div>
-
-
-<div class="card mb-4 rounded-0 shadow border-0">
-  <div class="card-header rounded-0 bg-white border p-0 border-0">
-    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#conflicted-with-python-pygmets-how-to-fix-it">
-      <span>Conflicted with python-pygmets, How to fix it ?</span> <i class="ti-plus text-primary text-right"></i>
-    </a>
-  </div>
-  <div id="conflicted-with-python-pygmets-how-to-fix-it" class="collapse" data-parent="#accordion">
-    <div class="card-body font-secondary text-color"><p>To solve this conflict, you need to remove the existing packages in the file system by running this command below:</p>
-<pre><code>sudo rm -rf /usr/bin/pygmentize
-</code></pre><p>After that try to update your system with the command:</p>
-<pre><code>pi -Syu
-</code></pre><div class="notices info" ><p>All the commands must run in <strong>Konsole</strong>.</p></div>
-</div>
-  </div>
-</div>
+          <div class="content"><h3 id="coming-soon-">Coming Soon !!!</h3>
 </div>
           
           <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 05 Jan 2020</p>
@@ -907,54 +727,6 @@ have to update key-ring packages that following by command below:</p>
             
             
             
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
             
 
             
@@ -989,6 +761,22 @@ have to update key-ring packages that following by command below:</p>
             
             
             
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             
             
             
@@ -997,6 +785,22 @@ have to update key-ring packages that following by command below:</p>
             
             
 
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
             
             
             
@@ -1036,12 +840,28 @@ have to update key-ring packages that following by command below:</p>
             
             
             
+            
+            
+            
+            
 
             
-            <a class="nav nav-prev" href="https://www.koompi.org/faqs/"><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">FAQs</span></a>
             
             
-            <a class="nav nav-next" href="https://www.koompi.org/contact/"> <span class="d-none d-md-block">Got Any Questions</span><i class="ti-arrow-right ml-2"></i></a>
+
+            
+            
+            
+            
+            
+            
+            
+
+            
+            <a class="nav nav-prev" href="https://www.koompi.org/release/"><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">New Release</span></a>
+            
+            
+            <a class="nav nav-next" href="https://www.koompi.org/release/pix-release/pix_release/"> <span class="d-none d-md-block">Pix Release</span><i class="ti-arrow-right ml-2"></i></a>
             
           </nav>
         </div>

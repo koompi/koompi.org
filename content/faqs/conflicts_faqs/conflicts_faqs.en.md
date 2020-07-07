@@ -21,7 +21,7 @@ sudo pacman -Syu --overwrite /usr/lib\*/p11-kit-trust.so
 {{</ faq >}}
 
 {{< faq "Error with Modprobe and Vboxdrv ?" >}}
-It appears that I have problem with `modprobe vboxdrv`.You can sovle this problem by run command below:
+It appears that I have a problem with `modprobe vboxdrv`.You can solve this problem by run command below:
 ```
 sudo modprobe -a vboxdrv
 ```
@@ -32,14 +32,14 @@ First, Run this other command for clearing cache and the database directory
 ```
 pi -Scc
 ```
-After that, run this comman to reinstalling the database and resync repo:
+After that, run this command to reinstalling the database and resync repo:
 ```
 pi -Syyu
 ```
 {{</ faq >}}
 
 {{< faq "Facing error with connecting libalpm !!!" >}}
-If you facing this probelm run commands below:
+If you facing this problem run commands below:
 **For libalpm:so.11:**
 ```
 sudo ln -s /usr/lib/libalpm.so.10 /usr/lib/libalpm.so.11
@@ -48,7 +48,7 @@ sudo ln -s /usr/lib/libalpm.so.10 /usr/lib/libalpm.so.11
 ```
 sudo ln -s /usr/lib/libalpm.so.12 /usr/lib/libalpm.so.11
 ```
-After you finish with tthe command above, you may face other problem realated to `pi error while loading...`. You need to install pi back [click here](https://www.koompi.org/faqs/#how-to-install-pi-or-pacman)
+After you finish with the command above, you may face other problem related to `pi error while loading...`. You need to install pi back [click here](https://www.koompi.org/faqs/#how-to-install-pi-or-pacman)
 {{</ faq >}}
 
 {{< faq "Facing Xorgprotol issues !!" >}}
@@ -60,7 +60,7 @@ pi -Rdd xorgproto
 DO NOT worry, `Xorgprotol package` is safe for removing. 
 {{< /notice >}}
 
-Despite this thread being `[SOLVED]`, Facing nonethless with notified status.
+Despite this thread being `[SOLVED]`, Facing nonetheless with notified status.
 ```
 removing xorgproto breaks dependency 'xorgproto' required by xorg-server-devel
 ```
@@ -71,8 +71,8 @@ pi -Rdd xorg-server-devel
 {{</ faq >}}
 
 
-{{< faq "Missing Qt5 dependency, How to install it back ? " >}}
-If you accidentally delete QT5 dependency or while you are trying to install some app and it required the Qt5 pacckages, you can install it back by:
+{{< faq "Missing Qt5 dependency, How to install it back? " >}}
+If you accidentally delete QT5 dependency or while you are trying to install some app and it required the Qt5 packages, you can install it back by:
 ```
 pi -S qt5-base
 ```
@@ -104,11 +104,11 @@ Nothing to worry, as it is out of date not out of sync, we can solve it with onl
 ```
 sudo pacman-mirrors -f 5
 ```
-After, it has done running, try to update with command `pii -Syyu`.
+After, it has done running, try to update with command `pi -Syyu`.
 {{</ faq >}}
 
 {{< faq "Conflicting python-pyqt5 and pyqt5-common, How to fix it ?" >}}
-If you run command to update the system and facing erro like below:
+If you run command to update the system and facing error like below:
 ```Text
  :: Synchronizing package databases...
  The core is up to date
@@ -126,7 +126,7 @@ If you run command to update the system and facing erro like below:
  :: python-pyqt5 and pyqt5-common are in conflict
  Error installing repo packages
 ```
-In order to solve this problem, you have to run this command and follow all instuctions have been given.
+To solve this problem, you have to run this command and follow all instructions have been given.
 ```
 sudo pacman -Rdd pyqt5-common
 ```
@@ -149,11 +149,11 @@ pacman -Rns $(pacman -Qqtd)
 {{</ faq >}}
 
 {{< faq "Conflicted with python-pygmets, How to fix it ?" >}}
-In order to solve this conflicted, you need to remove the existing packages in the file system by running this command below:
+To solve this conflict, you need to remove the existing packages in the file system by running this command below:
 ```
 sudo rm -rf /usr/bin/pygmentize
 ```
-After that try to update your system with command:
+After that try to update your system with the command:
 ```
 pi -Syu
 ```

@@ -7,7 +7,7 @@ description: "Solutions and Problems that happened in the Operating System have 
 type : "docs"
 ---
 {{< faq "How to install KOOMPI OS?" >}}
-There are two main steps of installing it.
+There are two main steps for installing it.
 
 **First Step (Create a bootable USB)**
 - Get a USB minimum of 4GB.
@@ -19,8 +19,8 @@ There are two main steps of installing it.
 - Open the PC and Move into the BIOS Boot(When you opened press key `Esc`.).
 - Go to Booting Menu.
 - After that Select the USB.
-- After that your will run some process and when it finished, your screen is going to show Desktop.
-- Connect to Internet and Click on App that use for installing and follow the instructions have been given.
+- After that you will run some process and when it finished, your screen is going to show Desktop.
+- Connect to the Internet and Click on App that uses for installing and follow the instructions have been given.
 
 For making it easier, click this [link for the video](https://youtu.be/DnavvK4NU6A).
 {{</ faq >}}
@@ -44,8 +44,12 @@ After, Finish the command and zoom still not running, [Click here](#).
 {{< faq "Can KOOMPI OS be able to install Spotify ?" >}}
 Of Course, you can install it. [Visiting here to know how to install applications in KOOMPI OS](https://www.koompi.org/applications/).
 {{< notice note >}}
-As you know spotify is not available in some countries !!
+As you know Spotify is not available in some countries !!
 {{< /notice >}}
+{{</ faq >}}
+
+{{< faq "Can KOOMPI OS run with IOS ?" >}}
+In the meantime, our software isn't supporting the IOS system yet, but we are looking forward to doing it.
 {{</ faq >}}
 
 {{< faq "Can KOOMPI OS run with IOS ?" >}}
@@ -61,29 +65,29 @@ For Adobe Lightroom, Our team is trying their best to bring it as much as possib
 {{</ faq >}}
 
 {{< faq "Can KOOMPI OS run Adobe Photoshop ?" >}}
-Not extacly, You can for some reasns. In order to install it, you need to instal `pix` first, [Click here](#).
+Not exactly, You can download it by it is not running smoothly. To install it, you need to instal `pix` first, [Click here](https://www.koompi.org/release/pix-release/pix_release/).
 {{</ faq >}}
 
 
-{{< faq "When will new version of KOOMPI OS release?" >}}
-All Announcement about releasing the new version of KOOMPI OS will be announced in [KOOMPI Telegram Community](https://t.me/koompi). And it will be informed on new release section on the www.koompi.org](https://www.koompi.org/release/) as well.
+{{< faq "When will a new version of KOOMPI OS release?" >}}
+All Announcement about releasing the new version of KOOMPI OS will be announced in [KOOMPI Telegram Community](https://t.me/koompi). And it will be informed on the new release section on the www.koompi.org](https://www.koompi.org/release/) as well.
 {{</ faq >}}
 
 {{< faq "How to update the system in KOOMPI OS?" >}}
-In KOOMPI OS, You can update the system by using the Konsole or command line tools and a command like this.  
+In KOOMPI OS, You can update the system by using the Konsole or command-line tools and a command like this.  
 ```
 pi -Sy
 ```
 {{</ faq >}}
 
 {{< faq "Applications can not run, How to solve it ?" >}}
-As your apps can not run, you might be facing error related to missing dependencies of the apps. In order to know, what kind of dependencies that your apps required. You need to run the keyword of the package name, and it  will show your missing dependencies.[Visit here to see all the dependencies](#).
+As your apps can not run, you might be facing error related to missing dependencies of the apps. To know, what kind of dependencies that your apps required. You need to run the keyword of the package name, and it  will show your missing dependencies.[Visit here to see all the dependencies](#).
 
-Sample: I am facing with can not run **telegram app**. So, the keyword pacckages of telegram app is `telegram-desktop`. I run the keyword in konsole:
+Sample: I am facing with can not run **telegram app**. So, the keyword packages of telegram app is `telegram-desktop`. I run the keyword in Konsole:
 ```
 telegram-desktop
 ```
-The output will be showing and you can see name of dependencies that are missing, mostly all apps are missing QT5, libicu. We can install dependency packages back by  run:
+The output will be showing and you can see the name of dependencies that are missing, mostly all apps are missing QT5, libicu. We can install dependency packages back by  run:
 ```
 pi -S <Name of dependency packages>
 ```
@@ -102,13 +106,13 @@ While you are trying to reset automically your time, you must connect to interne
 {{</ faq >}}
 
 {{< faq " How can I change default apps has been used ?" >}}
-In general, After you have installed the OS each of the apps will choose their own default app which has been decided by developer but you can change it with the following steps:
+In general, After you have installed the OS each of the apps will choose their default app which has been decided by developer but you can change it with the following steps:
 1. you need to search for `System setting`.
 1. After that, you have to find the `Applications` section.
 1. Then, you will find the `Default Applications` layout.
 1. Finally, Selecting the program you want it to change and applying it.
 
-Sample: As my web browser has been using elinks as my default app, so I want to change it and using firefox instead. I follow the following step and in the `Default applications` section. I look for web browser and apply firefox instead of elinks. That's done. now I have used firefox as my deffault browser.
+Sample: As my web browser has been using elinks as my default app, so I want to change it and using firefox instead. I follow the following step and in the `Default Applications` section. I look for web browser and apply firefox instead of elinks. That's done. now I have used Firefox as my default browser.
 {{</ faq >}}
 
 {{< faq "Is KOOMPI OS is free to use?" >}}
@@ -122,16 +126,13 @@ If you want to know more details [click here](#).
 {{</ faq >}}
 
 {{< faq "What is sudo ?" >}}
-**sudo** — A widely used command in the Linux command line, sudo stands for "SuperUser Do". So, if 
-you want any command to be done with administrative or root privileges, you can use the sudo 
-command.
+**sudo** — A widely used command in the Linux command line, sudo stands for "SuperUser Do". So, if you want any command to be done with administrative or root privileges, you can use the sudo command.
 
 If you want to know more details [click here](#).
 {{</ faq >}}
 
 {{< faq "What is different between pi and pix ?" >}}
-As you know that pi is the shortcut form of pacman which we are using it to install applications and 
-packages. Even though we had some updates we still using pi as the main command. 
+As you know that pi is the shortcut form of pacman which we are using it to install applications and packages. Even though we had some updates we still using pi as the main command. 
 
 Pix sounds familiar to `pi`, but it is quite different because it stands for **pacman extended or extra** which is supported by many more applications.., etc. that **Pi** can't support like Microsoft office. 
 {{</ faq >}}
@@ -165,12 +166,12 @@ When a Linux server first boots, it prints status messages to the console, the f
 {{</ faq >}}
 
 {{< faq "How to install applications in KOOMPI OS ?" >}}
-In order to install the application in KOOMPI OS, you have to use commands in terminal or Konsole:
+To install the application in KOOMPI OS, you have to use commands in terminal or Konsole:
 **Sample:**
 ```
  pi -S Package_Name
 ```
-For example: In order to install `firefox`,
+For example: To install `firefox`,
 ```
 pi -S firefox
 ```
@@ -180,8 +181,7 @@ Please, click [here](https://www.koompi.org/applications/) for more info.
 
 
 {{< faq "How to Change password in KOOMPI OS ?" >}}
-As a KOOMPI OS or Linux system administrator (sysadmin) you can change the password for any users on 
-your server. To change a password on behalf of a user:
+As a KOOMPI OS or Linux system administrator (sysadmin), you can change the password for any users on your server. To change a password on behalf of a user:
 
 1. First, sign on or “`su`” or “`sudo`” to the “`root`” account on **Pionux**, run: `sudo -i`
 1. Then type, `passwd Administrator_name` to change a password for Admin user
@@ -191,7 +191,7 @@ your server. To change a password on behalf of a user:
 For more info about password: [Click here]()
 {{</ faq >}}
 
-{{< faq "How can I reset the password of the computer ? " >}}
+{{< faq "How can I reset the password of the computer? " >}}
 Dealing with forget password is not an easy thing !!!
 
 KOOMPI respect `user privacy 100%`, so KOOMPI knows nothing about user password or any data. It is the **user's responsibility** to take care of their data and password. However, there is still a way to `set a new password`, but it requires **advanced administration skills**.
@@ -199,13 +199,13 @@ KOOMPI respect `user privacy 100%`, so KOOMPI knows nothing about user password 
 Please bring your laptop to the KOOMPI office.
 {{</ faq >}}
 
-{{< faq "How can I change screen resolution ? " >}}
+{{< faq "How can I change screen resolution? " >}}
 You can change the screen resolution by going into `System Setting` and then `Hardware` and then move on to `Display and Monitor` section. After that **Click** `Display Configuration`.
 
 The default resolution for most PCs is **1920x1080** so does KOOMPI. So, set it to that resolution.
 {{</ faq >}}
 
-{{< faq "Sound problem, What should I do ? " >}}
+{{< faq "Sound problem, What should I do? " >}}
 There are two solutions we are recommending for you.
 
 ---
@@ -228,10 +228,10 @@ pi -S pavucontrol
 ```
 After you have installed it, you can search and open it for configuring the input and output audio.
 
-If you try everyone of the solutions have been provided and still have problems, please it to our office for fixing.
+If you try every one of the solutions have been provided and still have problems, please it to our office for fixing.
 {{</ faq >}}
 
-{{< faq "My internet is not working, How to fix it ? " >}}
+{{< faq "My internet is not working, How to fix it? " >}}
 We suggest you to reset the **network manager** with the commands below.
 ```
 sudo systemctl restart NetworkManager
@@ -241,8 +241,7 @@ If it still has the problem, we recommend you to bring it to our office.
 
  
 {{< faq "How can I know about my pc specs?" >}}
-You need to do is that you have to open **Settings** `-->`**System Setting** `-->` **System Information**. Finally, now 
-you can see all details about your pc.
+You need to do is that you have to open **Settings** `-->`**System Setting** `-->` **System Information**. Finally, now you can see all details about your pc.
 {{</ faq >}}
 
 {{< faq "I can't remove the note from my desktop?" >}}
@@ -252,12 +251,12 @@ remove icon will pop up. That's all.
 For more details is that when some app or icon pops up just follow the previous solution.
 {{</ faq >}}
 
-{{< faq "How to enable the touch pad while it was off?" >}}
+{{< faq "How to enable the touchpad while it was off?" >}}
 You can open your touchpad through your keyboard. First, you need to go into the **setting** Enter
 and Click **System Settings**. And then you will have to find **Input Devices**, Select 
 **Touchpad** feature, and then `Enable it` and you will be done.
 
 {{< notice note >}}
-Use `tab key` for changing you are selected. If you are finding it hard to do with keyboard, we recommend using the external mouse instead.
+Use `tab key` for changing you are selected. If you are finding it hard to do with the keyboard, we recommend using the external mouse instead.
 {{< /notice >}}
 {{</ faq >}}

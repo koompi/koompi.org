@@ -94,7 +94,7 @@ According to the language used to code, the code editors highlight special keywo
       <description>Conflicting with p11-kit-trust ?    Meanwhile, you are updating the OS and you are facing this kind of conflicting.
 Sample of output you are commonly facing:
 problem: nss: /usr/lib/p11-kit-trust.so exists in filesystem lib32-nss: /usr/lib32/p11-kit-trust.so exists in filesystem As you can notice that p11-kit-trust.so, you need to overwrite it.
-sudo pacman -Syu --overwrite /usr/lib\*/p11-kit-trust.so    Error with Modprobe and Vboxdrv ?    It appears that I have problem with modprobe vboxdrv.</description>
+sudo pacman -Syu --overwrite /usr/lib\*/p11-kit-trust.so    Error with Modprobe and Vboxdrv ?    It appears that I have a problem with modprobe vboxdrv.</description>
     </item>
     
     <item>
@@ -153,6 +153,15 @@ pi -S git  Make sure you have already run the command pi -Syu to update your sys
 Please, make sure you have already updated your system with this command &amp;ldquo;pi -Syu&amp;rdquo;.
   Chart list of Graphic Editors:
    Graphic Editor Names Installing Commands     Darktable pi -S darktable    Digikam pi -S digikam    GIMP pi -S gimp   Inkscape pi -S inkscape    Krita pi -S krita    Pinta pi -S pinta    Photoshop pix -i adope-photoshop-cc    RawTherapee pi -S rawtherapee      Darktable I let you store all the precious digital negatives in a database that you can, later on, develop raw images.</description>
+    </item>
+    
+    <item>
+      <title>Latest Version</title>
+      <link>https://www.koompi.org/release/latest-version/latest_version/</link>
+      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
+      
+      <guid>https://www.koompi.org/release/latest-version/latest_version/</guid>
+      <description>Coming Soon !!! </description>
     </item>
     
     <item>
