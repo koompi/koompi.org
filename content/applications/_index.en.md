@@ -1,5 +1,5 @@
 ---
-title: "Applications Info"
+title: "Applications"
 date: 2018-12-27T11:02:05+06:00
 icon: "ti-package"
 description: "Providing the guide of applications installation; documents, images, and videos."

@@ -18,7 +18,7 @@ unsafe= true
 ################################# navigation ################################
 [[menu.main]]
 name = "Faqs"
-url = "faqs"
+url = "faq"
 weight = 1
 
 #[[menu.main]]
@@ -95,7 +95,7 @@ languageName = "En"
 languageCode = "en-us"
 weight = 1
 home = "Home"
-copyright = "Copyright by  © KOOMPI 2020 "
+copyright = "Copyright by  © [KOOMPI](https://koompi.com/) 2020 "
 
 
 # banner
@@ -125,7 +125,7 @@ languageCode = "kh-kh"
 weight = 2
 home = "ទំព័រដើម"
 Faqs= "សំនួរ&​ចំលើយ" 
-copyright = "រក្សាសិទ្ធិដោយ © គម្ពីរ ២០២០"
+copyright = "រក្សាសិទ្ធិដោយ © [គម្ពីរ](https://koompi.com/) ២០២០"
 
 # banner
 [Languages.kh.params.banner]

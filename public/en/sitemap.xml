@@ -53,11 +53,6 @@
   </url>
   
   <url>
-    <loc>https://www.koompi.org/faqs/conflicts_faqs/conflicts_faqs/</loc>
-    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.koompi.org/applications/converter/converter/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
@@ -213,22 +208,7 @@
   </url>
   
   <url>
-    <loc>https://www.koompi.org/faqs/</loc>
-    <lastmod>2018-12-26T11:02:05+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kh"
-                href="https://www.koompi.org/kh/faqs/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.koompi.org/faqs/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://www.koompi.org/basic/other/other/</loc>
+    <loc>https://www.koompi.org/basic/other/others/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
   
@@ -243,6 +223,20 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://www.koompi.org/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.koompi.org/faq/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kh"
+                href="https://www.koompi.org/kh/faq/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/faq/"
                 />
   </url>
   

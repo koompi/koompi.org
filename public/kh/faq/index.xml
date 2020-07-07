@@ -2,14 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>KOOMPI OS</title>
-    <link>https://www.koompi.org/kh/</link>
+    <link>https://www.koompi.org/kh/faq/</link>
     <description>Recent content on KOOMPI OS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>kh-kh</language>
     <copyright>រក្សាសិទ្ធិដោយ © [គម្ពីរ](https://koompi.com/) ២០២០</copyright>
-    <lastBuildDate>Sat, 29 Dec 2018 11:02:05 +0600</lastBuildDate>
     
-	<atom:link href="https://www.koompi.org/kh/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.koompi.org/kh/faq/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

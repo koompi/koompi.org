@@ -78,17 +78,17 @@
   </url>
   
   <url>
-    <loc>https://www.koompi.org/kh/faqs/</loc>
-    <lastmod>2018-12-26T11:02:05+06:00</lastmod>
+    <loc>https://www.koompi.org/kh/faq/</loc>
+    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.koompi.org/faqs/"
+                href="https://www.koompi.org/faq/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="kh"
-                href="https://www.koompi.org/kh/faqs/"
+                href="https://www.koompi.org/kh/faq/"
                 />
   </url>
   

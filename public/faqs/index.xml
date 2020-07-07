@@ -1,28 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>FAQs on KOOMPI OS</title>
+    <title>Frequently Asked Questions on KOOMPI OS</title>
     <link>https://www.koompi.org/faqs/</link>
-    <description>Recent content in FAQs on KOOMPI OS</description>
+    <description>Recent content in Frequently Asked Questions on KOOMPI OS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright by  © KOOMPI 2020 </copyright>
-    <lastBuildDate>Wed, 26 Dec 2018 11:02:05 +0600</lastBuildDate>
+    <copyright>Copyright by  © [KOOMPI](https://koompi.com/) 2020 </copyright>
     
 	<atom:link href="https://www.koompi.org/faqs/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Conflicted FAQs</title>
-      <link>https://www.koompi.org/faqs/conflicts_faqs/conflicts_faqs/</link>
-      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
-      
-      <guid>https://www.koompi.org/faqs/conflicts_faqs/conflicts_faqs/</guid>
-      <description>Conflicting with p11-kit-trust ?    Meanwhile, you are updating the OS and you are facing this kind of conflicting.
-Sample of output you are commonly facing:
-problem: nss: /usr/lib/p11-kit-trust.so exists in filesystem lib32-nss: /usr/lib32/p11-kit-trust.so exists in filesystem As you can notice that p11-kit-trust.so, you need to overwrite it.
-sudo pacman -Syu --overwrite /usr/lib\*/p11-kit-trust.so    Error with Modprobe and Vboxdrv ?    It appears that I have a problem with modprobe vboxdrv.</description>
-    </item>
     
   </channel>
 </rss>
