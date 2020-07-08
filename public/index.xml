@@ -153,6 +153,17 @@ Please, make sure you have already updated your system with this command &amp;ld
     </item>
     
     <item>
+      <title>Link/Unlink</title>
+      <link>https://www.koompi.org/basic/link/link/</link>
+      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
+      
+      <guid>https://www.koompi.org/basic/link/link/</guid>
+      <description>To make links between files you need to use ln command. A symbolic link (also known as a soft link or symlink) consists of a special type of file that serves as a reference to another file or directory.
+ln is a command-line utility for creating links between files.By default, the ln command creates hard links. To create a symbolic link, use the -s (--symbolic) option.
+There are two types of links in Linux/UNIX systems:</description>
+    </item>
+    
+    <item>
       <title>Music Player Apps</title>
       <link>https://www.koompi.org/applications/music-platform/music_platform/</link>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
@@ -224,11 +235,20 @@ So in this section, we are going to introduce many social platforms and a little
     </item>
     
     <item>
-      <title>System Manager</title>
+      <title>System Control</title>
       <link>https://www.koompi.org/basic/system-control/system_control/</link>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
       <guid>https://www.koompi.org/basic/system-control/system_control/</guid>
+      <description>Coming Soon !!! </description>
+    </item>
+    
+    <item>
+      <title>System Manager</title>
+      <link>https://www.koompi.org/basic/system-manager/system_manager/</link>
+      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
+      
+      <guid>https://www.koompi.org/basic/system-manager/system_manager/</guid>
       <description>Systemctl is init system and system manager that is widely becoming the new standard for opensource machines. While there are considerable opinions about whether systemd is an improvement over the traditional SysV init systems it is replacing, the majority of distributions plan to adopt it or have already done so.
 Due to its heavy adoption, familiarizing yourself with systemd is well worth the trouble, as it will make administering servers considerably easier.</description>
     </item>

@@ -78,6 +78,34 @@
   </url>
   
   <url>
+    <loc>https://www.koompi.org/kh/basic/link/link/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/basic/link/link/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kh"
+                href="https://www.koompi.org/kh/basic/link/link/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.koompi.org/kh/basic/system-control/system_control/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/basic/system-control/system_control/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kh"
+                href="https://www.koompi.org/kh/basic/system-control/system_control/"
+                />
+  </url>
+  
+  <url>
     <loc>https://www.koompi.org/kh/faq/</loc>
     <priority>0</priority>
     <xhtml:link

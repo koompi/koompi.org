@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
   <meta charset="utf-8">
-  <title>System Manager</title>
+  <title>System Control</title>
 
   <meta name="generator" content="Hugo 0.73.0" />
 
@@ -129,6 +129,18 @@
         </option>
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <option id="kh" value="https://www.koompi.org/kh/basic/system-control/system_control/">Kh</option>
         
         
         
@@ -314,6 +326,28 @@
 
 
 
+<li data-nav-id="https://www.koompi.org/basic/link/link/" title="Link/Unlink" class="sidelist
+  ">
+  <a href="https://www.koompi.org/basic/link/link/">
+    Link/Unlink
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
 <li data-nav-id="https://www.koompi.org/basic/network/network/" title="Network Info" class="sidelist
   ">
   <a href="https://www.koompi.org/basic/network/network/">
@@ -380,9 +414,31 @@
 
 
 
-<li data-nav-id="https://www.koompi.org/basic/system-control/system_control/" title="System Manager" class="sidelist
+<li data-nav-id="https://www.koompi.org/basic/system-control/system_control/" title="System Control" class="sidelist
   active">
   <a href="https://www.koompi.org/basic/system-control/system_control/">
+    System Control
+  </a>
+  
+  
+</li>
+
+
+        
+      
+        
+          
+
+
+
+
+
+
+
+
+<li data-nav-id="https://www.koompi.org/basic/system-manager/system_manager/" title="System Manager" class="sidelist
+  ">
+  <a href="https://www.koompi.org/basic/system-manager/system_manager/">
     System Manager
   </a>
   
@@ -442,107 +498,9 @@
       </div>
       <div class="col-lg-9">
         <div class="p-lg-5 p-4 bg-white">
-          <h2 class="mb-5">System Manager</h2>
+          <h2 class="mb-5">System Control</h2>
           
-          <div class="content"><p><strong>Systemctl</strong> is init system and <code>system manager</code> that is widely becoming the new standard for opensource machines. While there are considerable opinions about whether <strong>systemd</strong> is an improvement over the traditional <code>SysV</code> init systems it is replacing, the majority of distributions plan to adopt it or have already done so.</p>
-<p>Due to its heavy adoption, familiarizing yourself with <code>systemd</code> is well worth the trouble, as it will make administering servers considerably easier. Learning about and <strong>utilizing the tools and daemons</strong> that comprise <code>systemd</code> will help you better appreciate the power, flexibility, and capabilities it provides, or at least help you to do your job with minimal hassle.</p>
-<p>In this guide, we will be discussing the <code>systemctl</code> command, which is the central management tool for controlling the init system. We will cover how to manage services, check statuses, change <code>system states</code>, and work with the <code>configuration files</code>.</p>
-
-
-<div class="notices note" ><p>Please note that although <code>systemd</code> has become the default init system for many <strong>Linux distributions</strong>, it isn’t implemented universally across all distros. As you go through this tutorial, if your terminal outputs the <code>error bash: systemctl</code> is not installed then it is likely that <strong>your machine has a different init system installed</strong>.</p></div>
-
-<hr>
-<hr>
-<h2 id="system-service-management">System Service Management</h2>
-<p><strong>The fundamental purpose</strong> of an init system is to initialize the components that must be started after the <strong>Linux kernel</strong> is booted <code>(traditionally known as “userland” components)</code>. The init system is also used to manage services and daemons for the server at any point while the system is running. With that in mind, we will start with some simple <strong>service management operations.</strong></p>
-<p>In <code>systemd</code>, the target of most actions are <strong>“units”</strong>, which are resources that <code>systemd</code> knows how to manage. Units are categorized by the type of resource they represent and they are defined with files known as unit files. The type of each unit can be inferred from the suffix on the end of the file.</p>
-<p>For <strong>service management</strong> tasks, the target unit will be service units, which have unit files with a suffix of <code>.service</code>. However, for most service management commands, you can actually leave off the <code>.service suffix</code>, as <strong>systemd</strong> is smart enough to know that you probably want to operate on a service when using service management commands.</p>
-<h2 id="basic-systemctl-usage">Basic systemctl usage</h2>
-<p>The main command used to introspect and control systemd is <code>systemctl</code>, which has mentioned above. Some of its uses are examining the <code>system state</code> and managing the system and services.</p>
-<h2 id="analyzing-the-system-state">Analyzing the system state</h2>
-<p>The commands so far have been useful for managing single services, but they are not very helpful for exploring the current state of the system. There are a number of <code>systemctl</code> commands that provide this information.</p>
-<p>Show system status using:</p>
-<pre><code>systemctl status
-</code></pre><h2 id="list-running-units">List Running Units</h2>
-<p>To see a list of all of the active units that <strong>systemd</strong> knows about, we can use the <code>list-units</code> command:</p>
-<pre><code>systemctl list-units
-</code></pre><p>Since the <code>list-units</code> command shows only active units by default, all of the entries above will show <code>“loaded”</code> in the LOAD column and <code>“active”</code> in the <strong>ACTIVE</strong> column. This display is actually the default behavior of <strong>systemctl</strong> when called without additional commands, so you will see the same thing if you call <strong>systemctl</strong> with no arguments:</p>
-<pre><code>systemctl
-</code></pre><p>We can tell <strong>systemctl</strong> to output different information by adding additional flags. For instance, to see all of the units that <strong>systemd</strong> has loaded (or attempted to load), regardless of whether they are currently active, you can use the <code>--all</code> flag, like this:</p>
-<pre><code>systemctl list-units --all
-</code></pre><p>This will show any unit that <strong>systemd</strong> loaded or attempted to load, regardless of its current state on the system. Some units become inactive after running, and some units that <strong>systemd</strong> attempted to load may have not been found on disk.</p>
-<h2 id="list-failed-units">List Failed Units</h2>
-<pre><code>systemctl --failed
-</code></pre><p>If <strong>your output</strong> has beedn provided like below, It means that your system does not have any <code>UNIT Failed</code>.</p>
-<pre><code>UNIT LOAD ACTIVE SUB DESCRIPTION
-0 loaded units listed.
-</code></pre><h2 id="using-units">Using Units</h2>
-<p><strong>Start</strong> a unit immediately:</p>
-<pre><code>sudo systemctl start &lt;unit_name&gt;
-</code></pre><p>Sample for starting <code>nginx.service</code></p>
-<pre><code>sudo systemctl start nginx.service
-</code></pre>
-
-<div class="notices note" ><p>After you run the command, there will be nothing showing on your desktop. You can check if it really running or not with flag <code>status</code>.</p></div>
-
-
-
-<div class="notices info" ><p>All the flag are being used the same as sample have been given above.</p></div>
-
-<p><strong>Stop</strong> a unit immediately:</p>
-<pre><code>sudo systemctl stop &lt;unit_name&gt;
-</code></pre><p><strong>Restart</strong> a unit:</p>
-<pre><code>sudo systemctl restart &lt;unit_name&gt;
-</code></pre><p>Ask a unit to <strong>reload</strong> its configuration:</p>
-<pre><code>sudo systemctl reload &lt;unit_name&gt;
-</code></pre><p><strong>Show the status</strong> of a unit, including whether it is running or not:</p>
-<pre><code>systemctl status &lt;unit_name&gt;
-</code></pre><p>Check whether a unit is already <strong>enabled</strong> or not:</p>
-<pre><code>systemctl is-enabled &lt;unit_name&gt;
-</code></pre><p><strong>Enable a unit</strong> to be started on bootup:</p>
-<pre><code>sudo systemctl enable &lt;unit_name&gt;
-</code></pre><p><strong>Enable</strong> a unit to be started on bootup and Start immediately:</p>
-<pre><code>sudo systemctl enable --now &lt;unit_name&gt;
-</code></pre><p><strong>Disable a unit</strong> to not start during bootup:</p>
-<pre><code>sudo systemctl disable &lt;unit_name&gt;
-</code></pre><p><strong>Mask</strong> a unit to make it impossible to start it (both manually and as a dependency, which makes masking dangerous):</p>
-<pre><code>sudo systemctl mask &lt;unit_name&gt;
-</code></pre><p><strong>Unmask</strong> a unit:</p>
-<pre><code>sudo  systemctl unmask &lt;unit_name&gt;
-</code></pre><p>Show the <strong>manual page</strong> associated with a unit (this has to be supported by the unit file):</p>
-<pre><code>systemctl help &lt;unit_name&gt;
-</code></pre><p><strong>Reload systemd</strong> manager <code>configuration</code>, scanning for <code>new</code> or <code>changed units</code>:
-
-
-<div class="notices note" ><p>This does not ask the changed units to reload their own configurations. See reload example above.</p></div>
-</p>
-<pre><code>systemctl daemon-reload
-</code></pre><h2 id="removing-units">Removing Units</h2>
-<p>To remove any additions you have made, either delete the unit’s <code>.d</code> configuration directory or the modified service file from <code>/etc/systemd/system</code>. For instance, to remove a snippet, we could type:</p>
-<pre><code>sudo rm -r /etc/systemd/system/&lt;unit_name&gt;
-</code></pre><p>To remove a full modified unit file, we would type:</p>
-<pre><code>sudo rm /etc/systemd/system/&lt;unit_name&gt;
-</code></pre><p>After deleting the file or directory, you should reload the <code>systemd</code> process so that it no longer attempts to reference these files and reverts back to using the system copies. You can do this by typing:</p>
-<pre><code>sudo systemctl daemon-reload
-</code></pre><h2 id="getting-and-setting-the-default-target">Getting and Setting the Default Target</h2>
-<p>The systemd process has a default target that it uses when booting the system. Satisfying the cascade of dependencies from that single target will bring the system into the desired state. To find the default target for your system, type:</p>
-<pre><code>systemctl get-default
-</code></pre><pre><code>multi-user.target
-</code></pre><p>If you wish to set a different default target, you can use the set-default. For instance, if you have a graphical desktop installed and you wish for the system to boot into that by default, you can change your default target accordingly:</p>
-<pre><code>sudo systemctl set-default graphical.target
-</code></pre><h2 id="power-management">Power Management</h2>
-<p><strong>power management</strong> refers to the mechanism for controlling the power use of personal computer hardware.There are targets defined for important events like powering off or rebooting and more options.
-<strong>Reboot</strong> the system:</p>
-<pre><code>systemctl reboot
-</code></pre><p><strong>Shut down</strong> and power-off the system:</p>
-<pre><code>systemctl poweroff
-</code></pre><p><strong>Suspend</strong> the system:</p>
-<pre><code>systemctl suspend
-</code></pre><p>Put the system into <strong>hibernation</strong>:</p>
-<pre><code>systemctl hibernate
-</code></pre><p>Put the system into <strong>hybrid-sleep</strong> state (or suspend-to-both):</p>
-<pre><code>systemctl hybrid-sleep
-</code></pre><hr>
+          <div class="content"><h3 id="coming-soon-">Coming Soon !!!</h3>
 </div>
           
           <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 05 Jan 2020</p>
@@ -733,6 +691,22 @@
             
             
             
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             
 
             
@@ -742,6 +716,22 @@
             
             
             
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
             
             
             
@@ -1141,7 +1131,7 @@
             <a class="nav nav-prev" href="https://www.koompi.org/basic/search-and-find/searchfind/"><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">Searching/History</span></a>
             
             
-            <a class="nav nav-next" href="https://www.koompi.org/basic/other/others/"> <span class="d-none d-md-block">Other</span><i class="ti-arrow-right ml-2"></i></a>
+            <a class="nav nav-next" href="https://www.koompi.org/basic/system-manager/system_manager/"> <span class="d-none d-md-block">System Manager</span><i class="ti-arrow-right ml-2"></i></a>
             
           </nav>
         </div>
