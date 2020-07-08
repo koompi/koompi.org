@@ -76,6 +76,10 @@ A basic example of the cp command to copy files (keep the original file and make
 ```
  cp File_Name NewFile_Name
 ```
+If you want to copy other file from one directory to other directory, you can use the command below:
+```
+cp -R <source_folder> <destination_folder>
+```
 ### Options
 `-i`  for interactive, asks you to confirm if an existing file (perhaps a version of joe_expenses already exists in the cashflow directory) should be overwritten in the copying process.
 
