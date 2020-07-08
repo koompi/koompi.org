@@ -63,7 +63,10 @@ pi -S atom
 {{< notice info >}}
 After you type the command in konsole, please follow all instructions that have been given!
 {{< /notice >}}
-
+You can also start the atom by command,too.
+```
+atom
+```
 ## Main Features
 - Crossing platform editing
 - Built-in package manager
