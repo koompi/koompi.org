@@ -88,9 +88,9 @@ cp -R <source_folder> <destination_folder>
 `-v` for verbose, shows files being copied one by one.
 
 ## Move/Rename file or folder
-For instance, to instantly seek out and move all of the files. Your command-line instruction would simply be:
+For instance, to instantly seek out and move all of the folder. Your command-line instruction would simply be:
 ```
- mv File_Name NewFile_Name
+ mv Folder_Name NewFolder_Name
 ```
 ## Create Folder
 we can create directories from command line using the command `mkdir`. Syntax of this command is explained below.
