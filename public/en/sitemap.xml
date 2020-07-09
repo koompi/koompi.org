@@ -118,6 +118,21 @@
   </url>
   
   <url>
+    <loc>https://www.koompi.org/basic/power-management/power_management/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kh"
+                href="https://www.koompi.org/kh/basic/power-management/power_management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/basic/power-management/power_management/"
+                />
+  </url>
+  
+  <url>
     <loc>https://www.koompi.org/applications/recorder/recorder/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
   </url>
@@ -130,21 +145,6 @@
   <url>
     <loc>https://www.koompi.org/applications/media/media/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.koompi.org/basic/system-control/system_control/</loc>
-    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="kh"
-                href="https://www.koompi.org/kh/basic/system-control/system_control/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.koompi.org/basic/system-control/system_control/"
-                />
   </url>
   
   <url>

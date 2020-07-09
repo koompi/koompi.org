@@ -149,7 +149,7 @@ Please, make sure you have already updated your system with this command &amp;ld
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
       <guid>https://www.koompi.org/release/latest-version/latest_version/</guid>
-      <description>Coming Soon !!! </description>
+      <description>On April 26, 2020, We have released a new ISO version for KOOMPI OS (the built number: 202004) with many new cool features and even the bugs have been fixed. We have been working very hard to push out the OTA update. If you are curious about this new version, you can download and install the ISO with the link that has been providing below. However, If you don&amp;rsquo;t know how to set up it, you can come to the KOOMPI Office for installation anytime you are free.</description>
     </item>
     
     <item>
@@ -206,6 +206,18 @@ passwd Sample Output:
     </item>
     
     <item>
+      <title>Power Management</title>
+      <link>https://www.koompi.org/basic/power-management/power_management/</link>
+      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
+      
+      <guid>https://www.koompi.org/basic/power-management/power_management/</guid>
+      <description>Power Management is a feature that turns off the power or switches system&amp;rsquo;s components to a low-power state when inactive, which is located at the corner of the screen.
+You can run those services through Konsole also. So, This is the guide for those commands.
+  Poweroff and Reboot If you want to shut down your system you can follow the command below:
+poweroff Reboot is referring to restart your system.</description>
+    </item>
+    
+    <item>
       <title>Recording Apps</title>
       <link>https://www.koompi.org/applications/recorder/recorder/</link>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
@@ -232,15 +244,6 @@ passwd Sample Output:
       <description>As the social media platform has been the most powerful application which not only for communication but also for gathering a lot of information around everywhere in the world. Even they have been developed by many different companies but still focus on one main point that makes the users stay connected.
 So in this section, we are going to introduce many social platforms and a little details about them.
  Here is the list chart on the Media apps plus command to install them.</description>
-    </item>
-    
-    <item>
-      <title>System Control</title>
-      <link>https://www.koompi.org/basic/system-control/system_control/</link>
-      <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
-      
-      <guid>https://www.koompi.org/basic/system-control/system_control/</guid>
-      <description>Coming Soon !!! </description>
     </item>
     
     <item>
