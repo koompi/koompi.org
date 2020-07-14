@@ -13,7 +13,7 @@
     
     
     <item>
-      <title>Install/Remove</title>
+      <title>ព័ត៌មានពី Install/Remove</title>
       <link>https://www.koompi.org/kh/basic/install-and-remove/install_remove/</link>
       <pubDate>Sun, 29 Dec 2019 11:02:05 +0600</pubDate>
       
@@ -25,7 +25,18 @@
     </item>
     
     <item>
-      <title>Users/Groups</title>
+      <title>ព័ត៌មានពី Files/Folders</title>
+      <link>https://www.koompi.org/kh/basic/flies-and-folders/flie_folder/</link>
+      <pubDate>Fri, 29 Nov 2019 11:02:05 +0600</pubDate>
+      
+      <guid>https://www.koompi.org/kh/basic/flies-and-folders/flie_folder/</guid>
+      <description>This document is a guide for information related to Files and Folders. All the Command lines will be provided here with the explanation plus the example.
+For more details of the instruction, see KOOMPI OS website articles or the various program section, both linked from this guide.
+  Create File Knowing how to create a new file is an important skill for anyone using open-source regularly. You can create a new file either from the command line or from the desktop file manager.</description>
+    </item>
+    
+    <item>
+      <title>ព័ត៌មានពី Users/Groups</title>
       <link>https://www.koompi.org/kh/basic/users-and-groups/users_groups/</link>
       <pubDate>Tue, 29 Oct 2019 11:02:05 +0600</pubDate>
       
@@ -34,7 +45,7 @@
     </item>
     
     <item>
-      <title>Root Info</title>
+      <title>ព័ត៌មានពី Root</title>
       <link>https://www.koompi.org/kh/basic/root/root/</link>
       <pubDate>Sun, 29 Sep 2019 11:02:05 +0600</pubDate>
       
@@ -43,7 +54,7 @@
     </item>
     
     <item>
-      <title>Cache Info</title>
+      <title>ព័ត៌មានពី Cache</title>
       <link>https://www.koompi.org/kh/basic/cache/cache/</link>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
@@ -53,7 +64,7 @@
     </item>
     
     <item>
-      <title>GitHub Info</title>
+      <title>ព័ត៌មានពី GitHub</title>
       <link>https://www.koompi.org/kh/basic/github/git_command/</link>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
@@ -65,7 +76,7 @@ pi -S git  Make sure you have already run the command pi -Syu to update your sys
     </item>
     
     <item>
-      <title>Link/Unlink</title>
+      <title>ព័ត៌មានពី Link/Unlink</title>
       <link>https://www.koompi.org/kh/basic/link/link/</link>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
@@ -76,7 +87,7 @@ There are two types of links in Linux/UNIX systems:</description>
     </item>
     
     <item>
-      <title>Network Info</title>
+      <title>ព័ត៌មានពី Network</title>
       <link>https://www.koompi.org/kh/basic/network/network/</link>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
@@ -87,7 +98,7 @@ There are two types of links in Linux/UNIX systems:</description>
     </item>
     
     <item>
-      <title>Power Management</title>
+      <title>ព័ត៌មានពី Power Manager</title>
       <link>https://www.koompi.org/kh/basic/power-management/power_management/</link>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
@@ -96,7 +107,7 @@ There are two types of links in Linux/UNIX systems:</description>
     </item>
     
     <item>
-      <title>Searching/History</title>
+      <title>ព័ត៌មានពី Search/History</title>
       <link>https://www.koompi.org/kh/basic/search-and-find/searchfind/</link>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
@@ -105,7 +116,7 @@ There are two types of links in Linux/UNIX systems:</description>
     </item>
     
     <item>
-      <title>System Manager</title>
+      <title>ព័ត៌មានពី System Manager</title>
       <link>https://www.koompi.org/kh/basic/system-manager/system_manager/</link>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
@@ -114,7 +125,7 @@ There are two types of links in Linux/UNIX systems:</description>
     </item>
     
     <item>
-      <title>Other</title>
+      <title>ព័ត៌មានពី ផ្នែកផ្សេងៗ</title>
       <link>https://www.koompi.org/kh/basic/other/others/</link>
       <pubDate>Fri, 29 Dec 2017 11:02:05 +0600</pubDate>
       

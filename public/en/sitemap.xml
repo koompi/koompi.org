@@ -33,8 +33,18 @@
   </url>
   
   <url>
-    <loc>https://www.koompi.org/basic/flies-and-folders/flie-folder/</loc>
+    <loc>https://www.koompi.org/basic/flies-and-folders/flie_folder/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="kh"
+                href="https://www.koompi.org/kh/basic/flies-and-folders/flie_folder/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/basic/flies-and-folders/flie_folder/"
+                />
   </url>
   
   <url>

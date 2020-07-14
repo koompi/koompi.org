@@ -2,7 +2,7 @@
 <html lang="kh-kh">
   <head>
   <meta charset="utf-8">
-  <title>ព័ត៌មានពី Cache</title>
+  <title>ព័ត៌មានពី Files/Folders</title>
 
   <meta name="generator" content="Hugo 0.73.0" />
 
@@ -125,7 +125,7 @@
         
         
         
-        <option id="en" value="https://www.koompi.org/basic/cache/cache/">En</option>
+        <option id="en" value="https://www.koompi.org/basic/flies-and-folders/flie_folder/">En</option>
         
         
         
@@ -139,7 +139,7 @@
         
         
         
-        <option id="kh" value="https://www.koompi.org/kh/basic/cache/cache/" selected>Kh
+        <option id="kh" value="https://www.koompi.org/kh/basic/flies-and-folders/flie_folder/" selected>Kh
         </option>
         
         
@@ -217,7 +217,7 @@
 
 
 <li data-nav-id="https://www.koompi.org/kh/basic/flies-and-folders/flie_folder/" title="ព័ត៌មានពី Files/Folders" class="sidelist
-  ">
+  active">
   <a href="https://www.koompi.org/kh/basic/flies-and-folders/flie_folder/">
     ព័ត៌មានពី Files/Folders
   </a>
@@ -283,7 +283,7 @@
 
 
 <li data-nav-id="https://www.koompi.org/kh/basic/cache/cache/" title="ព័ត៌មានពី Cache" class="sidelist
-  active">
+  ">
   <a href="https://www.koompi.org/kh/basic/cache/cache/">
     ព័ត៌មានពី Cache
   </a>
@@ -472,54 +472,181 @@
       </div>
       <div class="col-lg-9">
         <div class="p-lg-5 p-4 bg-white">
-          <h2 class="mb-5">ព័ត៌មានពី Cache</h2>
+          <h2 class="mb-5">ព័ត៌មានពី Files/Folders</h2>
           
-          <div class="content"><p><strong>Pi</strong> stores its downloaded packages in <code>/var/cache/pacman/pkg/</code> and does not remove the old or uninstalled versions automatically. This has some advantages:</p>
-<ol>
-<li>It allows to <code>downgrade a package</code> without the need to retrieve the previous version through other means, such as the <code>Arch Linux Archive.</code></li>
-<li>A package that has been uninstalled can easily be reinstalled directly from the cache folder, not requiring a new download from the repository.</li>
-</ol>
-<p>However, it is necessary to <code>deliberately clean up the cache</code> periodically to prevent the folder to grow indefinitely in size.</p>
-<p>The paccache script, provided within the <code>pacman-contrib</code> package, deletes all cached versions of installed and uninstalled packages, except for the most recent 3, by default:</p>
-<pre><code>paccache -r
-</code></pre><p><strong>Enable and start</strong> <code>paccache.timer</code> to discard unused packages weekly.</p>
-
-
-<div class="notices tip" ><p>You can create a <code>hook</code> to run this automatically after every pi transaction.</p></div>
-
-<p>For more <strong>options</strong> aboout <code>paccache</code> use :</p>
-<pre><code>paccache -h
-</code></pre><p><strong>Pacman</strong> also has some built-in options to clean the cache and the leftover database files from repositories which are no longer listed in the configuration file <code>/etc/pacman.conf</code>.</p>
-<p>However, <em>Pacman</em> does not offer the possibility to keep a number of past versions and is, therefore, more aggressive than paccache default options.</p>
-<p>To remove all the <code>cached packages</code> that are not currently installed, and the <code>unused sync database</code>, execute:</p>
-<pre><code>pi -Sc
-</code></pre><p>To remove all files from the cache, use the clean switch twice, this is the most aggressive approach and will leave nothing in the cache folder:</p>
-<pre><code>pi -Scc
+          <div class="content"><p>This document is a guide for information related to <strong>Files and Folders</strong>. All the Command lines will be provided here with the explanation plus the example.</p>
+<p>For more details of the instruction, see <a href="www.koompi.org">KOOMPI OS website</a> articles or the various <a href="www.koompi.org/applications/">program section</a>, both linked from this guide.</p>
+<hr>
+<hr>
+<h2 id="create-file">Create File</h2>
+<p>Knowing how to create a new file is an <strong>important skill</strong> for anyone using open-source regularly. You can create a new file either from the <code>command line</code> or from the <code>desktop file manager</code>.</p>
+<p>The <code>touch</code> command allows us to update the t<strong>imestamps on existing files and directories</strong> as well as creating, empty files. The only easiest and most memorable way to create new, empty files is by using the <code>touch command</code>.</p>
+<p>To create a new file simply run the touch command followed by the name of the file you want to create:</p>
+<pre><code> touch Files_Name.txt
+</code></pre><p>You can also create multiple files at once by specifying the file names separated by space.</p>
+<pre><code> touch File_Name1.txt File_Name2.txt File_Name3.txt
 </code></pre>
 
-<div class="notices warning" ><p>One should avoid deleting from the cache all past versions of installed packages and all uninstalled packages unless one desperately needs to free some disk space. This will prevent downgrading or reinstalling packages without downloading them again.</p></div>
+<div class="notices info" ><p><code>.txt</code> stand for the text file. You can also use other extensions for the kind of files you want to use.</p></div>
 
+<p>Besides <code>Touch</code>, <code>echo</code> can also use to create file too. The <code>echo</code> command prints the <strong>strings</strong> that are passed as arguments to the standard output, which can be <em>redirected</em> to a file.</p>
+<pre><code> echo &quot;some line&quot; &gt;&gt; File_Name.txt
+</code></pre><p>For Example:</p>
+<pre><code> echo $null &gt;&gt; sample.txt
+</code></pre>
 
+<div class="notices note" ><p><code>$null</code> here is standing for no. It means there will be no arguments redirected into the file.</p></div>
 
-<div class="notices tip" ><p>Automatically clean the package cache.</p></div>
+<h2 id="deleting-file">Deleting File</h2>
+<p>Deleting File is one of the frequently done operation. Run <code>rm</code> command with the name of the file you want to remove:</p>
+<pre><code> rm File_Name
+</code></pre><p>Here is an example</p>
+<pre><code> rm sample.txt 
+</code></pre><h2 id="display-file-content">Display File Content</h2>
+<p>Cat(concatenate) command is very frequently used in open-source. It reads data from the file and gives their content as output. It helps us to create, view, concatenate files. So let us see some frequently used cat commands.</p>
+<pre><code> cat File_Name
+</code></pre><h2 id="edit-text-file">Edit Text File</h2>
+<p>There are many ways to edit files through command line such as vi, emacs, pico, ed, and nano. Among those only Nano is regularly using.</p>
+<pre><code> nano File_Name
+</code></pre>
 
-<p>If you are too lazy to clean the package cache manually, you can automate this task using Pacman hooks. The Pacman hook will automatically clean the package cache after every Pacman transaction.</p>
-<p>To do so, create a file /etc/pacman.d/hooks/clean_package_cache.hook:</p>
-<pre><code>sudo mkdir /etc/pacman.d/hooks
-</code></pre><p>Next:</p>
-<pre><code>sudo nano /etc/pacman.d/hooks/clean_package_cache.hook
-</code></pre><p>Add the following lines:</p>
-<pre><code>[Trigger]
-Operation = Upgrade
-Operation = Install
-Operation = Remove
-Type = Package
-Target = *
-[Action]
-Description = Cleaning pacman cache...
-When = PostTransaction
-Exec = /usr/bin/paccache -r
-</code></pre><p>Save and close the file. From now on, the package cache will be cleaned automatically after every Pacman transactions (like an upgrade, install, remove). You don’t have to run paccache command manually every time.</p>
+<div class="notices note" ><p>Sometimes, we need to add <code>sudo</code>; which stand for <strong>superuser do</strong>, in front of it to edit.</p></div>
+
+<pre><code> sudo nano File_Name
+</code></pre><h2 id="copy-file-or-folder">Copy File or Folder</h2>
+<p>A basic example of the cp command to copy files (keep the original file and make a duplicate of it) might look like:</p>
+<pre><code> cp File_Name NewFile_Name
+</code></pre><p>If you want to copy other file from one directory to other directory, you can use the command below:</p>
+<pre><code>cp -R &lt;source_folder&gt; &lt;destination_folder&gt;
+</code></pre><h3 id="options">Options</h3>
+<p><code>-i</code>  for interactive, asks you to confirm if an existing file (perhaps a version of joe_expenses already exists in the cashflow directory) should be overwritten in the copying process.</p>
+<p><code>-r</code> for recursive, to copy all the subdirectories and files in a given directory and preserve the tree structure.</p>
+<p><code>-v</code> for verbose, shows files being copied one by one.</p>
+<h2 id="moverename-file-or-folder">Move/Rename file or folder</h2>
+<p>For instance, to instantly seek out and move all of the folder. Your command-line instruction would simply be:</p>
+<pre><code> mv Folder_Name NewFolder_Name
+</code></pre><h2 id="create-folder">Create Folder</h2>
+<p>we can create directories from command line using the command <code>mkdir</code>. Syntax of this command is explained below.</p>
+<pre><code> mkdir Folder_Name
+</code></pre><p>For example, to create a folder named ‘newfolder‘ the command is:</p>
+<pre><code> mkdir NewFolder
+</code></pre><h2 id="remove-folder">Remove Folder</h2>
+<p>Removing folder is like removing the file, too but it has a little bit different. You have to add <code>-r</code> after <code>rm command</code>.</p>
+<pre><code> rm -r Folder_Name
+</code></pre><h2 id="list-folder-contents">List Folder Contents</h2>
+<p>Listing Command (ls) allows us to see all the contents in the directory we are in.</p>
+<pre><code> ls
+</code></pre><h3 id="options-1">Options</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Options</th>
+<th align="left">Descriptions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>ls -a</strong></td>
+<td align="left"><code>list all files including hidden file starting with '.'</code></td>
+</tr>
+<tr>
+<td align="left"><strong>ls &ndash;color</strong></td>
+<td align="left"><code>colored list [=always/never/auto]</code></td>
+</tr>
+<tr>
+<td align="left"><strong>ls -d</strong></td>
+<td align="left"><code>list directories - with ' */'</code></td>
+</tr>
+<tr>
+<td align="left"><strong>ls -F</strong></td>
+<td align="left"><code>add one char of */=&gt;@| to enteries</code></td>
+</tr>
+<tr>
+<td align="left"><strong>ls -i</strong></td>
+<td align="left"><code>list file's inode index number</code></td>
+</tr>
+<tr>
+<td align="left"><strong>ls -l</strong></td>
+<td align="left"><code>list with long format - show permissions</code></td>
+</tr>
+<tr>
+<td align="left"><strong>ls -la</strong></td>
+<td align="left"><code>list long format including hidden files</code></td>
+</tr>
+<tr>
+<td align="left"><strong>ls -lh</strong></td>
+<td align="left"><code>list long format with readable file size</code></td>
+</tr>
+<tr>
+<td align="left"><strong>ls -ls</strong></td>
+<td align="left"><code>list with long format with file size</code></td>
+</tr>
+<tr>
+<td align="left"><strong>ls -r</strong></td>
+<td align="left"><code>list in reverse order</code></td>
+</tr>
+<tr>
+<td align="left"><strong>ls -R</strong></td>
+<td align="left"><code>list recursively directory tree</code></td>
+</tr>
+</tbody>
+</table>
+<p>For more info use <code>--help</code> after the command like this `ls &ndash;help``.</p>
+<h2 id="change-folder-or-directory">Change Folder or Directory</h2>
+<p><code>cd</code> is the command for changing the folder/directory of the command line. Here its syntax:</p>
+<pre><code> cd Folder_Name
+</code></pre><p>Changing to home directory (determined by $HOME environment variable):</p>
+<pre><code> cd
+</code></pre><p>Also change to home directory:</p>
+<pre><code> cd .
+</code></pre><p>Change to parent directory:</p>
+<pre><code> cd ..
+</code></pre><p>Change to subdirectory Documents:</p>
+<pre><code> cd Documents
+</code></pre><p>Change to directory with absolute path</p>
+<pre><code> cd path1/path2/path3
+</code></pre><p>Change to directory name with white space -<em>path Name</em></p>
+<pre><code> cd path\ Name 
+</code></pre>
+
+<div class="notices tip" ><p><code>\</code> here is stand for white space !!!</p></div>
+
+<h2 id="show-current-folder">Show Current Folder</h2>
+<p>To show the directory you are currently in:</p>
+<pre><code> pwd
+</code></pre><p><strong>Output :</strong></p>
+<pre><code> /home/koompi
+</code></pre><h2 id="create-physical-link-to-file-or-folder">Create Physical Link to File or Folder</h2>
+<p>To make links between files you need to use <code>ln</code> command. A symbolic link (also known as a soft link or symlink) consists of a special type of file that serves as a reference to another file or directory.</p>
+<pre><code>ln [FileName] [LinkName]
+</code></pre><h2 id="find-phrase-within-file">Find Phrase Within File</h2>
+<p>The grep command is used to search text. It searches the given file for lines containing a match to the given strings or words. It is one of the most useful commands.</p>
+<p>Below is some standard grep command explained with examples to get you started with grep. Search any line that contains the word in filename.</p>
+<pre><code> grep 'Strings' FileName
+</code></pre><p>Perform a case-insensitive search for the word:</p>
+<pre><code> grep -i 'Strings' FileName
+</code></pre><p>Looking for all files in the current directory and in all of its subdirectories.</p>
+<pre><code> grep -R 'Strings'
+</code></pre><p>Searching and displaying the total number of times that the string appears in FileName.</p>
+<pre><code> grep -c 'Strings' FileName
+</code></pre><p>Searching by paths:</p>
+<pre><code> grep 'Strings' path/path/path
+</code></pre><h2 id="mount-filesystem">Mount Filesystem</h2>
+<p>You can mount the filesystem with the syntax below:</p>
+<pre><code> mount /dev/[device] [path]
+</code></pre><h2 id="unmount-filesystem">Unmount Filesystem</h2>
+<p>You can also unmount filesystem with command below.</p>
+<pre><code> unmount [path]
+</code></pre><h2 id="make-file-executable">Make File Executable</h2>
+<p>Change the rights to a file so that it can run as a program.</p>
+<pre><code> chmod +x filename
+</code></pre><h2 id="list-trash-files">List Trash Files</h2>
+<p>As you have already known what is <code>ls</code>  command, you should know the path of the trash file.</p>
+<pre><code> ls -l files ~/.local/share/Trash/files
+</code></pre><h2 id="empty-trash">Empty Trash</h2>
+<p>Above are the paths of trash file, we can empty it with <code>rm -r</code> command:</p>
+<pre><code> rm -r ~/.locale/share/Trash
+</code></pre><hr>
 <hr>
 </div>
           
@@ -583,54 +710,6 @@ Exec = /usr/bin/paccache -r
             
             
             
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
             
 
             
@@ -763,6 +842,54 @@ Exec = /usr/bin/paccache -r
             
             
             
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             
             
             
@@ -860,10 +987,10 @@ Exec = /usr/bin/paccache -r
             
 
             
-            <a class="nav nav-prev" href="https://www.koompi.org/kh/basic/root/root/"><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">ព័ត៌មានពី Root</span></a>
+            <a class="nav nav-prev" href="https://www.koompi.org/kh/basic/install-and-remove/install_remove/"><i class="ti-arrow-left mr-2"></i> <span class="d-none d-md-block">ព័ត៌មានពី Install/Remove</span></a>
             
             
-            <a class="nav nav-next" href="https://www.koompi.org/kh/basic/github/git_command/"> <span class="d-none d-md-block">ព័ត៌មានពី GitHub</span><i class="ti-arrow-right ml-2"></i></a>
+            <a class="nav nav-next" href="https://www.koompi.org/kh/basic/users-and-groups/users_groups/"> <span class="d-none d-md-block">ព័ត៌មានពី Users/Groups</span><i class="ti-arrow-right ml-2"></i></a>
             
           </nav>
         </div>
