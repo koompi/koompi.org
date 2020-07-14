@@ -3,8 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.koompi.org/kh/basic/install-and-remove/install_remove/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/basic/install-and-remove/install_remove/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kh"
+                href="https://www.koompi.org/kh/basic/install-and-remove/install_remove/"
+                />
+  </url>
+  
+  <url>
     <loc>https://www.koompi.org/kh/</loc>
-    <lastmod>2018-12-29T11:02:05+06:00</lastmod>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -14,6 +29,141 @@
                 rel="alternate"
                 hreflang="kh"
                 href="https://www.koompi.org/kh/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.koompi.org/kh/basic/users-and-groups/users_groups/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/basic/users-and-groups/users_groups/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kh"
+                href="https://www.koompi.org/kh/basic/users-and-groups/users_groups/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.koompi.org/kh/basic/root/root/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/basic/root/root/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kh"
+                href="https://www.koompi.org/kh/basic/root/root/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.koompi.org/kh/basic/cache/cache/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/basic/cache/cache/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kh"
+                href="https://www.koompi.org/kh/basic/cache/cache/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.koompi.org/kh/basic/github/git_command/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/basic/github/git_command/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kh"
+                href="https://www.koompi.org/kh/basic/github/git_command/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.koompi.org/kh/basic/link/link/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/basic/link/link/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kh"
+                href="https://www.koompi.org/kh/basic/link/link/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.koompi.org/kh/basic/network/network/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/basic/network/network/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kh"
+                href="https://www.koompi.org/kh/basic/network/network/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.koompi.org/kh/basic/power-management/power_management/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/basic/power-management/power_management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kh"
+                href="https://www.koompi.org/kh/basic/power-management/power_management/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.koompi.org/kh/basic/search-and-find/searchfind/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/basic/search-and-find/searchfind/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kh"
+                href="https://www.koompi.org/kh/basic/search-and-find/searchfind/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.koompi.org/kh/basic/system-manager/system_manager/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/basic/system-manager/system_manager/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kh"
+                href="https://www.koompi.org/kh/basic/system-manager/system_manager/"
                 />
   </url>
   
@@ -78,30 +228,17 @@
   </url>
   
   <url>
-    <loc>https://www.koompi.org/kh/basic/link/link/</loc>
+    <loc>https://www.koompi.org/kh/basic/other/others/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://www.koompi.org/basic/link/link/"
+                href="https://www.koompi.org/basic/other/others/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="kh"
-                href="https://www.koompi.org/kh/basic/link/link/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://www.koompi.org/kh/basic/power-management/power_management/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.koompi.org/basic/power-management/power_management/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="kh"
-                href="https://www.koompi.org/kh/basic/power-management/power_management/"
+                href="https://www.koompi.org/kh/basic/other/others/"
                 />
   </url>
   

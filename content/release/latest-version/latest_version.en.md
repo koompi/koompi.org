@@ -8,7 +8,7 @@ keywords: ["induct", "instate"]
 ---
 On April 26, 2020, We have released a new ISO version for KOOMPI OS **(the built number: 202004)** with many new cool features and even the bugs have been fixed. We have been working very hard to push out the OTA update. If you are curious about this new version, you can download and install the ISO with the link that has been providing below. However, If you don't know how to set up it, you can come to the `KOOMPI Office` for installation anytime you are free.
 
-![image example](../images/winkd.png "image")
+<!-- ![image example](./images/winkd.png "image") -->
 
 ## What's New 
 

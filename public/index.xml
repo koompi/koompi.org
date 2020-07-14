@@ -37,10 +37,10 @@ For more details of the instruction, see KOOMPI OS website articles or the vario
     
     <item>
       <title>Users/Groups</title>
-      <link>https://www.koompi.org/basic/users-and-groups/users-and-groups/</link>
+      <link>https://www.koompi.org/basic/users-and-groups/users_groups/</link>
       <pubDate>Tue, 29 Oct 2019 11:02:05 +0600</pubDate>
       
-      <guid>https://www.koompi.org/basic/users-and-groups/users-and-groups/</guid>
+      <guid>https://www.koompi.org/basic/users-and-groups/users_groups/</guid>
       <description>The id command writes to standard output a message containing the system identifications (ID) for a specified user. The system IDs are numbers which identify users and user groups to the system. The id command writes the following information, when applicable:
  User name and real user ID Name of the user&amp;rsquo;s group and real group ID Name of user&amp;rsquo;s supplementary groups and supplementary group IDs  Supplementary group information is written only for systems supporting multiple-user groups and only if the specified user belongs to a supplementary group.</description>
     </item>
