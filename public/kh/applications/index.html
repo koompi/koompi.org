@@ -206,88 +206,45 @@
         <div class="p-lg-5 p-4 bg-white">
           <h2 class="mb-5">ព័ត៌មានអំពីកម្មវិធី</h2>
           
-          <div class="content"><h1 id="មកដលឆបៗន-">មកដល់ឆាប់ៗនេះ !!!</h1>
-<!-- ---
-title: "Installation"
-date: 2018-12-29T11:02:05+06:00
-lastmod: 2020-01-05T10:42:26+06:00
-weight: 2
-draft: false
-# search related keywords
-keywords: ["induct", "instate"]
----
+          <div class="content"><p>ជំហានទាំងអស់ដែលទាក់ទងនឹងកម្មវិធីត្រូវបានរក្សាទុកនៅទីនេះដើម្បីជួយដល់អ្នក។ ប្រសិនបើអ្នកមិនដឹងពី <a href="#">ខុនសូល</a>ទាល់តែសោះ យើងណែនាំអ្នកជាពិសេសនោះអ្នកទើបតែប្រើប្រាស់ប្រព័ន្ធប្រតិបតិ្តការនេះ ឲ្យសិក្សា បន្ថែមពីវាតាមរយះឯកសារផ្សេងៗដែលពាក់ព័ន្ធបានរក្សាទុកនៅក្នុងផ្នែក <code>ពាក្យបញ្ជាមូលដ្ឋាន</code>។</p>
 
-The following steps are here to help you initialize your new website. If you don't know Hugo at all, we strongly suggest you learn more about it by following this [great documentation for beginners](https://gohugo.io/overview/quickstart/).
 
-### Create your project
+<div class="notices note" ><p>មុនពេលអ្នកដំឡើងកម្មវិធីណាមួយ, អ្នកត្រូវធ្វើការដំឡើងវាដល់ វីលស៊ិនចុងក្រោយ <strong>(lastest version)</strong> ជាមុន សិន។ ប្រសិនបើអ្នកមិនបានធ្វើការដំឡើងទេ សូមអ្នកធ្វើវា។</p></div>
 
-Hugo provides a `new` command to create a new website.
+<p>ដើម្បីធ្វើការដំឡើងវាដល់ វីលស៊ិនចុងក្រោយ <strong>(lastest version)</strong>, អ្នកត្រូវវាយពាក្យបញ្ជាខាងក្រោម៖</p>
+<pre><code>pi -Syu
+</code></pre><p>នៅក្នុង ប្រព័ន្ធប្រតិបតិ្តការ គម្ពីរ ឫប្រព័ន្ធប្រតិបត្តិការ លីនិចផ្សេងៗ ដើម្បីដំឡើងកម្មវិធីណាមួយអ្នកត្រូវស្គាល់ពី ឈ្មោះគន្លឹះរបស់កម្មវិធីជាមុនសិន ហើយធ្វើការបញ្ចូលពាក្យបញ្ជាជាមួយឈ្មោះគនឹ្លះនោះ។</p>
+<pre><code>pi -S ឈ្មោះគន្លឹះកម្មវិធី
+</code></pre><p>ប្រសិនបើអ្នកចង់លុបចោលកម្មវិធី អ្នកអាចធ្វើដូចខាងក្រោម</p>
+<pre><code>pi -Rn ឈ្មោះគន្លឹះកម្មវិធី
+</code></pre>
 
-```
-hugo new site <new_project>
-```
+<div class="notices info" ><p>បើចង់ដឹងបន្ថែមពីការដំឡើងនិងការលុបចោលកម្មវិធី សូមចុច<a href="#">ទីនេះ</a>។</p></div>
 
-### Install the theme
+<p>បើអ្នកចង់ធ្វើការឆ្លើយតបរាល់សំនួរដែលបានសួរនៅពេលដំឡើង ឫលុបកម្មវិធីអ្នកអាចធ្វើបានតាមរយះនេះ ៖</p>
+<pre><code>yes | ពាក្យបញ្ជាលុប ឫដំឡើង និងឈ្មោះកម្មវិធី 
+</code></pre><p>ខាងក្រោមនេះជាឧទាហរណ៍ ៖
 
-Install the **Dot** theme by following [this documentation](https://gohugo.io/themes/installing/)
 
-This theme's repository is: https://github.com/themefisher/dot-hugo-documentation-theme.git
-
-Alternatively, you can [download the theme as .zip](https://github.com/themefisher/dot-hugo-documentation-theme/archive/master.zip) file and extract it in the `themes` directory
-
-Or you can check this video documentation for installing this template:
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/Srt3lTmRxzQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content"><div class="tab-pane" title="ឧទាហរណ៍នៃ ការដំឡើង">
+  <pre><code>yes | pi -S brave
+</code></pre>
 </div>
-
-
-### Basic configuration
-
-When building the website, you can set a theme by using `--theme` option. However, we suggest you modify the configuration file (`config.toml`) and set the theme as the default.
-
-```toml
-# Change the default theme to be use when building the site with Hugo
-theme = "Dot"
-```
-
-
-### Create your first content pages
-
-Then, create content pages inside the previously created chapter. Here are two ways to create content in the chapter:
-
-```
-hugo new installation/first-content.md
-hugo new installation/second-content/_index.md
-```
-
-Feel free to edit thoses files by adding some sample content and replacing the `title` value in the beginning of the files. 
-
-### Launching the website locally
-
-Launch by using the following command:
-
-```
-hugo serve
-```
-
-Go to `https://koompi.org`
-
-### Build the website
-
-When your site is ready to deploy, run the following command:
-
-```
-hugo
-```
-
-A `public` folder will be generated, containing all static content and assets for your website. It can now be deployed on any web server.
-
-
-
-<div class="notices info" ><p>This website can be automatically published and hosted with <a href="https://www.netlify.com/">Netlify</a> (Read more about <a href="https://www.netlify.com/blog/2015/07/30/hosting-hugo-on-netlifyinsanely-fast-deploys/">Automated HUGO deployments with Netlify</a>). Alternatively, you can use <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Github pages</a></p></div>
- --><blockquote>
-</blockquote>
+<div class="tab-pane" title="ឧទាហរណ៍នៃ ការលុបចោល">
+  <pre><code>yes | pi -Rn brave
+</code></pre>
+</div>
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content"><div class="notices info" ><p>ពាក្យបញ្ជា អូតូ នេះអាចធ្វើបានលើពាក្យបញ្ជាដំឡើង និងលុប។</p></div>
+<div class="notices note" ><p>ពាក្យបញ្ជា អូតូ នេះអាចដំណើរការលើកម្មវិធីតែមួយចំនួនប៉ុណ្ណោះ។</p></div>
+<hr>
+<hr>
+</div>
+</div></div>
+</div></p>
 </div>
           
           <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 28 Dec 2018</p>

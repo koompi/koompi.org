@@ -5,7 +5,7 @@ icon: "ti-package"
 description: "Providing the guide of applications installation; documents, images, and videos."
 type : "docs"
 ---
- The following steps are stored here to help you. If you don’t know konsole at all, we strongly suggest you learn more about it by following this great documentation for beginners in the Basic Command section.
+ The following steps that connected with applicantions are stored here to help you. If you don’t know konsole at all, we strongly suggest you learn more about it by following this great documentation for beginners in the Basic Command section.
 
 {{% notice note %}}
  Before, You install any applications, you have to make sure your system is already up to date. If you haven't done it, you must do it.

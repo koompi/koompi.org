@@ -6,79 +6,60 @@ description: "ការផ្តល់មគ្គុទេសក៍នៃកា
 ដែល​មានជា ឯកសារ,រូបភាព និងវីដេអូ។"
 type : "docs"
 ---
-# មកដល់ឆាប់ៗនេះ !!!
-<!-- ---
-title: "Installation"
-date: 2018-12-29T11:02:05+06:00
-lastmod: 2020-01-05T10:42:26+06:00
-weight: 2
-draft: false
-# search related keywords
-keywords: ["induct", "instate"]
----
+ជំហានទាំងអស់ដែលទាក់ទងនឹងកម្មវិធីត្រូវបានរក្សាទុកនៅទីនេះដើម្បីជួយដល់អ្នក។ ប្រសិនបើអ្នកមិនដឹងពី [ខុនសូល](#)ទាល់តែសោះ យើងណែនាំអ្នកជាពិសេសនោះអ្នកទើបតែប្រើប្រាស់ប្រព័ន្ធប្រតិបតិ្តការនេះ ឲ្យសិក្សា បន្ថែមពីវាតាមរយះឯកសារផ្សេងៗដែលពាក់ព័ន្ធបានរក្សាទុកនៅក្នុងផ្នែក `ពាក្យបញ្ជាមូលដ្ឋាន`។
 
-The following steps are here to help you initialize your new website. If you don't know Hugo at all, we strongly suggest you learn more about it by following this [great documentation for beginners](https://gohugo.io/overview/quickstart/).
+{{% notice note %}}
+មុនពេលអ្នកដំឡើងកម្មវិធីណាមួយ, អ្នកត្រូវធ្វើការដំឡើងវាដល់ វីលស៊ិនចុងក្រោយ **(lastest version)** ជាមុន សិន។ ប្រសិនបើអ្នកមិនបានធ្វើការដំឡើងទេ សូមអ្នកធ្វើវា។
+{{% /notice %}}
 
-### Create your project
-
-Hugo provides a `new` command to create a new website.
+ដើម្បីធ្វើការដំឡើងវាដល់ វីលស៊ិនចុងក្រោយ **(lastest version)**, អ្នកត្រូវវាយពាក្យបញ្ជាខាងក្រោម៖
+```
+pi -Syu
+```
+នៅក្នុង ប្រព័ន្ធប្រតិបតិ្តការ គម្ពីរ ឫប្រព័ន្ធប្រតិបត្តិការ លីនិចផ្សេងៗ ដើម្បីដំឡើងកម្មវិធីណាមួយអ្នកត្រូវស្គាល់ពី ឈ្មោះគន្លឹះរបស់កម្មវិធីជាមុនសិន ហើយធ្វើការបញ្ចូលពាក្យបញ្ជាជាមួយឈ្មោះគនឹ្លះនោះ។
 
 ```
-hugo new site <new_project>
+pi -S ឈ្មោះគន្លឹះកម្មវិធី
 ```
 
-### Install the theme
-
-Install the **Dot** theme by following [this documentation](https://gohugo.io/themes/installing/)
-
-This theme's repository is: https://github.com/themefisher/dot-hugo-documentation-theme.git
-
-Alternatively, you can [download the theme as .zip](https://github.com/themefisher/dot-hugo-documentation-theme/archive/master.zip) file and extract it in the `themes` directory
-
-Or you can check this video documentation for installing this template:
-{{< youtube Srt3lTmRxzQ >}}
-
-### Basic configuration
-
-When building the website, you can set a theme by using `--theme` option. However, we suggest you modify the configuration file (`config.toml`) and set the theme as the default.
-
-```toml
-# Change the default theme to be use when building the site with Hugo
-theme = "Dot"
-```
-
-
-### Create your first content pages
-
-Then, create content pages inside the previously created chapter. Here are two ways to create content in the chapter:
+ប្រសិនបើអ្នកចង់លុបចោលកម្មវិធី អ្នកអាចធ្វើដូចខាងក្រោម
 
 ```
-hugo new installation/first-content.md
-hugo new installation/second-content/_index.md
+pi -Rn ឈ្មោះគន្លឹះកម្មវិធី
 ```
 
-Feel free to edit thoses files by adding some sample content and replacing the `title` value in the beginning of the files. 
+{{% notice info %}}
+បើចង់ដឹងបន្ថែមពីការដំឡើងនិងការលុបចោលកម្មវិធី សូមចុច[ទីនេះ](#)។
+{{% /notice %}}
 
-### Launching the website locally
 
-Launch by using the following command:
-
+បើអ្នកចង់ធ្វើការឆ្លើយតបរាល់សំនួរដែលបានសួរនៅពេលដំឡើង ឫលុបកម្មវិធីអ្នកអាចធ្វើបានតាមរយះនេះ ៖
 ```
-hugo serve
+yes | ពាក្យបញ្ជាលុប ឫដំឡើង និងឈ្មោះកម្មវិធី 
 ```
+ខាងក្រោមនេះជាឧទាហរណ៍ ៖
+{{% tabs %}}
+  {{% tab "ឧទាហរណ៍នៃ ការដំឡើង" %}}
+   ```
+   yes | pi -S brave
+   ```
+  {{% /tab %}}
 
-Go to `https://koompi.org`
+  {{% tab "ឧទាហរណ៍នៃ ការលុបចោល" %}}
+  ```
+  yes | pi -Rn brave
+  ```
+  {{% /tab %}}
 
-### Build the website
+{{% tabs %}}
 
-When your site is ready to deploy, run the following command:
+{{% notice info %}}
+ពាក្យបញ្ជា អូតូ នេះអាចធ្វើបានលើពាក្យបញ្ជាដំឡើង និងលុប។
+{{% /notice %}}
 
-```
-hugo
-```
+{{% notice note %}}
+ពាក្យបញ្ជា អូតូ នេះអាចដំណើរការលើកម្មវិធីតែមួយចំនួនប៉ុណ្ណោះ។
+{{% /notice %}}
 
-A `public` folder will be generated, containing all static content and assets for your website. It can now be deployed on any web server.
-
-{{% notice info%}}
-This website can be automatically published and hosted with [Netlify](https://www.netlify.com/) (Read more about [Automated HUGO deployments with Netlify](https://www.netlify.com/blog/2015/07/30/hosting-hugo-on-netlifyinsanely-fast-deploys/)). Alternatively, you can use [Github pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
-{{% /notice %}} -->
+-----
+-----
