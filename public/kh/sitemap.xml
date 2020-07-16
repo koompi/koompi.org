@@ -93,6 +93,21 @@
   </url>
   
   <url>
+    <loc>https://www.koompi.org/kh/release/pix-release/pix_release/</loc>
+    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/release/pix-release/pix_release/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kh"
+                href="https://www.koompi.org/kh/release/pix-release/pix_release/"
+                />
+  </url>
+  
+  <url>
     <loc>https://www.koompi.org/kh/basic/cache/cache/</loc>
     <lastmod>2020-01-05T10:42:26+06:00</lastmod>
     <xhtml:link
