@@ -39,4 +39,79 @@ pix update
 pix i pi
 ```
 ## តើពាក្យបញ្ជា pix អាចធ្វើអ្វីបានខ្លះ?
-ពាក្យបញ្ជា pix អាចធ្វើអី្វដែលមិនអាចទៅរួចក្លាយជាការពិត
+ពាក្យបញ្ជា pix អាចធ្វើអី្វដែលមិនអាចធ្វើបានអាចធ្វើបាន ហើយអ្នកអាចស្វែងរកព័ត៌មានបន្ថែមពីវាបាន ដោយ ការវាតបញ្ចូលពាក្យបញ្ជាខាងក្រោមក្នុង ខុនសូល។
+```
+pix
+```
+
+## ការឆេកមើលកម្មវិធីនៅលើ Pix
+
+នៅក្នុង**pix version**, អ្នកអាចរកមើលកម្មវិធីទាំងនោះបានដោយប្រើ `-l`ពីក្រោយពាក្យបញ្ជា pix:
+```
+pix -l
+```
+ឯនេះជាលទ្ធផលពីការប្រើពាក្យបញ្ជាខាងលើ៖
+```
+NO             APPLICATION           INSTALL                      REMOVE     
+
+1              adobe-acrobat-xi      pix -i adobe-acrobat-xi      pix -r adobe-acrobat-xi     
+2              adobe-photoshop-cc    pix -i adobe-photoshop-cc    pix -r adobe-photoshop-cc   
+3              asc-timetables        pix -i asc-timetables        pix -r asc-timetables       
+4              chinese-support       pix -i chinese-support       pix -r chinese-support      
+5              flutter               pix -i flutter               pix -r flutter              
+6              ios-support           pix -i ios-support           pix -r ios-support          
+7              khmer-typing          pix -i khmer-typing          pix -r khmer-typing         
+8              koompi-academy        pix -i koompi-academy        pix -r koompi-academy       
+9              koompi-themes         pix -i koompi-themes         pix -r koompi-themes        
+10             master-pdf-editor5    pix -i master-pdf-editor5    pix -r master-pdf-editor5   
+11             ms-office-2013        pix -i ms-office-2013        pix -r ms-office-2013       
+12             pi                    pix -i pi                    pix -r pi  
+```
+## ការដំឡើង Version Pix
+ដូចដែលធ្លាប់បានបង្ហាញពីការដំឡើង Versionម្តងនៅខាងលើហើយ អ្នកក៏អាចប្រើប្រាស់ពាក្យបញ្ជាកាត់ ក្នុងការដំឡើង Versionផងដែរ 
+```
+pix u
+```
+{{< notice note >}}
+បើអ្នកបានដំឡើង Versionចុងក្រោយវារួចរាល់ វានឹងបង្ហាញដូចខាងក្រោម។
+{{< /notice >}}
+
+```
+[ok] No Problems Found.
+
+Dependencies Found:     2
+Dependencies Missing:   0
+
+No app updates available.
+```
+
+## ការបញ្ចូល និងលុបចោលលើ Pix Version
+ក្នុងPix Version អ្នកអាចបញ្ចូលកម្មវិធីបានដោយរបៀបនេះ
+```
+pix i <App_Name>
+```
+
+ឯការលុបចោលគឺធ្វើតាមរបៀបនេះ៖
+```
+pix r <App_Name>
+```
+- `i` មានន័យថាដំឡើង ឫបញ្ចូល (Install)
+- `r` មានន័យថាលុបបំបាត់ (Remove)
+
+ការបង្ហាញពីការលុប និងដំឡើងកម្មវិធី Microsoft Office 2013៖
+{{% tabs %}}
+  {{% tab "ការដំឡើង" %}}
+   ```
+   pix i ms-office-2013 
+   ```
+  {{% /tab %}}
+
+  {{% tab "ការលុប" %}}
+  ```
+  pix r ms-office-2013 
+  ```
+  {{% /tab %}}
+{{% tabs %}}
+
+----
+----
