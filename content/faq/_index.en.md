@@ -48,9 +48,6 @@ As you know Spotify is not available in some countries !!
 In the meantime, our software isn't supporting the IOS system yet, but we are looking forward to doing it.
 {{</ faq >}}
 
-{{< faq "Can KOOMPI OS run with IOS ?" >}}
-In the meantime, our software isn't supporting the IOS system yet, but we are looking forward to doing it.
-{{</ faq >}}
 
 {{< faq "Can KOOMPI OS run Adobe Lightroom ?" >}}
 In the meantime, We can’t run Lightroom in KOOMPI Operating yet, but many other applications have similar features and high quality as them. 
