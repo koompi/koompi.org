@@ -43,5 +43,3 @@ On April 26, 2020, We have released a new ISO version for KOOMPI OS **(the built
 ----
 ----
 
----
----

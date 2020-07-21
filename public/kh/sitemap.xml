@@ -288,21 +288,6 @@
   </url>
   
   <url>
-    <loc>https://www.koompi.org/kh/faq/</loc>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.koompi.org/faq/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="kh"
-                href="https://www.koompi.org/kh/faq/"
-                />
-  </url>
-  
-  <url>
     <loc>https://www.koompi.org/kh/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -355,6 +340,20 @@
                 rel="alternate"
                 hreflang="kh"
                 href="https://www.koompi.org/kh/tutorial/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.koompi.org/kh/faq/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/faq/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kh"
+                href="https://www.koompi.org/kh/faq/"
                 />
   </url>
   

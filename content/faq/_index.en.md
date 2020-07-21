@@ -21,7 +21,7 @@ There are two main steps for installing it.
 For making it easier, click this [link for the video](https://youtu.be/DnavvK4NU6A).
 {{</ faq >}}
 
-{{< faq "How to install pi or pacman" >}}
+{{< faq "How to install pi or pacman?" >}}
 As pi is our primary command, it has been always created since you install the Operating System. In case, your pi error or missing, you can install pi or pacman by pix command, to do so:
 ```
 pix i pi
