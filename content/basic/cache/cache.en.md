@@ -78,4 +78,4 @@ Exec = /usr/bin/paccache -r
 Save and close the file. From now on, the package cache will be cleaned automatically after every Pacman transactions (like an upgrade, install, remove). You don’t have to run paccache command manually every time.
 
 ----
-
+----

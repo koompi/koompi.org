@@ -7,92 +7,90 @@ draft: false
 keywords: ["induct", "instate"]
 ---
 
-This document is a guide for information related to **Files and Folders**. All the Command lines will be provided here with the explanation plus the example.
+ផ្នែកនេះគឺជាការណែនាំសម្រាប់ព័ត៌មានទាក់ទងនឹង **ឯកសារនិងថតឯកសារ (Files/Folders)** ។ ពាក្យបញ្ជា ទាំងអស់នឹងត្រូវបានផ្តល់នៅទីនេះជាមួយនឹងការពន្យល់ព្រមទាំងឧទាហរណ៍ផងដែរ។
 
-For more details of the instruction, see [KOOMPI OS website](www.koompi.org) articles or the various [program section](www.koompi.org/applications/), both linked from this guide.
+សម្រាប់ព័ត៌មានលម្អិតនៃការណែនាំសូមមើលអត្ថបទនៅ [គេហទំព័រ KOOMPI OS ](www.koompi.org) ឬអត្ថបទ[ផ្នែកកម្មវិធីផ្សេងៗ](www.koompi.org/applications/) ដែលភ្ជាប់ជាមួយសៀវភៅណែនាំ។
 
 ---
 ---
 
-## Create File
-Knowing how to create a new file is an **important skill** for anyone using open-source regularly. You can create a new file either from the `command line` or from the `desktop file manager`.
+## ការបង្កើត File
+ការដឹងពីរបៀបបង្កើតឯកសារថ្មី **(File)** គឺជារឿងដ៏សំខាន់សម្រាប់ អ្នកដែលប្រើប្រាស់ Open-Source។ អ្នកអាច បង្កើតឯកសារថ្មី `បន្ទាត់បញ្ជា` ឬពី `កម្មវិធីគ្រប់គ្រងឯកសារលើកុំព្យូទ័រ` ។
 
-The `touch` command allows us to update the t**imestamps on existing files and directories** as well as creating, empty files. The only easiest and most memorable way to create new, empty files is by using the `touch command`.
+ពាក្យបញ្ជា `touch` អនុញ្ញាតឱ្យយើងធ្វើការកែប្រែលើឯកសារនិងថតដែលមានស្រាប់ក៏ដូចជា ការបង្កើតឯកសារ ផងដែរ។ មធ្យោបាយដែលងាយស្រួល និងចងចាំបំផុតតែមួយគត់ ដើម្បីបង្កើតឯកសារទទេ គឺដោយការប្រើ `touch`។
 
-
-To create a new file simply run the touch command followed by the name of the file you want to create:
+ដើម្បីបង្កើតឯកសារថ្មីគ្រាន់តែដំណើរការពាក្យបញ្ជា touch ហើយដាក់ឈ្មោះឯកសារដែលអ្នកចង់៖
 ```
- touch Files_Name.txt
+touch Files_Name.txt
 ```
-
-You can also create multiple files at once by specifying the file names separated by space.
+អ្នកក៏អាចបង្កើតឯកសារពីរ ឫច្រើនក្នុងពេលតែមួយផងដែរ៖
 ```
  touch File_Name1.txt File_Name2.txt File_Name3.txt
 ```
 
 {{< notice info >}}
-`.txt` stand for the text file. You can also use other extensions for the kind of files you want to use.
+`.txt`សម្គាល់ឯកសារជាអត្ថបទ។ អ្នកក៏អាចប្រើ`ផ្នែកបន្ថែមផ្សេងទៀត`សម្រាប់សម្គាល់ប្រភេទឯកសារដែលអ្នក ចង់ប្រើផងដែរ។
 {{< /notice >}}
 
-Besides `Touch`, `echo` can also use to create file too. The `echo` command prints the **strings** that are passed as arguments to the standard output, which can be *redirected* to a file.
+ក្រៅពី `touch`, អ្នកក៏អាចប្រើ`អេកូ` ដើម្បីបង្កើតឯកសារផងដែរ។ ពាក្យបញ្ជា `អេកូ` បង្ហាញ **ទិន្នន័យជាតួអក្សរ** ដែលត្រូវបានបញ្ជូនទៅជាលទ្ធផលក្នុងការបង្ហាញ។
 ```
  echo "some line" >> File_Name.txt
 ```
-For Example:
+ឧទាហរណ៍៖
 ```
  echo $null >> sample.txt
 ```
 {{< notice note >}}
-`$null` here is standing for no. It means there will be no arguments redirected into the file.
+`$null` សម្គាល់ថា ទេ នៅទីនេះ។
 {{< /notice >}}
-## Deleting File
-Deleting File is one of the frequently done operation. Run `rm` command with the name of the file you want to remove:
+## ការលុប File
+ការលុបឯកសារ គឺជាផ្នែកមួយនៃប្រតិបត្តិការដែលធ្វើឡើងជាញឹកញាប់ដោយពាក្យបញ្ជា `rm` ជាមួយឈ្មោះឯកសារដែលអ្នកចង់លុបចេញ៖
 ```
- rm File_Name
+rm File_Name
 ```
-Here is an example
+នេះជាឧទាហរណ៍៖
 ```
- rm sample.txt 
+rm sample.txt 
 ```
 
-## Display File Content
-Cat(concatenate) command is very frequently used in open-source. It reads data from the file and gives their content as output. It helps us to create, view, concatenate files. So let us see some frequently used cat commands.
+## ការបង្ហាញអត្តបទ
+ពាក្យបញ្ជា **cat** ត្រូវបានប្រើជាញឹកញាប់ វាធ្វើការអានទិន្នន័យពីឯកសារនិងការបង្ហាញ។ វាជួយយើងក្នុងការបង្កើត និងមើល។
 ```
  cat File_Name
 ```
-## Edit Text File
-There are many ways to edit files through command line such as vi, emacs, pico, ed, and nano. Among those only Nano is regularly using.
+## ការកែប្រែ File
+ក្នុងប្រព័ន្ធប្រតិបតិ្ថការមានវិធីជាច្រើន ដើម្បីកែឯកសារតាមរយៈពាក្យបញ្ជាដូចជា vi, emacs, pico, ed និង nano ។ ក្នុងចំណោមពាក្យបញ្ជាទាំងនោះមានតែ nano ដែលកំពុងប្រើជាប្រចាំ។
 ```
- nano File_Name
+nano File_Name
 ```
 {{< notice note >}}
-Sometimes, we need to add `sudo`; which stand for **superuser do**, in front of it to edit.
+ពេលខ្លះយើងត្រូវបន្ថែម `ពាក្យបញ្ជា sudo`ដែលតំណាងឱ្យ **superuser** នៅពីមុខវាដើម្បីកែសម្រួល *Files* មួយចំនួន។
 {{< /notice >}}
 ```
- sudo nano File_Name
+sudo nano File_Name
 ```
-## Copy File or Folder
-A basic example of the cp command to copy files (keep the original file and make a duplicate of it) might look like:
+## ការថតចម្លង File និង Folder
+ឧទាហរណ៍ងាយៗពីពាក្យបញ្ជា cp ក្នុងការថតតចម្លង files (ដោយ file ដើមមិនប្រែប្រួល៖
 ```
  cp File_Name NewFile_Name
 ```
-If you want to copy other file from one directory to other directory, you can use the command below:
+ប្រសិនបើអ្នកចង់ចម្លង File ពីថតមួយទៅថតមួយ អ្នកអាចប្រើតាមរបៀបខាងក្រោម៖
 ```
 cp -R <source_folder> <destination_folder>
 ```
-### Options
-`-i`  for interactive, asks you to confirm if an existing file (perhaps a version of joe_expenses already exists in the cashflow directory) should be overwritten in the copying process.
+### ជម្រើសដទៃ
+`-i`សម្រាប់អន្តរកម្មដោយសួរអ្នក ដើម្បីបញ្ជាក់ថាតើឯកសារមានស្រាប់ ត្រូវបានសរសេរកែប្រែពីលើនៅក្នុង ដំណើរការចម្លង។
 
-`-r` for recursive, to copy all the subdirectories and files in a given directory and preserve the tree structure.
+`-r` សម្រាប់ការចម្លងថតរងនិងឯកសារទាំងអស់នៅក្នុងថតឯកសារដើម។
 
-`-v` for verbose, shows files being copied one by one.
+`-v` បង្ហាញឯកសារដែលត្រូវបានចម្លងម្តងមួយៗ។
 
-## Move/Rename file or folder
-For instance, to instantly seek out and move all of the folder. Your command-line instruction would simply be:
+## ការប្តូរទីតាំង file or folder
+ដើម្បីស្វែងរកនិងផ្លាស់ទីថតអាចធ្វើតាមការណែនាំខាងក្រោម៖
 ```
- mv Folder_Name NewFolder_Name
+mv Folder_Name NewFolder_Name
 ```
-## Create Folder
+## ការបង្កើត Folder
 we can create directories from command line using the command `mkdir`. Syntax of this command is explained below.
 ```
  mkdir Folder_Name

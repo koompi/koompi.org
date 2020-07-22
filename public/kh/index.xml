@@ -30,9 +30,15 @@
       <pubDate>Fri, 29 Nov 2019 11:02:05 +0600</pubDate>
       
       <guid>https://www.koompi.org/kh/basic/flies-and-folders/flie_folder/</guid>
-      <description>This document is a guide for information related to Files and Folders. All the Command lines will be provided here with the explanation plus the example.
-For more details of the instruction, see KOOMPI OS website articles or the various program section, both linked from this guide.
-  Create File Knowing how to create a new file is an important skill for anyone using open-source regularly. You can create a new file either from the command line or from the desktop file manager.</description>
+      <description>ផ្នែកនេះគឺជាការណែនាំសម្រាប់ព័ត៌មានទាក់ទងនឹង ឯកសារនិងថតឯកសារ (Files/Folders) ។ ពាក្យបញ្ជា ទាំងអស់នឹងត្រូវបានផ្តល់នៅទីនេះជាមួយនឹងការពន្យល់ព្រមទាំងឧទាហរណ៍ផងដែរ។
+សម្រាប់ព័ត៌មានលម្អិតនៃការណែនាំសូមមើលអត្ថបទនៅ គេហទំព័រ KOOMPI OS  ឬអត្ថបទផ្នែកកម្មវិធីផ្សេងៗ ដែលភ្ជាប់ជាមួយសៀវភៅណែនាំ។
+  ការបង្កើត File ការដឹងពីរបៀបបង្កើតឯកសារថ្មី (File) គឺជារឿងដ៏សំខាន់សម្រាប់ អ្នកដែលប្រើប្រាស់ Open-Source។ អ្នកអាច បង្កើតឯកសារថ្មី បន្ទាត់បញ្ជា ឬពី កម្មវិធីគ្រប់គ្រងឯកសារលើកុំព្យូទ័រ ។
+ពាក្យបញ្ជា touch អនុញ្ញាតឱ្យយើងធ្វើការកែប្រែលើឯកសារនិងថតដែលមានស្រាប់ក៏ដូចជា ការបង្កើតឯកសារ ផងដែរ។ មធ្យោបាយដែលងាយស្រួល និងចងចាំបំផុតតែមួយគត់ ដើម្បីបង្កើតឯកសារទទេ គឺដោយការប្រើ touch។
+ដើម្បីបង្កើតឯកសារថ្មីគ្រាន់តែដំណើរការពាក្យបញ្ជា touch ហើយដាក់ឈ្មោះឯកសារដែលអ្នកចង់៖
+touch Files_Name.txt អ្នកក៏អាចបង្កើតឯកសារពីរ ឫច្រើនក្នុងពេលតែមួយផងដែរ៖
+ touch File_Name1.txt File_Name2.txt File_Name3.txt  .txtសម្គាល់ឯកសារជាអត្ថបទ។ អ្នកក៏អាចប្រើផ្នែកបន្ថែមផ្សេងទៀតសម្រាប់សម្គាល់ប្រភេទឯកសារដែលអ្នក ចង់ប្រើផងដែរ។
+ ក្រៅពី touch, អ្នកក៏អាចប្រើអេកូ ដើម្បីបង្កើតឯកសារផងដែរ។ ពាក្យបញ្ជា អេកូ បង្ហាញ ទិន្នន័យជាតួអក្សរ ដែលត្រូវបានបញ្ជូនទៅជាលទ្ធផលក្នុងការបង្ហាញ។
+ echo &amp;quot;some line&amp;quot; &amp;gt;&amp;gt; File_Name.txt ឧទាហរណ៍៖</description>
     </item>
     
     <item>
@@ -92,8 +98,17 @@ pix i pi តើពាក្យបញ្ជា pix អាចធ្វើអ្វ
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
       <guid>https://www.koompi.org/kh/basic/cache/cache/</guid>
-      <description>Pi stores its downloaded packages in /var/cache/pacman/pkg/ and does not remove the old or uninstalled versions automatically. This has some advantages:
- It allows to downgrade a package without the need to retrieve the previous version through other means, such as the Arch Linux Archive. A package that has been uninstalled can easily be reinstalled directly from the cache folder, not requiring a new download from the repository.  However, it is necessary to deliberately clean up the cache periodically to prevent the folder to grow indefinitely in size.</description>
+      <description>Pi រក្សាទុកកញ្ចប់ដែលបានទាញយកមកតម្លើងនៅក្នុង /var/cache/pacman/pkg/ ហើយមិនបានលុបversionចាស់ៗ ឬលុបចេញដោយស្វ័យប្រវត្តិនោះទេ។ ទាំងនេះមានគុណសម្បត្តិមួយចំនួន៖
+ វាបន្សល់ទុក កញ្ចប់ Version មុនៗ ដែលបានទាញយកមកប្រើប្រាស់ដូចជា Arch Linux Archive។ កញ្ចប់មួយដែលធ្លាប់បានតំឡើងអាចទាញយកមកវិញយ៉ាងងាយស្រួលពី ផ្នែកនេះដោយមិន តម្រូវឱ្យមានការទាញយកថ្មីពី serverឡើយ។  ទោះយ៉ាងណាក៏ដោយយើងចាំបាច់ត្រូវធ្វើការលុបចោលផ្នែកនេះជាទៀងទាត់ ដើម្បីការពារកុំអោយ វាកើន ទំហំកាន់តែច្រើនហួសដែនកំណត់។
+paccache ដែលបានផ្តល់នៅក្នុងកញ្ចប់ pacman-contrib នឹងលុបរាល់កញ្ចប់ដែលបានតម្លើងក្នុងឃ្លាំង លើកលែងតែកញ្ចប់ ៣ ចុងក្រោយបំផុតតាមលំនាំដើមតែប៉ុណ្ណោះ៖
+paccache -r ការធ្វើការបើកដំណើរការនិងចាប់ផ្តើម paccache.timer ដើម្បីបោះបង់ចោលកញ្ចប់ដែលមិនត្រូវការប្រើជា ប្រចាំសប្តាហ៍។
+អ្នកអាចបង្កើត hook ដើម្បីដំណើរការវាដោយស្វ័យប្រវត្តិ។
+ សម្រាប់ជម្រើសច្រើនទៀតនៃ paccacheធ្វើការបញ្ចូលពាក្យបញ្ជាខាងក្រោម:
+paccache -h Pacmanក៏មានជម្រើសដែលមានស្រាប់ផងដែរក្នុងការសំអាតឃ្លាំង និងឯកសារទិន្នន័យក្នុងឃ្លាំងដែលនៅសល់ និងដែលមិនត្រូវបានរាយនៅក្នុង /etc/pacman.conf ។
+ទោះយ៉ាងណា Pacman មិនផ្តល់នូវលទ្ធភាព ដើម្បីរក្សានូវversionចាស់ៗ ដូច្នេះវាកាន់តែខ្លាំងក្លាជាងជម្រើសលំនាំ ដើមរបស់ paccache ។
+ដើម្បីលុប កញ្ចប់ក្នុងCache ដែលមិនស្ថិតក្នុងversionបច្ចុប្បន្ននិងមិនបានប្រើក្នុងប្រព័ន្ធប្រតិបត្តិការ៖
+pi -Sc ដើម្បីយកឯកសារទាំងអស់ចេញពីcache សូមប្រើclean switch twice, វិធីសាស្រ្តនេះមានប្រសិទិ្ធភាពខ្លំាង និងមិនទុកអ្វីទាំងអស់។
+pi -Scc  ចំណុចមួយគួរតែចៀសវាងការលុបចេញពីឃ្cacheទិន្នន័យជំនាន់មុនៗ នៃកញ្ចប់ដែលបានតម្លើង និងកញ្ចប់ដែលបានលុបទាំងអស់ ក្នុងករណីអ្នកត្រូវការ space។ វានឹងការពារversionឬតំឡើងកញ្ចប់ឡើងវិញដោយមិនចាំបាច់ទាញយកវាម្តងទៀត។</description>
     </item>
     
     <item>

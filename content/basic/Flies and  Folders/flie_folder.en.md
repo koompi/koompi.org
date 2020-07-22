@@ -17,7 +17,7 @@ For more details of the instruction, see [KOOMPI OS website](www.koompi.org) art
 ## Create File
 Knowing how to create a new file is an **important skill** for anyone using open-source regularly. You can create a new file either from the `command line` or from the `desktop file manager`.
 
-The `touch` command allows us to update the t**imestamps on existing files and directories** as well as creating, empty files. The only easiest and most memorable way to create new, empty files is by using the `touch command`.
+The `touch` command allows us to update the **timestamps on existing files and directories** as well as creating, empty files. The only easiest and most memorable way to create new, empty files is by using the `touch command`.
 
 
 To create a new file simply run the touch command followed by the name of the file you want to create:

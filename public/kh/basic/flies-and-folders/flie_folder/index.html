@@ -474,58 +474,58 @@
         <div class="p-lg-5 p-4 bg-white">
           <h2 class="mb-5">ព័ត៌មានពី Files/Folders</h2>
           
-          <div class="content"><p>This document is a guide for information related to <strong>Files and Folders</strong>. All the Command lines will be provided here with the explanation plus the example.</p>
-<p>For more details of the instruction, see <a href="www.koompi.org">KOOMPI OS website</a> articles or the various <a href="www.koompi.org/applications/">program section</a>, both linked from this guide.</p>
+          <div class="content"><p>ផ្នែកនេះគឺជាការណែនាំសម្រាប់ព័ត៌មានទាក់ទងនឹង <strong>ឯកសារនិងថតឯកសារ (Files/Folders)</strong> ។ ពាក្យបញ្ជា ទាំងអស់នឹងត្រូវបានផ្តល់នៅទីនេះជាមួយនឹងការពន្យល់ព្រមទាំងឧទាហរណ៍ផងដែរ។</p>
+<p>សម្រាប់ព័ត៌មានលម្អិតនៃការណែនាំសូមមើលអត្ថបទនៅ <a href="www.koompi.org">គេហទំព័រ KOOMPI OS </a> ឬអត្ថបទ<a href="www.koompi.org/applications/">ផ្នែកកម្មវិធីផ្សេងៗ</a> ដែលភ្ជាប់ជាមួយសៀវភៅណែនាំ។</p>
 <hr>
 <hr>
-<h2 id="create-file">Create File</h2>
-<p>Knowing how to create a new file is an <strong>important skill</strong> for anyone using open-source regularly. You can create a new file either from the <code>command line</code> or from the <code>desktop file manager</code>.</p>
-<p>The <code>touch</code> command allows us to update the t<strong>imestamps on existing files and directories</strong> as well as creating, empty files. The only easiest and most memorable way to create new, empty files is by using the <code>touch command</code>.</p>
-<p>To create a new file simply run the touch command followed by the name of the file you want to create:</p>
-<pre><code> touch Files_Name.txt
-</code></pre><p>You can also create multiple files at once by specifying the file names separated by space.</p>
+<h2 id="ករបងកត-file">ការបង្កើត File</h2>
+<p>ការដឹងពីរបៀបបង្កើតឯកសារថ្មី <strong>(File)</strong> គឺជារឿងដ៏សំខាន់សម្រាប់ អ្នកដែលប្រើប្រាស់ Open-Source។ អ្នកអាច បង្កើតឯកសារថ្មី <code>បន្ទាត់បញ្ជា</code> ឬពី <code>កម្មវិធីគ្រប់គ្រងឯកសារលើកុំព្យូទ័រ</code> ។</p>
+<p>ពាក្យបញ្ជា <code>touch</code> អនុញ្ញាតឱ្យយើងធ្វើការកែប្រែលើឯកសារនិងថតដែលមានស្រាប់ក៏ដូចជា ការបង្កើតឯកសារ ផងដែរ។ មធ្យោបាយដែលងាយស្រួល និងចងចាំបំផុតតែមួយគត់ ដើម្បីបង្កើតឯកសារទទេ គឺដោយការប្រើ <code>touch</code>។</p>
+<p>ដើម្បីបង្កើតឯកសារថ្មីគ្រាន់តែដំណើរការពាក្យបញ្ជា touch ហើយដាក់ឈ្មោះឯកសារដែលអ្នកចង់៖</p>
+<pre><code>touch Files_Name.txt
+</code></pre><p>អ្នកក៏អាចបង្កើតឯកសារពីរ ឫច្រើនក្នុងពេលតែមួយផងដែរ៖</p>
 <pre><code> touch File_Name1.txt File_Name2.txt File_Name3.txt
 </code></pre>
 
-<div class="notices info" ><p><code>.txt</code> stand for the text file. You can also use other extensions for the kind of files you want to use.</p></div>
+<div class="notices info" ><p><code>.txt</code>សម្គាល់ឯកសារជាអត្ថបទ។ អ្នកក៏អាចប្រើ<code>ផ្នែកបន្ថែមផ្សេងទៀត</code>សម្រាប់សម្គាល់ប្រភេទឯកសារដែលអ្នក ចង់ប្រើផងដែរ។</p></div>
 
-<p>Besides <code>Touch</code>, <code>echo</code> can also use to create file too. The <code>echo</code> command prints the <strong>strings</strong> that are passed as arguments to the standard output, which can be <em>redirected</em> to a file.</p>
+<p>ក្រៅពី <code>touch</code>, អ្នកក៏អាចប្រើ<code>អេកូ</code> ដើម្បីបង្កើតឯកសារផងដែរ។ ពាក្យបញ្ជា <code>អេកូ</code> បង្ហាញ <strong>ទិន្នន័យជាតួអក្សរ</strong> ដែលត្រូវបានបញ្ជូនទៅជាលទ្ធផលក្នុងការបង្ហាញ។</p>
 <pre><code> echo &quot;some line&quot; &gt;&gt; File_Name.txt
-</code></pre><p>For Example:</p>
+</code></pre><p>ឧទាហរណ៍៖</p>
 <pre><code> echo $null &gt;&gt; sample.txt
 </code></pre>
 
-<div class="notices note" ><p><code>$null</code> here is standing for no. It means there will be no arguments redirected into the file.</p></div>
+<div class="notices note" ><p><code>$null</code> សម្គាល់ថា ទេ នៅទីនេះ។</p></div>
 
-<h2 id="deleting-file">Deleting File</h2>
-<p>Deleting File is one of the frequently done operation. Run <code>rm</code> command with the name of the file you want to remove:</p>
-<pre><code> rm File_Name
-</code></pre><p>Here is an example</p>
-<pre><code> rm sample.txt 
-</code></pre><h2 id="display-file-content">Display File Content</h2>
-<p>Cat(concatenate) command is very frequently used in open-source. It reads data from the file and gives their content as output. It helps us to create, view, concatenate files. So let us see some frequently used cat commands.</p>
+<h2 id="ករលប-file">ការលុប File</h2>
+<p>ការលុបឯកសារ គឺជាផ្នែកមួយនៃប្រតិបត្តិការដែលធ្វើឡើងជាញឹកញាប់ដោយពាក្យបញ្ជា <code>rm</code> ជាមួយឈ្មោះឯកសារដែលអ្នកចង់លុបចេញ៖</p>
+<pre><code>rm File_Name
+</code></pre><p>នេះជាឧទាហរណ៍៖</p>
+<pre><code>rm sample.txt 
+</code></pre><h2 id="ករបងហញអតតបទ">ការបង្ហាញអត្តបទ</h2>
+<p>ពាក្យបញ្ជា <strong>cat</strong> ត្រូវបានប្រើជាញឹកញាប់ វាធ្វើការអានទិន្នន័យពីឯកសារនិងការបង្ហាញ។ វាជួយយើងក្នុងការបង្កើត និងមើល។</p>
 <pre><code> cat File_Name
-</code></pre><h2 id="edit-text-file">Edit Text File</h2>
-<p>There are many ways to edit files through command line such as vi, emacs, pico, ed, and nano. Among those only Nano is regularly using.</p>
-<pre><code> nano File_Name
+</code></pre><h2 id="ករកបរ-file">ការកែប្រែ File</h2>
+<p>ក្នុងប្រព័ន្ធប្រតិបតិ្ថការមានវិធីជាច្រើន ដើម្បីកែឯកសារតាមរយៈពាក្យបញ្ជាដូចជា vi, emacs, pico, ed និង nano ។ ក្នុងចំណោមពាក្យបញ្ជាទាំងនោះមានតែ nano ដែលកំពុងប្រើជាប្រចាំ។</p>
+<pre><code>nano File_Name
 </code></pre>
 
-<div class="notices note" ><p>Sometimes, we need to add <code>sudo</code>; which stand for <strong>superuser do</strong>, in front of it to edit.</p></div>
+<div class="notices note" ><p>ពេលខ្លះយើងត្រូវបន្ថែម <code>ពាក្យបញ្ជា sudo</code>ដែលតំណាងឱ្យ <strong>superuser</strong> នៅពីមុខវាដើម្បីកែសម្រួល <em>Files</em> មួយចំនួន។</p></div>
 
-<pre><code> sudo nano File_Name
-</code></pre><h2 id="copy-file-or-folder">Copy File or Folder</h2>
-<p>A basic example of the cp command to copy files (keep the original file and make a duplicate of it) might look like:</p>
+<pre><code>sudo nano File_Name
+</code></pre><h2 id="ករថតចមលង-file-នង-folder">ការថតចម្លង File និង Folder</h2>
+<p>ឧទាហរណ៍ងាយៗពីពាក្យបញ្ជា cp ក្នុងការថតតចម្លង files (ដោយ file ដើមមិនប្រែប្រួល៖</p>
 <pre><code> cp File_Name NewFile_Name
-</code></pre><p>If you want to copy other file from one directory to other directory, you can use the command below:</p>
+</code></pre><p>ប្រសិនបើអ្នកចង់ចម្លង File ពីថតមួយទៅថតមួយ អ្នកអាចប្រើតាមរបៀបខាងក្រោម៖</p>
 <pre><code>cp -R &lt;source_folder&gt; &lt;destination_folder&gt;
-</code></pre><h3 id="options">Options</h3>
-<p><code>-i</code>  for interactive, asks you to confirm if an existing file (perhaps a version of joe_expenses already exists in the cashflow directory) should be overwritten in the copying process.</p>
-<p><code>-r</code> for recursive, to copy all the subdirectories and files in a given directory and preserve the tree structure.</p>
-<p><code>-v</code> for verbose, shows files being copied one by one.</p>
-<h2 id="moverename-file-or-folder">Move/Rename file or folder</h2>
-<p>For instance, to instantly seek out and move all of the folder. Your command-line instruction would simply be:</p>
-<pre><code> mv Folder_Name NewFolder_Name
-</code></pre><h2 id="create-folder">Create Folder</h2>
+</code></pre><h3 id="ជមរសដទ">ជម្រើសដទៃ</h3>
+<p><code>-i</code>សម្រាប់អន្តរកម្មដោយសួរអ្នក ដើម្បីបញ្ជាក់ថាតើឯកសារមានស្រាប់ ត្រូវបានសរសេរកែប្រែពីលើនៅក្នុង ដំណើរការចម្លង។</p>
+<p><code>-r</code> សម្រាប់ការចម្លងថតរងនិងឯកសារទាំងអស់នៅក្នុងថតឯកសារដើម។</p>
+<p><code>-v</code> បង្ហាញឯកសារដែលត្រូវបានចម្លងម្តងមួយៗ។</p>
+<h2 id="ករបតរទតង-file-or-folder">ការប្តូរទីតាំង file or folder</h2>
+<p>ដើម្បីស្វែងរកនិងផ្លាស់ទីថតអាចធ្វើតាមការណែនាំខាងក្រោម៖</p>
+<pre><code>mv Folder_Name NewFolder_Name
+</code></pre><h2 id="ករបងកត-folder">ការបង្កើត Folder</h2>
 <p>we can create directories from command line using the command <code>mkdir</code>. Syntax of this command is explained below.</p>
 <pre><code> mkdir Folder_Name
 </code></pre><p>For example, to create a folder named ‘newfolder‘ the command is:</p>
@@ -536,7 +536,7 @@
 </code></pre><h2 id="list-folder-contents">List Folder Contents</h2>
 <p>Listing Command (ls) allows us to see all the contents in the directory we are in.</p>
 <pre><code> ls
-</code></pre><h3 id="options-1">Options</h3>
+</code></pre><h3 id="options">Options</h3>
 <table>
 <thead>
 <tr>

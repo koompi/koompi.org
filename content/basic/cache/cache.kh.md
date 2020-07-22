@@ -6,63 +6,61 @@ draft: false
 # search related keywords
 keywords: ["induct", "instate"]
 ---
+**Pi** រក្សាទុកកញ្ចប់ដែលបានទាញយកមកតម្លើងនៅក្នុង `/var/cache/pacman/pkg/` ហើយមិនបានលុបversionចាស់ៗ ឬលុបចេញដោយស្វ័យប្រវត្តិនោះទេ។ ទាំងនេះមានគុណសម្បត្តិមួយចំនួន៖
 
-**Pi** stores its downloaded packages in `/var/cache/pacman/pkg/` and does not remove the old or uninstalled versions automatically. This has some advantages:
+1. វាបន្សល់ទុក កញ្ចប់ Version មុនៗ ដែលបានទាញយកមកប្រើប្រាស់ដូចជា `Arch Linux Archive`។
+2. កញ្ចប់មួយដែលធ្លាប់បានតំឡើងអាចទាញយកមកវិញយ៉ាងងាយស្រួលពី ផ្នែកនេះដោយមិន តម្រូវឱ្យមានការទាញយកថ្មីពី serverឡើយ។ 
 
-1. It allows to `downgrade a package` without the need to retrieve the previous version through other means, such as the `Arch Linux Archive.`
-2. A package that has been uninstalled can easily be reinstalled directly from the cache folder, not requiring a new download from the repository.
+ទោះយ៉ាងណាក៏ដោយយើងចាំបាច់ត្រូវធ្វើការលុបចោលផ្នែកនេះជាទៀងទាត់ ដើម្បីការពារកុំអោយ  វាកើន ទំហំកាន់តែច្រើនហួសដែនកំណត់។
 
-However, it is necessary to `deliberately clean up the cache` periodically to prevent the folder to grow indefinitely in size.
-
-The paccache script, provided within the `pacman-contrib` package, deletes all cached versions of installed and uninstalled packages, except for the most recent 3, by default:
+`paccache` ដែលបានផ្តល់នៅក្នុងកញ្ចប់ `pacman-contrib` នឹងលុបរាល់កញ្ចប់ដែលបានតម្លើងក្នុងឃ្លាំង លើកលែងតែកញ្ចប់ ៣ ចុងក្រោយបំផុតតាមលំនាំដើមតែប៉ុណ្ណោះ៖
 ```
 paccache -r
 ```
-**Enable and start** `paccache.timer` to discard unused packages weekly.
+**ការធ្វើការបើកដំណើរការនិងចាប់ផ្តើម** `paccache.timer` ដើម្បីបោះបង់ចោលកញ្ចប់ដែលមិនត្រូវការប្រើជា ប្រចាំសប្តាហ៍។
 
 {{< notice tip >}}
-You can create a `hook` to run this automatically after every pi transaction.
+អ្នកអាចបង្កើត `hook` ដើម្បីដំណើរការវាដោយស្វ័យប្រវត្តិ។
 {{< /notice >}}
 
-For more **options** aboout `paccache` use :
+សម្រាប់ជម្រើសច្រើនទៀតនៃ `paccache`ធ្វើការបញ្ចូលពាក្យបញ្ជាខាងក្រោម:
 ```
 paccache -h
 ```
-**Pacman** also has some built-in options to clean the cache and the leftover database files from repositories which are no longer listed in the configuration file `/etc/pacman.conf`. 
+**Pacman**ក៏មានជម្រើសដែលមានស្រាប់ផងដែរក្នុងការសំអាតឃ្លាំង និងឯកសារទិន្នន័យក្នុងឃ្លាំងដែលនៅសល់ និងដែលមិនត្រូវបានរាយនៅក្នុង `/etc/pacman.conf` ។
 
-However, *Pacman* does not offer the possibility to keep a number of past versions and is, therefore, more aggressive than paccache default options.
+ទោះយ៉ាងណា *Pacman* មិនផ្តល់នូវលទ្ធភាព ដើម្បីរក្សានូវversionចាស់ៗ ដូច្នេះវាកាន់តែខ្លាំងក្លាជាងជម្រើសលំនាំ ដើមរបស់ paccache ។
 
-To remove all the `cached packages` that are not currently installed, and the `unused sync database`, execute:
+ដើម្បីលុប `កញ្ចប់ក្នុងCache` ដែលមិនស្ថិតក្នុងversionបច្ចុប្បន្ននិងមិនបានប្រើក្នុងប្រព័ន្ធប្រតិបត្តិការ៖
 ```
 pi -Sc
 ```
+ដើម្បីយកឯកសារទាំងអស់ចេញពីcache សូមប្រើ`clean switch twice`, វិធីសាស្រ្តនេះមានប្រសិទិ្ធភាពខ្លំាង និងមិនទុកអ្វីទាំងអស់។
 
-To remove all files from the cache, use the clean switch twice, this is the most aggressive approach and will leave nothing in the cache folder:
 ```
 pi -Scc
 ```
 
 {{< notice warning >}}
-One should avoid deleting from the cache all past versions of installed packages and all uninstalled packages unless one desperately needs to free some disk space. This will prevent downgrading or reinstalling packages without downloading them again.
+ចំណុចមួយគួរតែចៀសវាងការលុបចេញពីឃ្cacheទិន្នន័យជំនាន់មុនៗ នៃកញ្ចប់ដែលបានតម្លើង និងកញ្ចប់ដែលបានលុបទាំងអស់ ក្នុងករណីអ្នកត្រូវការ space។ វានឹងការពារversionឬតំឡើងកញ្ចប់ឡើងវិញដោយមិនចាំបាច់ទាញយកវាម្តងទៀត។
 {{< /notice >}}
 
 {{< notice tip >}}
-Automatically clean the package cache.
+ការធ្វើការសម្អាតកញ្ចប់ដោយស្វ័យប្រវត្តិគួរតែធ្វើការកំណត់វា។
 {{< /notice >}}
 
+ប្រសិនបើអ្នកខ្ជិលពេកក្នុងការសម្អាតឃ្លាំងសម្ងាត់កញ្ចប់ដោយខ្លួនអ្នក អ្នកអាចធ្វើការលុបវាដោយស្វ័យប្រវត្តិ ដោយ `Hook`នោះ Pacman នឹងសម្អាតកញ្ចប់ដោយស្វ័យប្រវត្តិ បន្ទាប់ពីដំណើរការ Pacman ។
 
-If you are too lazy to clean the package cache manually, you can automate this task using Pacman hooks. The Pacman hook will automatically clean the package cache after every Pacman transaction.
 
-
-To do so, create a file /etc/pacman.d/hooks/clean_package_cache.hook:
+ដើម្បីបង្កើតfileបានក្នុង /etc/pacman.d/hooks/clean_package_cache.hook, ចូលអ្នកដំណើរការតាមខាងក្រោម៖
 ```
 sudo mkdir /etc/pacman.d/hooks
 ```
-Next:
+បន្ទាប់មក៖
 ```
 sudo nano /etc/pacman.d/hooks/clean_package_cache.hook
 ```
-Add the following lines:
+ធ្វើការដាក់codeដែលមាននៅខាងក្រោម៖
 ```
 [Trigger]
 Operation = Upgrade
@@ -75,7 +73,8 @@ Description = Cleaning pacman cache...
 When = PostTransaction
 Exec = /usr/bin/paccache -r
 ```
-Save and close the file. From now on, the package cache will be cleaned automatically after every Pacman transactions (like an upgrade, install, remove). You don’t have to run paccache command manually every time.
+ចូរអ្នកធ្វើការរក្សាទុកនិងបិទ ហើយចាប់ពីពេលនេះកញ្ចប់នឹងត្រូវបានសម្អាតដោយស្វ័យប្រវត្តិបន្ទាប់ពីប្រតិបត្តិការរបស់ Pacman (ដូចជាការតម្លើងុំ និងលុបជាដើម) ។ អ្នកមិនចាំបាច់ធ្វើការបញ្ជាពាក្យបញ្ជា paccache ដោយផ្ទាល់នោះឡើយ។
 
+----
 ----
 
