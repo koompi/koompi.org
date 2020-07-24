@@ -526,125 +526,126 @@
 <p>ដើម្បីស្វែងរកនិងផ្លាស់ទីថតអាចធ្វើតាមការណែនាំខាងក្រោម៖</p>
 <pre><code>mv Folder_Name NewFolder_Name
 </code></pre><h2 id="ករបងកត-folder">ការបង្កើត Folder</h2>
-<p>we can create directories from command line using the command <code>mkdir</code>. Syntax of this command is explained below.</p>
-<pre><code> mkdir Folder_Name
-</code></pre><p>For example, to create a folder named ‘newfolder‘ the command is:</p>
-<pre><code> mkdir NewFolder
-</code></pre><h2 id="remove-folder">Remove Folder</h2>
-<p>Removing folder is like removing the file, too but it has a little bit different. You have to add <code>-r</code> after <code>rm command</code>.</p>
-<pre><code> rm -r Folder_Name
-</code></pre><h2 id="list-folder-contents">List Folder Contents</h2>
-<p>Listing Command (ls) allows us to see all the contents in the directory we are in.</p>
-<pre><code> ls
-</code></pre><h3 id="options">Options</h3>
+<p>អ្នកអាចបង្កើតថតឯកសារចេញពីបន្ទាត់យបញ្ជា​<code>mkdir</code>។​ពាក្យបញ្ជានេះត្រូវបានពន្យល់ខាងក្រោម៖</p>
+<pre><code>mkdir Folder_Name
+</code></pre><p>ឧទាហរណ៍ក្នុងការបង្កើតថតឯកសារមួយមានឈ្មោះថា​&quot;NewFolder&rdquo;</p>
+<pre><code>mkdir NewFolder
+</code></pre><h2 id="ករលបចល-folder">ការលុបចោល Folder</h2>
+<p>ការលុបចោលថតឯកសារស្រដៀងគ្នាទៅនឹងការលុបចោលឯកសារអ៊ីចឹងដែរ ប៉ុន្តៃវាមានភាពខុសគ្នាបន្តិច។​អ្នកគ្រាន់តែថែម <code>-r</code> បន្ទាប់ពី <code>ពាក្យបញ្ជា​rm</code>.</p>
+<pre><code>rm -r Folder_Name
+</code></pre><h2 id="គរពងរយឯកសរនងថតឯកសរ">គារពង្រយឯកសារ​និងថតឯកសារ</h2>
+<p>ការពង្រាយនេះអាចធ្វើបានដោយ​ពាក្យបញ្ជា​<code>ls</code>​ដែលវានឹងរាយរាល់ទិន្នន័យដែលមានក្នុងថតដែលអ្នកកំពុងនៅ៖</p>
+<pre><code>ls
+</code></pre><h3 id="ជមរសដទនករពងរយ">ជម្រើសដទៃនៃការពង្រាយ</h3>
 <table>
 <thead>
 <tr>
-<th align="left">Options</th>
-<th align="left">Descriptions</th>
+<th align="left">ជម្រើស</th>
+<th align="left">ការពណ៌នា</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td align="left"><strong>ls -a</strong></td>
-<td align="left"><code>list all files including hidden file starting with '.'</code></td>
+<td align="left"><code>ការរាយទិន្នន័យទាំងអស់​(ទាំងទិន្នន័យដែលបិទបាំងក្តី)</code></td>
 </tr>
 <tr>
 <td align="left"><strong>ls &ndash;color</strong></td>
-<td align="left"><code>colored list [=always/never/auto]</code></td>
+<td align="left"><code>ការរាយទិន្នន័យតាមពណ៌</code></td>
 </tr>
 <tr>
 <td align="left"><strong>ls -d</strong></td>
-<td align="left"><code>list directories - with ' */'</code></td>
+<td align="left"><code>ការរាយទិន្នន័យដែលមានសញ្ញា​*'</code></td>
 </tr>
 <tr>
 <td align="left"><strong>ls -F</strong></td>
-<td align="left"><code>add one char of */=&gt;@| to enteries</code></td>
+<td align="left"><code>ការរាយទិន្នន័យាតាមតួអក្សរ</code></td>
 </tr>
 <tr>
 <td align="left"><strong>ls -i</strong></td>
-<td align="left"><code>list file's inode index number</code></td>
+<td align="left"><code>ការរាយទិន្នន័យតាមលេខរៀង</code></td>
 </tr>
 <tr>
 <td align="left"><strong>ls -l</strong></td>
-<td align="left"><code>list with long format - show permissions</code></td>
+<td align="left"><code>ការរាយទិន្នន័យជាជួរ</code></td>
 </tr>
 <tr>
 <td align="left"><strong>ls -la</strong></td>
-<td align="left"><code>list long format including hidden files</code></td>
+<td align="left"><code>ការរាយទិន្នន័យជាជួរជាមួយទិន្នន័យដែលបិទបាំង</code></td>
 </tr>
 <tr>
 <td align="left"><strong>ls -lh</strong></td>
-<td align="left"><code>list long format with readable file size</code></td>
+<td align="left"><code>ការរាយទិន្នន័យជាជូរដែលមានទាំងទំហំទិន្នន័យដែលអាចមើលបាន</code></td>
 </tr>
 <tr>
 <td align="left"><strong>ls -ls</strong></td>
-<td align="left"><code>list with long format with file size</code></td>
+<td align="left"><code>ការរាយទិន្នន័យជាជួរដែលមានទាំងការបង្ហាញទំហំនៃទិន្នន័យ</code></td>
 </tr>
 <tr>
 <td align="left"><strong>ls -r</strong></td>
-<td align="left"><code>list in reverse order</code></td>
+<td align="left"><code>ការរាយទិន្នន័យបញ្រាស់</code></td>
 </tr>
 <tr>
 <td align="left"><strong>ls -R</strong></td>
-<td align="left"><code>list recursively directory tree</code></td>
+<td align="left"><code>ការរាយទិន្នន័យតាមមែកធាងនៃទិន្នន័យ</code></td>
 </tr>
 </tbody>
 </table>
-<p>For more info use <code>--help</code> after the command like this `ls &ndash;help``.</p>
-<h2 id="change-folder-or-directory">Change Folder or Directory</h2>
-<p><code>cd</code> is the command for changing the folder/directory of the command line. Here its syntax:</p>
-<pre><code> cd Folder_Name
-</code></pre><p>Changing to home directory (determined by $HOME environment variable):</p>
+<p>សម្រាប់ព័ត៌មាន​អ្នកគ្រាន់តែវាយ​&ndash;help បន្ទាប់ពីពាក្យបញ្ជា​ls។</p>
+<h2 id="ករចញនងចលfolder-or-directory">ការចេញនិងចូល​Folder or Directory</h2>
+<p><code>cd</code>គឺជាពាក្យបញ្ជាសម្រាប់ចេញចូល​ថតឯកសារ (folder/directory)​ហើយនេះជាទម្រង់គំរូ:</p>
+<pre><code>cd Folder_Name
+</code></pre><p>ការត្រឡប់មកកាន់ទីតាំង​Home(ទីតាំងដើម)៖</p>
 <pre><code> cd
-</code></pre><p>Also change to home directory:</p>
+</code></pre><p>ការថយមកថតមុនមួយ</p>
 <pre><code> cd .
-</code></pre><p>Change to parent directory:</p>
+</code></pre><p>ការត្រឡប់ទៅកាន់ទីតាំងគោល</p>
 <pre><code> cd ..
-</code></pre><p>Change to subdirectory Documents:</p>
+</code></pre><p>ការចូលទៅកាន់​ថត​Documents</p>
 <pre><code> cd Documents
-</code></pre><p>Change to directory with absolute path</p>
+</code></pre><p>ការចូលទៅកាន់ថតបន្តគ្នា</p>
 <pre><code> cd path1/path2/path3
-</code></pre><p>Change to directory name with white space -<em>path Name</em></p>
+</code></pre><p>ចូលកាន់ថតដែលមាន​ឈ្មោះ(ប្រើប្រាស់ដកឃ្លា)៖</p>
 <pre><code> cd path\ Name 
 </code></pre>
 
-<div class="notices tip" ><p><code>\</code> here is stand for white space !!!</p></div>
+<div class="notices note" ><p><code>\</code> សម្គាល​ការប្រើប្រាស់ដកឃ្លា។</p></div>
 
-<h2 id="show-current-folder">Show Current Folder</h2>
-<p>To show the directory you are currently in:</p>
+<h2 id="ករបងកញពទតងបចចបបននភពកនងថត">ការបង្កាញពីទីតាំងបច្ចុប្បន្នភាពក្នុងថត</h2>
+<p>ពក្យបញ្ជាខាងក្រោម​ប្រើសម្រាប់បង្កាញពីទីតាំងបច្ចុប្បន្នភាព៖</p>
 <pre><code> pwd
 </code></pre><p><strong>Output :</strong></p>
 <pre><code> /home/koompi
-</code></pre><h2 id="create-physical-link-to-file-or-folder">Create Physical Link to File or Folder</h2>
-<p>To make links between files you need to use <code>ln</code> command. A symbolic link (also known as a soft link or symlink) consists of a special type of file that serves as a reference to another file or directory.</p>
+</code></pre><h2 id="ករធវដណភជប-fileនងfolder">ការធ្វើដំណភ្ជាប់ file​និង​folder</h2>
+<p>ការតភ្ជាប់ឯកសារមួយ​ទៅឯកសារមួយ​អ្នកអាចប្រើពាក្យបញ្ជានេះ៖</p>
 <pre><code>ln [FileName] [LinkName]
-</code></pre><h2 id="find-phrase-within-file">Find Phrase Within File</h2>
-<p>The grep command is used to search text. It searches the given file for lines containing a match to the given strings or words. It is one of the most useful commands.</p>
-<p>Below is some standard grep command explained with examples to get you started with grep. Search any line that contains the word in filename.</p>
-<pre><code> grep 'Strings' FileName
-</code></pre><p>Perform a case-insensitive search for the word:</p>
+</code></pre><p>បើអ្នកចង់ដឹងពីផ្នែកបន្ថៃម​<a href="#">សូមចុចទីនេះ</a>។</p>
+<h2 id="សវងរកឃលនកនងឯកសរ">ស្វែងរកឃ្លានៅក្នុងឯកសារ</h2>
+<p>ពាក្យបញ្ជា grep ត្រូវបានប្រើដើម្បីស្វែងរកអត្ថបទ។ វាស្វែងរកឯកសារដែលបានផ្តល់ឱ្យជាតួឃ្លាតាមអក្សរឬពាក្យដែលបានផ្តល់។</p>
+<p>នៅខាងក្រោមនេះគឺជាពាក្យបញ្ជា grep ដែលមានការពន្យល់ជាមួយឧទាហរណ៍ដើម្បីឲ្យអ្នកចាប់ផ្តើមជាមួយវា៖</p>
+<pre><code>grep 'Strings' FileName
+</code></pre><p>ការអនុវត្តស្វែងរកករណីដែលមិនសមរម្យនៃពាក្យ៖</p>
 <pre><code> grep -i 'Strings' FileName
-</code></pre><p>Looking for all files in the current directory and in all of its subdirectories.</p>
+</code></pre><p>ការរកមើលឯកសារទាំងអស់នៅក្នុងថតបច្ចុប្បន្ននិងនៅក្នុងថតរងរបស់វាទាំងអស់។</p>
 <pre><code> grep -R 'Strings'
-</code></pre><p>Searching and displaying the total number of times that the string appears in FileName.</p>
+</code></pre><p>ការស្វែងរកនិងបង្ហាញចំនួនដងសរុបដែលតូអក្សរបានបង្ហាញក្នុង FileName ។</p>
 <pre><code> grep -c 'Strings' FileName
-</code></pre><p>Searching by paths:</p>
+</code></pre><p>ការស្វែងរកតាមផ្នែកបន្តគ្នា</p>
 <pre><code> grep 'Strings' path/path/path
-</code></pre><h2 id="mount-filesystem">Mount Filesystem</h2>
-<p>You can mount the filesystem with the syntax below:</p>
+</code></pre><h2 id="ករ-mount-filesystem">ការ Mount Filesystem</h2>
+<p>អ្នកអាច mount the filesystem ជាមួយការបញ្ជាដែលមានដូចខាងក្រោម។</p>
 <pre><code> mount /dev/[device] [path]
-</code></pre><h2 id="unmount-filesystem">Unmount Filesystem</h2>
-<p>You can also unmount filesystem with command below.</p>
+</code></pre><h2 id="ករ-unmount-filesystem">ការ Unmount Filesystem</h2>
+<p>អ្នកអាច unmount filesystem ជាមួយការបញ្ជាដែលមានដូចខាងក្រោម។</p>
 <pre><code> unmount [path]
-</code></pre><h2 id="make-file-executable">Make File Executable</h2>
-<p>Change the rights to a file so that it can run as a program.</p>
+</code></pre><h2 id="ករធវឯកសរតរមតរវ">ការធ្វើឯកសារត្រឹមត្រូវ</h2>
+<p>នេះមានន័យតាម​ឯកសារណាដែលដំណើរខុសប្រភេទខ្លួន​អ្នកអាចប្រើប្រាស់ពាក្យបញ្ជានេះបាន។</p>
 <pre><code> chmod +x filename
-</code></pre><h2 id="list-trash-files">List Trash Files</h2>
-<p>As you have already known what is <code>ls</code>  command, you should know the path of the trash file.</p>
+</code></pre><h2 id="ករបងហញទនននយសរម">ការបង្ហាញទិន្នន័យសំរាម</h2>
+<p>ការរាយទីន្នន័យដែលមាននៅក្នុងធុងសំរាម៖</p>
 <pre><code> ls -l files ~/.local/share/Trash/files
-</code></pre><h2 id="empty-trash">Empty Trash</h2>
-<p>Above are the paths of trash file, we can empty it with <code>rm -r</code> command:</p>
+</code></pre><h2 id="ករសមអតធងសរម">ការសម្អាតធុងសំរាម</h2>
+<p>ការលុបចោលទិន្នន័យនៅក្នុងធុងសំរាម៖</p>
 <pre><code> rm -r ~/.locale/share/Trash
 </code></pre><hr>
 <hr>

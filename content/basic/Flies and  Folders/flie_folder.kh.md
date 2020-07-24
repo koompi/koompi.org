@@ -198,13 +198,13 @@ grep 'Strings' FileName
  grep 'Strings' path/path/path
 ```
 
-## Mount Filesystem
-You can mount the filesystem with the syntax below:
+## ការ Mount Filesystem
+អ្នកអាច mount the filesystem ជាមួយការបញ្ជាដែលមានដូចខាងក្រោម។
 ```
  mount /dev/[device] [path]
 ```
-## ការUnmount Filesystem
-អ្នកអាច unmount filesystemជាមួយការបញ្ជាដែលមានដូចខាងក្រោម។
+## ការ Unmount Filesystem
+អ្នកអាច unmount filesystem ជាមួយការបញ្ជាដែលមានដូចខាងក្រោម។
 ```
  unmount [path]
 ```
