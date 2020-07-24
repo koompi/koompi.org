@@ -158,26 +158,5 @@ If you wish to set a different default target, you can use the set-default. For 
 sudo systemctl set-default graphical.target
 ```
 
-## Power Management
-**power management** refers to the mechanism for controlling the power use of personal computer hardware.There are targets defined for important events like powering off or rebooting and more options.
-**Reboot** the system:
-```
-systemctl reboot
-```
-**Shut down** and power-off the system:
-```
-systemctl poweroff
-```
-**Suspend** the system:
-```
-systemctl suspend
-```
-Put the system into **hibernation**:
-```
-systemctl hibernate
-```
-Put the system into **hybrid-sleep** state (or suspend-to-both):
-```
-systemctl hybrid-sleep
-```
-----
+---
+---

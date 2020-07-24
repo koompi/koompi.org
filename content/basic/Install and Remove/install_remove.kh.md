@@ -34,34 +34,32 @@ pi -S <Package name1 Package name2 ...>
 ---
 
 ### ការលុបចោលកញ្ចប់
-កញ្ចប់តែងតែត្រូវបានតម្លើងជាមួយកញ្ចប់ផ្សេងទៀតដែលវាអាស្រ័យលើ **កញ្ចប់រង**។ ជាញឹកញាប់ភាពអាស្រ័យទាំងនោះមានរួចហើយឬត្រូវបានតំឡើងដោយផ្នែកនៅលើប្រព័ន្ធរបស់អ្នកពីព្រោះផ្សេងទៀត
-A package is always installed with other packages that it *depends on*, `called dependencies`. Quite often those dependencies are already, or partially installed on your system because other **packages also depend on it**.
+កញ្ចប់តែងតែត្រូវបានតម្លើងជាមួយកញ្ចប់ផ្សេងទៀត ដែលវាអាស្រ័យលើ **កញ្ចប់រង**។ ជាញឹកញាប់កញ្ចប់រង ទាំងនោះត្រូវបានតម្លើងទៅតាមផ្នែកនៅលើប្រព័ន្ធទៅតាមតម្រូវការរបស់កញ្ចប់ដទៃ។
 
-If you just want to remove the package, the command following will be enough
+ប្រសិនបើអ្នកចង់លុបកញ្ចប់ចេញពាក្យបញ្ជាខាងក្រោមនឹងគ្រប់គ្រាន់សម្រាប់ធ្វើវា៖
 ```    
- pi -R <Package name>
+pi -R <Package name>
 ```
-If you rather want to avoid a `cluttered system` you can remove a package and its dependencies, without removing dependencies that are used by other installed packages, use the following command.
-
+ប្រសិនបើអ្នកចង់ជៀសវាង `កំុប្រព័ន្ធច្របូកច្របល់` អ្នកអាចលុបកញ្ចប់ និងកញ្ចប់រង ដោយមិនចាំបាច់លុប កញ្ចប់រងដែលប្រើប្រាស់ដោយកញ្ចប់ដទៃតាមពាក្យបញ្ជាខាងក្រោម
 ```
  pi -Rs <Package name>
 ```
-To remove a package, its dependencies and all the packages that depend on the target package
+ដើម្បីលុបកញ្ចប់រងដែលកញ្ចប់ទាំងអស់នោះពឹងផ្អែកលើប្រើដូចខាងក្រោម។
 ```
- pi -Rsc <Package name>
+pi -Rsc <Package name>
 ```
-For deleting a package that other packages need without deleting their dependency package
-
+បើអ្នកចង់លុបតែកញ្ចប់ដោយមិនលុបកញ្ចប់រង៖
 ```
- pi -Rdd <Package name>
+pi -Rdd <Package name>
 ```
 
 {{< notice note >}}
-All operations have required a password. Then if you aren’t satisfied with the build tool and configuration choices, you can eject at any time. This command will remove the single build dependency from your operation.
+ការប្រតិបត្តិការទាំងអស់តម្រូវឱ្យមានការបញ្ចូលពាក្យសម្ងាត់។ បន្ទាប់មកប្រសិនបើអ្នកមិនពេញចិត្តនឹង ឧបករណ៍ និងជម្រើសណាមួយអ្នកអាចច្រាននៅពេលណាក៏បាន។ ការដំណើរការនេះនឹងបញ្ឈប់ភ្លាម។
 {{< /notice >}}
 
 {{< notice tip >}}
 Here Special usage to automate the install procedure (Recommend):
+នេះជាការប្រើប្រាស់ពិសេសមួយ ដើម្បីធ្វើដំណើរការស្វ័យប្រវត្តិកម្ម។ ពួកយើងណៃនាំឲ្យប្រើប្រាស់វា៖
 {{< /notice >}}
 
 ```
@@ -69,7 +67,7 @@ Here Special usage to automate the install procedure (Recommend):
 ```
 	
 {{< notice tip >}}
-Install packages with no confirm.
+ការដំឡើងដោយគ្មានការសួរសំណួរ៖
 {{< /notice >}}
 
 ```

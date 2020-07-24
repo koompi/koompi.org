@@ -490,28 +490,28 @@
 <pre><code> pi -Sg &lt;Package group name&gt;
 </code></pre><hr>
 <h3 id="ករលបចលកញចប">ការលុបចោលកញ្ចប់</h3>
-<p>កញ្ចប់តែងតែត្រូវបានតម្លើងជាមួយកញ្ចប់ផ្សេងទៀតដែលវាអាស្រ័យលើ <strong>កញ្ចប់រង</strong>។ ជាញឹកញាប់ភាពអាស្រ័យទាំងនោះមានរួចហើយឬត្រូវបានតំឡើងដោយផ្នែកនៅលើប្រព័ន្ធរបស់អ្នកពីព្រោះផ្សេងទៀត
-A package is always installed with other packages that it <em>depends on</em>, <code>called dependencies</code>. Quite often those dependencies are already, or partially installed on your system because other <strong>packages also depend on it</strong>.</p>
-<p>If you just want to remove the package, the command following will be enough</p>
-<pre><code> pi -R &lt;Package name&gt;
-</code></pre><p>If you rather want to avoid a <code>cluttered system</code> you can remove a package and its dependencies, without removing dependencies that are used by other installed packages, use the following command.</p>
+<p>កញ្ចប់តែងតែត្រូវបានតម្លើងជាមួយកញ្ចប់ផ្សេងទៀត ដែលវាអាស្រ័យលើ <strong>កញ្ចប់រង</strong>។ ជាញឹកញាប់កញ្ចប់រង ទាំងនោះត្រូវបានតម្លើងទៅតាមផ្នែកនៅលើប្រព័ន្ធទៅតាមតម្រូវការរបស់កញ្ចប់ដទៃ។</p>
+<p>ប្រសិនបើអ្នកចង់លុបកញ្ចប់ចេញពាក្យបញ្ជាខាងក្រោមនឹងគ្រប់គ្រាន់សម្រាប់ធ្វើវា៖</p>
+<pre><code>pi -R &lt;Package name&gt;
+</code></pre><p>ប្រសិនបើអ្នកចង់ជៀសវាង <code>កំុប្រព័ន្ធច្របូកច្របល់</code> អ្នកអាចលុបកញ្ចប់ និងកញ្ចប់រង ដោយមិនចាំបាច់លុប កញ្ចប់រងដែលប្រើប្រាស់ដោយកញ្ចប់ដទៃតាមពាក្យបញ្ជាខាងក្រោម</p>
 <pre><code> pi -Rs &lt;Package name&gt;
-</code></pre><p>To remove a package, its dependencies and all the packages that depend on the target package</p>
-<pre><code> pi -Rsc &lt;Package name&gt;
-</code></pre><p>For deleting a package that other packages need without deleting their dependency package</p>
-<pre><code> pi -Rdd &lt;Package name&gt;
+</code></pre><p>ដើម្បីលុបកញ្ចប់រងដែលកញ្ចប់ទាំងអស់នោះពឹងផ្អែកលើប្រើដូចខាងក្រោម។</p>
+<pre><code>pi -Rsc &lt;Package name&gt;
+</code></pre><p>បើអ្នកចង់លុបតែកញ្ចប់ដោយមិនលុបកញ្ចប់រង៖</p>
+<pre><code>pi -Rdd &lt;Package name&gt;
 </code></pre>
 
-<div class="notices note" ><p>All operations have required a password. Then if you aren’t satisfied with the build tool and configuration choices, you can eject at any time. This command will remove the single build dependency from your operation.</p></div>
+<div class="notices note" ><p>ការប្រតិបត្តិការទាំងអស់តម្រូវឱ្យមានការបញ្ចូលពាក្យសម្ងាត់។ បន្ទាប់មកប្រសិនបើអ្នកមិនពេញចិត្តនឹង ឧបករណ៍ និងជម្រើសណាមួយអ្នកអាចច្រាននៅពេលណាក៏បាន។ ការដំណើរការនេះនឹងបញ្ឈប់ភ្លាម។</p></div>
 
 
 
-<div class="notices tip" ><p>Here Special usage to automate the install procedure (Recommend):</p></div>
+<div class="notices tip" ><p>Here Special usage to automate the install procedure (Recommend):
+នេះជាការប្រើប្រាស់ពិសេសមួយ ដើម្បីធ្វើដំណើរការស្វ័យប្រវត្តិកម្ម។ ពួកយើងណៃនាំឲ្យប្រើប្រាស់វា៖</p></div>
 
 <pre><code> yes | pi -S &lt;Package name&gt; 
 </code></pre>
 
-<div class="notices tip" ><p>Install packages with no confirm.</p></div>
+<div class="notices tip" ><p>ការដំឡើងដោយគ្មានការសួរសំណួរ៖</p></div>
 
 <pre><code> pi -S --noconfirm &lt;Package name&gt;
 </code></pre><hr>

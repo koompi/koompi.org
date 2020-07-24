@@ -586,19 +586,8 @@
 </code></pre><pre><code>multi-user.target
 </code></pre><p>If you wish to set a different default target, you can use the set-default. For instance, if you have a graphical desktop installed and you wish for the system to boot into that by default, you can change your default target accordingly:</p>
 <pre><code>sudo systemctl set-default graphical.target
-</code></pre><h2 id="power-management">Power Management</h2>
-<p><strong>power management</strong> refers to the mechanism for controlling the power use of personal computer hardware.There are targets defined for important events like powering off or rebooting and more options.
-<strong>Reboot</strong> the system:</p>
-<pre><code>systemctl reboot
-</code></pre><p><strong>Shut down</strong> and power-off the system:</p>
-<pre><code>systemctl poweroff
-</code></pre><p><strong>Suspend</strong> the system:</p>
-<pre><code>systemctl suspend
-</code></pre><p>Put the system into <strong>hibernation</strong>:</p>
-<pre><code>systemctl hibernate
-</code></pre><p>Put the system into <strong>hybrid-sleep</strong> state (or suspend-to-both):</p>
-<pre><code>systemctl hybrid-sleep
 </code></pre><hr>
+<hr>
 </div>
           
           <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 05 Jan 2020</p>
