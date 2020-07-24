@@ -483,14 +483,15 @@
 </code></pre><p>សម្រាប់តម្លើងកញ្ចប់លើពីពីរ</p>
 <pre><code>pi -S &lt;Package name1 Package name2 ...&gt;
 </code></pre><hr>
-<h3 id="installing-package-group">Installing Package Group</h3>
-<p>Some packages belong to a <strong>group of packages</strong> that simultaneously call installation. As in here, for instance</p>
+<h3 id="ករតមលងកញចបជករម">ការតម្លើងកញ្ចប់ជាក្រុម</h3>
+<p>កញ្ចប់ខ្លះជារបស់ <strong>ក្រុមកញ្ចប់ដទៃ</strong> ដែលហៅថាការតំឡើងដំណាលគ្នា។ ឧទាហរណ៍មាននៅទីនេះ</p>
 <pre><code> pi -S &lt;Package group name&gt;
-</code></pre><p>To see what inside the package group, run</p>
+</code></pre><p>ដើម្បីមើលអ្វីដែលនៅក្នុងក្រុមកញ្ចប់ សូមដំណើរការតាមខាងក្រោម។</p>
 <pre><code> pi -Sg &lt;Package group name&gt;
 </code></pre><hr>
-<h3 id="removing-packages">Removing Packages</h3>
-<p>A package is always installed with other packages that it <em>depends on</em>, <code>called dependencies</code>. Quite often those dependencies are already, or partially installed on your system because other <strong>packages also depend on it</strong>.</p>
+<h3 id="ករលបចលកញចប">ការលុបចោលកញ្ចប់</h3>
+<p>កញ្ចប់តែងតែត្រូវបានតម្លើងជាមួយកញ្ចប់ផ្សេងទៀតដែលវាអាស្រ័យលើ <strong>កញ្ចប់រង</strong>។ ជាញឹកញាប់ភាពអាស្រ័យទាំងនោះមានរួចហើយឬត្រូវបានតំឡើងដោយផ្នែកនៅលើប្រព័ន្ធរបស់អ្នកពីព្រោះផ្សេងទៀត
+A package is always installed with other packages that it <em>depends on</em>, <code>called dependencies</code>. Quite often those dependencies are already, or partially installed on your system because other <strong>packages also depend on it</strong>.</p>
 <p>If you just want to remove the package, the command following will be enough</p>
 <pre><code> pi -R &lt;Package name&gt;
 </code></pre><p>If you rather want to avoid a <code>cluttered system</code> you can remove a package and its dependencies, without removing dependencies that are used by other installed packages, use the following command.</p>

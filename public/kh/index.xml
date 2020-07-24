@@ -21,9 +21,9 @@
       <description>នៅលើកម្មវិធីប្រភពចំហ កម្មវិធីភាគច្រើនត្រូវបានតំឡើងតាម Aur ដែលមានកញ្ចប់កម្មវិធី។ ដូច្នេះនេះខាងក្រោមនេះ គឺជាព័ត៌មានលំអិតសំរាប់តម្លើងនិងយកព័ត៌មានលំអិតអំពីកញ្ចប់។
   ការតម្លើងកញ្ចប់ នៅខាងក្រោមនេះ គឺជាពាក្យបញ្ជាដើម្បីតំឡើងកញ្ចប់តែមួយដែលរួមកញ្ចប់រងដូចខាងក្រោមៈ
 pi -S &amp;lt;Package name&amp;gt; or pi -i &amp;lt;Package name&amp;gt; សម្រាប់តម្លើងកញ្ចប់លើពីពីរ
-pi -S &amp;lt;Package name1 Package name2 ...&amp;gt;  Installing Package Group Some packages belong to a group of packages that simultaneously call installation. As in here, for instance
- pi -S &amp;lt;Package group name&amp;gt; To see what inside the package group, run
- pi -Sg &amp;lt;Package group name&amp;gt;  Removing Packages A package is always installed with other packages that it depends on, called dependencies.</description>
+pi -S &amp;lt;Package name1 Package name2 ...&amp;gt;  ការតម្លើងកញ្ចប់ជាក្រុម កញ្ចប់ខ្លះជារបស់ ក្រុមកញ្ចប់ដទៃ ដែលហៅថាការតំឡើងដំណាលគ្នា។ ឧទាហរណ៍មាននៅទីនេះ
+ pi -S &amp;lt;Package group name&amp;gt; ដើម្បីមើលអ្វីដែលនៅក្នុងក្រុមកញ្ចប់ សូមដំណើរការតាមខាងក្រោម។
+ pi -Sg &amp;lt;Package group name&amp;gt;  ការលុបចោលកញ្ចប់ កញ្ចប់តែងតែត្រូវបានតម្លើងជាមួយកញ្ចប់ផ្សេងទៀតដែលវាអាស្រ័យលើ កញ្ចប់រង។ ជាញឹកញាប់ភាពអាស្រ័យទាំងនោះមានរួចហើយឬត្រូវបានតំឡើងដោយផ្នែកនៅលើប្រព័ន្ធរបស់អ្នកពីព្រោះផ្សេងទៀត A package is always installed with other packages that it depends on, called dependencies. Quite often those dependencies are already, or partially installed on your system because other packages also depend on it.</description>
     </item>
     
     <item>

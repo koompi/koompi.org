@@ -21,20 +21,20 @@ pi -S <Package name1 Package name2 ...>
 ```
 ---
 
-### Installing Package Group
-
-Some packages belong to a **group of packages** that simultaneously call installation. As in here, for instance
+### ការតម្លើងកញ្ចប់ជាក្រុម
+កញ្ចប់ខ្លះជារបស់ **ក្រុមកញ្ចប់ដទៃ** ដែលហៅថាការតំឡើងដំណាលគ្នា។ ឧទាហរណ៍មាននៅទីនេះ
 ```
  pi -S <Package group name>
 ```
-To see what inside the package group, run
+ដើម្បីមើលអ្វីដែលនៅក្នុងក្រុមកញ្ចប់ សូមដំណើរការតាមខាងក្រោម។
 ```
  pi -Sg <Package group name>
 ```
 
 ---
 
-### Removing Packages
+### ការលុបចោលកញ្ចប់
+កញ្ចប់តែងតែត្រូវបានតម្លើងជាមួយកញ្ចប់ផ្សេងទៀតដែលវាអាស្រ័យលើ **កញ្ចប់រង**។ ជាញឹកញាប់ភាពអាស្រ័យទាំងនោះមានរួចហើយឬត្រូវបានតំឡើងដោយផ្នែកនៅលើប្រព័ន្ធរបស់អ្នកពីព្រោះផ្សេងទៀត
 A package is always installed with other packages that it *depends on*, `called dependencies`. Quite often those dependencies are already, or partially installed on your system because other **packages also depend on it**.
 
 If you just want to remove the package, the command following will be enough
