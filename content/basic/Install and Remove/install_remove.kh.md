@@ -6,19 +6,18 @@ draft: false
 # search related keywords
 keywords: ["induct", "instate"]
 ---
-On Open-source software most applications are installed through `Aur` that contain app package.So, Here are the details for installing and removing packages details.
+នៅលើកម្មវិធីប្រភពចំហ កម្មវិធីភាគច្រើនត្រូវបានតំឡើងតាម Aur ដែលមានកញ្ចប់កម្មវិធី។ ដូច្នេះនេះខាងក្រោមនេះ គឺជាព័ត៌មានលំអិតសំរាប់តម្លើងនិងយកព័ត៌មានលំអិតអំពីកញ្ចប់។
 
 ----
 ----
-### Installing Packages
-
-Follow the following command to install a signal package including the dependencies:
+### ការតម្លើងកញ្ចប់
+នៅខាងក្រោមនេះ គឺជាពាក្យបញ្ជាដើម្បីតំឡើងកញ្ចប់តែមួយដែលរួមកញ្ចប់រងដូចខាងក្រោមៈ
 ```
- pi -S <Package name> or pi -i <Package name>
+pi -S <Package name> or pi -i <Package name>
 ```
-For the list of packages installation:
+សម្រាប់តម្លើងកញ្ចប់លើពីពីរ
 ```
- pi -S <Package name1 Package name2 ...>
+pi -S <Package name1 Package name2 ...>
 ```
 ---
 

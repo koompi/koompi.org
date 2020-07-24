@@ -18,10 +18,12 @@
       <pubDate>Sun, 29 Dec 2019 11:02:05 +0600</pubDate>
       
       <guid>https://www.koompi.org/kh/basic/install-and-remove/install_remove/</guid>
-      <description>On Open-source software most applications are installed through Aur that contain app package.So, Here are the details for installing and removing packages details.
-  Installing Packages Follow the following command to install a signal package including the dependencies:
- pi -S &amp;lt;Package name&amp;gt; or pi -i &amp;lt;Package name&amp;gt; For the list of packages installation:
- pi -S &amp;lt;Package name1 Package name2 ...&amp;gt;  Installing Package Group Some packages belong to a group of packages that simultaneously call installation.</description>
+      <description>នៅលើកម្មវិធីប្រភពចំហ កម្មវិធីភាគច្រើនត្រូវបានតំឡើងតាម Aur ដែលមានកញ្ចប់កម្មវិធី។ ដូច្នេះនេះខាងក្រោមនេះ គឺជាព័ត៌មានលំអិតសំរាប់តម្លើងនិងយកព័ត៌មានលំអិតអំពីកញ្ចប់។
+  ការតម្លើងកញ្ចប់ នៅខាងក្រោមនេះ គឺជាពាក្យបញ្ជាដើម្បីតំឡើងកញ្ចប់តែមួយដែលរួមកញ្ចប់រងដូចខាងក្រោមៈ
+pi -S &amp;lt;Package name&amp;gt; or pi -i &amp;lt;Package name&amp;gt; សម្រាប់តម្លើងកញ្ចប់លើពីពីរ
+pi -S &amp;lt;Package name1 Package name2 ...&amp;gt;  Installing Package Group Some packages belong to a group of packages that simultaneously call installation. As in here, for instance
+ pi -S &amp;lt;Package group name&amp;gt; To see what inside the package group, run
+ pi -Sg &amp;lt;Package group name&amp;gt;  Removing Packages A package is always installed with other packages that it depends on, called dependencies.</description>
     </item>
     
     <item>
