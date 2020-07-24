@@ -91,74 +91,74 @@ cp -R <source_folder> <destination_folder>
 mv Folder_Name NewFolder_Name
 ```
 ## ការបង្កើត Folder
-we can create directories from command line using the command `mkdir`. Syntax of this command is explained below.
+អ្នកអាចបង្កើតថតឯកសារចេញពីបន្ទាត់យបញ្ជា​`mkdir`។​ពាក្យបញ្ជានេះត្រូវបានពន្យល់ខាងក្រោម៖
 ```
- mkdir Folder_Name
+mkdir Folder_Name
 ```
-For example, to create a folder named ‘newfolder‘ the command is:
+ឧទាហរណ៍ក្នុងការបង្កើតថតឯកសារមួយមានឈ្មោះថា​"NewFolder"
 ```
- mkdir NewFolder
+mkdir NewFolder
 ```
-## Remove Folder
-Removing folder is like removing the file, too but it has a little bit different. You have to add `-r` after `rm command`.
+## ការលុបចោល Folder
+ការលុបចោលថតឯកសារស្រដៀងគ្នាទៅនឹងការលុបចោលឯកសារអ៊ីចឹងដែរ ប៉ុន្តៃវាមានភាពខុសគ្នាបន្តិច។​អ្នកគ្រាន់តែថែម `-r` បន្ទាប់ពី `ពាក្យបញ្ជា​rm`.
 ```
- rm -r Folder_Name
+rm -r Folder_Name
 ```
-## List Folder Contents
-Listing Command (ls) allows us to see all the contents in the directory we are in.
+## គារពង្រយឯកសារ​និងថតឯកសារ
+ការពង្រាយនេះអាចធ្វើបានដោយ​ពាក្យបញ្ជា​`ls`​ដែលវានឹងរាយរាល់ទិន្នន័យដែលមានក្នុងថតដែលអ្នកកំពុងនៅ៖
 ```
- ls
+ls
 ```
-### Options
-| Options  | Descriptions| 
+### ជម្រើសដទៃនៃការពង្រាយ
+| ជម្រើស  | ការពណ៌នា| 
 |:-------------|:-------------|
-| **ls -a**|      `list all files including hidden file starting with '.'`|
-| **ls --color** |      `colored list [=always/never/auto]`|
-| **ls -d** |       `list directories - with ' */'`|
-| **ls -F** |       `add one char of */=>@| to enteries`|
-| **ls -i**|       `list file's inode index number`|
-| **ls -l** |      `list with long format - show permissions`|
-| **ls -la** |   `list long format including hidden files` |
-| **ls -lh** |   `list long format with readable file size` |
-| **ls -ls** |   `list with long format with file size` |
-| **ls -r** |   `list in reverse order` |
-| **ls -R** |   `list recursively directory tree` |
+| **ls -a**|      `ការរាយទិន្នន័យទាំងអស់​(ទាំងទិន្នន័យដែលបិទបាំងក្តី)`|
+| **ls --color** |      `ការរាយទិន្នន័យតាមពណ៌`|
+| **ls -d** |       `ការរាយទិន្នន័យដែលមានសញ្ញា​*'`|
+| **ls -F** |       `ការរាយទិន្នន័យាតាមតួអក្សរ`|
+| **ls -i**|       `ការរាយទិន្នន័យតាមលេខរៀង`|
+| **ls -l** |      `ការរាយទិន្នន័យជាជួរ`|
+| **ls -la** |   `ការរាយទិន្នន័យជាជួរជាមួយទិន្នន័យដែលបិទបាំង` |
+| **ls -lh** |   `ការរាយទិន្នន័យជាជូរដែលមានទាំងទំហំទិន្នន័យដែលអាចមើលបាន` |
+| **ls -ls** |   `ការរាយទិន្នន័យជាជួរដែលមានទាំងការបង្ហាញទំហំនៃទិន្នន័យ` |
+| **ls -r** |   `ការរាយទិន្នន័យបញ្រាស់` |
+| **ls -R** |   `ការរាយទិន្នន័យតាមមែកធាងនៃទិន្នន័យ` |
 
-For more info use `--help` after the command like this `ls --help``.
-## Change Folder or Directory
-`cd` is the command for changing the folder/directory of the command line. Here its syntax:
+សម្រាប់ព័ត៌មាន​អ្នកគ្រាន់តែវាយ​--help បន្ទាប់ពីពាក្យបញ្ជា​ls។
+## ការចេញនិងចូល​Folder or Directory
+`cd`គឺជាពាក្យបញ្ជាសម្រាប់ចេញចូល​ថតឯកសារ (folder/directory)​ហើយនេះជាទម្រង់គំរូ:
 ```
- cd Folder_Name
+cd Folder_Name
 ```
-Changing to home directory (determined by $HOME environment variable):
+ការត្រឡប់មកកាន់ទីតាំង​Home(ទីតាំងដើម)៖
 ```
  cd
 ```
-Also change to home directory:
+ការថយមកថតមុនមួយ
 ```
  cd .
 ```
-Change to parent directory:
+ការត្រឡប់ទៅកាន់ទីតាំងគោល
 ```
  cd ..
 ```
-Change to subdirectory Documents:
+ការចូលទៅកាន់​ថត​Documents
 ```
  cd Documents
 ```
-Change to directory with absolute path
+ការចូលទៅកាន់ថតបន្តគ្នា
 ```
  cd path1/path2/path3
 ```
-Change to directory name with white space -*path Name*
+ចូលកាន់ថតដែលមាន​ឈ្មោះ(ប្រើប្រាស់ដកឃ្លា)៖
 ```
  cd path\ Name 
 ```
-{{< notice tip >}}
-`\` here is stand for white space !!!
+{{< notice note >}}
+`\` សម្គាល​ការប្រើប្រាស់ដកឃ្លា។
 {{< /notice >}}
-## Show Current Folder
-To show the directory you are currently in:
+## ការបង្កាញពីទីតាំងបច្ចុប្បន្នភាពក្នុងថត
+ពក្យបញ្ជាខាងក្រោម​ប្រើសម្រាប់បង្កាញពីទីតាំងបច្ចុប្បន្នភាព៖
 ```
  pwd
 ```
@@ -166,31 +166,34 @@ To show the directory you are currently in:
 ```
  /home/koompi
 ```
-## Create Physical Link to File or Folder
-To make links between files you need to use `ln` command. A symbolic link (also known as a soft link or symlink) consists of a special type of file that serves as a reference to another file or directory.
+## ការធ្វើដំណភ្ជាប់ file​និង​folder
+ការតភ្ជាប់ឯកសារមួយ​ទៅឯកសារមួយ​អ្នកអាចប្រើពាក្យបញ្ជានេះ៖
 ```
 ln [FileName] [LinkName]
 ```
-## Find Phrase Within File
-The grep command is used to search text. It searches the given file for lines containing a match to the given strings or words. It is one of the most useful commands.
+បើអ្នកចង់ដឹងពីផ្នែកបន្ថៃម​[សូមចុចទីនេះ](#)។
+## ស្វែងរកឃ្លានៅក្នុងឯកសារ
+ពាក្យបញ្ជា grep ត្រូវបានប្រើដើម្បីស្វែងរកអត្ថបទ។ វាស្វែងរកឯកសារដែលបានផ្តល់ឱ្យជាតួឃ្លាតាមអក្សរឬពាក្យដែលបានផ្តល់។
 
-Below is some standard grep command explained with examples to get you started with grep. Search any line that contains the word in filename.
+នៅខាងក្រោមនេះគឺជាពាក្យបញ្ជា grep ដែលមានការពន្យល់ជាមួយឧទាហរណ៍ដើម្បីឲ្យអ្នកចាប់ផ្តើមជាមួយវា៖
 ```
- grep 'Strings' FileName
+grep 'Strings' FileName
 ```
-Perform a case-insensitive search for the word:
+
+ការអនុវត្តស្វែងរកករណីដែលមិនសមរម្យនៃពាក្យ៖
 ```
  grep -i 'Strings' FileName
 ```
-Looking for all files in the current directory and in all of its subdirectories.
+
+ការរកមើលឯកសារទាំងអស់នៅក្នុងថតបច្ចុប្បន្ននិងនៅក្នុងថតរងរបស់វាទាំងអស់។
 ```
  grep -R 'Strings'
 ```
-Searching and displaying the total number of times that the string appears in FileName.
+ការស្វែងរកនិងបង្ហាញចំនួនដងសរុបដែលតូអក្សរបានបង្ហាញក្នុង FileName ។
 ```
  grep -c 'Strings' FileName
 ```
-Searching by paths:
+ការស្វែងរកតាមផ្នែកបន្តគ្នា
 ```
  grep 'Strings' path/path/path
 ```
@@ -200,23 +203,23 @@ You can mount the filesystem with the syntax below:
 ```
  mount /dev/[device] [path]
 ```
-## Unmount Filesystem
-You can also unmount filesystem with command below.
+## ការUnmount Filesystem
+អ្នកអាច unmount filesystemជាមួយការបញ្ជាដែលមានដូចខាងក្រោម។
 ```
  unmount [path]
 ```
-## Make File Executable
-Change the rights to a file so that it can run as a program.
+## ការធ្វើឯកសារត្រឹមត្រូវ
+នេះមានន័យតាម​ឯកសារណាដែលដំណើរខុសប្រភេទខ្លួន​អ្នកអាចប្រើប្រាស់ពាក្យបញ្ជានេះបាន។
 ```
  chmod +x filename
 ```
-## List Trash Files
-As you have already known what is `ls`  command, you should know the path of the trash file.
+## ការបង្ហាញទិន្នន័យសំរាម
+ការរាយទីន្នន័យដែលមាននៅក្នុងធុងសំរាម៖
 ```
  ls -l files ~/.local/share/Trash/files
 ```
-## Empty Trash
-Above are the paths of trash file, we can empty it with `rm -r` command:
+## ការសម្អាតធុងសំរាម
+ការលុបចោលទិន្នន័យនៅក្នុងធុងសំរាម៖
 ```
  rm -r ~/.locale/share/Trash
 ```
