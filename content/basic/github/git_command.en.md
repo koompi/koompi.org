@@ -39,13 +39,13 @@ git init
 
 ---
 ## Save changes to the repository
-As you have already build your project, you can make changes  in it.
+As you have already build your project, you can make changes in it.
 ```
 git add .
 git commit -m " message "
 ```
 {{< notice info >}}
-The Words in "... ". After you push the changes to the git, the directory that change will appear the words in "...".
+The Words in "... ". After you push the changes to the git, the directory that changes will appear the words in "...".
 {{< /notice >}}
 
 ---
@@ -57,7 +57,7 @@ git status
 
 ---
 ## Create a new branch
-On Github, we can create branches on the same repository if you do not want to use as a master. To create a branch:
+On Github, we can create branches on the same repository if you do not want to use it as a master. To create a branch:
 ```
 git branch [branchName]
 ```
@@ -77,27 +77,27 @@ git branch -d [branchName]
 ```
 
 ---
-## Merge changes into current branch
-When you are working as a team, you probably work with different branch from the team. So, we can pull the project together with command below:
+## Merge changes into the current branch
+When you are working as a team, you probably work with different branch from the team. So, we can pull the project together with the command below:
 ```
 git merge [branchName]
 ```
 
 ---
 ## Checkout an existing branch
-When you want to create new branch, you might want to check out if the branch has already made on the same repository. So that you can create other branches instead.
+When you want to create a new branch, you might want to check out if the branch has already made on the same repository. So that you can create other branches instead.
 ```
 git checkout -b [branchName]
 ```
 
-In order to create new branch with that name you have to use command below:
+To create a new branch with that name you have to use the command below:
 ```
 git checkout -b [newBranch]
 ```
 
 ---
 ## Create and Delete tag
-Git tags are used as reference points in your development workflow. You might want to create new Git tags in order to have a reference to a given release of your software. Creating tag with this:
+Git tags are used as reference points in your development workflow. You might want to create new Git tags to have a reference to a given release of your software. Creating tag with this:
 ```
 git  tag [tagName]
 ```
@@ -114,8 +114,8 @@ git push --tags
 ```
 
 --
-## Get the lastest version of the repository
-In order to get the data of last updated on repository, type this in konsole:
+## Get the latest version of the repository
+To get the data of last updated on repository, type this in Konsole:
 ```
 git pull [branchName] [remoteURl/remoteName]
 ```
@@ -177,7 +177,7 @@ git stash -u
 
 ---
 ## How to bring stashed work back to the working directory
-You can also bring back all the untracked files back to working directory, too.
+You can bring back all the untracked files back to the working directory, too.
 ```
 git stash pop
 ```
@@ -191,7 +191,7 @@ git rm --cached [fileName]
 ```
 
 
-In order to remove the directory:
+To remove the directory:
 ```
 git rm -r --cached [directoryName]
 ```

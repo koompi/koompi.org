@@ -6,155 +6,155 @@ draft: false
 # search related keywords
 keywords: ["induct", "instate"]
 ---
-This module is a guide for details and usage of GitHub. If you are a newbie especially coding beginners and get to know what it is. 
+ការបង្ហាញពីការប្រើប្រាស់ Github ក្នុង ខុនសូលមាននៅក្នុងផ្នែកនេះ។ ប្រសិនបើអ្នកដែលទើបតែរៀនកូដថ្មីៗ អ្នកអាចសិក្សាពីវាបាន។
 
-## Install git 
-We can start to install git by running a command in Konsole:
+## ការតម្លើង git
+យើងអាចចាប់ពីការទាញយក git មកប្រើប្រាស់ក្នុង pc របស់ជាមុន៖
 ```
 pi -S git
 ```
 
 {{< notice note >}}
-Make sure you have already run the command `pi -Syu` to update your system.
+កុំភ្លេចធ្វើការទាញយកversion ចុងក្រោយនៃប្រព័ន្ធប្រតិបត្តិការជាមុនដោយពាក្យបញ្ជា `pi -Syu`
 {{< /notice >}}
 
 ---
 
-## Clone an existing repository
-If you want to clone your existing repository or you clone other people's repository, you run the command below:
+## ការចម្លង repo ដែលមានហើយ
+ប្រសិនបើអ្នកចង់ចម្លង  repo ដែលមានស្រាប់របស់អ្នកឬអ្នកដទៃ អ្នកអាចប្រើពាក្យបញ្ជាខាងក្រោម:
 ```
 git clone [url] 
 ```
 
 {{< notice info >}}
-**Url** is address of world wide web page.
+**Url** គឺជាអាស័យធ្ឋាននៃ World Wide Web
 {{< /notice >}}
 
 ---
-## Initialize new version controlled project
-In order, to create a new controlled project you have to run this command:
+## ចាប់ផ្តើមគម្រោងថ្មី
+ប្រសិនបើអ្នកចង់បង្កើតកំណែថ្មី អ្នកអាចដំណើរតាមការបង្ហាញ៖
 ```
 git init
 ```
 
 ---
-## Save changes to the repository
-As you have already build your project, you can make changes  in it.
+## ការកែប្រែ repository
+បើអ្នកធ្លាប់បានបង្កើត repo រួច ហើយអ្នកកែប្រែបន្ទាប់ពីបានរុញទៅទុកលើ Web អ្នកអាចធ្វើតាមនេះ។
 ```
 git add .
 git commit -m " message "
 ```
 {{< notice info >}}
-The Words in "... ". After you push the changes to the git, the directory that change will appear the words in "...".
+ពាក្យនៅក្នុង "... " គឺជាពាក្យសម្គាល់នៅពេលការផ្លាស់ប្តូរពេលរុញទៅ web ម្តងៗ។ 
 {{< /notice >}}
 
 ---
-## State the current state of the repository
-If you want to state where repository you are working on, do this:
+## ការបង្ហាញបច្ចុប្បន្នភាពនៃ repository
+ក្នុងការបង្ហាញព័ត៌មាននៅលើ repo អ្នកត្រូវប្រើពាក្យបញ្ជានេះ
 ```
 git status
 ```
 
 ---
-## Create a new branch
-On Github, we can create branches on the same repository if you do not want to use as a master. To create a branch:
+## ការបង្កើត branch ថ្មី
+នៅលើ Git មានការបែងចែក User ជាពីរ គឺ master and branch។ ដូចនេះអ្នកអាចធ្វើបង្កើត branch ដើម្បីប្រើប្រាស់ បាន ចៀសវាងការកែប្រែលើ master នាំឲ្យប៉ះពាល់ដល់ កូដដើម។
 ```
 git branch [branchName]
 ```
 
 ---
-## List all remote or local branches
-If you want all show all the branches that work on the repository.
+## ការបង្ហាញ branches ទាំងឡាយ
+ប្រសិនបើអ្នកចង់បង្ហាញ branches ទាំងអស់ដែលធ្វើការនៅ repo អ្នក។
 ```
 git branch -a
 ```
 
 ---
-## Delete branch
-If you wish to remove the branch, you can do it by run:
+## ការលុប branch
+ប្រសិនបើអ្នកចង់ដក branch អ្នក អ្នកអាចធ្វើវាដោយដំណើរការ៖
 ```
 git branch -d [branchName]
 ```
 
 ---
-## Merge changes into current branch
-When you are working as a team, you probably work with different branch from the team. So, we can pull the project together with command below:
+## ការដាក់បញ្ចូលគ្នានៃ branches
+នៅពេលអ្នកធ្វើការជាក្រុម អ្នកត្រូវធ្វើការជាមួយ branch ផ្សេងៗគ្នា។ ដូច្នេះយើងអាចទាញគម្រោងរួមគ្នាជាមួយ ពាក្យបញ្ជាខាងក្រោម៖
 ```
 git merge [branchName]
 ```
 
 ---
-## Checkout an existing branch
-When you want to create new branch, you might want to check out if the branch has already made on the same repository. So that you can create other branches instead.
+## ការមើលមាន branchនេះឫទេ?
+នៅពេលដែលអ្នកចង់បង្កើត branch ថ្មី អ្នកប្រហែលជាចង់ពិនិត្យមើលថា តើbranchនោះបានបង្កើតរួចហើយឫនៅ បើមានហើយ អ្នកអាចបង្កើតbranch ផ្សេងមួយទៀតជំនួស។
 ```
 git checkout -b [branchName]
 ```
 
-In order to create new branch with that name you have to use command below:
+ដើម្បីបង្កើត branch ថ្មីដោយមានការពិនិត្យឈ្មោះ និងបង្កើតថ្មីផងនោះ អ្នកត្រូវប្រើពាក្យបញ្ជាខាងក្រោម៖
 ```
 git checkout -b [newBranch]
 ```
 
 ---
-## Create and Delete tag
-Git tags are used as reference points in your development workflow. You might want to create new Git tags in order to have a reference to a given release of your software. Creating tag with this:
+## ការបង្កើត និង លុប tag
+Git tags ត្រូវបានប្រើជាចំណុចយោងនៅក្នុងលំហូរការងារអភិវឌ្ឍន៍របស់អ្នក។ អ្នកចង់បង្កើត git tags ថ្មី ដើម្បីអោយមានឯកសារយោងសំរាប់កម្មវិធីរបស់អ្នក។
 ```
 git  tag [tagName]
 ```
-You can delete tag by:
+ការលុបចោល៖
 ```
 git tag -d [tagName]
 ```
 
 ---
-## Push tags
-If you want to push tags you can run this:
+## ការរុញ tags
+ប្រសិនបើអ្នកចង់រុញ tags អ្នកអាចដំណើរការវាបាន៖
 ```
 git push --tags
 ```
 
 --
-## Get the lastest version of the repository
-In order to get the data of last updated on repository, type this in konsole:
+## ការទាញយកកំណៃចុងក្រោយពី repository
+ដើម្បីទាញទិន្នន័យចុងក្រោយពី repo master or branch ណាមួយអ្នកអាចប្រើប្រាស់ពាក្យបញ្ជានេះបាន។
 ```
 git pull [branchName] [remoteURl/remoteName]
 ```
 
 ---
-## Add remote repository
-we can also remote on the git repository with this command line:
+## ការដាក់ remote លើ repository
+យើងក៏អាចដាក់ remote លើ repoនៃ git ជាមួយនឹងបន្ទាត់ពាក្យបញ្ជានេះផងដែរ៖
 ```
 git remote add origin [url]
 ```
 
 ---
-## Define the author name to be used for all commits
-On git we can define the author name on all the commit use on repository:
+## ការបង្ហាញ user លើ repo
+នៅលើ git យើងអាចពិនិត្យឈ្មោះអ្នកនិពន្ធលើការ commit បាន:
 ```
 git config --global user. name [name]
 ```
 
 ---
 ## Define the author email to be used for all commits
-On git we can also define the author email on all the commit use on repository:
+នៅលើ git យើងអាចពិនិត្យអ៊ីម៉ែលអ្នកនិពន្ធលើការ commit បាន:
 ```
 git config --global user. email [email]
 ```
 
 ---
-## Helpful guides that come with git
+## ជម្រើសនៃ git
 ```
 git help -g
 ```
 
 ---
-## Undo the previous commit
-If you wish to revert previous commit, you can do it with this:
+## ការត្រឡប់ទៅការ commit មុន
+ប្រសិនបើអ្នកចង់ត្រឡប់ការប្រព្រឹត្ដិពីមុនអ្នកអាចធ្វើវាជាមួយពាក្យបញ្ជានេះ៖
 ```
 git revert HEAD^
 ```
 ## Forget about files that were tracked but are now in .gitignore
-Here are those commands:
+នេះជាពាក្យបញ្ជា៖
 ```
 git rm -r --cached .
 git add .
@@ -162,54 +162,54 @@ git commit -am " message "
 ```
 
 ---
-## Send local commits to the remote repository
-We can send as branch commits to the remote repository by:
+## ការបញ្ជូនទៅកាន់ remote repository
+យើងអាចបញ្ជូនជា branch ទៅ remote repo បានដោយ៖
 ```
 git push [remoteURL/remoteName] [branch]
 ```
 
 ---
-## Store current work with untracked files
-If you want your file to be untrackable you can do it with:
+## រក្សាទុកការងារបច្ចុប្បន្នដោយគ្មានការ track
+ប្រសិនបើអ្នកចង់អោយឯកសាររបស់អ្នកមិនអាច track បានអ្នកអាចធ្វើវាជាមួយ៖
 ```
 git stash -u
 ```
 
 ---
-## How to bring stashed work back to the working directory
-You can also bring back all the untracked files back to working directory, too.
+## ការដោះឯកសារ untracked 
+អ្នកក៏អាចយកឯកសារដែល untracked មកវិញបានដែរ។
 ```
 git stash pop
 ```
 
 ---
-## Remove a file or a directory from the working index
+## ការលុបឯកសារដោយ index
 
-you can remove the file from cached.
+អ្នកអាចលុបឯកសារពី cached បានដោយ៖
 ```
 git rm --cached [fileName]
 ```
 
 
-In order to remove the directory:
+ដើម្បីលុបថតឯកសារ៖
 ```
 git rm -r --cached [directoryName]
 ```
 
 ---
-## Delete a file or directory(force)
-If you cant delete the file you can force it with this:
+## ការលុបឯកសារ និង ថតឯកសារដោយបង្ខំ(force)
+ប្រសិនអ្នកមិនអាចលុបឯកសារខ្លះបាន អ្នកលុបដោយការបង្ខំបាន។
 ```
 git rm -f [fileName]
 ```
-Forcing delete on directory:
+ការលុបដោយបង្ខំ៖
 ```
 git rm -r -f [directoryname]
 ```
 
 ---
-## Delete remote branch 
-You can remove the remote branch with only command
+## ការលុប remote branch
+អ្នកអាចលុប remote branch ដោយប្រើតែពាក្យបញ្ជាមួយប៉ុណ្ណោះ។
 ```
 git push origin :[branchName]
 ```

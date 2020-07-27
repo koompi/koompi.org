@@ -474,56 +474,59 @@
         <div class="p-lg-5 p-4 bg-white">
           <h2 class="mb-5">ព័ត៌មានពី Link/Unlink</h2>
           
-          <div class="content"><p>To make links between files you need to use ln command. A symbolic link (also known as a soft link or symlink) consists of a special type of file that serves as a reference to another file or directory.</p>
-<p><code>ln</code> is a command-line utility for creating links between files.By default, the <code>ln</code> command creates <strong>hard links</strong>. To create a symbolic link, use the <code>-s</code> <em><code>(--symbolic)</code></em> option.</p>
-<p>There are two types of links in Linux/UNIX systems:</p>
+          <div class="content"><p>ដើម្បីភ្ជាប់ទំនាក់ទំនងរវាងឯកសារមួយទៅឯកសារមួយ អ្នកត្រូវប្រើពាក្យបញ្ជា ln ។ <strong>A Symbolic link</strong> (ត្រូវបាន គេស្គាល់ផងដែរថាជាបណ្តាញតំណភ្ជាប់) ដែលឯកសារពិសេសដើរតួជាឯកសារយោងទៅឯកសារដទៃ ឬថតឯកសារផ្សេងទៀត។ ដើម្បីបង្កើតតំណភ្ជាប់សូមប្រើ<code>-s</code> ។</p>
+<p>ក្នុងប្រព័ន្ធ Linux ការតភ្ជាប់មាន ពីរប្រភេទ៖</p>
 <ul>
 <li>
-<p><strong>Hard links:</strong> You can think a <code>hard link</code> as an additional name for an existing file. Hard links are associating two or more file names with the same <strong>inode</strong>. You can create <code>one</code> or <code>more</code> hard links for a single file.</p>
+<p><strong>Hard links:</strong> តំណឹងមួយបន្ថែមសម្រាប់ឯកសារដែលមានស្រាប់។ តំណភ្ជាប់រឹងភ្ជាប់ឈ្មោះឯកសារពីរឬច្រើន ជាមួយនឹង <strong>inode</strong> ។ អ្នកអាចបង្កើតតំណភ្ជាប់ <code>មួយ</code>ឬ` ច្រើនទៀតសម្រាប់ឯកសារតែមួយ។</p>
 </li>
 <li>
-<p><strong>Soft links:</strong> A soft link is something like a shortcut in Windows. It is an indirect pointer to a file or directory. Unlike a hard link, a symbolic link can point to a <code>file</code> or a <code>directory</code> on a <strong>different</strong> <code>filesystem</code> or <code>partition</code>.</p>
+<p>**Soft links:**គឺជាព្រួញចង្អុលដោយប្រយោលទៅឯកសារឬថតឯកសារ ខុសគ្នាពីតំណឹង។ A symbolic link អាចចង្អុលទៅ <code>ឯកសារ</code> ឬ <code>ថត</code> នៅលើប្រព័ន្ធប្រភេទឯកសារខុសៗគ្នា។</p>
 </li>
 </ul>
 
 
-<div class="notices note" ><p>Hard links cannot be created for directories and files on a different filesystem or partition.</p></div>
+<div class="notices note" ><p>តំណភ្ជាប់រឹងមិនអាចប្រើសម្រាប់ចង្អុលថតឯកសារនិងឯកសារនៅលើប្រព័ន្ធឯកសារផ្សេងគ្នាទេ។</p></div>
 
 <hr>
 <hr>
-<h2 id="syntax">Syntax</h2>
-<p>The ln command syntax for creating symbolic links is as follows:</p>
-<pre><code>ln -s [OPTIONS] FILE LINK
-</code></pre><h2 id="create-hard-link">Create Hard Link</h2>
-<p>That&rsquo;s pretty straightforward - all you have to do is to use the ln command in the following way:</p>
+<h2 id="ទមរង">ទម្រង់</h2>
+<p>ទម្រង់ក្នុងការប្រើប្រាស់ Symbolic link មានដូចខាងក្រោម៖</p>
+<pre><code>ln [OPTIONS] FILE LINK
+</code></pre><h2 id="ករបងកត-hard-link">ការបង្កើត Hard Link</h2>
+<p>អ្វីដែលអ្នកត្រូវធ្វើគឺត្រូវប្រើពាក្យបញ្ជា ln តាមវិធីដូចខាងក្រោមៈ</p>
 <pre><code>ln [file] [hard-link-to-file]
-</code></pre><p>Sample:</p>
+</code></pre><p>ឧទាហរណ៍៖</p>
 <pre><code>ln test.txt test_hard_link.txt
-</code></pre><h2 id="create-symbolic-link">Create Symbolic Link</h2>
-<p>Soft links are created with the ln command. For example, the following would create a soft link named link to a file named file, both in the current directory</p>
+</code></pre><h2 id="ករបងកត-symbolic-link">ការបង្កើត symbolic link</h2>
+<p>ខាងក្រោមនេះអាចបង្កើតជាតំណភ្ជាប់ឈ្មោះនៃឯកសារមួយទៅកាន់ឈ្មោះនៃឯកសារមួយទៀត ដែលស្ថិត នៅក្នុងថតជាមួយគ្នា។</p>
 <pre><code>ln -s &lt;File&gt; &lt;Link&gt;
-</code></pre><p>To verify new soft link run:</p>
+</code></pre><p>ដើម្បីពិនិត្យមើលថា តើវាដំណើរការមិនដំណើរការ ចូរវាយបញ្ចូលពាក្យនេះ។</p>
 <pre><code>ls -l file link
-</code></pre><p>Output:</p>
+</code></pre><p>ការបង្ហាញ:</p>
 <pre><code>-rw-r--r--  1 veryv  wheel  0 Mar  7 22:01 file
 lrwxr-xr-x  1 veryv  wheel  5 Mar  7 22:01 link -&gt; file1
-</code></pre><p>From the above outputs it is clear that a symbolic link named ‘link’ contains the name of the file named ‘file’ to which it is linked.</p>
-<h2 id="overwriteremove-existing-destination">Overwrite/Remove Existing Destination</h2>
-<p>You can make ln override this behavior by using the <code>-f</code> command line option.</p>
+</code></pre><p>តាមលទ្ធផលខាងលើវាច្បាស់ណាស់ថាតំណភ្ជាប់ដែលមានឈ្មោះថា ‘link’ មានឈ្មោះឯកសារដែលមានឈ្មោះថា ‘file’ ដែលមានន័យថាវាត្រូវបានភ្ជាប់។</p>
+<h2 id="ករកបរបញឈបគលដដលមនសរប">ការកែប្រែ/បញ្ឈប់គោលដៅដែលមានស្រាប់</h2>
+<p>អ្នកអាចធ្វើកែប្រែបានដោយប្រើ ln និង ជម្រើសនៃពាក្យបញ្ជា <code>-f</code> ។</p>
 <pre><code>ln -f &lt;File&gt; &lt;Link&gt;
-</code></pre><p>You can use the <code>-i</code> command line option if you want to make all this deletion process interactive.</p>
+</code></pre><p>អ្នកក៏អាចប្រើជម្រើសនៃពាក្យបញ្ជា <code>-i</code> ប្រសិនបើអ្នកចង់ធ្វើឱ្យដំណើរការលុបទាំងអស់នេះមានអន្តរកម្ម។</p>
 <pre><code>ln -i &lt;File&gt; &lt;Link&gt;
-</code></pre><h2 id="delete-linked">Delete Linked</h2>
-<p>There are some other things that you should consider when you need to delete links or the files to which they point.</p>
+</code></pre><h2 id="ករកតផតចតណភជប">ការកាត់ផ្តាច់តំណភ្ជាប់</h2>
+<p>អ្នកគួរតែពិចារណាទៅលើចំណុចមួយចំនួន  នៅពេលដែលអ្នកបញ្ឈប់តំណភ្ជាប់ឯកសារ
 
 
-<div class="notices note" ><p>Let&rsquo;s delete every hard link first by command <code>rm</code> . Remember that every directory entry that points to an inode is simply a hard link.</p></div>
-
-<p>By the way, you can use <code>unlink</code> to delete linked,too.</p>
+<div class="notices note" ><p>ចូរលុបរាល់ Hard link ទាំងអស់ជាមុនដោយពាក្យបញ្ជា <code>rm</code> ។ សូមចងចាំថារាល់ធាតុដែលចង្អុលទៅកាន់ inodeគឺជាបណ្តាញ hard link។</p></div>
+</p>
+<p>ក្រៅពីនេះ អ្នកក៏អាចបញ្ឈប់តំណភ្ជាប់តាមពាក្យបញ្ជា <code>unlink</code> ដូចគ្នា។</p>
 <pre><code>unlink file
 </code></pre>
 
-<div class="notices info" ><p>For more option or flags, using &ndash;help to show.</p></div>
+<div class="notices tip" ><p>ពួកណែនាំឲ្យប្រើតាមវិធីចុងក្រោយក្នុងការកាត់ផ្តាច់តំណភ្ជាប់</p></div>
+
+
+
+<div class="notices info" ><p>សម្រាប់ព័ត៌មានបន្ថែម សូមប្រើ <code>--help</code>។</p></div>
 
 <hr>
 <hr>

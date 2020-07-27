@@ -124,10 +124,14 @@ pi -Scc  ចំណុចមួយគួរតែចៀសវាងការល�
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
       <guid>https://www.koompi.org/kh/basic/github/git_command/</guid>
-      <description>This module is a guide for details and usage of GitHub. If you are a newbie especially coding beginners and get to know what it is.
-Install git We can start to install git by running a command in Konsole:
-pi -S git  Make sure you have already run the command pi -Syu to update your system.
-  Clone an existing repository If you want to clone your existing repository or you clone other people&amp;rsquo;s repository, you run the command below:</description>
+      <description>ការបង្ហាញពីការប្រើប្រាស់ Github ក្នុង ខុនសូលមាននៅក្នុងផ្នែកនេះ។ ប្រសិនបើអ្នកដែលទើបតែរៀនកូដថ្មីៗ អ្នកអាចសិក្សាពីវាបាន។
+ការតម្លើង git យើងអាចចាប់ពីការទាញយក git មកប្រើប្រាស់ក្នុង pc របស់ជាមុន៖
+pi -S git  កុំភ្លេចធ្វើការទាញយកversion ចុងក្រោយនៃប្រព័ន្ធប្រតិបត្តិការជាមុនដោយពាក្យបញ្ជា pi -Syu
+  ការចម្លង repo ដែលមានហើយ ប្រសិនបើអ្នកចង់ចម្លង repo ដែលមានស្រាប់របស់អ្នកឬអ្នកដទៃ អ្នកអាចប្រើពាក្យបញ្ជាខាងក្រោម:
+git clone [url]  Url គឺជាអាស័យធ្ឋាននៃ World Wide Web
+  ចាប់ផ្តើមគម្រោងថ្មី ប្រសិនបើអ្នកចង់បង្កើតកំណែថ្មី អ្នកអាចដំណើរតាមការបង្ហាញ៖
+git init  ការកែប្រែ repository បើអ្នកធ្លាប់បានបង្កើត repo រួច ហើយអ្នកកែប្រែបន្ទាប់ពីបានរុញទៅទុកលើ Web អ្នកអាចធ្វើតាមនេះ។
+git add . git commit -m &amp;quot; message &amp;quot;  ពាក្យនៅក្នុង &amp;ldquo;&amp;hellip; &amp;quot; គឺជាពាក្យសម្គាល់នៅពេលការផ្លាស់ប្តូរពេលរុញទៅ web ម្តងៗ។</description>
     </item>
     
     <item>
@@ -136,9 +140,15 @@ pi -S git  Make sure you have already run the command pi -Syu to update your sys
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
       <guid>https://www.koompi.org/kh/basic/link/link/</guid>
-      <description>To make links between files you need to use ln command. A symbolic link (also known as a soft link or symlink) consists of a special type of file that serves as a reference to another file or directory.
-ln is a command-line utility for creating links between files.By default, the ln command creates hard links. To create a symbolic link, use the -s (--symbolic) option.
-There are two types of links in Linux/UNIX systems:</description>
+      <description>ដើម្បីភ្ជាប់ទំនាក់ទំនងរវាងឯកសារមួយទៅឯកសារមួយ អ្នកត្រូវប្រើពាក្យបញ្ជា ln ។ A Symbolic link (ត្រូវបាន គេស្គាល់ផងដែរថាជាបណ្តាញតំណភ្ជាប់) ដែលឯកសារពិសេសដើរតួជាឯកសារយោងទៅឯកសារដទៃ ឬថតឯកសារផ្សេងទៀត។ ដើម្បីបង្កើតតំណភ្ជាប់សូមប្រើ-s ។
+ក្នុងប្រព័ន្ធ Linux ការតភ្ជាប់មាន ពីរប្រភេទ៖
+  Hard links: តំណឹងមួយបន្ថែមសម្រាប់ឯកសារដែលមានស្រាប់។ តំណភ្ជាប់រឹងភ្ជាប់ឈ្មោះឯកសារពីរឬច្រើន ជាមួយនឹង inode ។ អ្នកអាចបង្កើតតំណភ្ជាប់ មួយឬ` ច្រើនទៀតសម្រាប់ឯកសារតែមួយ។
+  **Soft links:**គឺជាព្រួញចង្អុលដោយប្រយោលទៅឯកសារឬថតឯកសារ ខុសគ្នាពីតំណឹង។ A symbolic link អាចចង្អុលទៅ ឯកសារ ឬ ថត នៅលើប្រព័ន្ធប្រភេទឯកសារខុសៗគ្នា។
+  តំណភ្ជាប់រឹងមិនអាចប្រើសម្រាប់ចង្អុលថតឯកសារនិងឯកសារនៅលើប្រព័ន្ធឯកសារផ្សេងគ្នាទេ។
+   ទម្រង់ ទម្រង់ក្នុងការប្រើប្រាស់ Symbolic link មានដូចខាងក្រោម៖
+ln [OPTIONS] FILE LINK ការបង្កើត Hard Link អ្វីដែលអ្នកត្រូវធ្វើគឺត្រូវប្រើពាក្យបញ្ជា ln តាមវិធីដូចខាងក្រោមៈ
+ln [file] [hard-link-to-file] ឧទាហរណ៍៖
+ln test.txt test_hard_link.txt ការបង្កើត symbolic link ខាងក្រោមនេះអាចបង្កើតជាតំណភ្ជាប់ឈ្មោះនៃឯកសារមួយទៅកាន់ឈ្មោះនៃឯកសារមួយទៀត ដែលស្ថិត នៅក្នុងថតជាមួយគ្នា។</description>
     </item>
     
     <item>

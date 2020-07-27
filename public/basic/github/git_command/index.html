@@ -522,12 +522,12 @@
 <pre><code>git init
 </code></pre><hr>
 <h2 id="save-changes-to-the-repository">Save changes to the repository</h2>
-<p>As you have already build your project, you can make changes  in it.</p>
+<p>As you have already build your project, you can make changes in it.</p>
 <pre><code>git add .
 git commit -m &quot; message &quot;
 </code></pre>
 
-<div class="notices info" ><p>The Words in &ldquo;&hellip; &ldquo;. After you push the changes to the git, the directory that change will appear the words in &ldquo;&hellip;&rdquo;.</p></div>
+<div class="notices info" ><p>The Words in &ldquo;&hellip; &ldquo;. After you push the changes to the git, the directory that changes will appear the words in &ldquo;&hellip;&rdquo;.</p></div>
 
 <hr>
 <h2 id="state-the-current-state-of-the-repository">State the current state of the repository</h2>
@@ -535,7 +535,7 @@ git commit -m &quot; message &quot;
 <pre><code>git status
 </code></pre><hr>
 <h2 id="create-a-new-branch">Create a new branch</h2>
-<p>On Github, we can create branches on the same repository if you do not want to use as a master. To create a branch:</p>
+<p>On Github, we can create branches on the same repository if you do not want to use it as a master. To create a branch:</p>
 <pre><code>git branch [branchName]
 </code></pre><hr>
 <h2 id="list-all-remote-or-local-branches">List all remote or local branches</h2>
@@ -546,18 +546,18 @@ git commit -m &quot; message &quot;
 <p>If you wish to remove the branch, you can do it by run:</p>
 <pre><code>git branch -d [branchName]
 </code></pre><hr>
-<h2 id="merge-changes-into-current-branch">Merge changes into current branch</h2>
-<p>When you are working as a team, you probably work with different branch from the team. So, we can pull the project together with command below:</p>
+<h2 id="merge-changes-into-the-current-branch">Merge changes into the current branch</h2>
+<p>When you are working as a team, you probably work with different branch from the team. So, we can pull the project together with the command below:</p>
 <pre><code>git merge [branchName]
 </code></pre><hr>
 <h2 id="checkout-an-existing-branch">Checkout an existing branch</h2>
-<p>When you want to create new branch, you might want to check out if the branch has already made on the same repository. So that you can create other branches instead.</p>
+<p>When you want to create a new branch, you might want to check out if the branch has already made on the same repository. So that you can create other branches instead.</p>
 <pre><code>git checkout -b [branchName]
-</code></pre><p>In order to create new branch with that name you have to use command below:</p>
+</code></pre><p>To create a new branch with that name you have to use the command below:</p>
 <pre><code>git checkout -b [newBranch]
 </code></pre><hr>
 <h2 id="create-and-delete-tag">Create and Delete tag</h2>
-<p>Git tags are used as reference points in your development workflow. You might want to create new Git tags in order to have a reference to a given release of your software. Creating tag with this:</p>
+<p>Git tags are used as reference points in your development workflow. You might want to create new Git tags to have a reference to a given release of your software. Creating tag with this:</p>
 <pre><code>git  tag [tagName]
 </code></pre><p>You can delete tag by:</p>
 <pre><code>git tag -d [tagName]
@@ -566,8 +566,8 @@ git commit -m &quot; message &quot;
 <p>If you want to push tags you can run this:</p>
 <pre><code>git push --tags
 </code></pre><p>&ndash;</p>
-<h2 id="get-the-lastest-version-of-the-repository">Get the lastest version of the repository</h2>
-<p>In order to get the data of last updated on repository, type this in konsole:</p>
+<h2 id="get-the-latest-version-of-the-repository">Get the latest version of the repository</h2>
+<p>To get the data of last updated on repository, type this in Konsole:</p>
 <pre><code>git pull [branchName] [remoteURl/remoteName]
 </code></pre><hr>
 <h2 id="add-remote-repository">Add remote repository</h2>
@@ -603,13 +603,13 @@ git commit -am &quot; message &quot;
 <pre><code>git stash -u
 </code></pre><hr>
 <h2 id="how-to-bring-stashed-work-back-to-the-working-directory">How to bring stashed work back to the working directory</h2>
-<p>You can also bring back all the untracked files back to working directory, too.</p>
+<p>You can bring back all the untracked files back to the working directory, too.</p>
 <pre><code>git stash pop
 </code></pre><hr>
 <h2 id="remove-a-file-or-a-directory-from-the-working-index">Remove a file or a directory from the working index</h2>
 <p>you can remove the file from cached.</p>
 <pre><code>git rm --cached [fileName]
-</code></pre><p>In order to remove the directory:</p>
+</code></pre><p>To remove the directory:</p>
 <pre><code>git rm -r --cached [directoryName]
 </code></pre><hr>
 <h2 id="delete-a-file-or-directoryforce">Delete a file or directory(force)</h2>

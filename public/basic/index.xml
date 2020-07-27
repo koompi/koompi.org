@@ -82,9 +82,9 @@ pi -S git  Make sure you have already run the command pi -Syu to update your sys
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
       <guid>https://www.koompi.org/basic/link/link/</guid>
-      <description>To make links between files you need to use ln command. A symbolic link (also known as a soft link or symlink) consists of a special type of file that serves as a reference to another file or directory.
-ln is a command-line utility for creating links between files.By default, the ln command creates hard links. To create a symbolic link, use the -s (--symbolic) option.
-There are two types of links in Linux/UNIX systems:</description>
+      <description>To make links between files you need to use ln command. A symbolic link (also known as a soft link or symlink) consists of a special type of file that serves as a reference to another file or directory. To create a symbolic link, use the -s (--symbolic) option.
+There are two types of links in Linux/UNIX systems:
+  Hard links: You can think of a hard link as an additional name for an existing file.</description>
     </item>
     
     <item>

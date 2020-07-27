@@ -67,7 +67,7 @@ Here Special usage to automate the install procedure (Recommend):
 ```
 	
 {{< notice tip >}}
-ការដំឡើងដោយគ្មានការសួរសំណួរ៖
+ការដំឡើងស្វ័យប្រវត្ថិ៖
 {{< /notice >}}
 
 ```

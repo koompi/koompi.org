@@ -6,75 +6,76 @@ draft: false
 # search related keywords
 keywords: ["induct", "instate"]
 ---
-To make links between files you need to use ln command. A symbolic link (also known as a soft link or symlink) consists of a special type of file that serves as a reference to another file or directory.
+ដើម្បីភ្ជាប់ទំនាក់ទំនងរវាងឯកសារមួយទៅឯកសារមួយ អ្នកត្រូវប្រើពាក្យបញ្ជា ln ។ **A Symbolic link** (ត្រូវបាន គេស្គាល់ផងដែរថាជាបណ្តាញតំណភ្ជាប់) ដែលឯកសារពិសេសដើរតួជាឯកសារយោងទៅឯកសារដទៃ ឬថតឯកសារផ្សេងទៀត។ ដើម្បីបង្កើតតំណភ្ជាប់សូមប្រើ`-s` ។
 
-`ln` is a command-line utility for creating links between files.By default, the `ln` command creates **hard links**. To create a symbolic link, use the `-s` *`(--symbolic)`* option.
+ក្នុងប្រព័ន្ធ Linux ការតភ្ជាប់មាន ពីរប្រភេទ៖
 
-There are two types of links in Linux/UNIX systems:
+- **Hard links:** តំណឹងមួយបន្ថែមសម្រាប់ឯកសារដែលមានស្រាប់។ តំណភ្ជាប់រឹងភ្ជាប់ឈ្មោះឯកសារពីរឬច្រើន ជាមួយនឹង **inode** ។ អ្នកអាចបង្កើតតំណភ្ជាប់ `មួយ`ឬ` ច្រើនទៀតសម្រាប់ឯកសារតែមួយ។
 
-- **Hard links:** You can think a `hard link` as an additional name for an existing file. Hard links are associating two or more file names with the same **inode**. You can create `one` or `more` hard links for a single file.
-
-- **Soft links:** A soft link is something like a shortcut in Windows. It is an indirect pointer to a file or directory. Unlike a hard link, a symbolic link can point to a `file` or a `directory` on a **different** `filesystem` or `partition`.
+- **Soft links:**គឺជាព្រួញចង្អុលដោយប្រយោលទៅឯកសារឬថតឯកសារ ខុសគ្នាពីតំណឹង។ A symbolic link អាចចង្អុលទៅ `ឯកសារ` ឬ `ថត` នៅលើប្រព័ន្ធប្រភេទឯកសារខុសៗគ្នា។
 
 {{< notice note >}}
-Hard links cannot be created for directories and files on a different filesystem or partition.
+តំណភ្ជាប់រឹងមិនអាចប្រើសម្រាប់ចង្អុលថតឯកសារនិងឯកសារនៅលើប្រព័ន្ធឯកសារផ្សេងគ្នាទេ។
 {{< /notice >}}
 
 ---
 ---
-## Syntax
-The ln command syntax for creating symbolic links is as follows:
+## ទម្រង់
+ទម្រង់ក្នុងការប្រើប្រាស់ Symbolic link មានដូចខាងក្រោម៖
 ```
-ln -s [OPTIONS] FILE LINK
+ln [OPTIONS] FILE LINK
 ```
-## Create Hard Link
-That's pretty straightforward - all you have to do is to use the ln command in the following way:
+## ការបង្កើត Hard Link
+អ្វីដែលអ្នកត្រូវធ្វើគឺត្រូវប្រើពាក្យបញ្ជា ln តាមវិធីដូចខាងក្រោមៈ
 ```
 ln [file] [hard-link-to-file]
 ```
-Sample:
+ឧទាហរណ៍៖
 ```
 ln test.txt test_hard_link.txt
 ```
-## Create Symbolic Link
-Soft links are created with the ln command. For example, the following would create a soft link named link to a file named file, both in the current directory
+## ការបង្កើត symbolic link
+ខាងក្រោមនេះអាចបង្កើតជាតំណភ្ជាប់ឈ្មោះនៃឯកសារមួយទៅកាន់ឈ្មោះនៃឯកសារមួយទៀត ដែលស្ថិត នៅក្នុងថតជាមួយគ្នា។
 ```
 ln -s <File> <Link>
 ```
-To verify new soft link run:
+ដើម្បីពិនិត្យមើលថា តើវាដំណើរការមិនដំណើរការ ចូរវាយបញ្ចូលពាក្យនេះ។
 ```
 ls -l file link
 ```
-Output:
+ការបង្ហាញ:
 ```
 -rw-r--r--  1 veryv  wheel  0 Mar  7 22:01 file
 lrwxr-xr-x  1 veryv  wheel  5 Mar  7 22:01 link -> file1
 ```
-From the above outputs it is clear that a symbolic link named ‘link’ contains the name of the file named ‘file’ to which it is linked.
+តាមលទ្ធផលខាងលើវាច្បាស់ណាស់ថាតំណភ្ជាប់ដែលមានឈ្មោះថា ‘link’ មានឈ្មោះឯកសារដែលមានឈ្មោះថា ‘file’ ដែលមានន័យថាវាត្រូវបានភ្ជាប់។
 
-## Overwrite/Remove Existing Destination
-You can make ln override this behavior by using the `-f` command line option.
+## ការកែប្រែ/បញ្ឈប់គោលដៅដែលមានស្រាប់
+អ្នកអាចធ្វើកែប្រែបានដោយប្រើ ln និង ជម្រើសនៃពាក្យបញ្ជា `-f` ។
 ```
 ln -f <File> <Link>
 ```
-You can use the `-i` command line option if you want to make all this deletion process interactive.
+អ្នកក៏អាចប្រើជម្រើសនៃពាក្យបញ្ជា `-i` ប្រសិនបើអ្នកចង់ធ្វើឱ្យដំណើរការលុបទាំងអស់នេះមានអន្តរកម្ម។
 ```
 ln -i <File> <Link>
 ```
-## Delete Linked
-There are some other things that you should consider when you need to delete links or the files to which they point.
-
+## ការកាត់ផ្តាច់តំណភ្ជាប់
+អ្នកគួរតែពិចារណាទៅលើចំណុចមួយចំនួន  នៅពេលដែលអ្នកបញ្ឈប់តំណភ្ជាប់ឯកសារ
 {{< notice note >}}
-Let's delete every hard link first by command `rm` . Remember that every directory entry that points to an inode is simply a hard link.
+ចូរលុបរាល់ Hard link ទាំងអស់ជាមុនដោយពាក្យបញ្ជា `rm` ។ សូមចងចាំថារាល់ធាតុដែលចង្អុលទៅកាន់ inodeគឺជាបណ្តាញ hard link។
 {{< /notice >}}
 
-By the way, you can use `unlink` to delete linked,too.
+
+ក្រៅពីនេះ អ្នកក៏អាចបញ្ឈប់តំណភ្ជាប់តាមពាក្យបញ្ជា `unlink` ដូចគ្នា។ 
 ```
 unlink file
 ```
+{{< notice tip >}}
+ពួកណែនាំឲ្យប្រើតាមវិធីចុងក្រោយក្នុងការកាត់ផ្តាច់តំណភ្ជាប់
+{{< /notice >}}
 
 {{< notice info >}}
-For more option or flags, using --help to show.
+សម្រាប់ព័ត៌មានបន្ថែម សូមប្រើ `--help`។
 {{< /notice >}}
 
 ---

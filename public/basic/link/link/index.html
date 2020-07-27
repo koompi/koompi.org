@@ -500,15 +500,14 @@
         <div class="p-lg-5 p-4 bg-white">
           <h2 class="mb-5">Link/Unlink</h2>
           
-          <div class="content"><p>To make links between files you need to use ln command. A symbolic link (also known as a soft link or symlink) consists of a special type of file that serves as a reference to another file or directory.</p>
-<p><code>ln</code> is a command-line utility for creating links between files.By default, the <code>ln</code> command creates <strong>hard links</strong>. To create a symbolic link, use the <code>-s</code> <em><code>(--symbolic)</code></em> option.</p>
+          <div class="content"><p>To make links between files you need to use ln command. A symbolic link (also known as a soft link or symlink) consists of a special type of file that serves as a reference to another file or directory. To create a symbolic link, use the <code>-s</code> <em><code>(--symbolic)</code></em> option.</p>
 <p>There are two types of links in Linux/UNIX systems:</p>
 <ul>
 <li>
-<p><strong>Hard links:</strong> You can think a <code>hard link</code> as an additional name for an existing file. Hard links are associating two or more file names with the same <strong>inode</strong>. You can create <code>one</code> or <code>more</code> hard links for a single file.</p>
+<p><strong>Hard links:</strong> You can think of a <code>hard link</code> as an additional name for an existing file. Hard links are associating two or more file names with the same <strong>inode</strong>.</p>
 </li>
 <li>
-<p><strong>Soft links:</strong> A soft link is something like a shortcut in Windows. It is an indirect pointer to a file or directory. Unlike a hard link, a symbolic link can point to a <code>file</code> or a <code>directory</code> on a <strong>different</strong> <code>filesystem</code> or <code>partition</code>.</p>
+<p><strong>Soft links:</strong> is something like a shortcut in Windows. It is an indirect pointer to a file or directory. Unlike a hard link, a symbolic link can point to a <code>file</code> or a <code>directory</code> on a <strong>different</strong> <code>filesystem</code> or <code>partition</code>.</p>
 </li>
 </ul>
 
@@ -533,11 +532,11 @@
 </code></pre><p>Output:</p>
 <pre><code>-rw-r--r--  1 veryv  wheel  0 Mar  7 22:01 file
 lrwxr-xr-x  1 veryv  wheel  5 Mar  7 22:01 link -&gt; file1
-</code></pre><p>From the above outputs it is clear that a symbolic link named ‘link’ contains the name of the file named ‘file’ to which it is linked.</p>
+</code></pre><p>From the above outputs, it is clear that a symbolic link named ‘link’ contains the name of the file named ‘file’ to which it is linked.</p>
 <h2 id="overwriteremove-existing-destination">Overwrite/Remove Existing Destination</h2>
-<p>You can make ln override this behavior by using the <code>-f</code> command line option.</p>
+<p>You can make ln override this behavior by using the <code>-f</code> command-line option.</p>
 <pre><code>ln -f &lt;File&gt; &lt;Link&gt;
-</code></pre><p>You can use the <code>-i</code> command line option if you want to make all this deletion process interactive.</p>
+</code></pre><p>You can use the <code>-i</code> command-line option if you want to make all this deletion process interactive.</p>
 <pre><code>ln -i &lt;File&gt; &lt;Link&gt;
 </code></pre><h2 id="delete-linked">Delete Linked</h2>
 <p>There are some other things that you should consider when you need to delete links or the files to which they point.</p>
@@ -545,12 +544,16 @@ lrwxr-xr-x  1 veryv  wheel  5 Mar  7 22:01 link -&gt; file1
 
 <div class="notices note" ><p>Let&rsquo;s delete every hard link first by command <code>rm</code> . Remember that every directory entry that points to an inode is simply a hard link.</p></div>
 
-<p>By the way, you can use <code>unlink</code> to delete linked,too.</p>
+<p>By the way, you can use <code>unlink</code> to delete linked, too.</p>
 <pre><code>unlink file
-</code></pre>
+</code></pre><p>
+
+<div class="notices info" ><p>we recommend you guy to use <code>unlink</code> for deleting the link between files.</p></div>
+
+
 
 <div class="notices info" ><p>For more option or flags, using &ndash;help to show.</p></div>
-
+</p>
 <hr>
 <hr>
 </div>
