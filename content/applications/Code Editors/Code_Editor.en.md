@@ -20,7 +20,7 @@ This chart shows the result of which code editors tcommands:
 | **Android Studio** | `pi -S android-stud`     |
 |**Atom**  |  `pi -S atom`    |
 |**RStudio**  |  `pi -S rstudio-desktop-bin`    |
-|**TeXmaker**  | `pi -S texmak`     |
+|**TeXmaker**  | `pi -S texmaker`     |
 |**Mousepad**  |   `pi -S mousepad`   |
 |**Visual Studio Code**  |  `pi -S code --classic`    |
 
