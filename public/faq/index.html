@@ -706,7 +706,7 @@ lib32-nss: /usr/lib32/p11-kit-trust.so exists in filesystem
 </code></pre></div>
   </div>
 </div>
-
+<p>
 
 <div class="card mb-4 rounded-0 shadow border-0">
   <div class="card-header rounded-0 bg-white border p-0 border-0">
@@ -717,6 +717,22 @@ lib32-nss: /usr/lib32/p11-kit-trust.so exists in filesystem
   <div id="missing-qt5-dependency-how-to-install-it-back" class="collapse" data-parent="#accordion">
     <div class="card-body font-secondary text-color"><p>If you accidentally delete QT5 dependency or while you are trying to install some app and it required the Qt5 packages, you can install it back by:</p>
 <pre><code>pi -S qt5-base
+</code></pre></div>
+  </div>
+</div>
+
+
+<div class="card mb-4 rounded-0 shadow border-0">
+  <div class="card-header rounded-0 bg-white border p-0 border-0">
+    <a class="card-link h4 d-flex tex-dark mb-0 py-3 px-4 justify-content-between" data-toggle="collapse" href="#how-to-refresh-the-importing-of-key">
+      <span>How to refresh the importing of Key?</span> <i class="ti-plus text-primary text-right"></i>
+    </a>
+  </div>
+  <div id="how-to-refresh-the-importing-of-key" class="collapse" data-parent="#accordion">
+    <div class="card-body font-secondary text-color"><p>In order to refreshing your PGP Key on KOOMPI OS, you need to run these following lines in Konsole:</p>
+<pre><code>sudo pacman -Scc
+sudo pacman-key --refresh-keys
+sudo pacman -Syyu
 </code></pre></div>
   </div>
 </div>
@@ -743,7 +759,7 @@ have to update key-ring packages that following by command below:</p>
 </code></pre><div class="notices info" ><p>The above command will update the new keys and disable the revoked keys.</p></div>
 </div>
   </div>
-</div>
+</div></p>
 
 
 <div class="card mb-4 rounded-0 shadow border-0">

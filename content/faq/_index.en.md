@@ -328,7 +328,14 @@ If you accidentally delete QT5 dependency or while you are trying to install som
 pi -S qt5-base
 ```
 {{</ faq >}}
-
+{{< faq "How to refresh the importing of Key? " >}}
+In order to refreshing your PGP Key on KOOMPI OS, you need to run these following lines in Konsole:
+```
+sudo pacman -Scc
+sudo pacman-key --refresh-keys
+sudo pacman -Syyu
+```
+{{</ faq >}}
 {{< faq "How To Fix “invalid or corrupted package (PGP signature) ? " >}}
 I tried to upgrade my Arch Linux server using the command `sudo pacman -Syu`, and You got the 
 following error:
