@@ -474,14 +474,13 @@
         <div class="p-lg-5 p-4 bg-white">
           <h2 class="mb-5">ព័ត៌មានពី Search/History</h2>
           
-          <div class="content"><h2 id="hkpipv4poolsks-keyserversnet11371">hkp://ipv4.pool.sks-keyservers.net:11371</h2>
+          <div class="content"><!-- ## hkp://ipv4.pool.sks-keyservers.net:11371 -->
 <p>នៅក្នុងឯកសារបង្រៀននេះយើងនឹងពិនិត្យមើល <code>ពាក្យបញ្ជា</code> និងវិធីដែលអ្នកអាចប្រើវាដើម្បីកំណត់ទីតាំង <strong>locate</strong> ឯកសារក្នុងប្រព័ន្ធឯកសាររបស់អ្នក។ ការស្វែងរកឯកសារគឺជា\សមត្ថភាពមួយអាចរកទីតាំងឯកសារនៅគ្រប់ទីកន្លែងនៃប្រព័ន្ធរបស់អ្នករួមទាំង mount drive និងឧបករណ៍ផ្ទុកចល័ត ព្រមទាំងដំណើរការកន្សោមផ្សេងៗ និងសូម្បីតែដំណើរការពាក្យបញ្ជាផ្សេងទៀត នៅលើឯកសារ ទាំងនោះផងដែរ។ ជាសំណាងល្អមានតែជម្រើសសាមញ្ញ មួយចំនួនដែលត្រូវការ ដើម្បីផ្តល់ជូន អ្នកប្រើប្រាស់ ភាគច្រើន នូវរាល់សមត្ថភាពដែលពួកគេត្រូវការ។</p>
 <hr>
 <hr>
 <p>ពាក្យបញ្ជា <code>find</code> ​​គឺជាបន្ទាត់បញ្ជាសម្រាប់ដំណើរការឋានានុក្រមឯកសារ។ វាអាចត្រូវបានប្រើ ដើម្បីស្វែងរកឯកសារនិងថត ហើយអនុវត្តប្រតិបត្តិការជាបន្តបន្ទាប់។ វាគាំទ្រការស្វែងរកតាមឯកសារ, ថតឯកសារ,កាលបរិច្ឆេទបង្កើត, កាលបរិច្ឆេទកែប្រែម្ចាស់និងសិទ្ធិ។</p>
 <h3 id="សវងរកដយឈម">ស្វែងរកដោយឈ្មោះ</h3>
-<p>ពាក្យបញ្ជាក្នុងប្រភពបើកចំហភាគច្រើន អ្នកមានជម្រើសជាច្រើន។ យើងកំពុងព្យាយាមស្វែងរកឯកសារតាមឈ្មោះ យើងនឹងប្រើជម្រើសមួយក្នុងចំណោមជម្រើសពីរ៖
-As with most open-source commands, you have several available options. And we are attempting to find a file by name, we’ll use one of two options:</p>
+<p>ពាក្យបញ្ជាក្នុងប្រភពបើកចំហភាគច្រើន អ្នកមានជម្រើសជាច្រើន។ យើងកំពុងព្យាយាមស្វែងរកឯកសារតាមឈ្មោះ យើងនឹងប្រើជម្រើសមួយក្នុងចំណោមជម្រើសពីរ៖</p>
 <ul>
 <li><strong>name</strong> – ករណីដែលមានការប្រកាន់</li>
 <li><strong>iname</strong> – ករណីដែលគ្មានការប្រកាន់</li>
@@ -526,26 +525,28 @@ As with most open-source commands, you have several available options. And we ar
 </tr>
 </tbody>
 </table>
-<p>Now, suppose you want to locate all <code>block devices</code> (a file that refers to a device) on your system. With the help of the <code>-type</code> option, we can do that like so:</p>
-<p>ឥឡូវសន្មតថាអ្នកចង់រកទីតាំង <code>ឧបករណ៍រារាំងទាំងអស់ (ឯកសារដែលសំដៅទៅលើឧបករណ៍) នៅលើប្រព័ន្ធរបស់អ្នក។ ដោយមានជំនួយពីជម្រើស </code>-type` យើងអាចធ្វើដូចនោះបាន៖</p>
+<p>ឥឡូវយើងសន្មតថា យើងចង់រកទីតាំង <code>ឧបករណ៍ដែលបានបិទទាំងអស់</code> (ឯកសារដែលសំដៅទៅលើឧបករណ៍) នៅលើប្រព័ន្ធរបស់យើង។ ដោយមានជំនួយពីជម្រើស <code>-type</code> យើងអាចធ្វើដូចនេះបាន៖</p>
 <pre><code>sudo find / -type b
 </code></pre><p>We can use the same option to help us look for configuration files. Say, for instance, you want to locate all regular files that end in the <code>.conf</code> extension. This command would look something like:</p>
+<p>យើងអាចប្រើជម្រើសដូចគ្នា ដើម្បីជួយយើងរកមើលការកំណត់រចនាសម្ព័ន្ធឯកសារ។ ឧទាហរណ៍អយើងចង់រកឯកសារធម្មតាទាំងអស់ដែលបញ្ចប់ដោយផ្នែកបន្ថែម <code>.conf</code> ។ ពាក្យបញ្ជានេះមានលក្ខណះដូចតទៅ៖</p>
 <pre><code>sudo find / -type  f -name &quot;*.conf&quot;
-</code></pre><h3 id="find-modified-files-since-last-60-minutes">Find Modified Files Since Last 60 minutes</h3>
-<p>Do you know you can modify your files by for the last 60 minutes or any minutes.</p>
+</code></pre><h3 id="សវងរកឯកសរដលបនកបរ-៦០-នទមន">ស្វែងរកឯកសារដែលបានកែប្រែ ៦០ នាទីមុន</h3>
+<p>តើអ្នកដឹងទេថាអ្នកអាចរកមើលឯកសាររបស់អ្នកដែលបានកែប្រែក្នុងរយៈពេល ៦០ នាទីចុងក្រោយ។</p>
 <pre><code>find / -mmin -60
-</code></pre><h3 id="find-change-files-since-last-6-minutes">Find Change Files Since Last 6 minutes</h3>
-<p>You can also find the changed files that you have been changed for any minutes, too.</p>
+</code></pre><h3 id="សវងរកឯកសរផលសបតរ-៦០-នទមន">ស្វែងរកឯកសារផ្លាស់ប្តូរ ៦០ នាទីមុន</h3>
+<p>អ្នកក៏អាចរកឃើញឯកសារដែលអ្នកបានផ្លាស់ប្តូរក្នុងរយៈពេល ៦០ នាទីផងដែរ។</p>
 <pre><code>find / -cmin -60
-</code></pre><h3 id="find-all-files-which-are-accessed-7-days">Find All Files Which Are Accessed 7 days</h3>
-<p>Besides finding all the files that have been changed by minutes you can look for the files has been accessed for days.</p>
+</code></pre><h3 id="សវងរកឯកសរទងអសដលបនបររយពល-៧-ថង">ស្វែងរកឯកសារទាំងអស់ដែលបានប្រើរយៈពេល ៧ ថ្ងៃ</h3>
+<p>Besides finding all the files that have been changed by minutes you can look for the files has been accessed for days.
+ក្រៅពីការស្វែងរកឯកសារទាំងអស់ដែលត្រូវបានផ្លាស់ប្តូរដោយនាទីអ្នកអាចរកមើលឯកសារដែលចូលប្រើដោយថ្ងៃផងដែរ។</p>
 <pre><code>find / -atim 7
 </code></pre>
 
-<div class="notices info" ><p>All the numeric number here, you can put with any other number.</p></div>
+<div class="notices info" ><p>លេខទាំងអស់នៅទីនេះ អ្នកអាចប្តូរដាក់ជាមួយលេខផ្សេងទៀតក៏បាន។</p></div>
 
-<h3 id="finding-files-by-size">Finding Files By Size</h3>
+<h3 id="សវងរកឯកសរតមទហ">ស្វែងរកឯកសារតាមទំហំ</h3>
 <p>We can use the find command to locate files of a certain size. Say, for instance, you want to go large and locate files that are over <strong>1000MB</strong>. The find command can be issued, with the help of the <code>-size</code> option, like so:</p>
+<p>យើងអាចប្រើពាក្យបញ្ជារកទីតាំងឯកសារដែលមានទំហំជាក់លាក់។ ឧទាហរណ៍អ្នកចង់ទៅរកឯកសារធំហើយរកទីតាំង ដែលមានំហំលើសពី <strong>១០០០MB</strong> ។ ពាក្យបញ្ជាស្វែងរកអាចត្រូវបានចេញដោយមានជំនួយពីជម្រើស <code>-size</code> ដូចជា៖</p>
 <pre><code>find / -size +1000M
 </code></pre><p>You can also find all files which are greater than or less than, too. For example, <code>( Greater than 10MB Less than 100MB )</code></p>
 <pre><code>find / -size +10M -size -10M

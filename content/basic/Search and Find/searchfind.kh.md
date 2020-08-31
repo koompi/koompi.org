@@ -7,7 +7,7 @@ draft: false
 keywords: ["induct", "instate"]
 ---
 
-## hkp://ipv4.pool.sks-keyservers.net:11371
+<!-- ## hkp://ipv4.pool.sks-keyservers.net:11371 -->
 
 នៅក្នុងឯកសារបង្រៀននេះយើងនឹងពិនិត្យមើល `ពាក្យបញ្ជា` និងវិធីដែលអ្នកអាចប្រើវាដើម្បីកំណត់ទីតាំង **locate** ឯកសារក្នុងប្រព័ន្ធឯកសាររបស់អ្នក។ ការស្វែងរកឯកសារគឺជា\សមត្ថភាពមួយអាចរកទីតាំងឯកសារនៅគ្រប់ទីកន្លែងនៃប្រព័ន្ធរបស់អ្នករួមទាំង mount drive និងឧបករណ៍ផ្ទុកចល័ត ព្រមទាំងដំណើរការកន្សោមផ្សេងៗ និងសូម្បីតែដំណើរការពាក្យបញ្ជាផ្សេងទៀត នៅលើឯកសារ ទាំងនោះផងដែរ។ ជាសំណាងល្អមានតែជម្រើសសាមញ្ញ មួយចំនួនដែលត្រូវការ ដើម្បីផ្តល់ជូន អ្នកប្រើប្រាស់ ភាគច្រើន នូវរាល់សមត្ថភាពដែលពួកគេត្រូវការ។
 
@@ -19,7 +19,6 @@ keywords: ["induct", "instate"]
 
 ### ស្វែងរកដោយឈ្មោះ
 ពាក្យបញ្ជាក្នុងប្រភពបើកចំហភាគច្រើន អ្នកមានជម្រើសជាច្រើន។ យើងកំពុងព្យាយាមស្វែងរកឯកសារតាមឈ្មោះ យើងនឹងប្រើជម្រើសមួយក្នុងចំណោមជម្រើសពីរ៖
-As with most open-source commands, you have several available options. And we are attempting to find a file by name, we’ll use one of two options:
 
 + **name** – ករណីដែលមានការប្រកាន់
 + **iname** – ករណីដែលគ្មានការប្រកាន់
@@ -52,38 +51,41 @@ sudo find / -iname text.txt
 | **c**     |      `ឈ្មោះ Devices`|
 | **b**     |      `Block Devices`|
 
-Now, suppose you want to locate all `block devices` (a file that refers to a device) on your system. With the help of the `-type` option, we can do that like so:
-
-ឥឡូវសន្មតថាអ្នកចង់រកទីតាំង `ឧបករណ៍រារាំងទាំងអស់ (ឯកសារដែលសំដៅទៅលើឧបករណ៍) នៅលើប្រព័ន្ធរបស់អ្នក។ ដោយមានជំនួយពីជម្រើស `-type` យើងអាចធ្វើដូចនោះបាន៖
+ឥឡូវយើងសន្មតថា យើងចង់រកទីតាំង `ឧបករណ៍ដែលបានបិទទាំងអស់` (ឯកសារដែលសំដៅទៅលើឧបករណ៍) នៅលើប្រព័ន្ធរបស់យើង។ ដោយមានជំនួយពីជម្រើស `-type` យើងអាចធ្វើដូចនេះបាន៖
 ```
 sudo find / -type b
 ```
 
 We can use the same option to help us look for configuration files. Say, for instance, you want to locate all regular files that end in the `.conf` extension. This command would look something like:
+
+យើងអាចប្រើជម្រើសដូចគ្នា ដើម្បីជួយយើងរកមើលការកំណត់រចនាសម្ព័ន្ធឯកសារ។ ឧទាហរណ៍អយើងចង់រកឯកសារធម្មតាទាំងអស់ដែលបញ្ចប់ដោយផ្នែកបន្ថែម `.conf` ។ ពាក្យបញ្ជានេះមានលក្ខណះដូចតទៅ៖
 ````
 sudo find / -type  f -name "*.conf"
 ````
-### Find Modified Files Since Last 60 minutes
-Do you know you can modify your files by for the last 60 minutes or any minutes.
+### ស្វែងរកឯកសារដែលបានកែប្រែ ៦០ នាទីមុន
+តើអ្នកដឹងទេថាអ្នកអាចរកមើលឯកសាររបស់អ្នកដែលបានកែប្រែក្នុងរយៈពេល ៦០ នាទីចុងក្រោយ។
 ```
 find / -mmin -60
 ```
-### Find Change Files Since Last 6 minutes
-You can also find the changed files that you have been changed for any minutes, too.
+### ស្វែងរកឯកសារផ្លាស់ប្តូរ ៦០ នាទីមុន
+អ្នកក៏អាចរកឃើញឯកសារដែលអ្នកបានផ្លាស់ប្តូរក្នុងរយៈពេល ៦០ នាទីផងដែរ។
 ```
 find / -cmin -60
 ```
-### Find All Files Which Are Accessed 7 days
+### ស្វែងរកឯកសារទាំងអស់ដែលបានប្រើរយៈពេល ៧ ថ្ងៃ
 Besides finding all the files that have been changed by minutes you can look for the files has been accessed for days.
+ក្រៅពីការស្វែងរកឯកសារទាំងអស់ដែលត្រូវបានផ្លាស់ប្តូរដោយនាទីអ្នកអាចរកមើលឯកសារដែលចូលប្រើដោយថ្ងៃផងដែរ។
 ```
 find / -atim 7
 ```
 {{< notice info >}}
-All the numeric number here, you can put with any other number. 
+លេខទាំងអស់នៅទីនេះ អ្នកអាចប្តូរដាក់ជាមួយលេខផ្សេងទៀតក៏បាន។
 {{< /notice >}}
 
-### Finding Files By Size
+### ស្វែងរកឯកសារតាមទំហំ
 We can use the find command to locate files of a certain size. Say, for instance, you want to go large and locate files that are over **1000MB**. The find command can be issued, with the help of the `-size` option, like so:
+
+យើងអាចប្រើពាក្យបញ្ជារកទីតាំងឯកសារដែលមានទំហំជាក់លាក់។ ឧទាហរណ៍អ្នកចង់ទៅរកឯកសារធំហើយរកទីតាំង ដែលមានំហំលើសពី **១០០០MB** ។ ពាក្យបញ្ជាស្វែងរកអាចត្រូវបានចេញដោយមានជំនួយពីជម្រើស `-size` ដូចជា៖
 ```
 find / -size +1000M
 ```
