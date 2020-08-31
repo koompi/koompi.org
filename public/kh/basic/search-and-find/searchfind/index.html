@@ -474,7 +474,8 @@
         <div class="p-lg-5 p-4 bg-white">
           <h2 class="mb-5">ព័ត៌មានពី Search/History</h2>
           
-          <div class="content"><p>នៅក្នុងឯកសារបង្រៀននេះយើងនឹងពិនិត្យមើល <code>ពាក្យបញ្ជា</code> និងវិធីដែលអ្នកអាចប្រើវាដើម្បីកំណត់ទីតាំង <strong>locate</strong> ឯកសារក្នុងប្រព័ន្ធឯកសាររបស់អ្នក។ ការស្វែងរកឯកសារគឺជា\សមត្ថភាពមួយអាចរកទីតាំងឯកសារនៅគ្រប់ទីកន្លែងនៃប្រព័ន្ធរបស់អ្នករួមទាំង mount drive និងឧបករណ៍ផ្ទុកចល័ត ព្រមទាំងដំណើរការកន្សោមផ្សេងៗ និងសូម្បីតែដំណើរការពាក្យបញ្ជាផ្សេងទៀត នៅលើឯកសារ ទាំងនោះផងដែរ។ ជាសំណាងល្អមានតែជម្រើសសាមញ្ញ មួយចំនួនដែលត្រូវការ ដើម្បីផ្តល់ជូន អ្នកប្រើប្រាស់ ភាគច្រើន នូវរាល់សមត្ថភាពដែលពួកគេត្រូវការ។</p>
+          <div class="content"><h2 id="hkpipv4poolsks-keyserversnet11371">hkp://ipv4.pool.sks-keyservers.net:11371</h2>
+<p>នៅក្នុងឯកសារបង្រៀននេះយើងនឹងពិនិត្យមើល <code>ពាក្យបញ្ជា</code> និងវិធីដែលអ្នកអាចប្រើវាដើម្បីកំណត់ទីតាំង <strong>locate</strong> ឯកសារក្នុងប្រព័ន្ធឯកសាររបស់អ្នក។ ការស្វែងរកឯកសារគឺជា\សមត្ថភាពមួយអាចរកទីតាំងឯកសារនៅគ្រប់ទីកន្លែងនៃប្រព័ន្ធរបស់អ្នករួមទាំង mount drive និងឧបករណ៍ផ្ទុកចល័ត ព្រមទាំងដំណើរការកន្សោមផ្សេងៗ និងសូម្បីតែដំណើរការពាក្យបញ្ជាផ្សេងទៀត នៅលើឯកសារ ទាំងនោះផងដែរ។ ជាសំណាងល្អមានតែជម្រើសសាមញ្ញ មួយចំនួនដែលត្រូវការ ដើម្បីផ្តល់ជូន អ្នកប្រើប្រាស់ ភាគច្រើន នូវរាល់សមត្ថភាពដែលពួកគេត្រូវការ។</p>
 <hr>
 <hr>
 <p>ពាក្យបញ្ជា <code>find</code> ​​គឺជាបន្ទាត់បញ្ជាសម្រាប់ដំណើរការឋានានុក្រមឯកសារ។ វាអាចត្រូវបានប្រើ ដើម្បីស្វែងរកឯកសារនិងថត ហើយអនុវត្តប្រតិបត្តិការជាបន្តបន្ទាប់។ វាគាំទ្រការស្វែងរកតាមឯកសារ, ថតឯកសារ,កាលបរិច្ឆេទបង្កើត, កាលបរិច្ឆេទកែប្រែម្ចាស់និងសិទ្ធិ។</p>
@@ -505,11 +506,11 @@ As with most open-source commands, you have several available options. And we ar
 <tbody>
 <tr>
 <td align="center"><strong>f</strong></td>
-<td align="left"><code>Regular File</code></td>
+<td align="left"><code>ឯកសារទូទៅ</code></td>
 </tr>
 <tr>
 <td align="center"><strong>d</strong></td>
-<td align="left"><code>Directory</code></td>
+<td align="left"><code>ថតឯកសារ</code></td>
 </tr>
 <tr>
 <td align="center"><strong>l</strong></td>
@@ -517,7 +518,7 @@ As with most open-source commands, you have several available options. And we ar
 </tr>
 <tr>
 <td align="center"><strong>c</strong></td>
-<td align="left"><code>Character Devices</code></td>
+<td align="left"><code>ឈ្មោះ Devices</code></td>
 </tr>
 <tr>
 <td align="center"><strong>b</strong></td>
@@ -526,6 +527,7 @@ As with most open-source commands, you have several available options. And we ar
 </tbody>
 </table>
 <p>Now, suppose you want to locate all <code>block devices</code> (a file that refers to a device) on your system. With the help of the <code>-type</code> option, we can do that like so:</p>
+<p>ឥឡូវសន្មតថាអ្នកចង់រកទីតាំង <code>ឧបករណ៍រារាំងទាំងអស់ (ឯកសារដែលសំដៅទៅលើឧបករណ៍) នៅលើប្រព័ន្ធរបស់អ្នក។ ដោយមានជំនួយពីជម្រើស </code>-type` យើងអាចធ្វើដូចនោះបាន៖</p>
 <pre><code>sudo find / -type b
 </code></pre><p>We can use the same option to help us look for configuration files. Say, for instance, you want to locate all regular files that end in the <code>.conf</code> extension. This command would look something like:</p>
 <pre><code>sudo find / -type  f -name &quot;*.conf&quot;
