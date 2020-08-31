@@ -6,57 +6,55 @@ draft: false
 # search related keywords
 keywords: ["induct", "instate"]
 ---
-Network is included by two or more computers that are linked to share resources (such as printers and CDs), exchange files, or allow electronic communications. NetworkManager is the configuration of the network on the interfaces, which is the software utility that aims to simplify the use of computer networks.  
+បណ្តាញត្រូវបានរួមបញ្ចូលដោយកុំព្យូទ័រពីរឬច្រើនដែលត្រូវបានភ្ជាប់ទៅនឹងការចែករំលែកធនធាន (ដូចជា ម៉ាស៊ីនព្រីននិងស៊ីឌី) ការផ្លាស់ប្តូរឯកសារ ឬប្រព័ន្ធទំនាក់ទំនងអេឡិចត្រូនិច។  NetworkManager គឺជាការ កំណត់រចនាសម្ព័ន្ធបណ្តាញនៅលើចំណុចប្រទាក់ដែលជាឧបករណ៍ប្រើប្រាស់ software ដែលមានគោល បំណងធ្វើឱ្យការប្រើប្រាស់បណ្តាញកុំព្យូទ័រមានភាពងាយស្រួល។
 
 ---
 ---
-## Check the connection 
-To ensure about the network connection, go through the following conditions below:
- 1. Your `network interface` is listed and enabled. Otherwise, check the device driver.
- 2. Making sure that you are connected with a network cable or connected to the `wireless LAN`.
- 3. Your network interface has an `IP Address`.
- 4. You can `ping` a local IP Address (e.g. `The default gateway.`)
- 5. You can also `ping` a public IP Address(e.g. `The google DNS server`).
-## Reset Network Manager Service
-This is the easiest way to restart your network using the command line. It’s equivalent to the graphical way of doing it (restarts the Network-Manager service).
+## ពិនិត្យមើលបណ្តាញ 
+ដើម្បីធានាអំពីការភ្ជាប់បណ្តាញ សូមពិនិត្យលក្ខខណ្ឌដូចខាងក្រោម៖
+1. `ចំណុចប្រទាក់បណ្តាញ` របស់អ្នកត្រូវបានចុះបញ្ជីនិងបើកដំណើរការ។ បើមិនដូច្នោះទេ សូមពិនិត្យ​​ មើលកម្មវិធីបញ្ជាឧបករណ៍។
+2. ត្រូវប្រាកដថាអ្នកបានភ្ជាប់ជាមួយខ្សែបណ្តាញឬភ្ជាប់ដោយឥតខ្សែ LAN ។
+3. ​ចំណុចប្រទាក់បណ្តាញរបស់អ្នកមាន `អាស័យដ្ឋាន IP` ។
+4. អ្នកអាច `ping` រកឃើញអាសយដ្ឋាន IPមូលដ្ឋានណាមួយ (ឧ.ផ្លូវចេញចូលលំនាំដើម) 
+`The default gateway.`
+5. អ្នកក៏អាច `ping` អាស័យដ្ឋាន IP សាធារណៈ (ឧ.Google DNS) ។
+
+## កំណត់សេវាកម្មកម្មវិធីគ្រប់គ្រងបណ្តាញឡើងវិញ
+វិធីងាយស្រួលបំផុតគឺ ចាប់ផ្តើមបណ្តាញរបស់អ្នកឡើងវិញដោយប្រើពាក្យបញ្ជានេះ។ វាស្មើនឹងធ្វើតាមក្រាហ្វិច (ចាប់ផ្តើមសេវាកម្មបណ្តាញអ្នកគ្រប់គ្រងឡើងវិញ) ។
+
 ```
 sudo service network-manager restart
 ```
 {{< notice note >}}
-The network icon should disappear for a moment and then reappear.
+រូបតំណាងបណ្តាញគួរតែបាត់មួយភ្លែតហើយបន្ទាប់មកលេចឡើងម្តងទៀត។
 {{< /notice >}}
-## Reset Systemd of Network Manager
-The **service** command is just a wrapper for this method (and also for init.d scripts and Upstart commands). The `systemctl` command is much more versatile than **service**. This is what I usually prefer.
+
+## កំណត់ប្រព័ន្ធឡើងវិញនៃអ្នកគ្រប់គ្រងបណ្តាញ
+ពាក្យបញ្ជា **សេវាកម្ម** គ្រាន់តែជាការផ្តុំវិធីសាស្ត្រ(និងសម្រាប់ស្គ្រីប init.d និងពាក្យបញ្ជាឡើងលើ) ។ ពាក្យបញ្ជា `systemctl` គឺមានលក្ខណៈល្អប្រសើរជាង **សេវាកម្ម** ។
 ```
 sudo systemctl restart NetworkManager.service
 ```
 {{< notice note >}}
-The network icon (again) should disappear for a moment. To check out other `systemctl` options, you can refer to its man page.
+រូបតំណាងបណ្តាញ (ម្តងទៀត) គួរតែបាត់មួយភ្លែត។ ដើម្បីពិនិត្យមើលជម្រើស `systemctl` ផ្សេងទៀតអ្នក អាច​យោងទៅទំព័រមេរបស់វា។
 {{< /notice >}}
-## Turn OFF and ON Network Manager
-This is yet another tool for handling networks. It is a pretty powerful tool that you can find it very practical. Many sysadmins prefer it since it is easy to use.
+## ការបិទនិងបើកកម្មវិធីគ្រប់គ្រងបណ្តាញ
+នេះគឺជាឧបករណ៍មួយទៀតសម្រាប់ដោះស្រាយបណ្តាញ។ វាគឺជាឧបករណ៍ដែលមានអនុភាពគួរសម​ ដែលអ្នកអាចប្រើប្រាស់វាបាន។  **sysadmins** ជាច្រើនចូលចិត្តវា ព្រោះវាងាយស្រួលប្រើប្រាស់។
 
-There are two steps to this method: turning the network off, and then turning it back on.
+វិធីនេះមានពីរផ្នែកដែលត្រូវការបិទបណ្តាញហើយនឹងបើកវាវិញ។
 ```
 sudo nmcli networking off
-```
-
-{{< notice note >}}
-The network will shut down and the icon will disappear. To turn it back on.
-{{< /notice >}}
-```
 sudo nmcli networking on
 ```
 {{< notice info >}}
-You can check out the man page of [nmcli](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwihuZzuxIjqAhWIaCsKHU00BTEQFjAAegQIARAB&url=https%3A%2F%2Fdeveloper.gnome.org%2FNetworkManager%2Fstable%2Fnmcli.html&usg=AOvVaw2V2s22-Jb9gHnm4zLaT3KQ) for more options.
+អ្នកអាចពិនិត្យមើលទំព័ររបស់ [`nmcli`](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwihuZzuxIjqAhWIaCsKHU00BTEQFjAAegQIARAB&url=https%3A%2F%2Fdeveloper.gnome.org%2FNetworkManager%2Fstable%2Fnmcli.html&usg=AOvVaw2V2s22-Jb9gHnm4zLaT3KQ) សម្រាប់ជម្រើសជាច្រើនទៀត។
 {{< /notice >}}
 
-## Ping address
-Ping has been used as the command for testing if you have reach to a host or not.
+## Ping អាស័យដ្ឋាន
+Ping ត្រូវបានប្រើជាពាក្យបញ្ជាសម្រាប់ការសាកល្បងប្រសិនបើអ្នកអាចភ្ជាប់ទៅកាន់គោលដៅរឺអត់។
  ```
 ping www.example.com
 ```
-Down here is the example:
+ខាងក្រោមនេះគឺជាឧទាហរណ៍៖
 ```
 koompi@koompi-os$~ ping www.google.com
 PING www.google.com (172.217.194.147) 56(84) bytes of data.
@@ -66,40 +64,40 @@ PING www.google.com (172.217.194.147) 56(84) bytes of data.
 ```
 
 {{< notice note >}}
-If you receive an error like `pingL icmp open socket: Operation not permitted` when executing `ping`, try to re-install [iputils](#) package.
+ប្រសិនបើអ្នកទទួលបានបញ្ហាបែបនេះ `pingL icmp open socket: បOperation not permitted` នៅពេលប្រតិបត្តិ `ping` ព្យាយាមតំឡើងកញ្ចប់ [iputils] (#)​។
 {{< /notice >}}
 
 ## IP Address
-An **Internet Protocol Address (IP Address)** is a numerical label assigned to each device connected to a `computer network` that uses the `internet protocol` for communication.
+**Internet Protocol Address (IP Address)** គឺជាស្លាកលេខដែលត្រូវបានចាត់ចូលឧបករណ៍នីមួយៗដែលភ្ជាប់ ទៅនឹង `បណ្តាញកុំព្យូទ័រ` ដែលប្រើ `internet protocol` សម្រាប់ទំនាក់ទំនង។
 
-An IP address serves two main functions:
-1. The host or Network interface `identification`
-2. The location `addressing`.
+អាសយដ្ឋាន IP បម្រើមុខងារសំខាន់ពីរ៖
+1. ម៉ាស៊ីនឬបណ្តាញចំណុចប្រទាក់ `អត្តសញ្ញាណ`
+2. ទីតាំង `អាស័យដ្ឋាន` ។
 
-Internet Protocol `version 4` **(IPv4)** defines an IP address as a `32-bit` number.
+Internet Protocol `version 4` **(IPv4)**  កំណត់អាស័យដ្ឋាន IP ជា`៣២ប៊ីត`។
 
+ដើម្បីដឹងថាអាស័យដ្ឋាន IP មួយណាដែលកុំព្យូទ័ររបស់អ្នកមាន អ្នកប្រើពាក្យបញ្ជា `ip` ជាមួយវត្ថុបំណង ` អាស័យដ្ឋាន`។​ សកម្មភាពលំនាំដើមគឺ` បង្ហាញ `ដែលរាយអាស័យដ្ឋាន IP ។ អ្នកក៏អាចលុប `បង្ហាញ`និង
+អក្សរ​​សង្ខេប`អាស័យដ្ឋាន`ជា «addr»ឬ«a»។
 
-To discover which IP addresses your computer has, you use the `ip` command with the object `address`.The default action is `show`, which lists the IP addresses. You can also omit `show` and abbreviate `address` as "addr" or even "a".
-
-The following commands are all equivalent:
+ពាក្យបញ្ជាខាងក្រោមបង្ហាញតម្លៃស្មើគ្នាទាំងអស់៖
 {{% tabs %}}
-  {{% tab "First Choice" %}}
+  {{% tab "ជម្រើសទីមួយ" %}}
    ```
    ip address show
    ```
   {{% /tab %}}
 
-  {{% tab "Second Choice" %}}
+  {{% tab "ជម្រើសទីពីរ" %}}
   ```
   ip addr show
   ```
   {{% /tab %}}
-  {{% tab "Third Choice" %}}
+  {{% tab "ជម្រើសទីបី" %}}
   ```
   ip addr 
   ```
   {{% /tab %}}
-   {{% tab "Forth Choice" %}}
+   {{% tab "ជម្រើសទីបួន" %}}
   ```
   ip a
   ```
@@ -107,7 +105,7 @@ The following commands are all equivalent:
 
 {{% tabs %}}
 
-The output is down below:
+ការបង្ហាញមានខាងក្រោម៖
 ```
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
@@ -122,13 +120,12 @@ The output is down below:
     inet6 fe80::ba0c:6781:2174:12f4/64 scope link noprefixroute 
        valid_lft forever preferred_lft forever
 ```
-We can see two IP addresses, along with a lot of other information. The IP addresses are associated with the network interface controller(NICs). The `ip` command tries to be helpful and provides a bunch of information about the interface, too.
+យើងអាចមើលឃើញអាស័យដ្ឋាន IP ពីររួមជាមួយព័ត៌មានជាច្រើនទៀត។ អាសយដ្ឋាន IP ត្រូវបានភ្ជាប់ជាមួយ​ឧបករណ៍ ត្រួតពិនិត្យចំណុចប្រទាក់បណ្តាញ (NICs) ។ អាសយដ្ឋាន IP ដំបូងគឺជាអាស័យដ្ឋានរង្វិលជុំ (ខាងក្នុង) ដែលត្រូវបានប្រើដើម្បីទំនាក់ទំនងនៅក្នុងកុំព្យូទ័រ។ ឯទីពីរគឺអាសយដ្ឋាន IP ពិតប្រាកដ (ខាងក្រៅ) ដែលកុំព្យូទ័រ​ មានលើបណ្តាញមូលដ្ឋាន (LAN) ។
 
-The first IP address is the (internal) loopback address used to communicate within the computer. The second is the actual (external) IP address the computer has on the local area network (LAN).
 
-Let's break down all the information we received:
+សូមបំបែករាល់ព័ត៌មានដែលយើងបានទទួល៖
 
-- **lo**: The network interface name as a string.
+- **lo**: ឈ្មោះចំណុចប្រទាក់បណ្តាញជាអក្សរ។
 
 - **<LOOPBACK,UP,LOWER_UP>**: This is a loopback interface. It is `UP`, meaning it's operation. The [Physical networking layer](https://en.wikipedia.org/wiki/OSI_model)**(layer one)** is also up.
 - **mtu 65536**: The maximum transfer unit. This is the size of the largest chunk of data this interface can transmit.
@@ -155,14 +152,13 @@ Let's break down all the information we received:
 
 - **<BROADCAST,MULTICAST,UP,LOWER_UP>**: This interface supports `broad-` and `multicasting`, and the interface is UP (operational and connected). The hardware layer of the network (layer one) is also UP.
 
-## Display Only IPv4 and IPv6 Addresses
-
-If you want to limit the output to the IP version 4 addresses, you can use the `-4` option, as follows:
+## បង្ហាញតែអាស័យដ្ឋាន IPv4 និង IPv6
+ប្រសិនបើអ្នកចង់កំណត់លទ្ធផលទៅអាស័យដ្ឋាន IP ជំនាន់ទី ៤ អ្នកអាចប្រើជម្រើស `-4` ដូចខាងក្រោម៖
 
 ```
 ip -4 addr
 ```
-Output:
+លទ្ធផល៖
 ```
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
     inet 127.0.0.1/8 scope host lo
@@ -171,11 +167,11 @@ Output:
     inet 192.168.10.107/24 brd 192.168.10.255 scope global dynamic noprefixroute wlan0
        valid_lft 4487sec preferred_lft 4487sec
 ```
-if you want to limit the output to the IP version 6 addresses, you can use the `-6` option, as follows:
+ប្រសិនបើអ្នកចង់កំណត់លទ្ធផលទៅអាស័យដ្ឋាន IP ជំនាន់ ៦ អ្នកអាចប្រើជម្រើស `-6` ដូចខាងក្រោមៈ
 ```
 ip -6 addr
 ```
-Output:
+លទ្ធផល៖
 ```
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 state UNKNOWN qlen 1000
     inet6 ::1/128 scope host 
@@ -185,17 +181,16 @@ Output:
        valid_lft forever preferred_lft forever
 ```
 
-## Display Information for Single Interface
-If you want to see the IP address information for a single interface, you can use the `show` and `dev` options, and name the interface, as shown below.
-
+## បង្ហាញព័ត៌មានសម្រាប់ Interfaceមួយ
+ប្រសិនបើអ្នកចង់ឃើញព័ត៌មានអាស័យដ្ឋាន IP ជា Interface អ្នកអាចប្រើជម្រើស `show` និង `dev` ហើយដាក់ឈ្មោះថាចំណុចប្រទាក់ដូចបង្ហាញខាងក្រោម។
 ```
 ip addr show dev <Network_Interface_Name>
 ```
-For example:
+ឧទាហរណ៍៖
 ```
 ip addr show dev lo
 ```
-Output:
+លទ្ធផល៖
 ```
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
@@ -260,7 +255,7 @@ ip link show
 2: wlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DORMANT group default qlen 1000
     link/ether 34:41:5d:83:dd:fd brd ff:ff:ff:ff:ff:ff
 ```
-To see a single network interface, just add its name to the command, as shown below:
+ដើម្បីមើលឃើញចំណុចប្រទាក់បណ្តាញតែមួយ​ អ្នកគ្រាន់តែបន្ថែមឈ្មោះរបស់វាទៅពាក្យបញ្ជាដូចដែលបានបង្ហាញខាងក្រោម៖
 ```
 ip link show <Network_Interface_Name>
 ```

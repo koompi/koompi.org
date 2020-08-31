@@ -12,12 +12,12 @@ keywords: ["induct", "instate"]
 ---
 
 ### Root Access through Terminal(Konsole)
-If you attemp attempt to log you in as **"super user."** You can actually use this command to log in as any user on the machine.
+If you attemp to log you in as **"super user."** You can actually use this command to log in as any user on the machine.
 ```
 su -
 ``` 
 {{< notice note >}}
-It will be required your password for root. Please make sure enter your password correctly because while you was typing in it was hidden.
+It will be required your password for root. Please make sure to enter your password correctly because while you were typing in it was hidden.
 {{< /notice >}}
 
 When you are logged in as **root**, the command prompt should end these symbols:
@@ -52,12 +52,12 @@ If you want to lock the root account, enter the following command to remove the 
 ```
 sudo passwd -dl root
 ```
-If you wish to unlock root account, enter the following command to set new password and unlock it:
+ប្រសិនបើអ្នកចង់ដោះសោរគណនី root សូមបញ្ចូលពាក្យបញ្ជាខាងក្រោមដើម្បីកំណត់លេខសំងាត់ថ្មីហើយដោះសោរវា៖
 ```
 sudo passwd root
 ```
 {{< notice note >}}
-You'll be prompted to create a new password and enter it twice. Once a password has been set, the root account will be active.
+អ្នកនឹងត្រូវបានសួរឱ្យបង្កើតពាក្យសម្ងាត់ថ្មីហើយបញ្ចូលវាពីរដង។ នៅពេលដែលពាក្យសម្ងាត់ត្រូវបានកំណត់គណនី root នឹងដំណើរការ។
 {{< /notice >}}
 
 ----

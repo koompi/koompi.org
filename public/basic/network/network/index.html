@@ -504,7 +504,7 @@
 <hr>
 <hr>
 <h2 id="check-the-connection">Check the connection</h2>
-<p>To ensure about the network connection, go through the following conditions below:</p>
+<p>To ensure​the network connection, go through the following conditions below:</p>
 <ol>
 <li>Your <code>network interface</code> is listed and enabled. Otherwise, check the device driver.</li>
 <li>Making sure that you are connected with a network cable or connected to the <code>wireless LAN</code>.</li>
@@ -519,7 +519,7 @@
 
 <div class="notices note" ><p>The network icon should disappear for a moment and then reappear.</p></div>
 
-<h2 id="reset-systemd-of-network-manager">Reset Systemd of Network Manager</h2>
+<h2 id="reset-system-of-network-manager">Reset System of Network Manager</h2>
 <p>The <strong>service</strong> command is just a wrapper for this method (and also for init.d scripts and Upstart commands). The <code>systemctl</code> command is much more versatile than <strong>service</strong>. This is what I usually prefer.</p>
 <pre><code>sudo systemctl restart NetworkManager.service
 </code></pre>
@@ -530,17 +530,13 @@
 <p>This is yet another tool for handling networks. It is a pretty powerful tool that you can find it very practical. Many sysadmins prefer it since it is easy to use.</p>
 <p>There are two steps to this method: turning the network off, and then turning it back on.</p>
 <pre><code>sudo nmcli networking off
-</code></pre>
-
-<div class="notices note" ><p>The network will shut down and the icon will disappear. To turn it back on.</p></div>
-
-<pre><code>sudo nmcli networking on
+sudo nmcli networking on
 </code></pre>
 
 <div class="notices info" ><p>You can check out the man page of <a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwihuZzuxIjqAhWIaCsKHU00BTEQFjAAegQIARAB&amp;url=https%3A%2F%2Fdeveloper.gnome.org%2FNetworkManager%2Fstable%2Fnmcli.html&amp;usg=AOvVaw2V2s22-Jb9gHnm4zLaT3KQ">nmcli</a> for more options.</p></div>
 
 <h2 id="ping-address">Ping address</h2>
-<p>Ping has been used as the command for testing if you have reach to a host or not.</p>
+<p>Ping has been used as the command for testing if you have reached to a host or not.</p>
 <pre><code>ping www.example.com
 </code></pre><p>Down here is the example:</p>
 <pre><code>koompi@koompi-os$~ ping www.google.com

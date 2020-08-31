@@ -180,7 +180,7 @@ This document is containing only apps that possibly to install in the OS, If you
       
       <guid>https://www.koompi.org/basic/network/network/</guid>
       <description>Network is included by two or more computers that are linked to share resources (such as printers and CDs), exchange files, or allow electronic communications. NetworkManager is the configuration of the network on the interfaces, which is the software utility that aims to simplify the use of computer networks.
-  Check the connection To ensure about the network connection, go through the following conditions below:
+  Check the connection To ensure​the network connection, go through the following conditions below:
  Your network interface is listed and enabled.</description>
     </item>
     
@@ -212,7 +212,7 @@ passwd Sample Output:
       
       <guid>https://www.koompi.org/basic/power-management/power_management/</guid>
       <description>Power Management is a feature that turns off the power or switches system&amp;rsquo;s components to a low-power state when inactive, which is located at the corner of the screen.
-You can run those services through Konsole also. So, This is the guide for those commands.
+You can also run those services through Konsole also. So, This is the guide for those commands.
   Poweroff and Reboot If you want to shut down your system you can follow the command below:
 poweroff Reboot is referring to restart your system.</description>
     </item>
@@ -232,7 +232,7 @@ poweroff Reboot is referring to restart your system.</description>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
       <guid>https://www.koompi.org/basic/search-and-find/searchfind/</guid>
-      <description>In this tutorial, we&amp;rsquo;ll look at the commands and how you can quickly use it to locate files in your filesystem. Finding file is a powerful utility capable of locating files anywhere on your system including mounted drives and removable storage, processing regular expressions, and even running other commands on those files. Fortunately, only a few simple options are needed to provide most users with all the capability they need.</description>
+      <description>In this tutorial, we&amp;rsquo;ll look at the commands and how you can quickly use it to locate files in your filesystem. Finding files is a powerful utility capable of locating files anywhere on your system including mounted drives and removable storage, processing regular expressions, and even running other commands on those files. Fortunately, only a few simple options are needed to provide most users with all the capabilities they need.</description>
     </item>
     
     <item>

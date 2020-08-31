@@ -8,7 +8,7 @@ keywords: ["induct", "instate"]
 ---
 Power Management is a feature that turns off the power or switches system's components to a low-power state when inactive, which is located at the corner of the screen.
 
-You can run those services through Konsole also. So, This is the guide for those commands.
+You can also run those services through Konsole also. So, This is the guide for those commands.
 
 ---
 ---
@@ -18,7 +18,7 @@ If you want to shut down your system you can follow the command below:
 ```
 poweroff    
 ```
-Reboot is referring to restart your system. After you ran it, it is immediately reset your system.
+Reboot is referring to restart your system. After you run it, it immediately resets your system.
 ```
 reboot  
 ```

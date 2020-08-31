@@ -11,7 +11,7 @@ Network is included by two or more computers that are linked to share resources 
 ---
 ---
 ## Check the connection 
-To ensure about the network connection, go through the following conditions below:
+To ensure​the network connection, go through the following conditions below:
  1. Your `network interface` is listed and enabled. Otherwise, check the device driver.
  2. Making sure that you are connected with a network cable or connected to the `wireless LAN`.
  3. Your network interface has an `IP Address`.
@@ -25,7 +25,7 @@ sudo service network-manager restart
 {{< notice note >}}
 The network icon should disappear for a moment and then reappear.
 {{< /notice >}}
-## Reset Systemd of Network Manager
+## Reset System of Network Manager
 The **service** command is just a wrapper for this method (and also for init.d scripts and Upstart commands). The `systemctl` command is much more versatile than **service**. This is what I usually prefer.
 ```
 sudo systemctl restart NetworkManager.service
@@ -39,12 +39,6 @@ This is yet another tool for handling networks. It is a pretty powerful tool tha
 There are two steps to this method: turning the network off, and then turning it back on.
 ```
 sudo nmcli networking off
-```
-
-{{< notice note >}}
-The network will shut down and the icon will disappear. To turn it back on.
-{{< /notice >}}
-```
 sudo nmcli networking on
 ```
 {{< notice info >}}
@@ -52,7 +46,7 @@ You can check out the man page of [nmcli](https://www.google.com/url?sa=t&rct=j&
 {{< /notice >}}
 
 ## Ping address
-Ping has been used as the command for testing if you have reach to a host or not.
+Ping has been used as the command for testing if you have reached to a host or not.
  ```
 ping www.example.com
 ```

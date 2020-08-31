@@ -484,90 +484,98 @@
 
 <div class="notices note" ><p>ព័ត៌មានក្រុមអ្នកប្រើប្រាស់រងត្រូវបានដំណើរការទៅលើប្រព័ន្ធគាំទ្រក្រុមអ្នកប្រើ ហើយជាពិសេសគាំទ្រទៅលើ អ្នកប្រើប្រាស់ច្បាស់លាស់តែប៉ុណ្ណោះ។</p></div>
 
-<p>The <code>id</code> command also writes effective user and group IDs, but only for the user that invoked the <code>id</code> command. <strong>(If the User parameter is specified with the id command, the effective IDs are assumed to be identical to real IDs.)</strong> If the effective and real IDs for the invoking user are different, the id command writes the following effective ID information, when applicable:</p>
+<p>ពាក្យបញ្ជា <code>id</code> ក៏ធ្វើការកត់សម្គាល់លេខសម្គាល់អ្នកប្រើប្រាស់និងក្រុមអ្នកប្រើប្រាស់។ <strong>ប្រសិនបើប៉ារ៉ាម៉ែត្រ អ្នកប្រើប្រាស់ត្រូវបានបញ្ជាក់ជាមួយនឹងលេខសម្គាល់​ នោះលេខសម្គាល់ ដែលមានប្រសិទ្ធិភាពត្រូវបាន​​ សន្មតថាដូចគ្នាបេះបិទនឹងអត្តសញ្ញាណប័ណ្ណពិត។)</strong></p>
+<p>ប្រសិនបើលេខសម្គាល់ដែលមានប្រសិទ្ធិភាពនិងពិតប្រាកដសម្រាប់អ្នកប្រើប្រាស់ខុសគ្នា ​នោះលេខសម្គាល់ អត្តសញ្ញាណប័ណ្ណមានប្រសិទ្ធិភាពដូចខាងក្រោម នៅពេលអនុវត្ត៖</p>
 <ul>
-<li>Effective user name and effective user ID</li>
-<li>Name of the effective user&rsquo;s group and effective group ID</li>
+<li>ឈ្មោះអ្នកប្រើប្រាស់និងលេខសម្គាល់មានប្រសិទ្ធភាព</li>
+<li>ឈ្មោះក្រុមអ្នកប្រើប្រាស់និងលេខសម្គាល់ក្រុមមានប្រសិទ្ធភាព</li>
 </ul>
 
 
-<div class="notices info" ><p>The <code>id</code> command will fail if the specified user does not exist or if the command cannot read the user or group information.</p></div>
+<div class="notices info" ><p>ពាក្យបញ្ជា <code>id</code> នឹងបរាជ័យ ប្រសិនបើអ្នកប្រើប្រាស់ដែលបានបញ្ជាក់មិនមាន ឬប្រសិនបើពាក្យបញ្ជា មិនអាចអានព័ត៌មានអ្នកប្រើប្រាស់ឬក្រុមបាននោះ។</p></div>
 
-<p>The id command can be altered with the many flags, To check the flags of it run.</p>
+<p>ពាក្យបញ្ជា <code>id</code>អាចប្រើប្រាស់ជាមួយជម្រើសជាច្រើនទៀត ដើម្បីធ្វើការមើលជម្រើសដែលអាចប្រើប្រាស់ បានសូមវាយបញ្ចូលដូចខាងក្រោម៖</p>
 <pre><code>id --help
-</code></pre><h3 id="display-current-user">Display Current User</h3>
-<p>To display all system identifications for the current user, enter:</p>
+</code></pre><h3 id="ករបងហញលខសមគលបចចបបនន">ការបង្ហាញលេខសម្គាល់បច្ចុប្បន្ន</h3>
+<p>ដើម្បីបង្ហាញអត្តសញ្ញាណប្រព័ន្ធទាំងអស់សម្រាប់អ្នកប្រើប្រាស់បច្ចុប្បន្នសូមបញ្ចូល៖</p>
 <pre><code>id 
-</code></pre><p>Output for the id command is displayed in the following format:</p>
+</code></pre><p>ការបង្ហាញត្រូវបានបង្ហាញដូចខាងក្រោម៖</p>
 <pre><code>uid=1001(koompi) gid=1001(koompi) groups=1001(koompi),90(network),98(power),985(users),988(storage),993(input),995(audio),998(wheel)
-</code></pre><h3 id="display-group-id">Display Group ID</h3>
-<p>To display all group ID numbers for the current user, enter:</p>
+</code></pre><h3 id="ករបងហញលខសមគលករមបចចបបនន">ការបង្ហាញលេខសម្គាល់ក្រុមបច្ចុប្បន្ន</h3>
+<p>ដើម្បីបង្ហាញលេខសម្គាល់ក្រុមទាំងអស់សម្រាប់អ្នកប្រើប្រាស់បច្ចុប្បន្នសូមបញ្ចូល៖</p>
 <pre><code>id -G
-</code></pre><p>Output is displayed in the following format:</p>
+</code></pre><p>ការបង្ហាញត្រូវបានបង្ហាញដូចខាងក្រោម៖</p>
 <pre><code>1001 90 98 985 988 993 995 998
-</code></pre><h3 id="display-group-name">Display Group Name</h3>
+</code></pre><h3 id="ករបងហញឈមនករមបចចបបនន">ការបង្ហាញឈ្មោះនៃក្រុមបច្ចុប្បន្ន</h3>
+<p>ការបង្ហាញឈ្មោះនៃក្រុមបច្ចុប្បន្ន​ សូមបញ្ចូលដូចតទៅ៖</p>
 <pre><code>id -Gn
-</code></pre><p>Output is displayed in the following format:</p>
+</code></pre><p>ការបង្ហាញបោះចេញដូចតទៅ៖</p>
 <pre><code>koompi network power users storage input audio wheel
-</code></pre><p>To display the real group name for the current user, enter:</p>
+</code></pre><p>ដើម្បីបង្ហាញឈ្មោះក្រុមពិតប្រាកដជាក់លាក់មួយសម្រាប់អ្នកប្រើប្រាស់បច្ចុប្បន្នបញ្ចូល៖</p>
 <pre><code>id -gnr
-</code></pre><p>Output from the format:</p>
+</code></pre><p>ការបង្ហាញ៖</p>
 <pre><code>koompi
-</code></pre><h3 id="create-user">Create User</h3>
-<p>The <code>useradd</code> command creates a new user account using the values specified on the command line plus the default value from the system. Depending on command-line options, the useradd command will update system files and may also create the new user at home directory and copy initial files.</p>
+</code></pre><h3 id="ករបងកតអនកបរបរស">ការបង្កើតអ្នកប្រើប្រាស់</h3>
+<p>The <code>useradd</code> command creates a new user account using the values specified on the command line plus the default value from the system. Depending on command-line options, the useradd command will update system files and may also create the new user at home directory and copy initial files.
+ពាក្យបញ្ជា <code>useradd</code> បង្កើតគណនីអ្នកប្រើថ្មីដោយប្រើតម្លៃដែលបានបញ្ជាក់តាមពាក្យបញ្ជាលំនាំដើមពីប្រព័ន្ធ។ ដោយផ្អែកលើ​ ជម្រើសពាក្យបញ្ជា​ useradd នឹងធ្វើបច្ចុប្បន្នភាពចុងក្រោយឯកសារប្រព័ន្ធហើយក៏អាចបង្កើត​​អ្នកប្រើប្រាស់ថ្មី នៅទីតាំងផ្ទះនិងចម្លងឯកសារដែលត្រូវការផងដែរ។​</p>
 <pre><code>useradd &lt;USER_NAME&gt;
 </code></pre>
 
-<div class="notices note" ><p>Similarly, if the username already exists in an external user database, useradd will deny the user account creation request.</p></div>
+<div class="notices note" ><p>ស្រដៀងគ្នានេះដែរ​ ប្រសិនបើឈ្មោះអ្នកប្រើប្រាស់មានរួចហើយនៅក្នុងឃ្លាំងទិន្នន័យខាងក្រៅនោះ ពាក្យ​បញ្ជា​ នឹងបដិសេធការស្នើសុំបង្កើតគណនីអ្នកប្រើប្រាស់។</p></div>
 
 
 
-<div class="notices note" ><p>Usernames may only be up to 32 characters long.</p></div>
+<div class="notices info" ><p>ឈ្មោះអ្នកប្រើប្រាស់អាចមានត្រឹមតែ ៣២តួអក្សរតែប៉ុណ្ណោះ។</p></div>
 
-<h3 id="delete-user">Delete User</h3>
+<h3 id="ករលបគណនអនកបរបរស">ការលុបគណនីអ្នកប្រើប្រាស់</h3>
+<p>ពាក្យបញ្ជា <code>userdel</code> កែប្រែឯកសារគណនីប្រព័ន្ធដោយលុបរាល់សមាសធាតុទាំងអស់ដែលយោងទៅលើ ឈ្មោះអ្នកប្រើប្រាស់​ <code>LOGIN</code>។
+
+
+<div class="notices note" ><p>ឈ្មោះអ្នកប្រើប្រាស់ត្រូវតែមានទើបបញ្ជាដំណើរការ។</p></div>
+</p>
 <p>The <code>userdel</code>  command modifies the system account files, deleting all entries that refer to the user name <code>LOGIN</code>. The named user must exist.</p>
 <pre><code>userdel &lt;EXISTING_USER_NAME&gt;
-</code></pre><h3 id="rename-user">Rename User</h3>
-<p>The <code>usermod</code> command modifies the system account files to reflect the changes that are specified on the command line.</p>
+</code></pre><h3 id="ករបតរឈមអនកបរបរស">ការប្តូរឈ្មោះអ្នកប្រើប្រាស់</h3>
+<p>ពាក្យបញ្ជា <code>usermod</code> កែប្រែឯកសារគណនីប្រព័ន្ធ ដើម្បីឆ្លុះបញ្ចាំងពីការប្តូរដែលត្រូវបានបញ្ជាក់ដូចពាក្យបញ្ជា។</p>
 <pre><code>usermod -l [NEW_USER_NAME] [OLD_USER_NAME]
 </code></pre>
 
-<div class="notices info" ><p>you must make certain that the named user is not executing any processes when this command is being executed. <strong>usermod</strong> checks only on open-source platform.</p></div>
+<div class="notices warning" ><p>អ្នកត្រូវប្រាកដថាឈ្មោះ​អ្នកប្រើប្រាស់ដែលមានមិនដំណើរការនៅពេលដំណើរការពាក្យបញ្ជានេះ។ <code>usermod</code>ពិនិត្យតែលើវេទិកាប្រភពបើកចំហតែប៉ុណ្ណោះ។</p></div>
 
-<p>You can add an existing user to the group by</p>
+<p>អ្នកអាចបន្ថែមអ្នកប្រើប្រាស់ដែលមានស្រាប់នៅក្នុងក្រុមដោយ៖</p>
 <pre><code>usermod -aG [GROUP_NAME][USER_NAME]
-</code></pre><h3 id="grant-sudo-privileges-to-existing-user">Grant &ldquo;sudo&rdquo; privileges to Existing User</h3>
+</code></pre><h3 id="ករសទធ-សដទលអនកបរបរស">ការសិទិ្ធ «សូ៊ដូ»​ទៅលើអ្នកប្រើប្រាស់</h3>
 
 
-<div class="notices tip" ><p>If you do not know anything about the sudo <a href="">click here</a></p></div>
+<div class="notices tip" ><p>ប្រសិនបើអ្នកមិនដឹងអ្វីទាំងអស់អំពីស៊ូដូ <a href="">ចុចទីនេះ</a></p></div>
 
 <pre><code>sudo usermod -a -G sudo [USER]
 </code></pre><ul>
-<li><strong>-a</strong> &mdash; append the user to the supplemental GROUPS mentioned by the -G option without removing the user from other groups</li>
-<li><strong>-G</strong> &mdash; new list of supplementary GROUPS</li>
+<li><strong>-a</strong> &mdash; បន្ថែមអ្នកប្រើប្រាស់ទៅក្រុមបន្ថែមដែលបានលើកឡើងដោយជំរើស -G ដោយមិនយកអ្នកប្រើប្រាស់ចេញពីក្រុមផ្សេងទៀត</li>
+<li><strong>-G</strong> &mdash; បញ្ជីថ្មីនៃក្រុមបន្ថែម</li>
 </ul>
-<h3 id="showing-group">Showing Group</h3>
-<p>To display entries group from the system.</p>
+<h3 id="ករបងហញករម">ការបង្ហាញក្រុម</h3>
+<p>ដើម្បីបង្ហាញក្រុមពីប្រព័ន្ធ​៖</p>
 <pre><code>groups
-</code></pre><h3 id="creating-group">Creating Group</h3>
-<p>The <code>groupadd</code> command creates a new group account using the values specified on the command line plus the default values from the system. The new group will be entered into the system files as needed.</p>
+</code></pre><h3 id="ករបងកតករម">ការបង្កើតក្រុម</h3>
+<p>ពាក្យបញ្ជា <code>groupadd</code> បង្កើតគណនីក្រុមថ្មីដោយប្រើតម្លៃដែលបានបញ្ជាក់តាម​ បន្ទាត់ពាក្យបញ្ជាជាមួយ​ នឹងតម្លៃលំនាំដើមពីប្រព័ន្ធ។ ក្រុមថ្មីនឹងត្រូវបញ្ចូលទៅក្នុងប្រព័ន្ធតាមតម្រូវការ។</p>
 <pre><code>groupadd [NAME]
 </code></pre>
 
-<div class="notices note" ><p>Similarly, if the <code>NAME</code> already exists in an external user database, groupadd will deny the group account creation request.</p></div>
+<div class="notices note" ><p>ស្រដៀងគ្នានេះដែរ ប្រសិនបើ <code>NAME</code> មានរួចហើយនៅក្នុងប្រព័ន្ធទិន្នន័យខាងក្រៅក្រុម <code>groupadd</code> នឹងបដិសេធ សំណើរបង្កើតគណនីក្រុម។</p></div>
 
-<h3 id="delete-group">Delete Group</h3>
-<p>The <code>groupdel</code> command modifies the system account files, deleting all entries that refer to GROUP.</p>
+<h3 id="ករលបករម">ការលុបក្រុម</h3>
+<p>ពាក្យបញ្ជា <code>groupdel</code> កែប្រែឯកសារគណនីប្រព័ន្ធដោយលុបរាល់សមាសធាតុដែលយោងទៅ <strong>GROUP</strong> ។</p>
 <pre><code>groupdel [EXISTING_NAME]
 </code></pre>
 
-<div class="notices note" ><p><code>Group_Name</code> must be existed.</p></div>
+<div class="notices note" ><p><code>Group_Name</code>ត្រូវតែមាន។</p></div>
 
-<h3 id="rename-group">Rename Group</h3>
-<p>You can rename the group by groupmod.</p>
+<h3 id="ករបតរឈមករម">ការប្តូរឈ្មោះក្រុម</h3>
+<p>អ្នកអាចប្តូរឈ្មោះក្រុមតាម groupmod។</p>
 <pre><code>groupmod -n [NEW_GROUP_NAME] [OLD_GROUP_NAME]
 </code></pre><ul>
-<li><strong>-n</strong> &mdash; is the flag for changing the name</li>
+<li><strong>-n</strong> &mdash; គឺជាជម្រើសសំរាប់ផ្លាស់ប្តូរឈ្មោះ។</li>
 </ul>
 <hr>
 <hr>

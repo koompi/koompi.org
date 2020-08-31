@@ -6,7 +6,7 @@ draft: false
 # search related keywords
 keywords: ["induct", "instate"]
 ---
-In this tutorial, we'll look at the `commands` and how you can quickly use it to **locate** files in your filesystem. Finding file  is a powerful utility capable of locating files anywhere on your system including mounted drives and removable storage, processing regular expressions, and even running other commands on those files. Fortunately, only a few simple options are needed to provide most users with all the capability they need.
+In this tutorial, we'll look at the `commands` and how you can quickly use it to **locate** files in your filesystem. Finding files is a powerful utility capable of locating files anywhere on your system including mounted drives and removable storage, processing regular expressions, and even running other commands on those files. Fortunately, only a few simple options are needed to provide most users with all the capabilities they need.
 
 ----
 ----

@@ -77,12 +77,17 @@ useradd <USER_NAME>
 Similarly, if the username already exists in an external user database, useradd will deny the user account creation request.
 {{< /notice >}}
 
-{{< notice note >}}
+{{< notice info >}}
 Usernames may only be up to 32 characters long.
 {{< /notice >}}
 
 ### Delete User
-The `userdel`  command modifies the system account files, deleting all entries that refer to the user name `LOGIN`. The named user must exist.
+The `userdel`  command modifies the system account files, deleting all entries that refer to the user name `LOGIN`.
+
+{{< notice note >}}
+The named user must exist.
+{{< /notice >}}
+
 ```
 userdel <EXISTING_USER_NAME>
 ```
