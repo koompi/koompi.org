@@ -21,7 +21,7 @@ As with most open-source commands, you have several available options. And we ar
 + **name** – case sensitive
 + **iname** – case insensitive
 
-Remember, Open-source is very particular about the case, so if you’re looking for a file named text.txt, the following command will return no results.
+Remember, Open-source is very particular about the case, so if you’re looking for a file named .txt, the following command will return no results.
 ```
 sudo find / -name filename.extension
 ```
@@ -63,7 +63,7 @@ Do you know you can modify your files by for the last 60 minutes or any minutes.
 ```
 find / -mmin -60
 ```
-### Find Change Files Since Last 6 minutes
+### Find Change Files Since Last 60 minutes
 You can also find the changed files that you have been changed for any minutes, too.
 ```
 find / -cmin -60
@@ -84,7 +84,7 @@ find / -size +1000M
 ```
 You can also find all files which are greater than or less than, too. For example, `( Greater than 10MB Less than 100MB )`
 ```
-find / -size +10M -size -10M
+find / -size +10M -size -100M
 ```
 With the output from the command, you can comb through the directory structure and free up space or troubleshoot to find out what is mysteriously filling up your drive.
 
@@ -145,7 +145,7 @@ By default, the history command will show you the last five hundred commands you
 {{< /notice >}}
 
 ### Showing History Of Used Command Less
-If you wish to view the history one page at a time, you can use the command below. Now, you can simply use the spacebar to view one page at a time or use the down arrow to view one line at a time:
+If you wish to view the history one page at a time, you can use the command below.
 ```
 history | less
 ```
@@ -157,11 +157,11 @@ To view the last 25 commands, just use the following:
 ```
 history 25
 ```
-Another way to search history is with the following command. This command will show us all the history of commands have used on the object.
+Another way to search history is with the following command. This command will show us all the history of commands has used on the object.
 ```
 history | grep <OPTION> <FILE_NAME>
 ```
-For Example: I want to see how many commands have been used on this file `text.txt`
+For example: I want to see how many commands have been used on this file `text.txt`
 ```
 history | grep text.txt
 ```

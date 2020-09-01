@@ -510,7 +510,7 @@
 <li><strong>name</strong> – case sensitive</li>
 <li><strong>iname</strong> – case insensitive</li>
 </ul>
-<p>Remember, Open-source is very particular about the case, so if you’re looking for a file named text.txt, the following command will return no results.</p>
+<p>Remember, Open-source is very particular about the case, so if you’re looking for a file named .txt, the following command will return no results.</p>
 <pre><code>sudo find / -name filename.extension
 </code></pre><p>Sample:</p>
 <pre><code>sudo find / -name text.txt
@@ -557,7 +557,7 @@
 </code></pre><h3 id="find-modified-files-since-last-60-minutes">Find Modified Files Since Last 60 minutes</h3>
 <p>Do you know you can modify your files by for the last 60 minutes or any minutes.</p>
 <pre><code>find / -mmin -60
-</code></pre><h3 id="find-change-files-since-last-6-minutes">Find Change Files Since Last 6 minutes</h3>
+</code></pre><h3 id="find-change-files-since-last-60-minutes">Find Change Files Since Last 60 minutes</h3>
 <p>You can also find the changed files that you have been changed for any minutes, too.</p>
 <pre><code>find / -cmin -60
 </code></pre><h3 id="find-all-files-which-are-accessed-7-days">Find All Files Which Are Accessed 7 days</h3>
@@ -571,7 +571,7 @@
 <p>We can use the find command to locate files of a certain size. Say, for instance, you want to go large and locate files that are over <strong>1000MB</strong>. The find command can be issued, with the help of the <code>-size</code> option, like so:</p>
 <pre><code>find / -size +1000M
 </code></pre><p>You can also find all files which are greater than or less than, too. For example, <code>( Greater than 10MB Less than 100MB )</code></p>
-<pre><code>find / -size +10M -size -10M
+<pre><code>find / -size +10M -size -100M
 </code></pre><p>With the output from the command, you can comb through the directory structure and free up space or troubleshoot to find out what is mysteriously filling up your drive.</p>
 <p>You can search with the following size descriptions:</p>
 <table>
@@ -635,15 +635,15 @@
 <div class="notices note" ><p>By default, the history command will show you the last five hundred commands you have entered.</p></div>
 
 <h3 id="showing-history-of-used-command-less">Showing History Of Used Command Less</h3>
-<p>If you wish to view the history one page at a time, you can use the command below. Now, you can simply use the spacebar to view one page at a time or use the down arrow to view one line at a time:</p>
+<p>If you wish to view the history one page at a time, you can use the command below.</p>
 <pre><code>history | less
 </code></pre><p>To view just the last ten commands, you can use the following:</p>
 <pre><code>history | tail
 </code></pre><p>To view the last 25 commands, just use the following:</p>
 <pre><code>history 25
-</code></pre><p>Another way to search history is with the following command. This command will show us all the history of commands have used on the object.</p>
+</code></pre><p>Another way to search history is with the following command. This command will show us all the history of commands has used on the object.</p>
 <pre><code>history | grep &lt;OPTION&gt; &lt;FILE_NAME&gt;
-</code></pre><p>For Example: I want to see how many commands have been used on this file <code>text.txt</code></p>
+</code></pre><p>For example: I want to see how many commands have been used on this file <code>text.txt</code></p>
 <pre><code>history | grep text.txt
 </code></pre><p>Here is the output all the commands have been used on it.</p>
 <pre><code>  394  touch text.txt

@@ -9,21 +9,22 @@ keywords: ["induct", "instate"]
 
 <!-- ## hkp://ipv4.pool.sks-keyservers.net:11371 -->
 
-នៅក្នុងឯកសារបង្រៀននេះយើងនឹងពិនិត្យមើល `ពាក្យបញ្ជា` និងវិធីដែលអ្នកអាចប្រើវាដើម្បីកំណត់ទីតាំង **locate** ឯកសារក្នុងប្រព័ន្ធឯកសាររបស់អ្នក។ ការស្វែងរកឯកសារគឺជា\សមត្ថភាពមួយអាចរកទីតាំងឯកសារនៅគ្រប់ទីកន្លែងនៃប្រព័ន្ធរបស់អ្នករួមទាំង mount drive និងឧបករណ៍ផ្ទុកចល័ត ព្រមទាំងដំណើរការកន្សោមផ្សេងៗ និងសូម្បីតែដំណើរការពាក្យបញ្ជាផ្សេងទៀត នៅលើឯកសារ ទាំងនោះផងដែរ។ ជាសំណាងល្អមានតែជម្រើសសាមញ្ញ មួយចំនួនដែលត្រូវការ ដើម្បីផ្តល់ជូន អ្នកប្រើប្រាស់ ភាគច្រើន នូវរាល់សមត្ថភាពដែលពួកគេត្រូវការ។
+នៅក្នុងឯកសារបង្រៀននេះយើងនឹងពិនិត្យមើល `ពាក្យបញ្ជា` និងវិធីដែលយើងអាចប្រើវាដើម្បីកំណត់ទីតាំង **locate** ឯកសារក្នុងប្រព័ន្ធឯកសាររបស់យើង។ 
+
+ការស្វែងរកឯកសារគឺជាសមត្ថភាពមួយអាចរកទីតាំងឯកសារនៅគ្រប់ទីកន្លែងនៃប្រព័ន្ធរបស់យើងរួមទាំង mount drive និងឧបករណ៍ផ្ទុកចល័ត ព្រមទាំងដំណើរការកន្សោមផ្សេងៗ និងសូម្បីតែដំណើរការពាក្យបញ្ជាផ្សេងទៀត នៅលើឯកសារ ទាំងនោះផងដែរ។ ជាសំណាងល្អមានតែជម្រើសសាមញ្ញ មួយចំនួនដែលត្រូវការ ដើម្បីផ្តល់ជូន យើងប្រើប្រាស់ ភាគច្រើន នូវរាល់សមត្ថភាពដែលពួកគេត្រូវការ។
 
 ----
 ----
 
-
-ពាក្យបញ្ជា `find` ​​គឺជាបន្ទាត់បញ្ជាសម្រាប់ដំណើរការឋានានុក្រមឯកសារ។ វាអាចត្រូវបានប្រើ ដើម្បីស្វែងរកឯកសារនិងថត ហើយអនុវត្តប្រតិបត្តិការជាបន្តបន្ទាប់។ វាគាំទ្រការស្វែងរកតាមឯកសារ, ថតឯកសារ,កាលបរិច្ឆេទបង្កើត, កាលបរិច្ឆេទកែប្រែម្ចាស់និងសិទ្ធិ។
+ពាក្យបញ្ជា `find` ​​គឺជាបន្ទាត់បញ្ជាសម្រាប់ដំណើរការឋានានុក្រមឯកសារ។ វាអាចត្រូវបានប្រើ ដើម្បីស្វែង រកឯកសារនិងថត ហើយអនុវត្តប្រតិបត្តិការជាបន្តបន្ទាប់។ វាគាំទ្រការស្វែងរកតាមឯកសារ, ថតឯកសារ, កាលបរិច្ឆេទបង្កើត, កាលបរិច្ឆេទកែប្រែម្ចាស់និងសិទ្ធិ។
 
 ### ស្វែងរកដោយឈ្មោះ
-ពាក្យបញ្ជាក្នុងប្រភពបើកចំហភាគច្រើន អ្នកមានជម្រើសជាច្រើន។ យើងកំពុងព្យាយាមស្វែងរកឯកសារតាមឈ្មោះ យើងនឹងប្រើជម្រើសមួយក្នុងចំណោមជម្រើសពីរ៖
+ពាក្យបញ្ជាក្នុងប្រភពបើកចំហភាគច្រើន យើងមានជម្រើសជាច្រើន។ យើងកំពុងព្យាយាមស្វែងរកឯកសារ តាមឈ្មោះ យើងនឹងប្រើជម្រើសមួយក្នុងចំណោមជម្រើសពីរ៖
 
 + **name** – ករណីដែលមានការប្រកាន់
 + **iname** – ករណីដែលគ្មានការប្រកាន់
 
-Remember, Open-source is very particular about the case, so if you’re looking for a file named text.txt, the following command will return no results.
+ចូលចងចាំថា  Open-source គឺមានការប្រកាន់ច្រើនដោយតម្រូវឲ្យបញ្ចូលឲ្យបានត្រឹមត្រូវ ដូចនេះប្រសិន បើអ្នកចង់រកឯកសារណាមួយត្រូវបញ្ចូល ឬបញ្ជាក់ឲ្យបានច្បាស់។
 ```
 sudo find / -name filename.extension
 ```
@@ -31,7 +32,7 @@ sudo find / -name filename.extension
 ```
 sudo find / -name text.txt
 ```
-If, however, you were to alter the command by using the -iname option, the find command would locate your file, regardless of case. So the new command looks like:
+ប្រសិនបើអ្នកចង់ស្វែងរកតាម ជម្រើស -iname ពាក្យបញ្ជាគឺមានដូចខាងក្រោម៖
 ```
 sudo find / -iname filename.extension
 ```
@@ -41,7 +42,7 @@ sudo find / -iname text.txt
 ```
 
 ### ស្វែងរកដោយប្រភេទ
-ប្រសិនបើអ្នកមិនចាប់អារម្មណ៍ខ្លាំងក្នុងការរកទីតាំងឯកសារតាមឈ្មោះ ប៉ុន្តែអ្នកចង់រកឯកសារទាំងអស់តាម ប្រភេទណាមួយ នោះអ្នកត្រូវពិពណ៌នាប្រភេទឯកសារទូទៅមួយចំនួនគឺ៖
+ប្រសិនបើយើងមិនចាប់អារម្មណ៍ខ្លាំងក្នុងការរកទីតាំងឯកសារតាមឈ្មោះ ប៉ុន្តែយើងចង់រកឯកសារទាំងអស់តាម ប្រភេទណាមួយ នោះយើងត្រូវពិពណ៌នាប្រភេទឯកសារទូទៅមួយចំនួនគឺ៖
 
 |    ជម្រើស| ការពិពណ៌នា         | 
 |:----------:|:--------------------|
@@ -55,124 +56,128 @@ sudo find / -iname text.txt
 ```
 sudo find / -type b
 ```
+យើងអាចប្រើជម្រើសដូចគ្នា ដើម្បីជួយយើងរកមើលការកំណត់រចនាសម្ព័ន្ធឯកសារ។ 
 
-We can use the same option to help us look for configuration files. Say, for instance, you want to locate all regular files that end in the `.conf` extension. This command would look something like:
+ឧទាហរណ៍៖ យើងចង់រកឯកសារធម្មតាទាំងអស់ដែលបញ្ចប់ដោយផ្នែកបន្ថែម `.conf` ។
 
-យើងអាចប្រើជម្រើសដូចគ្នា ដើម្បីជួយយើងរកមើលការកំណត់រចនាសម្ព័ន្ធឯកសារ។ ឧទាហរណ៍អយើងចង់រកឯកសារធម្មតាទាំងអស់ដែលបញ្ចប់ដោយផ្នែកបន្ថែម `.conf` ។ ពាក្យបញ្ជានេះមានលក្ខណះដូចតទៅ៖
+ពាក្យបញ្ជានេះមានលក្ខណះដូចតទៅ៖
 ````
 sudo find / -type  f -name "*.conf"
 ````
 ### ស្វែងរកឯកសារដែលបានកែប្រែ ៦០ នាទីមុន
-តើអ្នកដឹងទេថាអ្នកអាចរកមើលឯកសាររបស់អ្នកដែលបានកែប្រែក្នុងរយៈពេល ៦០ នាទីចុងក្រោយ។
+តើយើងដឹងទេថាយើងអាចរកមើលឯកសាររបស់យើងដែលបានកែប្រែក្នុងរយៈពេល ៦០ នាទីចុងក្រោយ។
 ```
 find / -mmin -60
 ```
 ### ស្វែងរកឯកសារផ្លាស់ប្តូរ ៦០ នាទីមុន
-អ្នកក៏អាចរកឃើញឯកសារដែលអ្នកបានផ្លាស់ប្តូរក្នុងរយៈពេល ៦០ នាទីផងដែរ។
+យើងក៏អាចរកឃើញឯកសារដែលយើងបានផ្លាស់ប្តូរក្នុងរយៈពេល ៦០ នាទីផងដែរ។
 ```
 find / -cmin -60
 ```
 ### ស្វែងរកឯកសារទាំងអស់ដែលបានប្រើរយៈពេល ៧ ថ្ងៃ
-Besides finding all the files that have been changed by minutes you can look for the files has been accessed for days.
-ក្រៅពីការស្វែងរកឯកសារទាំងអស់ដែលត្រូវបានផ្លាស់ប្តូរដោយនាទីអ្នកអាចរកមើលឯកសារដែលចូលប្រើដោយថ្ងៃផងដែរ។
+ក្រៅពីការស្វែងរកឯកសារទាំងអស់ដែលត្រូវបានផ្លាស់ប្តូរដោយនាទីយើងអាចរកមើលឯកសារដែលចូលប្រើ
+ដោយថ្ងៃផងដែរ។
 ```
 find / -atim 7
 ```
 {{< notice info >}}
-លេខទាំងអស់នៅទីនេះ អ្នកអាចប្តូរដាក់ជាមួយលេខផ្សេងទៀតក៏បាន។
+លេខទាំងអស់នៅទីនេះ យើងអាចប្តូរដាក់ជាមួយលេខផ្សេងទៀតក៏បាន។
 {{< /notice >}}
 
 ### ស្វែងរកឯកសារតាមទំហំ
-We can use the find command to locate files of a certain size. Say, for instance, you want to go large and locate files that are over **1000MB**. The find command can be issued, with the help of the `-size` option, like so:
-
-យើងអាចប្រើពាក្យបញ្ជារកទីតាំងឯកសារដែលមានទំហំជាក់លាក់។ ឧទាហរណ៍អ្នកចង់ទៅរកឯកសារធំហើយរកទីតាំង ដែលមានំហំលើសពី **១០០០MB** ។ ពាក្យបញ្ជាស្វែងរកអាចត្រូវបានចេញដោយមានជំនួយពីជម្រើស `-size` ដូចជា៖
+យើងអាចប្រើពាក្យបញ្ជារកទីតាំងឯកសារដែលមានទំហំជាក់លាក់។ ឧទាហរណ៍យើងចង់ទៅរកឯកសារធំហើយ
+រកទីតាំងដែលមានទំហំលើសពី **១០០០MB** ។ ពាក្យបញ្ជាស្វែងរកអាចប្រើជំនួយពីជម្រើស `-size` ដូចជា៖
 ```
 find / -size +1000M
 ```
-You can also find all files which are greater than or less than, too. For example, `( Greater than 10MB Less than 100MB )`
+អ្នកក៏អាចរកឃើញឯកសារទាំងអស់ដែលមានទំហំធំជាងឬតូចជាងផងដែរ។ ឧទាហរណ៍ `(ធំជាង ១០ មេកាបៃតិចជាង ១០០ មេកាបៃ)`
 ```
-find / -size +10M -size -10M
+find / -size +10M -size -100M
 ```
-With the output from the command, you can comb through the directory structure and free up space or troubleshoot to find out what is mysteriously filling up your drive.
+ជាមួយនឹងលទ្ធផលពីពាក្យបញ្ជា អ្នកយល់ពីរចនាសម្ព័ន្ធថតនិងជាបន្សល់ទំហំ ឬដោះស្រាយបញ្ហា ដើម្បីរកមើល
+ថាមានកង្វះខាតលើ drive ដែរឬទេ។
 
-You can search with the following size descriptions:
+
+អ្នកអាចស្វែងរកជាមួយការពិពណ៌នាលំអិតនៃទំហំដូចខាងក្រោមៈ
 
 |    Options| Description         | 
 |:----------:|:--------------------|
-| **c**     |      `Bytes` |
-| **k**     |      `Kilobytes`    |
-| **M**     |      `Megabytes`|
-| **G**     |      `Gigabytes`|
-| **b**     |      `512-byte blocks`|
+| **c**     |      `បៃ` |
+| **k**     |      `គីឡូបៃ`    |
+| **M**     |      `មេហ្គាបៃ`|
+| **G**     |      `ជីហ្គាបៃ`|
+| **b**     |      `ប្រភេទ ៥១២ បៃ`|
 
 ----
 
-The `which` command locates the executable file associated with a given command. It returns the pathnames of the files (or links) which would be executed in the current environment, had the filename (or filenames) been given as a command (or commands) in a strictly POSIX-conformant shell. It does this by searching the paths in the PATH environment variable for executable files matching the names of the arguments.
+ពាក្យបញ្ជា `which` កំណត់ទីតាំងឯកសារដែលប្រតិបត្តិការដែលពាក់ព័ន្ធជាមួយពាក្យបញ្ជាដែលបានផ្តល់។ វាត្រឡប់ឈ្មោះឯកសារ (ឬតំណភ្ជាប់) ដែលនឹងត្រូវបានប្រតិបត្តិក្នុងបរិបទបច្ចុប្បន្នដែលមានឈ្មោះឯកសារ (ឬឈ្មោះឯកសារច្រើន) ត្រូវបានផ្តល់ជាពាក្យបញ្ជា (ឬពាក្យបញ្ជាច្រើន) នៅក្នុង POSIX-conformant ។ វាដំណើរ ការនេះដោយស្វែងរកផ្លូវអថេរបរិស្ថានស្វែងរកឯកសារដែលបានផ្ទៀងផ្ទាត់នឹងឈ្មោះអាគុយម៉ង់។
 
 
-The syntax for `which` command is as follows:
+ទម្រង់ដើមសម្រាប់ការប្រើប្រាស់ `which` មានដូចខាងក្រោម៖
 ```
 which [OPTIONS] FILE_NAME
 ```
-### Locate File With Which
-For example, to find the full path of the **ping** command, you would type the following:
+### រកទីតាំងឯកសារជាមួយពាក្យបញ្ជា which
+ឧទាហរណ៍ដើម្បីរកផ្លូវទីតាំងនៃពាក្យបញ្ជា **ping** អ្នកអាចវាយដូចខាងក្រោមៈ
 ```
 which ping
 ```
-You can also provide more than one arguments to the which command:
+អ្នកក៏អាចផ្តល់អំណះអំណាងច្រើនជាងមួយចំពោះពាក្យបញ្ជា `which` ៖
 ```
 which ping uptime
 ```
-The output will include full paths to both ping and uptime executables:
+លទ្ធផលនឹងរួមបញ្ចូលទាំងផ្លូវពីទីតាំងទាំង ping និង uptime:
 ```
 /usr/bin/ping
 /usr/bin/uptime
 ```
-The search is done from left to right, and if more than one matches are found in the directories listed in the `PATH` path variable, which will print only the first one. To print all matches, use the `-a` option:
+ការស្វែងរកត្រូវបានធ្វើពីឆ្វេងទៅស្តាំហើយប្រសិនបើមានការផ្គូផ្គងត្រឹមត្រូវច្រើនជាងមួយត្រូវបានរកឃើញ
+នៅក្នុងបញ្ជីរាយឈ្មោះនៅក្នុង `PATH` ដែលនឹងបង្ហាញតែភាពត្រឹមត្រូវមុនគេប៉ុណ្ណោះ។ ដើម្បីបង្ហាញរាល់ ការផ្គូផ្គងដែលត្រឹមត្រូវទាំងអស់ យើងត្រូវបន្ថែមជម្រើស `-a`៖
 ```
 which -a touch
 ```
 {{< notice info >}}
-Usually one of the executables is only a symlink to the other one, but in some cases, you may have two versions of the same command installed in different locations or different commands using the same name.
+ជាធម្មតាការប្រតិបត្តិមួយគឺគ្រាន់តែជាតំណភ្ជាប់ទៅនឹងការប្រតិបតិ្តមួយផ្សេងទៀត ប៉ុន្តែក្នុងករណីខ្លះយើង
+អាចទទួលបានលទ្ធផលពីចេញពីពាក្យបញ្ជាដូចគ្នាដែលត្រូវបានតំឡើងនៅទីតាំងផ្សេងគ្នាឬពាក្យ បញ្ជាផ្សេងៗ គ្នាដោយប្រើឈ្មោះតែមួយ។
 {{< /notice >}}
 
 {{< notice note >}}
-The `which` command is used to locate a command by searching the command executable in the directories specified by the environmental variable `PATH`.
+ចូលចងចាំថា ពាក្យបញ្ជា `which`ត្រូវបានប្រើ ដើម្បីកំណត់ទីតាំងពាក្យបញ្ជាដោយស្វែងរកតាមពាក្យបញ្ជា ក្នុងថតឯកសារដោយ អាគុយម៉ង់ `PATH`។
 {{< /notice >}}
 
 ----
-### Showing History Of Used Commands
-Since all of our services are currently running on Open-Source. There is a very useful command to show you all of the last commands that have been recently used. The command is simply called `history`, but can also be accessed by looking at your `.bash_history` in your home folder. 
-
+### ការបង្ហាញរបាយពាក្យបញ្ជានៃការប្រើប្រាស់ចុងក្រោយ
+ចាប់តាំងពីសេវាកម្មរបស់យើងទាំងអស់បច្ចុប្បន្នកំពុងដំណើរការលើប្រភព Open-Source។ វាមានពាក្យបញ្ជា មានប្រយោជន៍ ដើម្បីបង្ហាញយើងនូវពាក្យបញ្ជាចុងក្រោយទាំងអស់ដែលត្រូវបានប្រើថ្មីៗនេះ។ ពាក្យបញ្ជានេះ ជាសាមញ្ញាត្រូវបានគេហៅថា`history`។
 ```
 history
 ```
 {{< notice note >}}
-By default, the history command will show you the last five hundred commands you have entered.
+ជាទូទៅពាក្យបញ្ជានេះនឹងបង្ហាញយើងនូវរបាយពាក្យបញ្ជា **ប្រាំរយចុងក្រោយ** ដែលយើងបានបញ្ចូល
+ឬប្រើប្រាស់។
 {{< /notice >}}
 
-### Showing History Of Used Command Less
-If you wish to view the history one page at a time, you can use the command below. Now, you can simply use the spacebar to view one page at a time or use the down arrow to view one line at a time:
+### ការបង្ហាញរបាយពាក្យបញ្ជានៃការប្រើប្រាស់ចុងក្រោយ(តិច)
+ប្រសិនបើអ្នកចង់មើលរបាយប្រើប្រាស់ចុងក្រោយមួយទំព័រម្តងៗ អ្នកអាចប្រើពាក្យបញ្ជាខាងក្រោម។ 
 ```
 history | less
 ```
-To view just the last ten commands, you can use the following:
+ដើម្បីមើលពាក្យបញ្ជា ១០ ចុងក្រោយអ្នកអាចប្រើដូចខាងក្រោមៈ
 ```
 history | tail
 ```
-To view the last 25 commands, just use the following:
+ដើម្បីមើលពាក្យបញ្ជា ២៥ ចុងក្រោយអ្នកអាចប្រើដូចខាងក្រោមៈ
 ```
 history 25
 ```
-Another way to search history is with the following command. This command will show us all the history of commands have used on the object.
+វិធីមួយទៀត ដើម្បីស្វែងរករបាយពាក្យបញ្ជាចុងក្រោយ គឺដោយប្រើពាក្យបញ្ជាខាងក្រោម។ ពាក្យបញ្ជានេះនឹងបង្ហាញយើងពាក្យបញ្ជាទាំងអស់ ដែលបានបោះបានតាមវត្ថុបំណង។
 ```
 history | grep <OPTION> <FILE_NAME>
 ```
-For Example: I want to see how many commands have been used on this file `text.txt`
+ឧទាហរណ៍ ខ្ញុំចង់ឃើញថាតើមានពាក្យបញ្ជាប៉ុន្មានត្រូវបានប្រើលើឯកសារ `text.txt` នេះ
 ```
 history | grep text.txt
 ```
-Here is the output all the commands have been used on it.
+នេះជាការបង្ហាញ
 ```
   394  touch text.txt
   397  find / -iname text.txt
@@ -180,3 +185,5 @@ Here is the output all the commands have been used on it.
   408  locate text.txt
   431  history | grep text.txt
 ```
+----
+----
