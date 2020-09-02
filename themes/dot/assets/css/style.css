@@ -337,7 +337,7 @@ header.sticky-top {
 }
 
 .navbar-brand img {
-  max-width: 50px;
+  max-width: 50px !important;
   margin-bottom: 0;
 }
 
