@@ -14,16 +14,16 @@ In this article, we are going to introduce you guys the converting applications 
 ----
 Chart list below is providing the Name and commands:
 
-| Converter Names  |  Installing Commands | 
-|:-------------|:-------------|
-| **Audio Convert** | `pi -S audio-convert `     |
-| **HandBrake** | `pi -S handbrake `     |
-| **SoundConverter** | `pi -S soundconverter `     |
-| **Soundkonverter** | `pi -S soundkonverter `     |
+| Converter Names  |  Installing Commands | Details|
+|:-------------|:-------------|:-------------|
+| **Audio Convert** | `pi -S audio-convert `     |[Click for more]()|
+| **HandBrake** | `pi -S handbrake `     |[Click for more]()|
+| **SoundConverter** | `pi -S soundconverter `     |[Click for more]()|
+| **Soundkonverter** | `pi -S soundkonverter `     |[Click for more]()|
 
 ----
 
-# Audio Convert
+<!-- # Audio Convert
 **Audio Convert** is a script that converts between WAV, Ogg, MP3, MPC, FLAC, APE, AAC, and WMA files. It has an easy-to-use interface that makes it possible to fill in the tags for a few formats, copy the tags from input files into the new files, and choose the quality of compression.
 
 ## How to install Audio convert
@@ -80,6 +80,6 @@ This app is providing many features such as:
 It is easy to install, run this command below:
 ```
 pi -S soundkonverter
-```
+``` -->
 
 ---

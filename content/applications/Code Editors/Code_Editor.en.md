@@ -15,17 +15,18 @@ This document providesa completed details of the list of available coding apps t
 
 This chart shows the result of which code editors tcommands:
 
-| Code Editor Names  |  Installing Commands | 
-|:-------------|:-------------|
-| **Android Studio** | `pi -S android-stud`     |
-|**Atom**  |  `pi -S atom`    |
-|**RStudio**  |  `pi -S rstudio-desktop-bin`    |
-|**TeXmaker**  | `pi -S texmaker`     |
-|**Mousepad**  |   `pi -S mousepad`   |
-|**Visual Studio Code**  |  `pi -S code --classic`    |
+| Code Editor Names  |  Installing Commands |  Details|
+|:-------------|:-------------|:-------------|
+| **Android Studio** | `pi -S android-stud`     |[Click for more]()|
+|**Atom**  |  `pi -S atom`    |[Click for more]()|
+|**RStudio**  |  `pi -S rstudio-desktop-bin`    |[Click for more]()|
+|**TeXmaker**  | `pi -S texmaker`     |[Click for more]()|
+|**Mousepad**  |   `pi -S mousepad`   |[Click for more]()|
+|**Visual Studio Code**  |  `pi -S code --classic`    |[Click for more]()|
 
 
----
+ ---
+ <!--
 # Android Studio
 Android Studio is the official integrated development environment for Google's Android operating 
 system, built on JetBrains' IntelliJ IDEA software and designed specifically for Android development. It is available for download on Windows, macOS, Linux based and even KOOMPI OS.
@@ -146,6 +147,7 @@ Before you install any apps, make sure your system have been updated.If you have
 
 ```
 pi -S code --classic
-```
-
+``` 
+-->
+---
 ---

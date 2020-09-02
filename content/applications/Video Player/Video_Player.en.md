@@ -9,16 +9,16 @@ keywords: ["induct", "instate"]
 Since there have been video editors, there also have Video Players. They have been used as the platforms for playback the video or watching the video.
 
 ----
-| Social Media Names  | Installing Command| 
-|:-------------|:-------------|
-| **VLC**|      `pi -S vlc`|
-| **MPlayer**|      `pi -S mplayer`|
-| **KMplayer**|      `pi -S kmplayer`|
-| **MPV**|      `pi -S mpv`|
+| Social Media Names  | Installing Command| Details|
+|:-------------|:-------------|:-------------|
+| **VLC**|      `pi -S vlc`| [Click for more]()|
+| **MPlayer**|      `pi -S mplayer`|[Click for more]()|
+| **KMplayer**|      `pi -S kmplayer`|[Click for more]()|
+| **MPV**|      `pi -S mpv`|[Click for more]()|
 
 ----
 ----
-## VLC
+<!-- ## VLC
 **VLC Media Player** is one of the best and most popular Best Linux Software in the category of video
 players. It is an open source media player which support almost all media file types. VLC Media Player
 support network shares are browsing, downloading subtitles, video playlists, pop-up video, etc.
@@ -68,6 +68,6 @@ under GNU General Public License version 3.
 If you want to install it , run comamnd below:
 ```
 pi -S mpv
-```
+``` -->
 
 ----

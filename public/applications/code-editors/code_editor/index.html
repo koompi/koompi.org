@@ -93,7 +93,7 @@
         
         
         <li class="nav-item">
-          <a class="nav-link text-dark" href="https://repo.koompi.org/iso/KOOMPI-OS-2020.04.26-x86_64.iso">Download</a>
+          <a class="nav-link text-dark" href="http://repo.koompi.org/iso/KOOMPI-OS-2020.05.20-x86_64.iso">Download</a>
         </li>
         
         
@@ -498,101 +498,134 @@
 <tr>
 <th align="left">Code Editor Names</th>
 <th align="left">Installing Commands</th>
+<th align="left">Details</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td align="left"><strong>Android Studio</strong></td>
 <td align="left"><code>pi -S android-stud</code></td>
+<td align="left"><a href="">Click for more</a></td>
 </tr>
 <tr>
 <td align="left"><strong>Atom</strong></td>
 <td align="left"><code>pi -S atom</code></td>
+<td align="left"><a href="">Click for more</a></td>
 </tr>
 <tr>
 <td align="left"><strong>RStudio</strong></td>
 <td align="left"><code>pi -S rstudio-desktop-bin</code></td>
+<td align="left"><a href="">Click for more</a></td>
 </tr>
 <tr>
 <td align="left"><strong>TeXmaker</strong></td>
 <td align="left"><code>pi -S texmaker</code></td>
+<td align="left"><a href="">Click for more</a></td>
 </tr>
 <tr>
 <td align="left"><strong>Mousepad</strong></td>
 <td align="left"><code>pi -S mousepad</code></td>
+<td align="left"><a href="">Click for more</a></td>
 </tr>
 <tr>
 <td align="left"><strong>Visual Studio Code</strong></td>
 <td align="left"><code>pi -S code --classic</code></td>
+<td align="left"><a href="">Click for more</a></td>
 </tr>
 </tbody>
 </table>
 <hr>
-<h1 id="android-studio">Android Studio</h1>
-<p>Android Studio is the official integrated development environment for Google&rsquo;s Android operating
-system, built on JetBrains&rsquo; IntelliJ IDEA software and designed specifically for Android development. It is available for download on Windows, macOS, Linux based and even KOOMPI OS.</p>
-<h2 id="how-to-install-android-studio">How to install Android Studio</h2>
+ <!--
+# Android Studio
+Android Studio is the official integrated development environment for Google's Android operating 
+system, built on JetBrains' IntelliJ IDEA software and designed specifically for Android development. It is available for download on Windows, macOS, Linux based and even KOOMPI OS.
+
+## How to install Android Studio
 
 
 <div class="notices note" ><p>Before installing any apps, please make sure your system have already updated.</p></div>
 
-<p>If you don&rsquo;t know anything related to update the system, you can visit <a href="#">here</a>. You have already updated your system, you can easily install the andriod studio within command.</p>
-<pre><code>pi -S android-stud
-</code></pre><h2 id="features">Features</h2>
-<ul>
-<li>Navigation Editor</li>
-<li>New Project Wizard</li>
-<li>Single Variant Build Sync</li>
-<li>Dummy Data in Layout Editor</li>
-</ul>
-<hr>
-<h1 id="atom">Atom</h1>
-<p><a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwjpsZnQo9boAhUlNKYKHV4lDJsQFjAAegQIFxAC&amp;url=https%3A%2F%2Fatom.io%2F&amp;usg=AOvVaw2f1xmShfpKULMHZBtecYLV"><strong>Atom</strong></a> is a free and open-text editor that is user-friendly, customizable, and mobile. It is a desktop application built on HTML, JavaScript, CSS, and Node.js, and operates using the Electron framework.</p>
-<p>Atom boasts of simplicity, flexibility and effectiveness that appeal to many developers, expert and novice alike.It is also simple that even those with minimal coding experience can easily learn the system almost instantly.</p>
-<h2 id="how-to-install-atom">How to install Atom</h2>
-<p>In order to install <strong>atom</strong>, you need to go to <em>konsole</em> and input command below:</p>
-<pre><code>pi -S atom
-</code></pre><p>
+
+If you don't know anything related to update the system, you can visit [here](#). You have already updated your system, you can easily install the andriod studio within command.
+```
+pi -S android-stud
+```
+## Features
+- Navigation Editor
+- New Project Wizard
+- Single Variant Build Sync
+- Dummy Data in Layout Editor
+
+---
+
+# Atom
+
+[**Atom**](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwjpsZnQo9boAhUlNKYKHV4lDJsQFjAAegQIFxAC&url=https%3A%2F%2Fatom.io%2F&usg=AOvVaw2f1xmShfpKULMHZBtecYLV) is a free and open-text editor that is user-friendly, customizable, and mobile. It is a desktop application built on HTML, JavaScript, CSS, and Node.js, and operates using the Electron framework.
+
+Atom boasts of simplicity, flexibility and effectiveness that appeal to many developers, expert and novice alike.It is also simple that even those with minimal coding experience can easily learn the system almost instantly.
+
+## How to install Atom
+In order to install **atom**, you need to go to *konsole* and input command below:
+
+```
+pi -S atom
+```
+ 
+
 
 <div class="notices info" ><p>After you type the command in konsole, please follow all instructions that have been given!</p></div>
 
-You can also start the atom by command,too.</p>
-<pre><code>atom
-</code></pre><h2 id="main-features">Main Features</h2>
-<ul>
-<li>Crossing platform editing</li>
-<li>Built-in package manager</li>
-<li>Smart autocompletion</li>
-<li>File system browser</li>
-<li>Multiple panels</li>
-<li>Find and replace tool</li>
-<li>Packages and them</li>
-</ul>
-<hr>
-<h2 id="rstudio">RStudio</h2>
-<p><a href="https://rstudio.com/">RStudio</a> is an integrated development environment for R, a programming
+You can also start the atom by command,too.
+```
+atom
+```
+## Main Features
+- Crossing platform editing
+- Built-in package manager
+- Smart autocompletion
+- File system browser
+- Multiple panels
+- Find and replace tool
+- Packages and them
+
+---
+## RStudio
+[RStudio](https://rstudio.com/) is an integrated development environment for R, a programming
 language for statistical computing and graphics. It is available in two formats: RStudio Desktop is a
 regular desktop application while RStudio Server runs on a remote server and allows accessing RStudio
-using a web browser.</p>
-<h3 id="how-to-install-rstudio">How to install RStudio</h3>
-<p>You can install them by go to terminal, running this command:</p>
-<pre><code>pi -S rstudio-desktop-bin
-</code></pre><hr>
-<h1 id="texmaker">TeXmaker</h1>
-<p>In the arena of <code>Open-Source</code>, <strong>LaTeX</strong> is considered as a standard markup language. It helps the users for <strong>editing the documents</strong> to the markup level. TeXmaker is one of the best LaTeX editors available out here. It’s the most user-friendly LaTeX IDE for the newbie.</p>
-<h2 id="how-to-install-texmaker">How to install TeXmaker</h2>
-<p>LaTex can be downloaded through a command:</p>
-<pre><code>pi -S texmak
-</code></pre>
+using a web browser.
+
+### How to install RStudio
+You can install them by go to terminal, running this command:
+````
+pi -S rstudio-desktop-bin
+````
+
+---
+# TeXmaker
+In the arena of `Open-Source`, **LaTeX** is considered as a standard markup language. It helps the users for **editing the documents** to the markup level. TeXmaker is one of the best LaTeX editors available out here. It’s the most user-friendly LaTeX IDE for the newbie.
+
+## How to install TeXmaker
+LaTex can be downloaded through a command:
+```
+pi -S texmak
+```
+
 
 <div class="notices note" ><p>If you want to install it, you can use this command <strong>pi -Rdd texmak</strong>.</p></div>
 
-<hr>
-<h1 id="mousepad">Mousepad</h1>
-<p>Nothing can beat command-line text editors like – nano, vim ,etc. In terms of being lightweight, but if you want a graphical interface, here it is — The <strong>Mousepad</strong> is a minimal text editor.</p>
-<p>It’s extremely lightweight and blazing fast. It comes with a simple customizable user interface with multiple themes.</p>
-<h2 id="how-to-install-mousepad">How to install Mousepad</h2>
-<p>It can be installed through <code>pi</code> or<code> pacman</code>:
+
+---
+
+# Mousepad
+
+Nothing can beat command-line text editors like – nano, vim ,etc. In terms of being lightweight, but if you want a graphical interface, here it is — The **Mousepad** is a minimal text editor. 
+
+It’s extremely lightweight and blazing fast. It comes with a simple customizable user interface with multiple themes.
+
+## How to install Mousepad
+
+It can be installed through `pi` or` pacman`:
 
 
 <div class="code-tabs">
@@ -614,11 +647,11 @@ using a web browser.</p>
 <h2 id="how-to-instakk-vscode">How to instakk VsCode</h2>
 <div class="notices tip" ><p>Before you install any apps, make sure your system have been updated.If you have not updated, please run this command <strong>pi -Syu</strong> first.</p></div>
 <pre><code>pi -S code --classic
-</code></pre><hr>
+</code></pre><h2 id="--">&ndash;&gt;</h2>
+<hr>
 </div>
 </div></div>
-</div></p>
-</div>
+</div></div>
           
           <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 05 Jan 2020</p>
           <nav class="pagination mt-3">
@@ -1135,22 +1168,6 @@ using a web browser.</p>
             
             
             
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
 
             
             
@@ -1175,6 +1192,22 @@ using a web browser.</p>
             
             
             
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
             
             
             

@@ -93,7 +93,7 @@
         
         
         <li class="nav-item">
-          <a class="nav-link text-dark" href="https://repo.koompi.org/iso/KOOMPI-OS-2020.04.26-x86_64.iso">Download</a>
+          <a class="nav-link text-dark" href="http://repo.koompi.org/iso/KOOMPI-OS-2020.05.20-x86_64.iso">Download</a>
         </li>
         
         
@@ -497,66 +497,93 @@
 <tr>
 <th align="left">Converter Names</th>
 <th align="left">Installing Commands</th>
+<th align="left">Details</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td align="left"><strong>Audio Convert</strong></td>
 <td align="left"><code>pi -S audio-convert </code></td>
+<td align="left"><a href="">Click for more</a></td>
 </tr>
 <tr>
 <td align="left"><strong>HandBrake</strong></td>
 <td align="left"><code>pi -S handbrake </code></td>
+<td align="left"><a href="">Click for more</a></td>
 </tr>
 <tr>
 <td align="left"><strong>SoundConverter</strong></td>
 <td align="left"><code>pi -S soundconverter </code></td>
+<td align="left"><a href="">Click for more</a></td>
 </tr>
 <tr>
 <td align="left"><strong>Soundkonverter</strong></td>
 <td align="left"><code>pi -S soundkonverter </code></td>
+<td align="left"><a href="">Click for more</a></td>
 </tr>
 </tbody>
 </table>
 <hr>
-<h1 id="audio-convert">Audio Convert</h1>
-<p><strong>Audio Convert</strong> is a script that converts between WAV, Ogg, MP3, MPC, FLAC, APE, AAC, and WMA files. It has an easy-to-use interface that makes it possible to fill in the tags for a few formats, copy the tags from input files into the new files, and choose the quality of compression.</p>
-<h2 id="how-to-install-audio-convert">How to install Audio convert</h2>
-<p>You can install it with this command:</p>
-<pre><code>pi -S audio-convert
-</code></pre><hr>
-<h1 id="handbrake">Handbrake</h1>
-<p><a href="https://handbrake.fr/">HandBrake</a> is very easy to use open-source tool for converting videos from a number of formats to a few modern, popular formats.</p>
+<!-- # Audio Convert
+**Audio Convert** is a script that converts between WAV, Ogg, MP3, MPC, FLAC, APE, AAC, and WMA files. It has an easy-to-use interface that makes it possible to fill in the tags for a few formats, copy the tags from input files into the new files, and choose the quality of compression.
+
+## How to install Audio convert
+You can install it with this command:
+
+```
+pi -S audio-convert
+```
+
+---
+
+# Handbrake
+
+[HandBrake](https://handbrake.fr/) is very easy to use open-source tool for converting videos from a number of formats to a few modern, popular formats.
+
 
 
 <div class="notices tip" ><p>Before you install any apps, make sure your system have been updated.If you have not updated, please run this command <strong>pi -Syu</strong> first.</p></div>
 
-<h2 id="how-to-install-handbrake">How to install handbrake</h2>
-<p>In KOOMPI OS handbrake is installed within command below</p>
-<pre><code>pi -S handbrake
-</code></pre><hr>
-<h1 id="soundconverter">Soundconverter</h1>
-<p><strong>SoundConverter</strong> is the leading audio file converter. It reads anything GStreamer can read (Ogg Vorbis, AAC, MP3, FLAC, WAV, AVI, MPEG, MOV, M4A, AC3, DTS, ALAC, MPC, Shorten, APE, SID, MOD, XM, S3M, etc&hellip;), and writes to Opus, Ogg Vorbis, FLAC, WAV, AAC, and MP3 files.</p>
-<p>SoundConverter aims to be the simple app in using, and very fast. Thanks to its multithreaded designing, it will use as many cores as possible to speed up the conversion. It can also extract the audio from
-videos.</p>
-<h2 id="how-to-install-soundconverter">How to install Soundconverter</h2>
-<p>To install it, you need to be in <em>konsole</em> and run command below:</p>
-<pre><code>pi -S soundconverter
-</code></pre><h2 id="features">Features</h2>
-<p>This app is providing many features such as:</p>
-<ul>
-<li>Clean and easy interface</li>
-<li>Fast, multithreaded, conversion</li>
-<li>Process huge number of files in record time</li>
-<li>Powerful automated renaming- Change filenames and create folders according to tags</li>
-</ul>
+
+## How to install handbrake
+In KOOMPI OS handbrake is installed within command below
+```
+pi -S handbrake
+```
+
+---
+
+# Soundconverter
+**SoundConverter** is the leading audio file converter. It reads anything GStreamer can read (Ogg Vorbis, AAC, MP3, FLAC, WAV, AVI, MPEG, MOV, M4A, AC3, DTS, ALAC, MPC, Shorten, APE, SID, MOD, XM, S3M, etc...), and writes to Opus, Ogg Vorbis, FLAC, WAV, AAC, and MP3 files.
+
+SoundConverter aims to be the simple app in using, and very fast. Thanks to its multithreaded designing, it will use as many cores as possible to speed up the conversion. It can also extract the audio from 
+videos.
+
+## How to install Soundconverter
+To install it, you need to be in *konsole* and run command below:
+```
+pi -S soundconverter
+```
+
+## Features
+This app is providing many features such as:
+- Clean and easy interface
+- Fast, multithreaded, conversion
+- Process huge number of files in record time
+- Powerful automated renaming- Change filenames and create folders according to tags
+
+---
+
+# SoundKonverter
+
+**SoundKonverter** is a front-end to various audio converters.
+
+## How to install SoundKonverter
+It is easy to install, run this command below:
+```
+pi -S soundkonverter
+``` -->
 <hr>
-<h1 id="soundkonverter">SoundKonverter</h1>
-<p><strong>SoundKonverter</strong> is a front-end to various audio converters.</p>
-<h2 id="how-to-install-soundkonverter">How to install SoundKonverter</h2>
-<p>It is easy to install, run this command below:</p>
-<pre><code>pi -S soundkonverter
-</code></pre><hr>
 </div>
           
           <p class="post-meta border-bottom pb-3 mb-0 mt-3">Updated on 05 Jan 2020</p>
@@ -1074,22 +1101,6 @@ videos.</p>
             
             
             
-            
-            
-            
-
-            
-            
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
 
             
             
@@ -1114,6 +1125,22 @@ videos.</p>
             
             
             
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+
             
             
             

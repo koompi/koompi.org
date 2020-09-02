@@ -15,15 +15,15 @@ handful of features and tools to fulfill your image editing or painting or desig
 ----
 We are providing the list chart on the Video Editor with the details. Furthermore, visiting [KOOMPI ACADEMY FOR VIDEO TUTORIAL](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjr96qBuIPqAhUGfX0KHZ4LAIwQFjAAegQIBBAB&url=https%3A%2F%2Facademy.koompi.com%2F&usg=AOvVaw1bOydTTMdYQbaN9tLmZwRU)
 
-| Social Media Names  | Installing Command| 
-|:-------------|:-------------|
-| **Kdenlive**|      `pi -S kdenlive`|
-| **Openshot**|      `pi -S openshot`|
-| **Shotcut**|      `pi -S shotcut`|
+| Social Media Names  | Installing Command| Details|
+|:-------------|:-------------|:-------------|
+| **Kdenlive**|      `pi -S kdenlive`| [Click for more]()|
+| **Openshot**|      `pi -S openshot`|[Click for more]()|
+| **Shotcut**|      `pi -S shotcut`|[Click for more]()|
 
 ----
 ----
-## Kdenlive
+<!-- ## Kdenlive
 **Kdenlive** is a non-linear video editing software featuring multi-track editing with a timeline. 
 
 It supports an unlimited number of video and audio tracks and includes tools to create, move, crop and
@@ -58,6 +58,6 @@ with all the features you can expect in a standard video editor.
 You can install it by run this command below
 ```
 pi -S shotcut
-```
+``` -->
 ----
 

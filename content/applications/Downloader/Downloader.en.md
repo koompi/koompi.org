@@ -20,15 +20,15 @@ Before you install any apps, make sure your system have been updated.If you have
 ---
 Command installation and Name of the Download managers have been written in the following chart list.
 
-| Downloader App Names  |  Installing Commands | 
-|:-------------|:-------------|
-| **UGet** | `pi -S uget `     |
-| **Clipgrab** | `pi -S clipgrab `     |
+| Downloader App Names  |  Installing Commands | Details|
+|:-------------|:-------------|:-------------|
+| **UGet** | `pi -S uget `     |[Click for more]()|
+| **Clipgrab** | `pi -S clipgrab ` |[Click for more]()|
 
 
 ---
 
-# UGet
+<!-- # UGet
 
 **UGet** is an open-source download manager that downloads your files fast. This download manager can be efficiently organized and highly configurable. You can control your downloads in one central place.
  
@@ -61,6 +61,6 @@ pi -S clipgrab
 
 {{< notice info >}}
 After you have downloaded clipgrab and then you are facing a problem with it. Please [click here](#)
-{{< /notice >}}
+{{< /notice >}} -->
 
 ---

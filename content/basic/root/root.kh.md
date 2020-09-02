@@ -59,12 +59,13 @@ sudo password root
 ```
 sudo passwd -dl root
 ```
-If you wish to unlock root account, enter the following command to set new password and unlock it:
+ប្រសិនបើអ្នកចង់ដោះសោគណនី root សូមបញ្ចូលពាក្យបញ្ជាខាងក្រោម ដើម្បីកំណត់លេខសំងាត់ថ្មីហើយដោះសោរវា៖
 ```
 sudo passwd root
 ```
 {{< notice note >}}
-You'll be prompted to create a new password and enter it twice. Once a password has been set, the root account will be active.
+អ្នកនឹងត្រូវបានសួរឱ្យបង្កើតពាក្យសម្ងាត់ថ្មីហើយបញ្ចូលវាពីរដង។ នៅពេលដែលពាក្យសម្ងាត់ត្រូវបានកំណត់គណនី root នឹងបានបើក។
 {{< /notice >}}
 
+----
 ----

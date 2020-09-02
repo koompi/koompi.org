@@ -13,21 +13,21 @@ So in this section, we are going to introduce many social platforms and a little
 ---
 Here is the list chart on the Media apps plus command to install them.
 
-| Social Media Names  | Installing Command| 
-|:-------------|:-------------|
-| **Dingtalk**|      `pi -S dingtalk`|
-| **Discord**|      `pi -S discord`|
-| **Kodi**|      `pi -S kodi`|
-| **Popcorn Time**|      `pi -S popcorntime`|
-| **Messenger**|      `pi -S caprine`|
-| **Microsoft Team**|      `pi -S teams`|
-| **Teamviewer**|      `pi -S teamviewer`|
-| **Telegram**|      `pi -S telegram-desktop`|
-| **Zoom**|      `pi -S zoom`|
+| Social Media Names  | Installing Commands| Details|
+|:-------------|:-------------|:-------------|
+| **Dingtalk**|      `pi -S dingtalk`|[Click for more]()|
+| **Discord**|      `pi -S discord`|[Click for more]()|
+| **Kodi**|      `pi -S kodi`|[Click for more]()|
+| **Popcorn Time**|      `pi -S popcorntime`|[Click for more]()|
+| **Messenger**|      `pi -S caprine`|[Click for more]()|
+| **Microsoft Team**|      `pi -S teams`|[Click for more]()|
+| **Teamviewer**|      `pi -S teamviewer`|[Click for more]()|
+| **Telegram**|      `pi -S telegram-desktop`|[Click for more]()|
+| **Zoom**|      `pi -S zoom`|[Click for more]()|
 
 ---
 ---
-## Dingtalk
+<!-- ## Dingtalk
 **Dingtalk** is an enterprise communication and collaboration platform developed by Alibaba Group. It
 was one of the world's largest professional communication and management mobile apps in China with
 over 100 million users.
@@ -131,7 +131,7 @@ sudo systemctl enable teamviewerd
 You can start your teamviewer service with command line also:
 ```
 sudo systemctl start teamviewerd
-```
+``` -->
 
 ---
 <!-- ## Skype

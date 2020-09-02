@@ -15,20 +15,20 @@ Please, make sure you have already updated your system with this command "**pi -
 ---
 Chart list of Graphic Editors:
 
-| Graphic Editor Names  |  Installing Commands | 
-|:-------------|:-------------|
-| **Darktable** | `pi -S darktable `     |
-| **Digikam** | `pi -S digikam `     |
-| **GIMP** | `pi -S gimp`     |
-| **Inkscape** | `pi -S inkscape `     |
-| **Krita** | `pi -S krita `     |
-| **Pinta** | `pi -S pinta `     |
-| **Photoshop** | `pix -i adope-photoshop-cc `     |
-| **RawTherapee** | `pi -S rawtherapee `     |
+| Graphic Editor Names  |  Installing Commands | Details|
+|:-------------|:-------------|:-------------|
+| **Darktable** | `pi -S darktable `     |[Click for more]()|
+| **Digikam** | `pi -S digikam `     |[Click for more]()|
+| **GIMP** | `pi -S gimp`     |[Click for more]()|
+| **Inkscape** | `pi -S inkscape `     |[Click for more]()|
+| **Krita** | `pi -S krita `     |[Click for  more]()|
+| **Pinta** | `pi -S pinta `     |[Click for more]()|
+| **Photoshop** | `pix -i adope-photoshop-cc `     |[Click for more]()|
+| **RawTherapee** | `pi -S rawtherapee `     |[Click for more]()|
 
 ---
 
-# Darktable
+<!-- # Darktable
 
 I let you store all the precious digital negatives in a database that you can, later on, develop raw images. It’s a powerful image editing application created by photographers for photographers.
 
@@ -168,7 +168,7 @@ Make sure your system has already updated. If not run this `pi -Syu`
 
 {{< notice info >}}
 After running the command above, please follow the instructions that have been given.
-{{< /notice >}}
+{{< /notice >}} -->
 
 ---
 

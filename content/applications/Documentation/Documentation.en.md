@@ -18,18 +18,18 @@ If you have questions about the anything, you can check it [here](#) for the ans
 ----
 In this chart list below is all the Name with commands installation of Docs(Worksheets):
 
-| Document Applicantion Names | Installing Commands| 
-|:-------------|:-------------|
-| **Libre Office**|      `pi -S libreoffice-fresh`|
-| **Master PDF Editor 4**|      `pi -S masterpdfeditor-free`|
-| **Master PDF Editor 5**|      `pi -S masterpdfeditor`|
-| **Okular**|      `pi -S okular`|
-| **Simplenote**|      `pi -S simplenote-electron-bin`|
-| **WPS Office**|      `pi -S wps-office`|
+| Document Applicantion Names | Installing Commands|   Details|
+|:-------------|:-------------|:-------------|
+| **Libre Office**|      `pi -S libreoffice-fresh`| [Click for more]()|
+| **Master PDF Editor 4**|      `pi -S masterpdfeditor-free`|[Click for more]()|
+| **Master PDF Editor 5**|      `pi -S masterpdfeditor`|[Click for more]()|
+| **Okular**|      `pi -S okular`|[Click for more]()|
+| **Simplenote**|      `pi -S simplenote-electron-bin`|[Click for more]()|
+| **WPS Office**|      `pi -S wps-office`|[Click for more]()|
 
 ----
 
-# Libre Office
+<!-- # Libre Office
 **Libra Office** is the free power-packed Open-Source personal productivity suite for Windows, Macintosh,KOOMPI OS, and any other Linuxs, that gives you six feature-rich applications for all your document production and data processing needs: Writer, Calc, Impress, Draw, Math and Base.
 
 ## How to install Libre Office
@@ -139,5 +139,6 @@ pi -S wps-office-stable
 ```
 {{< notice info >}}
 If system will ask you for the password which while you are typing it, it is hidden. And after that they will give you instructions, please kindly follow them.
-{{< /notice >}}
+{{< /notice >}} -->
+
 ---

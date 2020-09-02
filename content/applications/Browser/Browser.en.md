@@ -17,19 +17,19 @@ Before continuing with this document, make sure you know how to use [**terminal 
 
 In this chart list below is all the browser apps that KOOMPI OS is supported and with commands installation:
 
-| Browser Names  | Installing Command| 
-|:-------------|:-------------|
-| **Brave**|      `pi -S brave-bin`|
-| **Chromium** |      `pi -S chromium`|
-| **Firefox** |       `pi -S firefox`|
-| **Google Chrome** |       `pi -S google-chrome`|
-| **Midori**|       `pi -S midori`|
-| **Opera** |      `pi -S opera`|
-| **Thunderbird** |   `pi -S thunderbird` |
+| Browser Names  | Installing Command| Details| 
+|:-------------|:-------------|:-------------|
+| **Brave**|      `pi -S brave-bin`| [Click for more]()|
+| **Chromium** |      `pi -S chromium`| [Click for more]()|
+| **Firefox** |       `pi -S firefox`| [Click for more]()|
+| **Google Chrome** |       `pi -S google-chrome`| [Click for more]()|
+| **Midori**|       `pi -S midori`|[Click for more]()|
+| **Opera** |      `pi -S opera`|[Click for more]()|
+| **Thunderbird** |   `pi -S thunderbird` |[Click for more]()|
 
 ---
 
-# Brave
+<!-- # Brave
 
 [Brave web browser](#) is a fast, free and open-source software.It was invented for fighting malware and preventing from tracking while keeping your information safe and secured.
 
@@ -167,6 +167,6 @@ If you installed thunderbird from outside package manager, you have to make sure
 
 {{< notice tip >}}
 If you face the problem with runnning app, please [click here](#) 
-{{< /notice >}}
+{{< /notice >}} -->
 
 ---

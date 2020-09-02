@@ -94,7 +94,7 @@ According to the language used to code, the code editors highlight special keywo
       <description>Converter is the app that helps the user for converting text file formats, documents, media file format (image, audio, and even video).
 In this article, we are going to introduce you guys the converting applications that mostly use in the KOOMPI OS.
  Chart list below is providing the Name and commands:
-   Converter Names Installing Commands     Audio Convert pi -S audio-convert    HandBrake pi -S handbrake    SoundConverter pi -S soundconverter    Soundkonverter pi -S soundkonverter      Audio Convert Audio Convert is a script that converts between WAV, Ogg, MP3, MPC, FLAC, APE, AAC, and WMA files.</description>
+   Converter Names Installing Commands Details     Audio Convert pi -S audio-convert  Click for more   HandBrake pi -S handbrake  Click for more   SoundConverter pi -S soundconverter  Click for more   Soundkonverter pi -S soundkonverter  Click for more     Before you install any apps, make sure your system have been updated.</description>
     </item>
     
     <item>
@@ -140,7 +140,7 @@ pi -S git  Make sure you have already run the command pi -Syu to update your sys
       <description>As we all know that graphic editor is one of the common apps for the demand of editing the images whether they are digital photographs, traditional photo-chemical photographs, or illustrations. So, Here is the document that describes and provides more info and an app for using.
 Please, make sure you have already updated your system with this command &amp;ldquo;pi -Syu&amp;rdquo;.
   Chart list of Graphic Editors:
-   Graphic Editor Names Installing Commands     Darktable pi -S darktable    Digikam pi -S digikam    GIMP pi -S gimp   Inkscape pi -S inkscape    Krita pi -S krita    Pinta pi -S pinta    Photoshop pix -i adope-photoshop-cc    RawTherapee pi -S rawtherapee      Darktable I let you store all the precious digital negatives in a database that you can, later on, develop raw images.</description>
+   Graphic Editor Names Installing Commands Details     Darktable pi -S darktable  Click for more   Digikam pi -S digikam  Click for more   GIMP pi -S gimp Click for more   Inkscape pi -S inkscape  Click for more   Krita pi -S krita  Click for more   Pinta pi -S pinta  Click for more   Photoshop pix -i adope-photoshop-cc  Click for more   RawTherapee pi -S rawtherapee  Click for more     After you used that command, it will give you instructions.</description>
     </item>
     
     <item>
@@ -223,7 +223,7 @@ poweroff Reboot is referring to restart your system.</description>
       <pubDate>Sat, 29 Dec 2018 11:02:05 +0600</pubDate>
       
       <guid>https://www.koompi.org/applications/recorder/recorder/</guid>
-      <description></description>
+      <description>Fixing Error!!! </description>
     </item>
     
     <item>
@@ -273,7 +273,7 @@ Due to its heavy adoption, familiarizing yourself with systemd is well worth the
       
       <guid>https://www.koompi.org/applications/video-player/video_player/</guid>
       <description>Since there have been video editors, there also have Video Players. They have been used as the platforms for playback the video or watching the video.
-    Social Media Names Installing Command     VLC pi -S vlc   MPlayer pi -S mplayer   KMplayer pi -S kmplayer   MPV pi -S mpv      VLC VLC Media Player is one of the best and most popular Best Linux Software in the category of video players.</description>
+    Social Media Names Installing Command Details     VLC pi -S vlc Click for more   MPlayer pi -S mplayer Click for more   KMplayer pi -S kmplayer Click for more   MPV pi -S mpv Click for more       </description>
     </item>
     
     <item>
