@@ -143,7 +143,7 @@ ol {
   padding-left: 20px;
 }
 img-fluids{
-  height: 40px !important;
+  height: 10px !important;
   margin-top: 2px !important;
   float: left;
 }
@@ -337,6 +337,7 @@ header.sticky-top {
 }
 
 .navbar-brand img {
+  min-width: 50px;
   max-width: 50px !important;
   margin-bottom: 0;
 }
