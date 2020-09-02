@@ -52,9 +52,9 @@ hasChildren = true
 ############################# Default Parameters ##########################
 [params]
 # logo is for all page
-logo =""
+logo ="/images/logo.png"
 # logo white is for homepage logo, you can use colorful logo too...
-logo_white =""
+logo_white ="/images/logos.png"
 # when logo is empty, it will shown your site title
 
 # customize color
