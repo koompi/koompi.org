@@ -6,10 +6,6 @@
     <description>Recent content in តើអ្នកមានសំណួរមែនទេ ? on KOOMPI OS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>kh-kh</language>
-    <copyright>រក្សាសិទ្ធិដោយ © [គម្ពីរ](https://koompi.com/) ២០២០</copyright>
-    
-	<atom:link href="https://www.koompi.org/kh/contact/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>រក្សាសិទ្ធិដោយ © [គម្ពីរ](https://koompi.com/) ២០២០</copyright><atom:link href="https://www.koompi.org/kh/contact/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

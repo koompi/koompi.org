@@ -1,6 +1,6 @@
 ---
 title: "Frequently Asked Questions"
-draft: false
+draft: true
 ---
 {{< faq "How to install KOOMPI OS?" >}}
 There are two main steps for installing it.

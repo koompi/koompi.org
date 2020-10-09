@@ -258,21 +258,6 @@
   </url>
   
   <url>
-    <loc>https://www.koompi.org/kh/basic/other/others/</loc>
-    <lastmod>2020-01-05T10:42:26+06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.koompi.org/basic/other/others/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="kh"
-                href="https://www.koompi.org/kh/basic/other/others/"
-                />
-  </url>
-  
-  <url>
     <loc>https://www.koompi.org/kh/features/</loc>
     <priority>0</priority>
     <xhtml:link
@@ -345,16 +330,6 @@
   
   <url>
     <loc>https://www.koompi.org/kh/faq/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.koompi.org/faq/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="kh"
-                href="https://www.koompi.org/kh/faq/"
-                />
   </url>
   
 </urlset>

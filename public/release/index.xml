@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright by  © [KOOMPI](https://koompi.com/) 2020 </copyright>
-    <lastBuildDate>Thu, 27 Dec 2018 11:02:05 +0600</lastBuildDate>
-    
-	<atom:link href="https://www.koompi.org/release/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 27 Dec 2018 11:02:05 +0600</lastBuildDate><atom:link href="https://www.koompi.org/release/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Latest Version</title>
       <link>https://www.koompi.org/release/latest-version/latest_version/</link>

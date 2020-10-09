@@ -6,10 +6,6 @@
     <description>Recent content in Got Any Questions on KOOMPI OS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright by  © [KOOMPI](https://koompi.com/) 2020 </copyright>
-    
-	<atom:link href="https://www.koompi.org/contact/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>Copyright by  © [KOOMPI](https://koompi.com/) 2020 </copyright><atom:link href="https://www.koompi.org/contact/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
