@@ -22,7 +22,7 @@ This chart shows the result of which code editors tcommands:
 |**RStudio**  |  `pi -S rstudio-desktop-bin`    |[Click for more]()|
 |**TeXmaker**  | `pi -S texmaker`     |[Click for more]()|
 |**Mousepad**  |   `pi -S mousepad`   |[Click for more]()|
-|**Visual Studio Code**  |  `pi -S code --classic`    |[Click for more]()|
+|**Visual Studio Code**  |  `pi -S code`    |[Click for more]()|
 
 
  ---

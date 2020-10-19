@@ -137,5 +137,14 @@ poweroff Reboot is referring to restart your system.</description>
 Due to its heavy adoption, familiarizing yourself with systemd is well worth the trouble, as it will make administering servers considerably easier.</description>
     </item>
     
+    <item>
+      <title>Other</title>
+      <link>https://www.koompi.org/basic/other/others/</link>
+      <pubDate>Fri, 29 Dec 2017 11:02:05 +0600</pubDate>
+      
+      <guid>https://www.koompi.org/basic/other/others/</guid>
+      <description>Coming soon!! **Noted**: If the **pi** database files are corrupted, and there is no backup file available, there exists some hope of rebuilding the pi database. {.is-info} # Reinstalling all packages To reinstall all native packages, use: ```shell pi -Qqn | pi -S - ``` # Querying Package Database ```shell $ pi -Q #queries the local package database $ pi -s #sync database $ pi -F #files database ``` For more options about querying: ```shell $ pi -Q --help ``` Options: ```shell -b, --dbpath  # set an alternate database location -c, --changelog # view the changelog of a package -d, --deps # list packages installed as dependencies [filter] -e, --explicit # list packages explicitly installed [filter] -g, --groups # view all members of a package group -i, --info # view package information (-ii for backup files) -k, --check # check that package files exist (-kk for file properties) -l, --list # list the files owned by the queried package -m, --foreign # list installed packages not found in sync db(s) [filter] -n, --native # list installed packages only found in sync db(s) [filter] -o, --owns  # query the package that owns  -p, --file  # query a package file instead of the database -q, --quiet # show less information for query and search -r, --root  # set an alternate installation root -s, --search  # search locally-installed packages for matching strings -t, --unrequired # list packages not (optionally) required by any package (-tt to ignore optdepends) [filter] -u, --upgrades # list outdated packages [filter] -v, --verbose # be verbose --arch  # set an alternate architecture --cachedir  # set an alternate package cache location --color  # colorize the output --config  # set an alternate configuration file --confirm # always ask for confirmation --debug # display debug messages --disable-download-timeout # use relaxed timeouts for download --gpgdir  # set an alternate home directory for GnuPG --hookdir  # set an alternate hook location --logfile  # set an alternate log file --noconfirm # do not ask for any confirmation --sysroot # operate on a mounted guest system (root-only) ```  **Warning**: Sometimes, -s&#39;s builtin ERE (Extended Regular Expressions) can cause a lot of unwanted results, so it has to be limited to match the package name only; not the description nor any other field.</description>
+    </item>
+    
   </channel>
 </rss>
