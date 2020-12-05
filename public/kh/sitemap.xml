@@ -343,4 +343,18 @@
                 />
   </url>
   
+  <url>
+    <loc>https://www.koompi.org/kh/faq/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.koompi.org/faq/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="kh"
+                href="https://www.koompi.org/kh/faq/"
+                />
+  </url>
+  
 </urlset>
